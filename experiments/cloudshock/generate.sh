@@ -18,5 +18,5 @@ done
 python ../../tools/make_resolutions_perturbations.py \
        --config template/cloudshock.xml \
        --resolutions $resolutions \
-       --perturbations 0.06 \
+       --perturbations 0.03125 \
 
