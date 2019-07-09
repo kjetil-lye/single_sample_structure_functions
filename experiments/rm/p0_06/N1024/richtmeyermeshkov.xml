@@ -1,99 +1,164 @@
-<?xml version="1.0" ?><config>
-<fvm>
-  <name>
+<?xml version="1.0" ?>
+<config>
+  <fvm>
+    <name>
     rm
   </name>
-  <platform>cuda</platform>
-  <grid>
-    <lowerCorner>0 0 0</lowerCorner>
-    <upperCorner>1 1 0</upperCorner>
-    <dimension>1024 1024 1</dimension>
-  </grid>
-  <boundary>periodic</boundary>
-  <flux>HLL3</flux>
-  <endTime>4</endTime>
-  <equation>euler2</equation>
-  <equationParameters>
-    <gamma>1.4</gamma>
-  </equationParameters>
-  <reconstruction>mc</reconstruction>
-  <cfl>auto</cfl>
-  <integrator>auto</integrator>
-  <initialData>
-    <python>richtmeyermeshkov.py</python>
+    <platform>cuda</platform>
+    <grid>
+      <lowerCorner>0 0 0</lowerCorner>
+      <upperCorner>1 1 0</upperCorner>
+      <dimension>1024 1024 1</dimension>
+    </grid>
+    <boundary>periodic</boundary>
+    <flux>HLL3</flux>
+    <endTime>4</endTime>
+    <equation>euler2</equation>
+    <equationParameters>
+      <gamma>1.4</gamma>
+    </equationParameters>
+    <reconstruction>mc</reconstruction>
+    <cfl>auto</cfl>
+    <integrator>auto</integrator>
+    <initialData>
+      <python>richtmeyermeshkov.py</python>
+      <parameters>
+        <parameter>
+          <name>a</name>
+          <length>40</length>
+          <values>
+            <value>0</value>
+          </values>
+        </parameter>
+        <parameter>
+          <name>epsilon</name>
+          <length>1</length>
+          <value>0.06</value>
+        </parameter>
+      </parameters>
+    </initialData>
+    <writer>
+      <type>netcdf</type>
+      <basename>rm</basename>
+      <numberOfSaves>1</numberOfSaves>
+    </writer>
+    <functionals>
+      <functional>
+        <name>structure_cube</name>
+        <p>1</p>
+        <numberOfH>32</numberOfH>
+        <numberOfSaves>8</numberOfSaves>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm_functional_structure_cube_1</basename>
+        </writer>
+      </functional>
+      <functional>
+        <name>structure_cube</name>
+        <p>1</p>
+        <time>3.92</time>
+        <numberOfH>32</numberOfH>
+        <timeRadius>0.08</timeRadius>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm_functional_time_integrated_structure_cube_1</basename>
+        </writer>
+      </functional>
+      <functional>
+        <name>structure_cube</name>
+        <p>2</p>
+        <numberOfH>32</numberOfH>
+        <numberOfSaves>8</numberOfSaves>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm_functional_structure_cube_2</basename>
+        </writer>
+      </functional>
+      <functional>
+        <name>structure_cube</name>
+        <p>2</p>
+        <time>3.92</time>
+        <numberOfH>32</numberOfH>
+        <timeRadius>0.08</timeRadius>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm_functional_time_integrated_structure_cube_2</basename>
+        </writer>
+      </functional>
+      <functional>
+        <name>structure_cube</name>
+        <p>3</p>
+        <numberOfH>32</numberOfH>
+        <numberOfSaves>8</numberOfSaves>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm_functional_structure_cube_3</basename>
+        </writer>
+      </functional>
+      <functional>
+        <name>structure_cube</name>
+        <p>3</p>
+        <time>3.92</time>
+        <numberOfH>32</numberOfH>
+        <timeRadius>0.08</timeRadius>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm_functional_time_integrated_structure_cube_3</basename>
+        </writer>
+      </functional>
+    </functionals>
+  </fvm>
+  <uq>
+    <sampleStart>0</sampleStart>
+    <samples>1</samples>
+    <generator>auto</generator>
     <parameters>
       <parameter>
         <name>a</name>
-        <length>40</length>
-        <values><value>0</value></values>
+        <length>20</length>
+        <type>uniform</type>
       </parameter>
-      <parameter>
-        <name>epsilon</name>
-        <length>1</length>
-        <value>0.06</value>
-      </parameter>
-
     </parameters>
-  </initialData>
-  <writer>
-    <type>netcdf</type>
-    <basename>rm</basename>
-    <numberOfSaves>1</numberOfSaves>
-  </writer>
-</fvm>
-<uq>
-  <sampleStart>0</sampleStart>
-  <samples>1</samples>
-  <generator>auto</generator>
-  <parameters>
-    <parameter>
-      <name>a</name>
-      <length>20</length>
-      <type>uniform</type>
-    </parameter>
-  </parameters>
-  <stats>
-    <stat>
-      <name>
+    <stats>
+      <stat>
+        <name>
 	structure_cube
       </name>
-      <numberOfSaves>1</numberOfSaves>
-      <numberOfH>32</numberOfH>
-      <p>1</p>
-      <writeInitialTimestep>true</writeInitialTimestep>
-      <writer>
-	<type>netcdf</type>
-	<basename>rm</basename>
-      </writer>
-    </stat>
-    <stat>
-      <name>
+        <numberOfSaves>1</numberOfSaves>
+        <numberOfH>32</numberOfH>
+        <p>1</p>
+        <writeInitialTimestep>true</writeInitialTimestep>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm</basename>
+        </writer>
+      </stat>
+      <stat>
+        <name>
 	structure_cube
       </name>
-      <numberOfSaves>1</numberOfSaves>
-      <numberOfH>32</numberOfH>
-      <p>2</p>
-      <writeInitialTimestep>true</writeInitialTimestep>
-      <writer>
-	<type>netcdf</type>
-	<basename>rm</basename>
-      </writer>
-    </stat>
-    <stat>
-      <name>
+        <numberOfSaves>1</numberOfSaves>
+        <numberOfH>32</numberOfH>
+        <p>2</p>
+        <writeInitialTimestep>true</writeInitialTimestep>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm</basename>
+        </writer>
+      </stat>
+      <stat>
+        <name>
 	structure_cube
       </name>
-      <numberOfSaves>1</numberOfSaves>
-      <numberOfH>32</numberOfH>
-      <p>3</p>
-      <writeInitialTimestep>true</writeInitialTimestep>
-      <writer>
-	<type>netcdf</type>
-	<basename>rm</basename>
-      </writer>
-    </stat>
-
-  </stats>
-</uq>
-
+        <numberOfSaves>1</numberOfSaves>
+        <numberOfH>32</numberOfH>
+        <p>3</p>
+        <writeInitialTimestep>true</writeInitialTimestep>
+        <writer>
+          <type>netcdf</type>
+          <basename>rm</basename>
+        </writer>
+      </stat>
+    </stats>
+  </uq>
 </config>
