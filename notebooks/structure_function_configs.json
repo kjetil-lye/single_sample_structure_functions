@@ -1,0 +1,184 @@
+{
+    "kh": {
+        "name": "Kelvin-Helmholtz",
+        "Tarray": [
+            0, 1
+        ],
+        "maxT": 2,
+        "perturbations": [
+            0.06
+        ],
+        "resolutions": [
+            128,
+            256,
+            512,
+            1024,
+            2048
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E"
+        ],
+        "cube_filename": "../experiments/kh/p0_06/N{resolution}/kh_structure_cube_{p}.000000_{t}.nc"
+    },
+
+
+    "fbb_0_5": {
+        "name": "Brownian bridge",
+        "Tarray": [
+            0, 1
+        ],
+        "maxT": 0.2,
+        "perturbations": [
+            0.1
+        ],
+        "resolutions": [
+            128,
+            256,
+	           512,
+             1024,
+             2048
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E"
+        ],
+        "cube_filename": "../experiments/fbb/H0_5/N{resolution}/euler_fbb_structure_cube_{p}.000000_{t}.nc"
+    },
+
+
+    "fbm_0_75": {
+        "name": "Fractional Brownian bridge with $H=0.75$",
+        "Tarray": [
+            0, 1
+        ],
+        "maxT": 0.2,
+        "perturbations": [
+            0.1
+        ],
+        "resolutions": [
+            128,
+            256,
+	          512,
+            1024,
+            2048
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E"
+        ],
+        "cube_filename": "../experiments/fbb/H0_75/N{resolution}/euler_fbb_structure_cube_{p}.000000_{t}.nc"
+    },
+
+
+
+        "fbm_0_125": {
+            "name": "Fractional Brownian bridge with $H=0.125$",
+            "Tarray": [
+                0, 1
+            ],
+            "maxT": 0.2,
+            "perturbations": [
+                0.1
+            ],
+            "resolutions": [
+                128,
+                256,
+    	          512,
+                1024,
+                2048
+            ],
+            "variables": [
+                "rho",
+                "mx",
+                "my",
+                "E"
+            ],
+            "cube_filename": "../experiments/fbb/H0_125/N{resolution}/euler_fbb_structure_cube_{p}.000000_{t}.nc"
+        },
+
+
+   "rm_0_06": {
+       "name": "Richtmeyer-Meshkov $\\epsilon=0.06$",
+        "Tarray": [
+            0,1
+        ],
+       "maxT": 4,
+        "perturbations": [
+            0.06
+        ],
+        "resolutions": [
+            128,
+            256,
+	    512,
+      1024,
+      2048
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E"
+        ],
+        "cube_filename": "../experiments/rm/p0_06/N{resolution}/rm_structure_cube_{p}.000000_{t}.nc"
+    },
+
+    "cloudshock_0_03125": {
+        "name": "Cloudshock $\\epsilon=1/32$",
+         "Tarray": [
+             0,1
+         ],
+        "maxT": 0.06,
+         "perturbations": [
+             0.06
+         ],
+         "resolutions": [
+             128,
+             256,
+ 	           512,
+             1024
+         ],
+         "variables": [
+             "rho",
+             "mx",
+             "my",
+             "E"
+         ],
+         "cube_filename": "../experiments/cloudshock/p0_03125/N{resolution}/cloudshock_structure_cube_{p}.000000_{t}.nc"
+     },
+
+
+
+     "shockvortex_0_06": {
+         "name": "Shock Vortex $\\epsilon=0.06$",
+          "Tarray": [
+              0,1
+          ],
+         "maxT": 0.0035,
+          "perturbations": [
+              0.06
+          ],
+          "resolutions": [
+              128,
+              256,
+       512,
+        1024,
+        2048
+          ],
+          "variables": [
+              "rho",
+              "mx",
+              "my",
+              "E"
+          ],
+          "cube_filename": "../experiments/shockvortex/p0_06/N{resolution}/shockvortex_structure_cube_{p}.000000_{t}.nc"
+      }
+
+
+}
