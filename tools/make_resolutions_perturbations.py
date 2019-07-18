@@ -45,12 +45,12 @@ Makes an instance of the configuration file for each resolution and each perturb
 
     for n, perturbation in enumerate(args.perturbations):
         perturbation_folder = "p{}".format(perturbation.replace(".","_"))
-        os.mkdir(perturbation_folder)
+        os.makedirs(perturbation_folder, exist_ok=True)
 
         for m, resolution in enumerate(args.resolutions):
             config = read_config(args.config)
             resolution_folder = f"{perturbation_folder}/N{resolution}"
-            os.mkdir(resolution_folder)
+            os.makedirs(resolution_folder, exist_ok=True)
 
 
             sample = samples[m]
