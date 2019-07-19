@@ -407,7 +407,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: cb52acb8b78fb062cad932b62638f9b0db4ffdc1
+Commit: 8069902d013a5a97dbea67c27ba3068292752589
 Repo: git@github.com:kjetil-lye/single_sample_structure_functions.git
 Hostname: gpusam};
 \node at (axis cs:0.2,0.93)[
@@ -415,7 +415,7 @@ Hostname: gpusam};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@cb52};
+]{@8069};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -423,7 +423,7 @@ Hostname: gpusam};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: cb52acb8b78fb062cad932b62638f9b0db4ffdc1
+Commit: 8069902d013a5a97dbea67c27ba3068292752589
 Repo: git@github.com:kjetil-lye/single_sample_structure_functions.git
 Hostname: gpusam};
 \end{axis}
@@ -437,17 +437,17 @@ Hostname: gpusam};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : cb52acb8b78fb062cad932b62638f9b0db4ffdc1
+%% GIT git_commit : 8069902d013a5a97dbea67c27ba3068292752589
 %% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : cb52
+%% GIT git_short_commit : 8069
 %% working_directory : /scratch/userdata/klye/projects/single_sample_structure_functions/notebooks
 %% hostname : gpusam
-%% generated_on_date : 2019-07-18 16:14:35.860420
+%% generated_on_date : 2019-07-18 23:24:13.082205
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/usr/bin/python3 /u/klye/.local/lib/python3.6/site-packages/ipykernel_launcher.py -f /tmp/tmpidp30vzu.json
+%%    commandrun=/usr/bin/python3 /u/klye/.local/lib/python3.6/site-packages/ipykernel_launcher.py -f /tmp/tmpza9gynqj.json
 %% python_version: 
 %%    /usr/bin/python3 (Version: 3.6.8 (default, Mar 21 2019, 10:08:12) 
 %%    [GCC 8.3.1 20190223 (Red Hat 8.3.1-2)])
@@ -1521,7 +1521,7 @@ Hostname: gpusam};
 %%     [function: savePlot, line: 329, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 341, file: ../python/plot_info.py]
 %%     [function: convergence_structure_functions, line: 53, file: <ipython-input-4-a874250666ef>]
-%%     [function: for_each_config, line: 33, file: <ipython-input-1-db8ea7cb3765>]
+%%     [function: for_each_config, line: 33, file: <ipython-input-1-e6852a8aebbc>]
 %%     [function: <module>, line: 66, file: <ipython-input-4-a874250666ef>]
 %%     [function: run_code, line: 3296, file: /u/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3220, file: /u/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
