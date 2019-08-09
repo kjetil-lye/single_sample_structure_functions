@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<config>
+  <fvm>
+    <name>
+    cloudshock
+  </name>
+    <platform>cuda</platform>
+    <grid>
+      <lowerCorner>0 0 0</lowerCorner>
+      <upperCorner>1 1 0</upperCorner>
+      <dimension>512 512 1</dimension>
+    </grid>
+    <boundary>neumann</boundary>
+    <flux>hll3</flux>
+    <endTime>0.06</endTime>
+    <equation>euler2</equation>
+    <equationParameters>
+      <gamma>1.4</gamma>
+    </equationParameters>
+    <reconstruction>wenof2</reconstruction>
+    <cfl>auto</cfl>
+    <integrator>rungekutta3</integrator>
+    <initialData>
+      <python>cloudshock.py</python>
+      <parameters>
+        <parameter>
+          <name>a</name>
+          <length>40</length>
+          <values>
+            <value>0</value>
+          </values>
+        </parameter>
+        <parameter>
+          <name>epsilon</name>
+          <length>1</length>
+          <value>0.03125</value>
+        </parameter>
+      </parameters>
+    </initialData>
+    <diffusion>
+      <name>none</name>
+      <reconstruction>none</reconstruction>
+    </diffusion>
+    <writer>
+      <basename>cloudshock</basename>
+      <type>netcdf</type>
+      <numberOfSaves>1</numberOfSaves>
+      <writeInitialTimestep>1</writeInitialTimestep>
+    </writer>
+  </fvm>
+  <uq>
+    <sampleStart>0</sampleStart>
+    <samples>1024</samples>
+    <generator>auto</generator>
+    <parameters>
+      <parameter>
+        <name>a</name>
+        <length>40</length>
+        <type>uniform</type>
+      </parameter>
+    </parameters>
+    <stats>
+      <stat>
+        <name>meanvar</name>
+        <numberOfSaves>1</numberOfSaves>
+        <writeInitialTimestep>1</writeInitialTimestep>
+        <writer>
+          <basename>cloudshock</basename>
+          <type>netcdf</type>
+        </writer>
+      </stat>
+    </stats>
+  </uq>
+</config>

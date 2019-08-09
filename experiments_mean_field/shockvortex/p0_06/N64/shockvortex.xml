@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<config>
+  <fvm>
+    <name>
+      shockvortex
+    </name>
+    <platform>cpu</platform>
+    <grid>
+      <lowerCorner>0 0 0</lowerCorner>
+      <upperCorner>1 1 0</upperCorner>
+      <dimension>64 64 1</dimension>
+    </grid>
+    <boundary>neumann</boundary>
+    <flux>HLL3</flux>
+    <endTime>0.0035</endTime>
+    <equation>euler2</equation>
+    <equationParameters>
+      <gamma>1.66666666666667</gamma>
+    </equationParameters>
+    <reconstruction>weno2</reconstruction>
+    <cfl>auto</cfl>
+    <integrator>auto</integrator>
+    <initialData>
+      <python>shockvortex.py</python>
+      <parameters>
+        <parameter>
+          <name>X</name>
+          <length>1</length>
+          <value>0</value>
+        </parameter>
+        <parameter>
+          <name>epsilon</name>
+          <length>1</length>
+          <value>0.06</value>
+        </parameter>
+      </parameters>
+    </initialData>
+    <diffusion>
+      <name>none</name>
+      <reconstruction>none</reconstruction>
+    </diffusion>
+    <writer>
+      <basename>shockvortex</basename>
+      <type>netcdf</type>
+      <numberOfSaves>1</numberOfSaves>
+      <writeInitialTimestep>1</writeInitialTimestep>
+    </writer>
+  </fvm>
+  <uq>
+    <samples>1024</samples>
+    <sampleStart>0</sampleStart>
+    <generator>auto</generator>
+    <parameters>
+      <parameter>
+        <name>X</name>
+        <length>1</length>
+        <type>uniform</type>
+      </parameter>
+    </parameters>
+    <stats>
+      <stat>
+        <name>meanvar</name>
+        <numberOfSaves>1</numberOfSaves>
+        <writeInitialTimestep>1</writeInitialTimestep>
+        <writer>
+          <basename>shockvortex</basename>
+          <type>netcdf</type>
+        </writer>
+      </stat>
+    </stats>
+  </uq>
+</config>

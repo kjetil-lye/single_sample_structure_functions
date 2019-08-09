@@ -6,7 +6,7 @@ import re
 
 MAX_RESOLUTION=2048
 
-from xml_tools import set_in_xml, get_xml_node, get_in_xml, read_config, make_functional_element, make_functional_element_time
+from xml_tools import create_mean_var, create_writer, set_in_xml, get_xml_node, get_in_xml, read_config, make_functional_element, make_functional_element_time
 if __name__ == '__main__':
     import argparse
 
@@ -15,9 +15,6 @@ Makes an instance of the configuration file for each resolution and each Hurst i
 
     H{HURST INDEX}/NRESOLUTION/configname.xml
             """)
-
-    parser.add_argument('--cuda_cutoff', type=int, default=1024,
-                        help='The lowest resolution for which to still use CUDA')
 
     parser.add_argument('--resolutions', type=int, nargs='+', required=True,
                         help='Resolutions')
@@ -32,7 +29,14 @@ Makes an instance of the configuration file for each resolution and each Hurst i
     parser.add_argument('--samples', type=int, nargs='+', default=[-1],
                         help='Number of samples per resolution (default 1 per resolution)')
 
+    parser.add_argument('--single_sample_save', action='store_true',
+                        help='Save single samples')
 
+    parser.add_argument('--do_not_compute_structure', action='store_true',
+                        help='Do not compute structure functions')
+    
+    parser.add_argument('--compute_mean_var', action='store_true',
+                        help='Compute the mean and the variance')
 
     args = parser.parse_args()
 
@@ -90,30 +94,56 @@ Makes an instance of the configuration file for each resolution and each Hurst i
                              os.path.join(resolution_folder, python_file))
 
             stats = get_xml_node(config, "config.uq.stats")
+            if not args.do_not_compute_structure:
+                number_of_h = int(resolution*32/1024)
+                for stat in stats.getElementsByTagName("stat"):
+                    set_in_xml(stat, "numberOfH", number_of_h)
 
-            number_of_h = int(resolution*32/1024)
-            for stat in stats.getElementsByTagName("stat"):
-                set_in_xml(stat, "numberOfH", number_of_h)
-
-
-            # Add functionals
-            try:
-                functionals_element = get_xml_node(config, "config.fvm.functionals")
-            except:
-                functionals_element = config.createElement("functionals")
-                get_xml_node(config, "config.fvm").appendChild(functionals_element)
-            for p in range(1,8):
-
-                functional = make_functional_element(config, p, number_of_h)
-                functionals_element.appendChild(functional)
-                functional_time = make_functional_element_time(config, p, number_of_h)
-                functionals_element.appendChild(functional_time)
+          
+                # Add functionals
+                try:
+                    functionals_element = get_xml_node(config, "config.fvm.functionals")
+                except:
+                    functionals_element = config.createElement("functionals")
+                    get_xml_node(config, "config.fvm").appendChild(functionals_element)
+                for p in range(1,8):
+    
+                    functional = make_functional_element(config, p, number_of_h)
+                    functionals_element.appendChild(functional)
+                    functional_time = make_functional_element_time(config, p, number_of_h)
+                    functionals_element.appendChild(functional_time)
+    
+                with open(os.path.join(resolution_folder, os.path.basename(args.config)), 'w') as f:
+    
+                    pretty_xml = config.toprettyxml(indent="  ")
+    
+                    # Default pretty print is not so pretty, so we make it prettier
+                    while re.search(r"\n\s*\n", pretty_xml):
+                        pretty_xml = re.sub(r"\n\s*\n", "\n", pretty_xml)
+                    f.write(pretty_xml)
+                    
+            else:
+                for stat in stats.getElementsByTagName("stat"):
+                    stats.removeChild(stat)
+                    
+                    
+            if args.single_sample_save:
+                writer = create_writer(config)
+                
+                fvm_node = get_xml_node(config, "config.fvm")
+                
+                fvm_node.appendChild(writer)
+                
+            if args.compute_mean_var:
+                stats.appendChild(create_mean_var(config))
 
             with open(os.path.join(resolution_folder, os.path.basename(args.config)), 'w') as f:
 
                 pretty_xml = config.toprettyxml(indent="  ")
 
                 # Default pretty print is not so pretty, so we make it prettier
+                # (the two following lines are not essential and can be removed if they cause problems)
                 while re.search(r"\n\s*\n", pretty_xml):
                     pretty_xml = re.sub(r"\n\s*\n", "\n", pretty_xml)
                 f.write(pretty_xml)
+

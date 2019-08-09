@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<config>
+  <fvm>
+    <name>
+    euler_fbb
+  </name>
+    <platform>cuda</platform>
+    <grid>
+      <lowerCorner>0 0 0</lowerCorner>
+      <upperCorner>1 1 0</upperCorner>
+      <dimension>64 64 1</dimension>
+    </grid>
+    <boundary>periodic</boundary>
+    <flux>hll3</flux>
+    <endTime>4</endTime>
+    <equation>euler2</equation>
+    <equationParameters>
+      <gamma>1.4</gamma>
+    </equationParameters>
+    <reconstruction>wenof2</reconstruction>
+    <cfl>auto</cfl>
+    <integrator>auto</integrator>
+    <initialData>
+      <python>euler_fbb.py</python>
+      <parameters>
+        <parameter>
+          <name>hurst_index</name>
+          <length>1</length>
+          <value>0.125</value>
+        </parameter>
+        <parameter>
+          <name>X</name>
+          <length>8380418</length>
+          <values>
+            <value>0</value>
+          </values>
+        </parameter>
+      </parameters>
+    </initialData>
+    <diffusion>
+      <name>none</name>
+      <reconstruction>none</reconstruction>
+    </diffusion>
+    <writer>
+      <basename>euler_fbb</basename>
+      <type>netcdf</type>
+      <numberOfSaves>1</numberOfSaves>
+      <writeInitialTimestep>1</writeInitialTimestep>
+    </writer>
+  </fvm>
+  <uq>
+    <samples>1024</samples>
+    <generator>auto</generator>
+    <sampleStart>0</sampleStart>
+    <parameters>
+      <parameter>
+        <name>X</name>
+        <length>8380418</length>
+        <type>uniform</type>
+      </parameter>
+    </parameters>
+    <stats>
+      <stat>
+        <name>meanvar</name>
+        <numberOfSaves>1</numberOfSaves>
+        <writeInitialTimestep>1</writeInitialTimestep>
+        <writer>
+          <basename>euler_fbb</basename>
+          <type>netcdf</type>
+        </writer>
+      </stat>
+    </stats>
+  </uq>
+</config>

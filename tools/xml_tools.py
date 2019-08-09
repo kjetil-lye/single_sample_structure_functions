@@ -99,5 +99,42 @@ def make_functional_element_time(config, p, number_of_h):
     
     return functional
     
+def create_writer(config):
+    basename = get_in_xml(config, "config.fvm.name").strip()
+    writer_node = config.createElement("writer")
+    basename_node = create_node_with_text(config, 'basename', basename)
+    type_node = create_node_with_text(config, 'type', 'netcdf')
+    number_of_saves_node = create_node_with_text(config, 'numberOfSaves', 1)
+    write_initial_timestep_node = create_node_with_text(config, 'writeInitialTimestep', 1)
+    
+    writer_node.appendChild(basename_node)
+    writer_node.appendChild(type_node)
+    writer_node.appendChild(number_of_saves_node)
+    writer_node.appendChild(write_initial_timestep_node)
+    
+    return writer_node
+    
+
+    
+def create_mean_var(config):
+    basename = get_in_xml(config, "config.fvm.name").strip()
+    stat_node = config.createElement("stat")
+    name_node = create_node_with_text(config, 'name', 'meanvar')
+    basename_node = create_node_with_text(config, 'basename', basename)
+    type_node = create_node_with_text(config, 'type', 'netcdf')
+    number_of_saves_node = create_node_with_text(config, 'numberOfSaves', 1)
+    write_initial_timestep_node = create_node_with_text(config, 'writeInitialTimestep', 1)
+    
+    writer_node = config.createElement('writer')
+    
+    writer_node.appendChild(basename_node)
+    stat_node.appendChild(name_node)
+    writer_node.appendChild(type_node)
+    stat_node.appendChild(number_of_saves_node)
+    stat_node.appendChild(write_initial_timestep_node)
+    stat_node.appendChild(writer_node)
+    
+    return stat_node
+    
     
     

@@ -1,0 +1,97 @@
+<config>
+<fvm>
+  <name>
+    kh
+  </name>
+  <platform>cuda</platform>
+  <grid>
+    <lowerCorner>0 0 0</lowerCorner>
+    <upperCorner>1 1 0</upperCorner>
+    <dimension>256 256 1</dimension>
+  </grid>
+  <boundary>periodic</boundary>
+  <flux>hll3</flux>
+  <endTime>2</endTime>
+  <equation>euler2</equation>
+  <equationParameters>
+    <gamma>1.4</gamma>
+  </equationParameters>
+  <reconstruction>weno2</reconstruction>
+  <cfl>auto</cfl>
+  <integrator>auto</integrator>
+  <functionals>
+
+
+  </functionals>
+  <initialData>
+    <python>kelvinhelmholtz.py</python>
+    <parameters>
+      <parameter>
+        <name>a</name>
+        <length>40</length>
+        <values><value>0</value></values>
+      </parameter>
+    </parameters>
+  </initialData>
+  <diffusion>
+    <name>none</name>
+    <reconstruction>none</reconstruction>
+  </diffusion>
+</fvm>
+<uq>
+  <samples>1</samples>
+  <sampleStart>0</sampleStart>
+  <generator>auto</generator>
+  <parameters>
+    <parameter>
+      <name>a</name>
+      <length>40</length>
+      <type>uniform</type>
+    </parameter>
+  </parameters>
+  <stats>
+    <stat>
+      <name>
+	structure_cube
+      </name>
+      <numberOfSaves>1</numberOfSaves>
+      <numberOfH>32</numberOfH>
+      <p>1</p>
+      <writeInitialTimestep>true</writeInitialTimestep>
+      <writer>
+	<type>netcdf</type>
+	<basename>kh</basename>
+      </writer>
+    </stat>
+
+    <stat>
+      <name>
+	structure_cube
+      </name>
+      <numberOfSaves>1</numberOfSaves>
+      <numberOfH>32</numberOfH>
+      <p>2</p>
+      <writeInitialTimestep>true</writeInitialTimestep>
+      <writer>
+	<type>netcdf</type>
+	<basename>kh</basename>
+      </writer>
+    </stat>
+
+    <stat>
+      <name>
+	structure_cube
+      </name>
+      <numberOfSaves>1</numberOfSaves>
+      <numberOfH>32</numberOfH>
+      <p>3</p>
+      <writeInitialTimestep>true</writeInitialTimestep>
+      <writer>
+	<type>netcdf</type>
+	<basename>kh</basename>
+      </writer>
+    </stat>
+
+  </stats>
+</uq>
+</config>
