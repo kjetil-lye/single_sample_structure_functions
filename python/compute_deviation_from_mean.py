@@ -63,7 +63,7 @@ def compute_deviation(*, input_filename, output_filename):
     mean_field = compute_mean_field(input_filename)
 
     with netCDF4.Dataset(input_filename) as inputfile:
-        with netCDF4.Dataset(output_filename, 'w', format='NETCDF4_CLASSIC') as outputfile:
+        with netCDF4.Dataset(output_filename, 'w', format='NETCDF3_64BIT_DATA') as outputfile:
             
             xdim = None
             ydim = None
