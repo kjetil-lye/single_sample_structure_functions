@@ -1,3 +1,7 @@
+import os
+import netCDF4
+import numpy as np
+import sys
 
 if __name__ == '__main__':
     import argparse
@@ -7,6 +11,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--input', type=str, required=True,
                     help='input filename')
+    args = parser.parse_args()
 
     basename_input = os.path.basename(args.input)
     output_basename = basename_input.replace('mean', 'meanassample')
@@ -31,12 +36,12 @@ if __name__ == '__main__':
 
                     if xdim is None:
                         
-                        xdim = outf.createDimension("x", d.shape[0])
-                        ydim = outf.createDimension("y", d.shape[1])
-                        zdim = outf.createDimension("z", d.shape[2])
+                        xdim = outf.createDimension("x", data.shape[0])
+                        ydim = outf.createDimension("y", data.shape[1])
+                        zdim = outf.createDimension("z", data.shape[2])
 
-                    newvar = outf.createVariable(f'sample_0_{variable}', d.dtype, ("x", "y", "z"))
-                    newvar[:,:,:] = d[:,:,:]
+                    newvar = outf.createVariable(f'sample_0_{variable}', data.dtype, ("x", "y", "z"))
+                    newvar[:,:,:] = data[:,:,:]
 
             outf.setncattr("WORKING_DIR", os.getcwd())
             outf.setncattr("IMPORTANT_NODE", """
