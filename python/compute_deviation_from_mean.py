@@ -7,6 +7,10 @@ import numpy as np
 import netCDF4
 import copy
 import collections
+import re
+import os
+import sys
+
 
 def get_shape(input_filename):
     with netCDF4.Dataset(input_filename) as f:
@@ -15,6 +19,7 @@ def get_shape(input_filename):
                 return copy.deepcopy(f.variables[variable].shape)
 
 def get_conserved_variable_name(variable):
+    print(variable)
     return str(re.search(r'sample_\d+_(.+)', variable).group(1))
     
 def compute_mean_field(input_filename):
@@ -68,8 +73,8 @@ def compute_deviation(*, input_filename, output_filename):
                 
                 if variable == 'time':
                     time = inputfile.variables[variable][0]
-                    tdim = outf.createDimension('t', 1)
-                    t = outf.createVariable("time", np.float64, ("t",))
+                    tdim = outputfile.createDimension('t', 1)
+                    t = outputfile.createVariable("time", np.float64, ("t",))
                     t[0] = time
                 else:
                     conserved_name = get_conserved_variable_name(variable)
@@ -77,30 +82,30 @@ def compute_deviation(*, input_filename, output_filename):
 
                     if xdim is None:
                         
-                        xdim = outf.createDimension("x", d.shape[0])
-                        ydim = outf.createDimension("y", d.shape[1])
-                        zdim = outf.createDimension("z", d.shape[2])
+                        xdim = outputfile.createDimension("x", data.shape[0])
+                        ydim = outputfile.createDimension("y", data.shape[1])
+                        zdim = outputfile.createDimension("z", data.shape[2])
 
-                newvar = outf.createVariable(variable, d.dtype, ("x", "y", "z"))
-                newvar[:,:,:] = d[:,:,:] - mean_field[conserved_name]
+                    newvar = outputfile.createVariable(variable, data.dtype, ("x", "y", "z"))
+                    newvar[:,:,:] = data[:,:,:] - mean_field[conserved_name]
 
-            outf.setncattr("WORKING_DIR", os.getcwd())
-            outf.setncattr("IMPORTANT_NODE", """
+            outputfile.setncattr("WORKING_DIR", os.getcwd())
+            outputfile.setncattr("IMPORTANT_NODE", """
 This file was converted with the script python/compute_deviation_from_mean.py
 in the single_sample_structure_functions repository. This was done as a postprocessing step
             """)
 
 
-            outf.setncattr("COMMAND_RUN_TO_COMPUTE_DEVIATION", " ".join([
+            outputfile.setncattr("COMMAND_RUN_TO_COMPUTE_DEVIATION", " ".join([
                     sys.executable,
                     *sys.argv]))
 
             with open(sys.argv[0]) as scriptfile:
-                outf.setncattr("SCRIPTFILE", scriptfile.read())
+                outputfile.setncattr("SCRIPTFILE", scriptfile.read())
 
 
-            for attr_name, attr_value in attributes.items():
-                outf.setncattr(attr_name, attr_value)
+            for attr_name in inputfile.ncattrs():
+                outputfile.setncattr(attr_name, inputfile.getncattr(attr_name))
 
 
 if __name__ == '__main__':
