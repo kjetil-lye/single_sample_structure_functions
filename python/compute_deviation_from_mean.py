@@ -19,7 +19,7 @@ def get_shape(input_filename):
                 return copy.deepcopy(f.variables[variable].shape)
 
 def get_conserved_variable_name(variable):
-    print(variable)
+
     return str(re.search(r'sample_\d+_(.+)', variable).group(1))
     
 def compute_mean_field(input_filename):
