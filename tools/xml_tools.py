@@ -64,11 +64,17 @@ def make_functional_element(config, p, number_of_h, number_of_saves=8):
     return functional
 
 
-def make_functional_element_time(config, p, number_of_h):
+def make_functional_element_time(config, p, number_of_h, full_time_average,
+                                 number_of_snapshots=200):
     basename = get_in_xml(config, "config.fvm.name").strip()
     end_time = float(get_in_xml(config, "config.fvm.endTime"))
-    
-    radius = 0.02 * end_time
+
+    if not full_time_average:
+        radius = 0.02 * end_time
+    else:
+        radius = 0.5 * end_time
+        number_of_snapshots_node = create_node_with_text(config, "numberOfSnapshots", number_of_snapshots)
+        
     
     save_time = end_time - radius
     
@@ -93,6 +99,10 @@ def make_functional_element_time(config, p, number_of_h):
     functional.appendChild(time_node)
     functional.appendChild(number_of_h_node)
     functional.appendChild(time_radius_node)
+
+    if full_time_average:
+        functional.appendChild(number_of_snapshots_node)
+        
     writer_node.appendChild(type_node)
     writer_node.appendChild(basename_node)
     functional.appendChild(writer_node)
