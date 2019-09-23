@@ -18,7 +18,7 @@ Submits the configuration file CSCS Daint. NOTE: Will run in folder of configura
 
 
 
-    parser.add_argument('--alsuqcli_path', type=str, default=default=os.path.join(repo.working_dir, 'alsvinn_build_folder/alsuqcli/alsuqcli'),
+    parser.add_argument('--alsuqcli_path', type=str, default=os.path.join(repo.working_dir, 'alsvinn_build_folder/alsuqcli/alsuqcli'),
                         help="path to alsuqlci")
     parser.add_argument('--config', type=str, required=True,
                         help="Path to configuration file")
