@@ -87,6 +87,69 @@
           <basename>kh_functional_time_integrated_structure_cube_3</basename>
         </writer>
       </functional>
+      <functional>
+        <time>1.5</time>
+        <timeRadius>0.5</timeRadius>
+        <name>identity</name>
+        <writer>
+          <type>netcdf</type>
+          <basename>kh_functional_time_integrated_identity</basename>
+        </writer>
+      </functional>
+      <functional>
+        <time>1.5</time>
+        <timeRadius>0.5</timeRadius>
+        <name>moment</name>
+        <degree>2</degree>
+        <writer>
+          <type>netcdf</type>
+          <basename>kh_functional_time_integrated_moment_2</basename>
+        </writer>
+      </functional>
+      <functional>
+        <numberOfSaves>1</numberOfSaves>
+        <name>identity</name>
+        <writer>
+          <type>netcdf</type>
+          <basename>kh_functional_identity</basename>
+        </writer>
+      </functional>
+      <functional>
+        <numberOfSaves>1</numberOfSaves>
+        <name>moment</name>
+        <degree>2</degree>
+        <writer>
+          <type>netcdf</type>
+          <basename>kh_functional_moment_2</basename>
+        </writer>
+      </functional>
+      <functional>
+        <numberOfSaves>1</numberOfSaves>
+        <name>bv</name>
+        <degree>1</degree>
+        <writer>
+          <type>netcdf</type>
+          <basename>kh_functional_bv_1</basename>
+        </writer>
+      </functional>
+      <functional>
+        <numberOfSaves>1</numberOfSaves>
+        <name>bv</name>
+        <degree>2</degree>
+        <writer>
+          <type>netcdf</type>
+          <basename>kh_functional_bv_2</basename>
+        </writer>
+      </functional>
+      <functional>
+        <numberOfSaves>1</numberOfSaves>
+        <name>bv</name>
+        <degree>3</degree>
+        <writer>
+          <type>netcdf</type>
+          <basename>kh_functional_bv_3</basename>
+        </writer>
+      </functional>
     </functionals>
     <initialData>
       <python>kelvinhelmholtz.py</python>

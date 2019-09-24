@@ -5,7 +5,7 @@ import os
 import re
 
 
-from xml_tools import create_mean_var, create_writer, set_in_xml, get_xml_node, get_in_xml, read_config, make_functional_element, make_functional_element_time
+from xml_tools import create_mean_var, create_writer, set_in_xml, get_xml_node, get_in_xml, read_config, make_functional_element, make_functional_element_time, create_identity_functionals, create_moment_functionals, create_bv_functionals
 if __name__ == '__main__':
     import argparse
 
@@ -108,7 +108,16 @@ Makes an instance of the configuration file for each resolution and each perturb
                         functional_time = make_functional_element_time(config, p, number_of_h, full_time_average=True)
                         functionals_element.appendChild(functional_time)
 
-    
+                
+
+                functionals_element.appendChild(create_identity_functionals(config))
+                functionals_element.appendChild(create_moment_functionals(config, 2))
+                functionals_element.appendChild(create_identity_functionals(config, time_average=False))
+                functionals_element.appendChild(create_moment_functionals(config, 2, time_average=False))
+                
+                for p in range(1, 4):
+                    functionals_element.appendChild(create_bv_functionals(config, p, time_average=False))
+                
                 with open(os.path.join(resolution_folder, os.path.basename(args.config)), 'w') as f:
     
                     pretty_xml = config.toprettyxml(indent="  ")

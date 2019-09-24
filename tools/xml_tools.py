@@ -146,5 +146,144 @@ def create_mean_var(config):
     
     return stat_node
     
+def create_moment_functionals(config, degree, time_average=True):
+    basename = get_in_xml(config, "config.fvm.name").strip()
+    end_time = float(get_in_xml(config, "config.fvm.endTime"))
+
+    functional = config.createElement("functional")
+    if time_average:
+        radius = 0.25 * end_time
+            
+        
+        save_time = end_time - radius
+        time_node = create_node_with_text(config, "time", save_time)
+        time_radius_node = create_node_with_text(config, "timeRadius", radius)
+        functional.appendChild(time_node)
+        functional.appendChild(time_radius_node)
+    else:
+        
+        number_of_saves_node = create_node_with_text(config, "numberOfSaves", 1)
+        
+        functional.appendChild(number_of_saves_node)
+        
     
+    
+    name_node = create_node_with_text(config, "name", "moment")
+    p_node = create_node_with_text(config, "degree", degree)
+
+    
+    writer_node = config.createElement("writer")
+    
+    type_node = create_node_with_text(config, "type", "netcdf")
+     
+    if time_average:
+        basename_node = create_node_with_text(config, 'basename', 
+                                              f"{basename}_functional_time_integrated_moment_{degree}")
+    else:
+        basename_node = create_node_with_text(config, 'basename', 
+                                              f"{basename}_functional_moment_{degree}")
+        
+    functional.appendChild(name_node)
+    functional.appendChild(p_node)
+
+
+    writer_node.appendChild(type_node)
+    writer_node.appendChild(basename_node)
+    functional.appendChild(writer_node)
+    
+    return functional
+    
+    
+def create_identity_functionals(config, time_average=True):
+    basename = get_in_xml(config, "config.fvm.name").strip()
+    end_time = float(get_in_xml(config, "config.fvm.endTime"))
+    
+    functional = config.createElement("functional")
+    if time_average:
+        radius = 0.25 * end_time
+            
+        
+        save_time = end_time - radius
+        time_node = create_node_with_text(config, "time", save_time)
+        time_radius_node = create_node_with_text(config, "timeRadius", radius)
+        functional.appendChild(time_node)
+        functional.appendChild(time_radius_node)
+    else:
+        
+        number_of_saves_node = create_node_with_text(config, "numberOfSaves", 1)
+        
+        functional.appendChild(number_of_saves_node)
+        
+    
+    
+    name_node = create_node_with_text(config, "name", "identity")
+    
+    
+    writer_node = config.createElement("writer")
+    
+    type_node = create_node_with_text(config, "type", "netcdf")
+    
+    if time_average:
+        basename_node = create_node_with_text(config, 'basename', 
+                                              f"{basename}_functional_time_integrated_identity")
+    else:
+        basename_node = create_node_with_text(config, 'basename', 
+                                              f"{basename}_functional_identity")
+        
+    
+    functional.appendChild(name_node)
+    
+
+    writer_node.appendChild(type_node)
+    writer_node.appendChild(basename_node)
+    functional.appendChild(writer_node)
+    
+    return functional
+
+def create_bv_functionals(config, degree, time_average=True):
+    basename = get_in_xml(config, "config.fvm.name").strip()
+    end_time = float(get_in_xml(config, "config.fvm.endTime"))
+
+    functional = config.createElement("functional")
+    if time_average:
+        radius = 0.25 * end_time
+            
+        
+        save_time = end_time - radius
+        time_node = create_node_with_text(config, "time", save_time)
+        time_radius_node = create_node_with_text(config, "timeRadius", radius)
+        functional.appendChild(time_node)
+        functional.appendChild(time_radius_node)
+    else:
+        
+        number_of_saves_node = create_node_with_text(config, "numberOfSaves", 1)
+        
+        functional.appendChild(number_of_saves_node)
+        
+    
+    
+    name_node = create_node_with_text(config, "name", "bv")
+    p_node = create_node_with_text(config, "degree", degree)
+    
+    writer_node = config.createElement("writer")
+    
+    type_node = create_node_with_text(config, "type", "netcdf")
+     
+    if time_average:
+        basename_node = create_node_with_text(config, 'basename', 
+                                              f"{basename}_functional_time_integrated_bv_{degree}")
+    else:
+        basename_node = create_node_with_text(config, 'basename', 
+                                              f"{basename}_functional_bv_{degree}")
+        
+    functional.appendChild(name_node)
+    functional.appendChild(p_node)
+
+
+
+    writer_node.appendChild(type_node)
+    writer_node.appendChild(basename_node)
+    functional.appendChild(writer_node)
+    
+    return functional
     
