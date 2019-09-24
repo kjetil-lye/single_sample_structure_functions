@@ -174,7 +174,7 @@
     </functionals>
   </fvm>
   <uq>
-    <samples>1</samples>
+    <samples>1024</samples>
     <generator>auto</generator>
     <sampleStart>0</sampleStart>
     <parameters>

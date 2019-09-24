@@ -12,7 +12,7 @@ do
     echo $resolution
     resolutions="$resolution $resolutions"
     resolution=$(($resolution/2))
-    samples="1 $samples"
+    samples="1024 $samples"
 done
 
 python ../../tools/make_resolutions_perturbations.py \
