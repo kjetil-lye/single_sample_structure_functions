@@ -120,15 +120,6 @@
       <functional>
         <time>3.0</time>
         <timeRadius>1.0</timeRadius>
-        <name>identity</name>
-        <writer>
-          <type>netcdf</type>
-          <basename>euler_fbb_functional_time_integrated_identity</basename>
-        </writer>
-      </functional>
-      <functional>
-        <time>3.0</time>
-        <timeRadius>1.0</timeRadius>
         <name>moment</name>
         <degree>2</degree>
         <writer>
@@ -142,6 +133,15 @@
         <writer>
           <type>netcdf</type>
           <basename>euler_fbb_functional_identity</basename>
+        </writer>
+      </functional>
+      <functional>
+        <numberOfSaves>1</numberOfSaves>
+        <name>moment</name>
+        <degree>2</degree>
+        <writer>
+          <type>netcdf</type>
+          <basename>euler_fbb_functional_moment_2</basename>
         </writer>
       </functional>
       <functional>
