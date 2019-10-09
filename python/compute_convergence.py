@@ -95,31 +95,63 @@ def load_file(filename, conserved_variables, statistic_name):
 def get_time(filename):
     with netCDF4.Dataset(filename) as f:
         return f.variables['time'][0]
+        
+def load_all_data(basename, resolutions, variables, statistic_name):
+    data = {}
+    for resolution in resolutions:
+        data[resolution] = load_file(basename.format(resolution=resolution),
+            variables, statistic_name)
+        
+    return data
+
+def get_min_max_values(all_data):
+    min_over_resolutions = []
+    max_over_resolutions = []
     
+    for resolution, data in all_data.items():
+        min_at_resolution = np.zeros(data.shape[-1])
+        max_at_resolution = np.zeros(data.shape[-1])
+        
+        for component in range(data.shape[-1]):
+            min_at_resolution[component] = np.min(data[:,:,component])
+            max_at_resolution[component] = np.max(data[:,:,component])
+            
+        min_over_resolutions.append(min_at_resolution)
+        max_over_resolutions.append(max_at_resolution)
+        
+    min_over_resolutions = np.array(min_over_resolutions)
+    max_over_resolutions = np.array(max_over_resolutions)
+    
+    return np.min(min_over_resolutions, axis=0), np.max(max_over_resolutions, axis=0)
     
 def plot_convergence(basename, statistic_name, title, conserved_variables = conserved_variables_default,
-                                resolutions=[64, 128,256,512,1024]):
+                                resolutions=[64, 128,256,512,1024],
+                                reference=True):
     
-    # We do reference convergence
-    reference_resolution = max(resolutions)
-    reference_solution = load_file(basename.format(resolution=reference_resolution),
-                                   conserved_variables, statistic_name)
+    all_data = load_all_data(basename, resolutions, conserved_variables,
+                             statistic_name)
+    
+    min_values, max_values = get_min_max_values(all_data)
+    
+    if reference:
+        # We do reference convergence
+        reference_resolution = max(resolutions)
+        reference_solution = all_data[reference_resolution]
     
     errors = []
+    
+    
     for resolution in resolutions[:-1]:
         timepoint = get_time(basename.format(resolution=resolution))
         
         
-        data = load_file(basename.format(resolution=resolution), 
-                         conserved_variables, 
-                         statistic_name)
-        
+        data = all_data[resolution]
         # Plot the solution
         x, y = np.mgrid[0:1:resolution*1j, 0:1:resolution*1j]
         
         for variable_index, variable in enumerate(conserved_variables):
-            min_value = np.min(reference_solution[:,:,variable_index])
-            max_value = np.max(reference_solution[:,:,variable_index])
+            min_value = min_values[variable_index]
+            max_value = max_values[variable_index]
             
             plt.pcolormesh(x, y, data[:,:,variable_index],
                            vmin=min_value, vmax=max_value)
@@ -131,8 +163,12 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
             
             plt.colorbar()
             
-            plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}")
+            plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}_N{resolution}")
             plt.close('all')
+            
+        if not reference:
+            reference_resolution = resolution * 2
+            reference_solution = all_data[reference_resolution]
         
         # Upscale
         while data.shape[0] < reference_resolution:
@@ -143,8 +179,13 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
         
         errors.append(error)
         
-    plot_info.saveData(f'convergence_{statistic_name}_{title}_{timepoint}_errors', errors)
-    plot_info.saveData(f'convergence_{statistic_name}_{title}_{timepoint}_resolutions', resolutions)
+    if reference:
+        convergence_type = 'reference'
+    else:
+        convergence_type = 'cauchy'
+        
+    plot_info.saveData(f'convergence_{convergence_type}_{statistic_name}_{title}_{timepoint}_errors', errors)
+    plot_info.saveData(f'convergence_{convergence_type}_{statistic_name}_{title}_{timepoint}_resolutions', resolutions)
     
     plt.loglog(resolutions[:-1], errors, '-o')
     poly = np.polyfit(np.log(resolutions[:-1]), np.log(errors), 1)
@@ -154,12 +195,15 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                basey=2)
     
     plt.xlabel("Resolution ($N\\times N$)")
-    plt.ylabel(f"Error ($||{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, str(reference_resolution))}||_{{L^1(D)}}$)")
+    if reference:
+        plt.ylabel(f"Error ($||{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, str(reference_resolution))}||_{{L^1(D)}}$)")
+    else:
+        plt.ylabel(f"Error ($||{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, '2N')}||_{{L^1(D)}}$)")
     
     plt.xticks(resolutions, [f'${N}\\times {N}$' for N in resolutions])
-    plt.title(f'Convergence of {statistic_name}\n{title}\n$T={timepoint}$')
+    plt.title(f'Convergence of {statistic_name}\n{title}\n$T={timepoint}$ {convergence_type} convergence')
     plt.legend()
-    plot_info.savePlot(f'convergence_{statistic_name}_{title}_{timepoint}')
+    plot_info.savePlot(f'convergence_{convergence_type}_{statistic_name}_{title}_{timepoint}')
     plt.close('all')
     
     
@@ -180,6 +224,9 @@ Computes the wasserstein distances
     parser.add_argument('--statistic_name', type=str, required=True,
                         help='Statistics name, can be either "mean", "variance" or "single_sample"')
     
+    parser.add_argument('--reference', action='store_true',
+                        help='Compute convergence against reference solution, else use Cauchy convergence.')
+    
     args = parser.parse_args()
     
     
@@ -187,4 +234,5 @@ Computes the wasserstein distances
     plot_convergence(args.input_basename, 
                      args.statistic_name, 
                      args.title, 
-                     conserved_variables=conserved_variables_default)
+                     conserved_variables=conserved_variables_default,
+                     reference=args.reference)
