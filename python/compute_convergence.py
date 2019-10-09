@@ -139,7 +139,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
             data = np.repeat(np.repeat(data, 2, 0), 2, 1)
         
         # compute error in L^1
-        error = np.sum(abs(data - reference_solution))/resolution**2
+        error = np.sum(abs(data - reference_solution))/reference_resolution**2
         
         errors.append(error)
         
