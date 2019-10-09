@@ -40,7 +40,7 @@ do
 	for H in 0.125 0.5 0.75;
 	do
 	    submit python ../python/compute_convergence.py \
-		--input_basename "${basepath}/fbb/H${H//./}/N{resolution}/euler_fbb_functional${time_integrated}_identity_${time}.nc" \
+		--input_basename "${basepath}/fbb/H${H//./_}/N{resolution}/euler_fbb_functional${time_integrated}_identity_${time}.nc" \
 		--title "Fractional Brownian bridge \$H=${H}\$ ${time_integrated}" \
 		--statistic_name ${stats}
 	done
