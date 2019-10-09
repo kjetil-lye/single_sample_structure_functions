@@ -131,7 +131,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
             
             plt.colorbar()
             
-            plot_info.savePlot(f"field_plot_{variable}_{title}_{timepoint}")
+            plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}")
             plt.close('all')
         
         # Upscale
@@ -156,9 +156,10 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
     plt.xlabel("Resolution ($N\\times N$)")
     plt.ylabel(f"Error ($||{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, str(reference_resolution))}||_{{L^1(D)}}$)")
     
+    plt.xticks(resolutions, [f'${N}\\times {N}$' for N in resolutions])
     plt.title(f'Convergence of {statistic_name}\n{title}\n$T={timepoint}$')
-    
-    plot_info.savePlot(f'convergence_{statistic_name}_{title}')
+    plt.legend()
+    plot_info.savePlot(f'convergence_{statistic_name}_{title}_{timepoint}')
     plt.close('all')
     
     
