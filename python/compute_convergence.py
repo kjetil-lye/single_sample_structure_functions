@@ -176,7 +176,7 @@ Computes the wasserstein distances
     parser.add_argument('--title', type=str, required=True,
                         help='Title of plot')
     
-    parser.add_argument('--statistics_name', type=str, required=True,
+    parser.add_argument('--statistic_name', type=str, required=True,
                         help='Statistics name, can be either "mean", "variance" or "single_sample"')
     
     args = parser.parse_args()
