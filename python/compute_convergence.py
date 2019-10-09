@@ -118,8 +118,8 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
         x, y = np.mgrid[0:1:resolution*1j, 0:1:resolution*1j]
         
         for variable_index, variable in enumerate(conserved_variables):
-            min_value = np.min(reference_resolution[:,:,variable_index])
-            max_value = np.max(reference_resolution[:,:,variable_index])
+            min_value = np.min(reference_solution[:,:,variable_index])
+            max_value = np.max(reference_solution[:,:,variable_index])
             
             plt.pcolormesh(x, y, data[:,:,variable_index],
                            vmin=min_value, vmax=max_value)
