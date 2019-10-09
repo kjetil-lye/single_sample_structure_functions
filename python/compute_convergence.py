@@ -158,7 +158,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
     
     plt.title(f'Convergence of {statistic_name}\n{title}\n$T={timepoint}$')
     
-    plot_info.saveData(f'convergence_{statistic_name}_{title}')
+    plot_info.savePlot(f'convergence_{statistic_name}_{title}')
     plt.close('all')
     
     
