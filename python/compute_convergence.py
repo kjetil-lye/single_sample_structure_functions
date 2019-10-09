@@ -45,7 +45,7 @@ def load_file_mean(filename, conserved_variables):
         for attr in f.ncattrs():
             plot_info.add_additional_plot_parameters(filename.replace("/", "_") + "_" + attr, f.getncattr(attr))
         
-        resolution = f.variables[conserved_variables[0]].shape[0]
+        resolution = f.variables[f'sample_0_{conserved_variables[0]}'].shape[0]
         mean = np.zeros((resolution, resolution, len(conserved_variables)))
         
         for sample in range(resolution):
@@ -63,7 +63,7 @@ def load_file_variance(filename, conserved_variables):
         for attr in f.ncattrs():
             plot_info.add_additional_plot_parameters(filename.replace("/", "_") + "_" + attr, f.getncattr(attr))
         
-        resolution = f.variables[conserved_variables[0]].shape[0]
+        resolution = f.variables[f'sample_0_{conserved_variables[0]}'].shape[0]
         
         mean = np.zeros((resolution, resolution, len(conserved_variables)))
         m2 = np.zeros((resolution, resolution, len(conserved_variables)))
