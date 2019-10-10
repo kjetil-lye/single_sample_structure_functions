@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 function submit {
-    bsub -n 1 -W 24:00 -R 'rusage[mem=4096]' "$@"
+    bsub -n 1 -W 24:00 -R 'rusage[mem=512]' "$@"
 }
 
 basepath='/cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average/'
