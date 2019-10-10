@@ -133,7 +133,7 @@ def plot_wasserstein_one_point_convergence(basename, title,
         plt.ylabel(f"Error ($\\|W_{{{exponent}}}(\\nu^{{1,N}}, \\nu^{{1,2N}})\\|_{{L^{{{exponent}}}(D)}}$)")
     
     plt.xticks(resolutions[:-1], [f'${N}\\times {N}$' for N in resolutions[:-1]])
-    plt.title(f'Convergence of {statistic_name.replace("_"," ")}\n{title}\n$T={timepoint}$ {convergence_type} convergence')
+    plt.title(f'Convergence of {statistic_name.replace("_"," ")}\n{title.replace("_"," ")}\n$T={timepoint}$ {convergence_type} convergence')
     
     
     # Scale to nearest power of two to make the y axis not zoom in too much

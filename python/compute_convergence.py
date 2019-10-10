@@ -208,7 +208,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
         plt.ylabel(f"Error ($\\|{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, '2N')}\\|_{{L^1(D)}}$)")
     
     plt.xticks(resolutions[:-1], [f'${N}\\times {N}$' for N in resolutions[:-1]])
-    plt.title(f'Convergence of {statistic_name.replace("_", " ")}\n{title}\n$T={timepoint}$ {convergence_type} convergence')
+    plt.title(f'Convergence of {statistic_name.replace("_", " ")}\n{title.replace("_"," ")}\n$T={timepoint}$ {convergence_type} convergence')
     
     
     # Scale to nearest power of two to make the y axis not zoom in too much
