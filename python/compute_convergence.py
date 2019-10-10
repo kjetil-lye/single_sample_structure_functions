@@ -141,6 +141,31 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
     
     errors = []
     
+    if reference:
+        
+        for resolution in resolutions:
+            timepoint = get_time(basename.format(resolution=resolution))
+            data = all_data[resolution]
+            # Plot the solution
+            x, y = np.mgrid[0:1:resolution*1j, 0:1:resolution*1j]
+           
+            for variable_index, variable in enumerate(conserved_variables):
+                min_value = min_values[variable_index]
+                max_value = max_values[variable_index]
+                
+                plt.pcolormesh(x, y, data[:,:,variable_index],
+                               vmin=min_value, vmax=max_value)
+                
+                plt.xlabel("$x$")
+                plt.ylabel("$y$")
+                
+                plt.title(f"{variable}\n{title}\n$T={timepoint}$")
+                
+                plt.colorbar()
+                
+                plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}_N{resolution}")
+                plt.close('all')
+                
     
     for resolution in resolutions[:-1]:
         timepoint = get_time(basename.format(resolution=resolution))
@@ -150,23 +175,6 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
         # Plot the solution
         x, y = np.mgrid[0:1:resolution*1j, 0:1:resolution*1j]
         
-        for variable_index, variable in enumerate(conserved_variables):
-            min_value = min_values[variable_index]
-            max_value = max_values[variable_index]
-            
-            plt.pcolormesh(x, y, data[:,:,variable_index],
-                           vmin=min_value, vmax=max_value)
-            
-            plt.xlabel("$x$")
-            plt.ylabel("$y$")
-            
-            plt.title(f"{variable}\n{title}\n$T={timepoint}$")
-            
-            plt.colorbar()
-            
-            plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}_N{resolution}")
-            plt.close('all')
-            
         if not reference:
             reference_resolution = resolution * 2
             reference_solution = all_data[reference_resolution]
