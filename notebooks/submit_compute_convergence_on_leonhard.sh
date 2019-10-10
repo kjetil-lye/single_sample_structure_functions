@@ -1,12 +1,13 @@
 #!/bin/bash
 set -e
 function submit {
-    bsub -n 1 -W 24:00 -R 'rusage[mem=512]' "$@"
+    bsub -n 1 -W 24:00 -R 'rusage[mem=2048]' "$@"
 }
 
 basepath='/cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average/'
 
 export PYTHONPATH=../python:$PYTHONPATH
+module load texlive
 for reference in '--reference' '';
 do
     for time_integrated in "" "_time_integrated";
