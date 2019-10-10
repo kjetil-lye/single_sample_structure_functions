@@ -1,5 +1,6 @@
-import matplotlib
-matplotlib.use('Agg')
+import latex_plots
+
+
 import plot_info
 import numpy as np
 import matplotlib.pyplot as plt
@@ -196,12 +197,26 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
     
     plt.xlabel("Resolution ($N\\times N$)")
     if reference:
-        plt.ylabel(f"Error ($||{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, str(reference_resolution))}||_{{L^1(D)}}$)")
+        plt.ylabel(f"Error ($\\|{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, str(reference_resolution))}\\|_{{L^1(D)}}$)")
     else:
-        plt.ylabel(f"Error ($||{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, '2N')}||_{{L^1(D)}}$)")
+        plt.ylabel(f"Error ($\\|{stats_latex(statistic_name, 'N')}-{stats_latex(statistic_name, '2N')}\\|_{{L^1(D)}}$)")
     
-    plt.xticks(resolutions, [f'${N}\\times {N}$' for N in resolutions])
+    plt.xticks(resolutions[:-1], [f'${N}\\times {N}$' for N in resolutions[:-1]])
     plt.title(f'Convergence of {statistic_name}\n{title}\n$T={timepoint}$ {convergence_type} convergence')
+    
+    
+    # Scale to nearest power of two to make the y axis not zoom in too much
+    min_error = np.min(errors)
+    max_error = np.max(errors)
+    
+    min_power_of_two = 2**(np.floor(np.log2(min_error)))
+    max_power_of_two = 2**(np.ceil(np.log2(max_error)))
+    
+    if min_power_of_two == max_power_of_two:
+        max_power_of_two *= 2
+    
+    np.ylim([min_power_of_two, max_power_of_two])
+    
     plt.legend()
     plot_info.savePlot(f'convergence_{convergence_type}_{statistic_name}_{title}_{timepoint}')
     plt.close('all')
