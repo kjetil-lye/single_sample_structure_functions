@@ -236,7 +236,8 @@ def savePlot(name):
     else:
         text_function = ax.text
     try:
-
+        if matplotlib.rcParams['text.usetex']:
+            informationText = informationText.replace('_', '\\_')
         text_function(0.95, 0.01, informationText,
                       fontsize=3, color=textcolor,
                       family='monospace',
