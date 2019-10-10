@@ -41,7 +41,7 @@ def load_file_single_sample(filename, conserved_variables):
 
 
 
-def load_file_mean(filename, conserved_variables):
+def load_file_mean(filename, conserved_variables, number_of_samples):
     with netCDF4.Dataset(filename) as f:
         for attr in f.ncattrs():
             plot_info.add_additional_plot_parameters(filename.replace("/", "_") + "_" + attr, f.getncattr(attr))
@@ -49,17 +49,17 @@ def load_file_mean(filename, conserved_variables):
         resolution = f.variables[f'sample_0_{conserved_variables[0]}'].shape[0]
         mean = np.zeros((resolution, resolution, len(conserved_variables)))
         
-        for sample in range(resolution):
+        for sample in range(number_of_samples):
             for variable_index, variable in enumerate(conserved_variables):
                 key = f'sample_{sample}_{variable}'
                 mean[:,:,variable_index] += f.variables[key][:,:,0]
         
-        mean /= resolution
+        mean /= number_of_samples
         
         return mean
             
     
-def load_file_variance(filename, conserved_variables):
+def load_file_variance(filename, conserved_variables, number_of_samples):
     with netCDF4.Dataset(filename) as f:
         for attr in f.ncattrs():
             plot_info.add_additional_plot_parameters(filename.replace("/", "_") + "_" + attr, f.getncattr(attr))
@@ -68,27 +68,27 @@ def load_file_variance(filename, conserved_variables):
         
         mean = np.zeros((resolution, resolution, len(conserved_variables)))
         m2 = np.zeros((resolution, resolution, len(conserved_variables)))
-        for sample in range(resolution):
+        for sample in range(number_of_samples):
             for variable_index, variable in enumerate(conserved_variables):
                 key = f'sample_{sample}_{variable}'
                 mean[:,:,variable_index] += f.variables[key][:,:,0]
                 m2[:,:,variable_index] += f.variables[key][:,:,0]**2
                 
         
-        mean /= resolution
-        m2 /= resolution
+        mean /= number_of_samples
+        m2 /= number_of_samples
         
         return m2 - mean**2
         
            
     
-def load_file(filename, conserved_variables, statistic_name):
+def load_file(filename, conserved_variables, statistic_name, number_of_samples):
     if statistic_name == 'single_sample':
         return load_file_single_sample(filename, conserved_variables)
     elif statistic_name == 'mean':
-        return load_file_mean(filename, conserved_variables)
+        return load_file_mean(filename, conserved_variables, number_of_samples)
     elif statistic_name == 'variance':
-        return load_file_variance(filename, conserved_variables)
+        return load_file_variance(filename, conserved_variables, number_of_samples)
     else:
         raise Exception(f"Unknown statistics: {statistic_name}")
     
@@ -97,11 +97,11 @@ def get_time(filename):
     with netCDF4.Dataset(filename) as f:
         return f.variables['time'][0]
         
-def load_all_data(basename, resolutions, variables, statistic_name):
+def load_all_data(basename, resolutions, variables, statistic_name, number_of_samples):
     data = {}
     for resolution in resolutions:
         data[resolution] = load_file(basename.format(resolution=resolution),
-            variables, statistic_name)
+            variables, statistic_name, number_of_samples)
         
     return data
 
@@ -130,7 +130,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                                 reference=True):
     
     all_data = load_all_data(basename, resolutions, conserved_variables,
-                             statistic_name)
+                             statistic_name, max(resolutions))
     
     min_values, max_values = get_min_max_values(all_data)
     
@@ -172,8 +172,6 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
         
         
         data = all_data[resolution]
-        # Plot the solution
-        x, y = np.mgrid[0:1:resolution*1j, 0:1:resolution*1j]
         
         if not reference:
             reference_resolution = resolution * 2
@@ -223,7 +221,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
     if min_power_of_two == max_power_of_two:
         max_power_of_two *= 2
     
-    np.ylim([min_power_of_two, max_power_of_two])
+    plt.ylim([min_power_of_two, max_power_of_two])
     
     plt.legend()
     plot_info.savePlot(f'convergence_{convergence_type}_{statistic_name}_{title}_{timepoint}')
