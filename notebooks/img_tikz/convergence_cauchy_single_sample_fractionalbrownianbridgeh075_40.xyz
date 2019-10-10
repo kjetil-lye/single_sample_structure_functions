@@ -11,19 +11,19 @@ legend entries={{$\mathcal{O}(N^{-0.5})$}},
 legend style={draw=white!80.0!black},
 tick align=outside,
 tick pos=left,
-title={Convergence of single_sample
+title={Convergence of single sample
 Fractional Brownian bridge $H=0.75$ 
 $T=4.0$ cauchy convergence},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={Resolution ($N\times N$)},
-xmin=57.6800296070931, xmax=1024,
+xmin=57.6800296070931, xmax=568.099569698737,
 xmode=log,
-xtick={64,128,256,512,1024},
-xticklabels={$64\times 64$,$128\times 128$,$256\times 256$,$512\times 512$,$1024\times 1024$},
+xtick={64,128,256,512},
+xticklabels={$64\times 64$,$128\times 128$,$256\times 256$,$512\times 512$},
 y grid style={white!69.01960784313725!black},
-ylabel={Error ($||u^{N}-u^{2N}||_{L^1(D)}$)},
-ymin=0.0939267296763055, ymax=0.284865549999104,
+ylabel={Error ($\|u^{N}-u^{2N}\|_{L^1(D)}$)},
+ymin=0.0625, ymax=0.5,
 ymode=log
 ]
 \addlegendimage{no markers, color1}
@@ -48,36 +48,36 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 78aeb9b097dab692ff9ddd00eb426987f5827992
-Repo: git@github.com:kjetil-lye/single_sample_structure_functions.git
-Hostname: lo-a2-068};
+Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
+Hostname: lo-a2-066};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @78ae};
+]{ @28531};
 \end{axis}
 
 \end{tikzpicture}
 
 %% INCLUDE THE COMMENTS AT THE END WHEN COPYING
 %%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%
-%% Convergence of single_sample
+%% Convergence of single sample
 %% Fractional Brownian bridge $H=0.75$ 
 %% $T=4.0$ cauchy convergence
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 78aeb9b097dab692ff9ddd00eb426987f5827992
+%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 78ae
+%% GIT git_short_commit : 28531
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-068
-%% generated_on_date : 2019-10-09 21:37:44.386690
+%% hostname : lo-a2-066
+%% generated_on_date : 2019-10-10 10:00:23.082155
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//fbb/H0_75/N{resolution}/euler_fbb_functional_identity_1.nc --title Fractional Brownian bridge $H=0.75$  --statistic_name single_sample
@@ -491,6 +491,7 @@ Hostname: lo-a2-068};
 %%     contextlib: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/contextlib.py)
 %%     google: Unknown (Unknown)
 %%     mpl_toolkits: Unknown (Unknown)
+%%     latex_plots: Unknown (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/latex_plots.py)
 %%     matplotlib: 2.2.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/__init__.py)
 %%     __future__: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/__future__.py)
 %%     six: 1.11.0 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/six.py)
@@ -723,7 +724,6 @@ Hostname: lo-a2-068};
 %%     json.encoder: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/json/encoder.py)
 %%     dateutil: 2.7.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/dateutil/__init__.py)
 %%     dateutil._version: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/dateutil/_version.py)
-%%     plot_info: 1.14.2 (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py)
 %%     matplotlib.pyplot: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/pyplot.py)
 %%     matplotlib.colorbar: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/colorbar.py)
 %%     matplotlib.artist: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/artist.py)
@@ -831,6 +831,7 @@ Hostname: lo-a2-068};
 %%     matplotlib.backends: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/__init__.py)
 %%     matplotlib.backends.backend_agg: 2.2.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/backend_agg.py)
 %%     matplotlib.backends._backend_agg: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/_backend_agg.cpython-36m-x86_64-linux-gnu.so)
+%%     plot_info: 1.14.2 (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py)
 %%     matplotlib2tikz: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/__init__.py)
 %%     matplotlib2tikz.__about__: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/__about__.py)
 %%     matplotlib2tikz.save: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/save.py)
@@ -1263,24 +1264,7 @@ Hostname: lo-a2-068};
 %%     netCDF4.utils: Unknown (/cluster/home/klye/.local/lib64/python3.6/site-packages/netCDF4/utils.py)
 %%     cftime: 1.0.0b1 (/cluster/home/klye/.local/lib64/python3.6/site-packages/cftime/__init__.py)
 %%     cftime._cftime: 1.0.0b1 (/cluster/home/klye/.local/lib64/python3.6/site-packages/cftime/_cftime.cpython-36m-x86_64-linux-gnu.so)
-%%     PIL.BmpImagePlugin: 0.7 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/BmpImagePlugin.py)
-%%     PIL.ImageFile: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/ImageFile.py)
-%%     PIL.ImagePalette: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/ImagePalette.py)
-%%     PIL.ImageColor: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/ImageColor.py)
-%%     PIL.GimpPaletteFile: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/GimpPaletteFile.py)
-%%     PIL.GimpGradientFile: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/GimpGradientFile.py)
-%%     PIL.PaletteFile: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PaletteFile.py)
-%%     PIL.GifImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/GifImagePlugin.py)
-%%     PIL.ImageChops: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/ImageChops.py)
-%%     PIL.ImageSequence: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/ImageSequence.py)
-%%     PIL.JpegImagePlugin: 0.6 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/JpegImagePlugin.py)
-%%     PIL.TiffImagePlugin: 1.3.5 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/TiffImagePlugin.py)
-%%     PIL.TiffTags: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/TiffTags.py)
-%%     fractions: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/fractions.py)
-%%     PIL.JpegPresets: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/JpegPresets.py)
-%%     PIL.PpmImagePlugin: 0.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PpmImagePlugin.py)
-%%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
-%%     [function: savePlot, line: 307, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 206, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 238, file: ../python/compute_convergence.py]
+%%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
+%%     [function: plot_convergence, line: 227, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]

@@ -7,50 +7,50 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{$\mathcal{O}(N^{-0.4})$}},
+legend entries={{$\mathcal{O}(N^{-0.3})$}},
 legend style={draw=white!80.0!black},
 tick align=outside,
 tick pos=left,
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={Resolution ($N\times N$)},
-xmin=57.6800296070931, xmax=1024,
+xmin=57.6800296070931, xmax=568.099569698737,
 xmode=log,
-xtick={64,128,256,512,1024},
-xticklabels={$64\times 64$,$128\times 128$,$256\times 256$,$512\times 512$,$1024\times 1024$},
+xtick={64,128,256,512},
+xticklabels={$64\times 64$,$128\times 128$,$256\times 256$,$512\times 512$},
 y grid style={white!69.01960784313725!black},
-ylabel={Error ($||\mathrm{Var}(u^{N})-\mathrm{Var}(u^{2N})||_{L^1(D)}$)},
-ymin=0.643723541885911, ymax=1.69628126330136,
+ylabel={Error ($\|\mathrm{Var}(u^{N})-\mathrm{Var}(u^{2N})\|_{L^1(D)}$)},
+ymin=0.5, ymax=2,
 ymode=log,
 ytick={0.25,0.5,1,2,4},
-yticklabels={$\mathdefault{2^{-2}}$,$\mathdefault{2^{-1}}$,$\mathdefault{2^{0}}$,$\mathdefault{2^{1}}$,$\mathdefault{2^{2}}$}
+yticklabels={$2^{-2}$,$2^{-1}$,$2^{0}$,$2^{1}$,$2^{2}$}
 ]
 \addlegendimage{no markers, color1}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-64	1.4883789788763 \\
-128	1.33061803314833 \\
-256	1.13279544712992 \\
-512	0.672708004727346 \\
+64	1.07245938875932 \\
+128	0.859678006229248 \\
+256	0.903246344703331 \\
+512	0.582649563656748 \\
 };
 \addplot [semithick, color1, dashed]
 table [row sep=\\]{%
-64	1.62319487084092 \\
-128	1.25867727448385 \\
-256	0.97601865910366 \\
-512	0.756836118542894 \\
+64	1.09018464667261 \\
+128	0.912336546268653 \\
+256	0.763501830811762 \\
+512	0.638947379710971 \\
 };
-\path [draw=black, fill opacity=0] (axis cs:0,0.643723541885911)
---(axis cs:0,1.69628126330136);
+\path [draw=black, fill opacity=0] (axis cs:0,0.5)
+--(axis cs:0,2);
 
-\path [draw=black, fill opacity=0] (axis cs:1,0.643723541885911)
---(axis cs:1,1.69628126330136);
+\path [draw=black, fill opacity=0] (axis cs:1,0.5)
+--(axis cs:1,2);
 
 \path [draw=black, fill opacity=0] (axis cs:57.6800296070931,0)
---(axis cs:1024,0);
+--(axis cs:568.099569698737,0);
 
 \path [draw=black, fill opacity=0] (axis cs:57.6800296070931,1)
---(axis cs:1024,1);
+--(axis cs:568.099569698737,1);
 
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
@@ -59,15 +59,15 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 78aeb9b097dab692ff9ddd00eb426987f5827992
-Repo: git@github.com:kjetil-lye/single_sample_structure_functions.git
-Hostname: lo-a2-074};
+Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
+Hostname: lo-a2-071};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @78ae};
+]{ @28531};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -75,9 +75,9 @@ Hostname: lo-a2-074};
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 78aeb9b097dab692ff9ddd00eb426987f5827992
-Repo: git@github.com:kjetil-lye/single_sample_structure_functions.git
-Hostname: lo-a2-074};
+Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
+Hostname: lo-a2-071};
 \end{axis}
 
 \end{tikzpicture}
@@ -89,14 +89,14 @@ Hostname: lo-a2-074};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 78aeb9b097dab692ff9ddd00eb426987f5827992
+%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 78ae
+%% GIT git_short_commit : 28531
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-074
-%% generated_on_date : 2019-10-09 21:46:57.720523
+%% hostname : lo-a2-071
+%% generated_on_date : 2019-10-10 10:18:07.139593
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//fbb/H0_125/N{resolution}/euler_fbb_functional_identity_1.nc --title Fractional Brownian bridge $H=0.125$  --statistic_name variance
@@ -510,6 +510,7 @@ Hostname: lo-a2-074};
 %%     contextlib: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/contextlib.py)
 %%     google: Unknown (Unknown)
 %%     mpl_toolkits: Unknown (Unknown)
+%%     latex_plots: Unknown (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/latex_plots.py)
 %%     matplotlib: 2.2.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/__init__.py)
 %%     __future__: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/__future__.py)
 %%     six: 1.11.0 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/six.py)
@@ -742,7 +743,6 @@ Hostname: lo-a2-074};
 %%     json.encoder: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/json/encoder.py)
 %%     dateutil: 2.7.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/dateutil/__init__.py)
 %%     dateutil._version: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/dateutil/_version.py)
-%%     plot_info: 1.14.2 (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py)
 %%     matplotlib.pyplot: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/pyplot.py)
 %%     matplotlib.colorbar: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/colorbar.py)
 %%     matplotlib.artist: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/artist.py)
@@ -850,6 +850,7 @@ Hostname: lo-a2-074};
 %%     matplotlib.backends: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/__init__.py)
 %%     matplotlib.backends.backend_agg: 2.2.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/backend_agg.py)
 %%     matplotlib.backends._backend_agg: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/_backend_agg.cpython-36m-x86_64-linux-gnu.so)
+%%     plot_info: 1.14.2 (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py)
 %%     matplotlib2tikz: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/__init__.py)
 %%     matplotlib2tikz.__about__: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/__about__.py)
 %%     matplotlib2tikz.save: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/save.py)
@@ -1300,7 +1301,7 @@ Hostname: lo-a2-074};
 %%     PIL.PpmImagePlugin: 0.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PpmImagePlugin.py)
 %%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
-%%     [function: savePlot, line: 307, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: savePlot, line: 329, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 206, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 238, file: ../python/compute_convergence.py]
+%%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
+%%     [function: savePlot, line: 330, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
+%%     [function: plot_convergence, line: 227, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]

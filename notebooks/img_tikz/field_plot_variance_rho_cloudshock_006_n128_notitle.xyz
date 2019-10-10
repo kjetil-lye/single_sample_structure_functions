@@ -3,11 +3,11 @@
 
 \begin{axis}[
 colorbar,
-colorbar style={ylabel={}},
+colorbar style={ytick={0,50,100,150,200,250},yticklabels={$0$,$50$,$100$,$150$,$200$,$250$},ylabel={}},
 colormap/viridis,
 height=\figureheight,
 point meta max=261.1313387902,
-point meta min=-1.55431223447522e-15,
+point meta min=-9.10382880192628e-15,
 tick align=outside,
 tick pos=left,
 width=\figurewidth,
@@ -15,14 +15,14 @@ x grid style={white!69.01960784313725!black},
 xlabel={$x$},
 xmin=0, xmax=1,
 xtick={0,0.2,0.4,0.6,0.8,1},
-xticklabels={0.0,0.2,0.4,0.6,0.8,1.0},
+xticklabels={$0.0$,$0.2$,$0.4$,$0.6$,$0.8$,$1.0$},
 y grid style={white!69.01960784313725!black},
 ylabel={$y$},
 ymin=0, ymax=1,
 ytick={0,0.2,0.4,0.6,0.8,1},
-yticklabels={0.0,0.2,0.4,0.6,0.8,1.0}
+yticklabels={$0.0$,$0.2$,$0.4$,$0.6$,$0.8$,$1.0$}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_rho_cloudshock_006_n128_notitle-001.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_rho_cloudshock_006_n128_notitle-002.png};
 \path [draw=black, fill opacity=0] (axis cs:0,0)
 --(axis cs:0,1);
 
@@ -42,15 +42,15 @@ yticklabels={0.0,0.2,0.4,0.6,0.8,1.0}
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 78aeb9b097dab692ff9ddd00eb426987f5827992
-Repo: git@github.com:kjetil-lye/single_sample_structure_functions.git
-Hostname: lo-a2-074};
+Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
+Hostname: lo-a2-063};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @78ae};
+]{ @28531};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -58,9 +58,9 @@ Hostname: lo-a2-074};
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 78aeb9b097dab692ff9ddd00eb426987f5827992
-Repo: git@github.com:kjetil-lye/single_sample_structure_functions.git
-Hostname: lo-a2-074};
+Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
+Hostname: lo-a2-063};
 \end{axis}
 
 \end{tikzpicture}
@@ -72,17 +72,17 @@ Hostname: lo-a2-074};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 78aeb9b097dab692ff9ddd00eb426987f5827992
+%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 78ae
+%% GIT git_short_commit : 28531
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-074
-%% generated_on_date : 2019-10-09 21:47:14.550477
+%% hostname : lo-a2-063
+%% generated_on_date : 2019-10-10 10:18:53.306270
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//cloudshock/p0_06/N{resolution}/cloudshock_functional_identity_1.nc --title Cloudshock  --statistic_name variance
+%%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//cloudshock/p0_06/N{resolution}/cloudshock_functional_identity_1.nc --title Cloudshock  --statistic_name variance --reference
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/cluster/scratch/klye/single_sample_structure_functions_fulltime/experiments_full_time_average/cloudshock/p0_06/N64
@@ -493,6 +493,7 @@ Hostname: lo-a2-074};
 %%     contextlib: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/contextlib.py)
 %%     google: Unknown (Unknown)
 %%     mpl_toolkits: Unknown (Unknown)
+%%     latex_plots: Unknown (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/latex_plots.py)
 %%     matplotlib: 2.2.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/__init__.py)
 %%     __future__: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/__future__.py)
 %%     six: 1.11.0 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/six.py)
@@ -725,7 +726,6 @@ Hostname: lo-a2-074};
 %%     json.encoder: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/json/encoder.py)
 %%     dateutil: 2.7.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/dateutil/__init__.py)
 %%     dateutil._version: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/dateutil/_version.py)
-%%     plot_info: 1.14.2 (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py)
 %%     matplotlib.pyplot: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/pyplot.py)
 %%     matplotlib.colorbar: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/colorbar.py)
 %%     matplotlib.artist: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/artist.py)
@@ -833,6 +833,7 @@ Hostname: lo-a2-074};
 %%     matplotlib.backends: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/__init__.py)
 %%     matplotlib.backends.backend_agg: 2.2.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/backend_agg.py)
 %%     matplotlib.backends._backend_agg: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/matplotlib/backends/_backend_agg.cpython-36m-x86_64-linux-gnu.so)
+%%     plot_info: 1.14.2 (/cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py)
 %%     matplotlib2tikz: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/__init__.py)
 %%     matplotlib2tikz.__about__: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/__about__.py)
 %%     matplotlib2tikz.save: 0.6.18 (/cluster/home/klye/.local/lib64/python3.6/site-packages/matplotlib2tikz/save.py)
@@ -1283,7 +1284,7 @@ Hostname: lo-a2-074};
 %%     PIL.PpmImagePlugin: 0.2 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PpmImagePlugin.py)
 %%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
-%%     [function: savePlot, line: 307, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: savePlot, line: 329, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
+%%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
+%%     [function: savePlot, line: 330, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
 %%     [function: plot_convergence, line: 166, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 238, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]
