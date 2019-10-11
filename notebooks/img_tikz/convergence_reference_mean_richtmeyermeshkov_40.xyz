@@ -48,15 +48,15 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-071};
+Hostname: lo-a2-076};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @28531};
+]{ @5761};
 \end{axis}
 
 \end{tikzpicture}
@@ -70,14 +70,14 @@ Hostname: lo-a2-071};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
+%% GIT git_commit : 576104869e03ada3b9fbc72f8da51e08168c955d
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 28531
+%% GIT git_short_commit : 5761
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-071
-%% generated_on_date : 2019-10-10 10:14:12.180218
+%% hostname : lo-a2-076
+%% generated_on_date : 2019-10-11 14:41:01.744373
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//rm/p0_06/N{resolution}/rm_functional_identity_1.nc --title Richtmeyer-Meshkov  --statistic_name mean --reference
@@ -1283,5 +1283,5 @@ Hostname: lo-a2-071};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 227, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 228, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]

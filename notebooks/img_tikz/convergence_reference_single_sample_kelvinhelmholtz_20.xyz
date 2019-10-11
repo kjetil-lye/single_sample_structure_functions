@@ -7,7 +7,7 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{$\mathcal{O}(N^{-0.2})$}},
+legend entries={{$\mathcal{O}(N^{-0.1})$}},
 legend style={draw=white!80.0!black},
 tick align=outside,
 tick pos=left,
@@ -29,17 +29,17 @@ ymode=log
 \addlegendimage{no markers, color1}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-64	0.679881979021406 \\
-128	0.553497777193634 \\
-256	0.472141779573956 \\
-512	0.458337888313094 \\
+64	0.657235660998691 \\
+128	0.533540824291482 \\
+256	0.466683190461099 \\
+512	0.498585901893888 \\
 };
 \addplot [semithick, color1, dashed]
 table [row sep=\\]{%
-64	0.653310915966926 \\
-128	0.57126976441351 \\
-256	0.499531135569743 \\
-512	0.436801264389997 \\
+64	0.617484503634509 \\
+128	0.560811842099134 \\
+256	0.509340591362894 \\
+512	0.462593366500353 \\
 };
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
@@ -48,15 +48,15 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-057};
+Hostname: lo-a2-056};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @28531};
+]{ @5761};
 \end{axis}
 
 \end{tikzpicture}
@@ -70,14 +70,14 @@ Hostname: lo-a2-057};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
+%% GIT git_commit : 576104869e03ada3b9fbc72f8da51e08168c955d
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 28531
+%% GIT git_short_commit : 5761
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-057
-%% generated_on_date : 2019-10-10 10:01:33.248889
+%% hostname : lo-a2-056
+%% generated_on_date : 2019-10-11 14:34:31.400479
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//kh/p0_06/N{resolution}/kh_functional_identity_1.nc --title Kelvin-Helmholtz  --statistic_name single_sample --reference
@@ -1283,5 +1283,5 @@ Hostname: lo-a2-057};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 227, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 228, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]

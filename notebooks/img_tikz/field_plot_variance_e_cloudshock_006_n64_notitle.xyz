@@ -22,7 +22,7 @@ ymin=0, ymax=1,
 ytick={0,0.2,0.4,0.6,0.8,1},
 yticklabels={$0.0$,$0.2$,$0.4$,$0.6$,$0.8$,$1.0$}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_e_cloudshock_006_n64_notitle-002.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_e_cloudshock_006_n64_notitle-003.png};
 \path [draw=black, fill opacity=0] (axis cs:0,0)
 --(axis cs:0,1);
 
@@ -42,7 +42,7 @@ yticklabels={$0.0$,$0.2$,$0.4$,$0.6$,$0.8$,$1.0$}
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lo-a2-063};
 \node at (axis cs:0.2,0.93)[
@@ -50,7 +50,7 @@ Hostname: lo-a2-063};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @28531};
+]{ @5761};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -58,7 +58,7 @@ Hostname: lo-a2-063};
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lo-a2-063};
 \end{axis}
@@ -72,14 +72,14 @@ Hostname: lo-a2-063};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
+%% GIT git_commit : 576104869e03ada3b9fbc72f8da51e08168c955d
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 28531
+%% GIT git_short_commit : 5761
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
 %% hostname : lo-a2-063
-%% generated_on_date : 2019-10-10 10:18:48.781719
+%% generated_on_date : 2019-10-11 14:47:55.390739
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//cloudshock/p0_06/N{resolution}/cloudshock_functional_identity_1.nc --title Cloudshock  --statistic_name variance --reference
@@ -1286,5 +1286,5 @@ Hostname: lo-a2-063};
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
 %%     [function: savePlot, line: 330, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 166, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 167, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]
