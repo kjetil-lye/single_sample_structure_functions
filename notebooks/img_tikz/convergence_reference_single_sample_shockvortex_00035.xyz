@@ -7,7 +7,7 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{$\mathcal{O}(N^{-0.5})$}},
+legend entries={{$\mathcal{O}(N^{-1.2})$}},
 legend style={draw=white!80.0!black},
 tick align=outside,
 tick pos=left,
@@ -23,23 +23,23 @@ xtick={64,128,256,512},
 xticklabels={$64\times 64$,$128\times 128$,$256\times 256$,$512\times 512$},
 y grid style={white!69.01960784313725!black},
 ylabel={Error ($\|u^{N}-u^{1024}\|_{L^1(D)}$)},
-ymin=0.00048828125, ymax=0.00390625,
+ymin=0.00048828125, ymax=0.015625,
 ymode=log
 ]
 \addlegendimage{no markers, color1}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-64	0.00205418372774947 \\
-128	0.00153447242103154 \\
-256	0.00113180239840439 \\
-512	0.000707280200493147 \\
+64	0.012228707620074 \\
+128	0.00975620318086302 \\
+256	0.0105315536768951 \\
+512	0.000833355783646442 \\
 };
 \addplot [semithick, color1, dashed]
 table [row sep=\\]{%
-64	0.00213152237074401 \\
-128	0.00150160847960776 \\
-256	0.0010578486329669 \\
-512	0.000745230028643852 \\
+64	0.0188348376597309 \\
+128	0.00847848019366476 \\
+256	0.00381657796541861 \\
+512	0.00171802811746886 \\
 };
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
@@ -48,15 +48,15 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-057};
+Hostname: lo-a2-060};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @28531};
+]{ @5761};
 \end{axis}
 
 \end{tikzpicture}
@@ -70,14 +70,14 @@ Hostname: lo-a2-057};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
+%% GIT git_commit : 576104869e03ada3b9fbc72f8da51e08168c955d
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 28531
+%% GIT git_short_commit : 5761
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-057
-%% generated_on_date : 2019-10-10 10:01:25.649294
+%% hostname : lo-a2-060
+%% generated_on_date : 2019-10-11 14:34:26.167852
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//shockvortex/p0_06/N{resolution}/shockvortex_functional_identity_1.nc --title Shockvortex  --statistic_name single_sample --reference
@@ -1283,5 +1283,5 @@ Hostname: lo-a2-057};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 227, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 228, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]

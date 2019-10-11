@@ -7,7 +7,7 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{$\mathcal{O}(N^{-0.5})$}},
+legend entries={{$\mathcal{O}(N^{-0.3})$}},
 legend style={draw=white!80.0!black},
 tick align=outside,
 tick pos=left,
@@ -28,17 +28,17 @@ yticklabels={$2^{-5}$,$2^{-4}$,$2^{-3}$,$2^{-2}$,$2^{-1}$,$2^{0}$}
 \addlegendimage{no markers, color1}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-64	0.31242074192873 \\
-128	0.21551396310332 \\
-256	0.166804569428928 \\
-512	0.116476688046655 \\
+64	0.258493671807902 \\
+128	0.156658584694602 \\
+256	0.122464694068701 \\
+512	0.128289919970824 \\
 };
 \addplot [semithick, color1, dashed]
 table [row sep=\\]{%
-64	0.308092451993501 \\
-128	0.223359309194509 \\
-256	0.161929903446323 \\
-512	0.117395123241991 \\
+64	0.225870339023674 \\
+128	0.178602551807727 \\
+256	0.141226473781883 \\
+512	0.111672071283373 \\
 };
 \path [draw=black, fill opacity=0] (axis cs:0,0.0625)
 --(axis cs:0,0.5);
@@ -59,15 +59,15 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-016};
+Hostname: lo-a2-057};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @28531};
+]{ @5761};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -75,9 +75,9 @@ Hostname: lo-a2-016};
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-016};
+Hostname: lo-a2-057};
 \end{axis}
 
 \end{tikzpicture}
@@ -89,14 +89,14 @@ Hostname: lo-a2-016};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
+%% GIT git_commit : 576104869e03ada3b9fbc72f8da51e08168c955d
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 28531
+%% GIT git_short_commit : 5761
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-016
-%% generated_on_date : 2019-10-10 10:00:46.585669
+%% hostname : lo-a2-057
+%% generated_on_date : 2019-10-11 14:32:55.461180
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//kh/p0_06/N{resolution}/kh_functional_time_integrated_identity_0.nc --title Kelvin-Helmholtz _time_integrated --statistic_name single_sample
@@ -1303,5 +1303,5 @@ Hostname: lo-a2-016};
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
 %%     [function: savePlot, line: 330, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 227, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 228, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]

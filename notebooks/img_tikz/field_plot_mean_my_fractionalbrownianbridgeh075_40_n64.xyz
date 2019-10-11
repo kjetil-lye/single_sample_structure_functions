@@ -21,7 +21,7 @@ y grid style={white!69.01960784313725!black},
 ylabel={$y$},
 ymin=0, ymax=1
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_mean_my_fractionalbrownianbridgeh075_40_n64-002.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_mean_my_fractionalbrownianbridgeh075_40_n64-003.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -29,15 +29,15 @@ ymin=0, ymax=1
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-075};
+Hostname: lo-a2-061};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @28531};
+]{ @5761};
 \end{axis}
 
 \end{tikzpicture}
@@ -51,14 +51,14 @@ Hostname: lo-a2-075};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
+%% GIT git_commit : 576104869e03ada3b9fbc72f8da51e08168c955d
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 28531
+%% GIT git_short_commit : 5761
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-075
-%% generated_on_date : 2019-10-10 10:03:39.854775
+%% hostname : lo-a2-061
+%% generated_on_date : 2019-10-11 14:44:39.532483
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//fbb/H0_75/N{resolution}/euler_fbb_functional_identity_1.nc --title Fractional Brownian bridge $H=0.75$  --statistic_name mean --reference
@@ -1264,5 +1264,5 @@ Hostname: lo-a2-075};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 166, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 167, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]

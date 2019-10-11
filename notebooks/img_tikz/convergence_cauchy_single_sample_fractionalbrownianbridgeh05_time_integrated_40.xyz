@@ -7,8 +7,8 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{$\mathcal{O}(N^{-0.1})$}},
-legend style={draw=white!80.0!black},
+legend entries={{$\mathcal{O}(N^{0.7})$}},
+legend style={at={(0.03,0.97)}, anchor=north west, draw=white!80.0!black},
 tick align=outside,
 tick pos=left,
 title={Convergence of single sample
@@ -23,23 +23,23 @@ xtick={64,128,256,512},
 xticklabels={$64\times 64$,$128\times 128$,$256\times 256$,$512\times 512$},
 y grid style={white!69.01960784313725!black},
 ylabel={Error ($\|u^{N}-u^{2N}\|_{L^1(D)}$)},
-ymin=0.25, ymax=0.5,
+ymin=0.5, ymax=4,
 ymode=log
 ]
 \addlegendimage{no markers, color1}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-64	0.468800259481234 \\
-128	0.419601130449106 \\
-256	0.439612624754555 \\
-512	0.40822356201176 \\
+64	0.640901971868437 \\
+128	0.570874341376068 \\
+256	0.541187370939612 \\
+512	3.675325134389 \\
 };
 \addplot [semithick, color1, dashed]
 table [row sep=\\]{%
-64	0.458092891071486 \\
-128	0.44151958231226 \\
-256	0.425545878062474 \\
-512	0.410150085275014 \\
+64	0.424273539654275 \\
+128	0.712652654797729 \\
+256	1.19704331975098 \\
+512	2.01067476520822 \\
 };
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
@@ -48,15 +48,15 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 28531d56c4f107f0146f70da323b342dde53e295
+Commit: 576104869e03ada3b9fbc72f8da51e08168c955d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-016};
+Hostname: lo-a2-058};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @28531};
+]{ @5761};
 \end{axis}
 
 \end{tikzpicture}
@@ -70,14 +70,14 @@ Hostname: lo-a2-016};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 28531d56c4f107f0146f70da323b342dde53e295
+%% GIT git_commit : 576104869e03ada3b9fbc72f8da51e08168c955d
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 28531
+%% GIT git_short_commit : 5761
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-016
-%% generated_on_date : 2019-10-10 10:00:39.595368
+%% hostname : lo-a2-058
+%% generated_on_date : 2019-10-11 14:32:53.246587
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//fbb/H0_5/N{resolution}/euler_fbb_functional_time_integrated_identity_0.nc --title Fractional Brownian bridge $H=0.5$ _time_integrated --statistic_name single_sample
@@ -1266,5 +1266,5 @@ Hostname: lo-a2-016};
 %%     cftime._cftime: 1.0.0b1 (/cluster/home/klye/.local/lib64/python3.6/site-packages/cftime/_cftime.cpython-36m-x86_64-linux-gnu.so)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 227, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 259, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 228, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]
