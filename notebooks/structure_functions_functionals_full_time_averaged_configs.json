@@ -207,7 +207,7 @@
   "fbb_0_5_ta": {
     "name": "Brownian bridge time averaged",
     "Tarray": [
-      1
+      0
     ],
     "maxT": 4,
     "t_start" : 4,
@@ -233,7 +233,7 @@
   "fbm_0_75_ta": {
     "name": "Fractional Brownian bridge with $H=0.75$ time averaged",
     "Tarray": [
-      1
+      0
     ],
     "maxT": 4,
     "t_start" : 4,
@@ -286,7 +286,7 @@
   "rm_0_06_ta": {
     "name": "Richtmeyer-Meshkov $\\epsilon=0.06$ time averaged",
     "Tarray": [
-      0,1
+      0
     ],
     "t_start" : 4,
     "maxT": 4,
@@ -338,7 +338,7 @@
   "shockvortex_0_06_ta": {
     "name": "Shock Vortex $\\epsilon=0.06$ time averaged",
     "Tarray": [
-      1
+      0
     ],
     "t_start" : 0.0034,
     "maxT": 0.0035,
