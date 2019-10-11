@@ -35,7 +35,8 @@ def load_file_single_sample(filename, conserved_variables):
         resolution = f.variables[f'sample_0_{conserved_variables[0]}'].shape[0]
         data = np.zeros((resolution, resolution, len(conserved_variables)))
         for variable_index, variable in enumerate(conserved_variables):
-            data[:,:,variable_index] = f.variables[f'sample_0_{variable}'][:,:,0]
+            # 42 is the answer to everything. (Wanted different realizations than the ones already shown a thousand times)
+            data[:,:,variable_index] = f.variables[f'sample_42_{variable}'][:,:,0]
             
         return data
 
@@ -153,7 +154,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                 min_value = min_values[variable_index]
                 max_value = max_values[variable_index]
                 
-                plt.pcolormesh(x, y, data[:,:,variable_index],
+                plt.pcolormesh(x, y, data[:,:,variable_index].T,
                                vmin=min_value, vmax=max_value)
                 
                 plt.xlabel("$x$")
