@@ -1,0 +1,364 @@
+
+{
+  "kh": {
+    "name": "Kelvin-Helmholtz",
+    "Tarray": [
+      8
+    ],
+    "maxT": 2,
+    "perturbations": [
+      0.06
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/kh/p0_06/N{resolution}/kh_functional_structure_cube_{p}_{t}.nc"
+  },
+
+
+  "fbb_0_5": {
+    "name": "Brownian bridge",
+    "Tarray": [
+      8
+    ],
+    "maxT": 4,
+    "perturbations": [
+      0.1
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/fbb/H0_5/N{resolution}/euler_fbb_functional_structure_cube_{p}_{t}.nc"
+  },
+
+
+  "fbm_0_75": {
+    "name": "Fractional Brownian bridge with $H=0.75$",
+    "Tarray": [
+      8
+    ],
+    "maxT": 4,
+    "perturbations": [
+      0.1
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/fbb/H0_75/N{resolution}/euler_fbb_functional_structure_cube_{p}_{t}.nc"
+  },
+
+
+
+  "fbm_0_125": {
+    "name": "Fractional Brownian bridge with $H=0.125$",
+    "Tarray": [
+      8
+    ],
+    "maxT": 4,
+    "perturbations": [
+      0.1
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/fbb/H0_125/N{resolution}/euler_fbb_functional_structure_cube_{p}_{t}.nc"
+  },
+
+
+  "rm_0_06": {
+    "name": "Richtmeyer-Meshkov $\\epsilon=0.06$",
+    "Tarray": [
+      8
+    ],
+    "maxT": 4,
+    "perturbations": [
+      0.06
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/rm/p0_06/N{resolution}/rm_functional_structure_cube_{p}_{t}.nc"
+  },
+
+  "cloudshock_0_03125": {
+    "name": "Cloudshock $\\epsilon=1/32$",
+    "Tarray": [
+      8
+    ],
+    "maxT": 0.06,
+    "perturbations": [
+      0.06
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/cloudshock/p0_03125/N{resolution}/cloudshock_functional_structure_cube_{p}_{t}.nc"
+  },
+
+
+
+  "shockvortex_0_06": {
+    "name": "Shock Vortex $\\epsilon=0.06$",
+    "Tarray": [
+      8
+    ],
+    "maxT": 0.0035,
+    "t_start" : 0.0035,
+    "perturbations": [
+      0.06
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/shockvortex/p0_06/N{resolution}/shockvortex_functional_structure_cube_{p}_{t}.nc"
+  },
+
+  "kh_ta": {
+    "name": "Kelvin-Helmholtz time averaged",
+    "Tarray": [
+      0
+    ],
+
+    "t_start" : 2,
+
+    "maxT": 2,
+    "perturbations": [
+      0.06
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/kh/p0_06/N{resolution}/kh_functional_time_integrated_structure_cube_{p}_{t}.nc"
+  },
+
+
+  "fbb_0_5_ta": {
+    "name": "Brownian bridge time averaged",
+    "Tarray": [
+      0
+    ],
+    "maxT": 4,
+    "t_start" : 4,
+    "perturbations": [
+      0.1
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/fbb/H0_5/N{resolution}/euler_fbb_functional_time_integrated_structure_cube_{p}_{t}.nc"
+  },
+
+
+  "fbm_0_75_ta": {
+    "name": "Fractional Brownian bridge with $H=0.75$ time averaged",
+    "Tarray": [
+      0
+    ],
+    "maxT": 4,
+    "t_start" : 4,
+    "perturbations": [
+      0.1
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/fbb/H0_75/N{resolution}/euler_fbb_functional_time_integrated_structure_cube_{p}_{t}.nc"
+  },
+
+
+
+  "fbm_0_125_ta": {
+    "name": "Fractional Brownian bridge with $H=0.125$ time averaged",
+    "Tarray": [
+      0
+    ],
+    "t_start" : 4,
+    "maxT": 4,
+    "perturbations": [
+      0.1
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/fbb/H0_125/N{resolution}/euler_fbb_functional_time_integrated_structure_cube_{p}_{t}.nc"
+  },
+
+
+  "rm_0_06_ta": {
+    "name": "Richtmeyer-Meshkov $\\epsilon=0.06$ time averaged",
+    "Tarray": [
+      0
+    ],
+    "t_start" : 4,
+    "maxT": 4,
+    "perturbations": [
+      0.06
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/rm/p0_06/N{resolution}/rm_functional_time_integrated_structure_cube_{p}_{t}.nc"
+  },
+
+  "cloudshock_0_03125_ta": {
+    "name": "Cloudshock $\\epsilon=1/32$ time averaged",
+    "Tarray": [
+      0
+    ],
+    "maxT": 0.06,
+    "t_start" : 0.06,
+    "perturbations": [
+      0.06
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/cloudshock/p0_03125/N{resolution}/cloudshock_functional_time_integrated_structure_cube_{p}_{t}.nc"
+  },
+
+
+
+  "shockvortex_0_06_ta": {
+    "name": "Shock Vortex $\\epsilon=0.06$ time averaged",
+    "Tarray": [
+      0
+    ],
+    "t_start" : 0.0034,
+    "maxT": 0.0035,
+    "perturbations": [
+      0.06
+    ],
+    "resolutions": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "variables": [
+      "rho",
+      "mx",
+      "my",
+      "E"
+    ],
+    "cube_filename": "../experiments_full_time_average/shockvortex/p0_06/N{resolution}/shockvortex_functional_time_integrated_structure_cube_{p}_{t}.nc"
+  }
+
+
+}
