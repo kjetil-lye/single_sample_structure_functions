@@ -7,6 +7,7 @@ function submit {
 basepath='/cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average/'
 
 export PYTHONPATH=../python:$PYTHONPATH
+module load texlive
 for reference in '--reference' '';
 do
     for time_integrated in "" "_time_integrated";
