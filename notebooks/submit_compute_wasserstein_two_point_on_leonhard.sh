@@ -5,7 +5,7 @@ function submit {
 }
 
 basepath='/cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average/'
-
+module load texlive
 export PYTHONPATH=../python:$PYTHONPATH
 for reference in '--reference' '';
 do
