@@ -53,6 +53,14 @@ do
 		    ${reference}
 	    done
 
+	    for H in 0.125 0.5 0.75;
+	    do
+		submit python ../python/compute_convergence.py \
+		    --input_basename "${basepath}/fbb_short_time/H${H//./_}/N{resolution}/euler_fbb_functional${time_integrated}_identity_${time}.nc" \
+		    --title "Fractional Brownian bridge \$H=${H}\$ short time ${time_integrated}" \
+		    --statistic_name ${stats}  \
+		    ${reference}
+	    done
 
 
 	done
