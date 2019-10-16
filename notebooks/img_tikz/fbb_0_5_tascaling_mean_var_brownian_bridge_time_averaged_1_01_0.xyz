@@ -9,8 +9,8 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{$\mathcal{O}(h^{0.65})$($\mathrm{exponent}=0.65\pm0.007$)},{$\mathcal{O}(h^{0.71})$($\mathrm{exponent}=0.71\pm0.004$)},{$\mathcal{O}(h^{0.75})$($\mathrm{exponent}=0.75\pm0.003$)},{$\mathcal{O}(h^{0.77})$($\mathrm{exponent}=0.77\pm0.004$)},{$N=128$},{$N=256$},{$N=512$},{$N=1024$}},
-legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+legend entries={{$N=128$},{$\mathcal{O}(h^{0.65\pm0.007})$},{$N=256$},{$\mathcal{O}(h^{0.71\pm0.004})$},{$N=512$},{$\mathcal{O}(h^{0.75\pm0.003})$},{$N=1024$},{$\mathcal{O}(h^{0.77\pm0.004})$}},
+legend style={at={(0.97,0.03)}, anchor=south east, draw=white!80.0!black},
 tick align=outside,
 tick pos=left,
 title={Scaling for Brownian bridge time averaged, $t=4.0,p=1$},
@@ -27,12 +27,12 @@ ymin=0.0420922195813437, ymax=0.801082447340105,
 ymode=log
 ]
 \addlegendimage{no markers, color0}
-\addlegendimage{no markers, color1}
-\addlegendimage{no markers, color2}
-\addlegendimage{no markers, color3}
 \addlegendimage{no markers, color0}
 \addlegendimage{no markers, color1}
+\addlegendimage{no markers, color1}
 \addlegendimage{no markers, color2}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color3}
 \addlegendimage{no markers, color3}
 \path [draw=color0, semithick] (axis cs:0.0104166666666667,0.198002644440098)
 --(axis cs:0.0104166666666667,0.22821544958982);
@@ -345,7 +345,7 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 4bf27e3ab0287ff7a106adf2773ac291e622cb7a
+Commit: 0611d2427613973805ba45c794e82a47e1643944
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -353,7 +353,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @4bf2};
+]{ @0611};
 \end{axis}
 
 \end{tikzpicture}
@@ -365,14 +365,14 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 4bf27e3ab0287ff7a106adf2773ac291e622cb7a
+%% GIT git_commit : 0611d2427613973805ba45c794e82a47e1643944
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 4bf2
+%% GIT git_short_commit : 0611
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-14 15:20:49.039525
+%% generated_on_date : 2019-10-15 13:27:35.157606
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-db4c72bf-123e-4c67-92c4-a470da928765.json
@@ -1472,9 +1472,9 @@ Hostname: lyelaptop};
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 63, file: <ipython-input-4-9b2765f1c5af>]
+%%     [function: convergence_structure_functions, line: 65, file: <ipython-input-4-17c1ccc52087>]
 %%     [function: for_each_config, line: 36, file: <ipython-input-1-d0c606e0ff22>]
-%%     [function: <module>, line: 109, file: <ipython-input-4-9b2765f1c5af>]
+%%     [function: <module>, line: 112, file: <ipython-input-4-17c1ccc52087>]
 %%     [function: run_code, line: 3325, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3248, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3057, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]

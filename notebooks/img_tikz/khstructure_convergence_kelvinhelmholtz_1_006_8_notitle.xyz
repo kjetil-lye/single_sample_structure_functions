@@ -48,7 +48,7 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 4bf27e3ab0287ff7a106adf2773ac291e622cb7a
+Commit: 893cc94705922f7ef9502f166adc5fb8ba574643
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -56,7 +56,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @4bf2};
+]{ @893cc};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -64,7 +64,7 @@ Hostname: lyelaptop};
   rotate=0.0,
   align=right
 ]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 4bf27e3ab0287ff7a106adf2773ac291e622cb7a
+Commit: 893cc94705922f7ef9502f166adc5fb8ba574643
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \end{axis}
@@ -78,14 +78,14 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 4bf27e3ab0287ff7a106adf2773ac291e622cb7a
+%% GIT git_commit : 893cc94705922f7ef9502f166adc5fb8ba574643
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 4bf2
+%% GIT git_short_commit : 893cc
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-14 12:49:06.134381
+%% generated_on_date : 2019-10-15 22:05:39.358875
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-db4c72bf-123e-4c67-92c4-a470da928765.json
@@ -1186,9 +1186,9 @@ Hostname: lyelaptop};
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 330, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 76, file: <ipython-input-4-9b2765f1c5af>]
+%%     [function: convergence_structure_functions, line: 78, file: <ipython-input-4-17c1ccc52087>]
 %%     [function: for_each_config, line: 36, file: <ipython-input-1-d0c606e0ff22>]
-%%     [function: <module>, line: 109, file: <ipython-input-4-9b2765f1c5af>]
+%%     [function: <module>, line: 112, file: <ipython-input-4-17c1ccc52087>]
 %%     [function: run_code, line: 3325, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3248, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3057, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
