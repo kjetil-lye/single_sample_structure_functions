@@ -5,7 +5,7 @@ function submit {
 }
 
 basepath='/cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average/'
-
+module load texlive
 export PYTHONPATH=../python:$PYTHONPATH
 for reference in '--reference' '';
 do
@@ -52,6 +52,15 @@ do
 		    ${reference}
 	    done
 
+
+	    for H in 0.125 0.5 0.75;
+	    do
+		submit python ../python/compute_two_point_wasserstein.py \
+		    --input_basename "${basepath}/fbb_short_time/H${H//./_}/N{resolution}/euler_fbb_functional${time_integrated}_identity_${time}.nc" \
+		    --title "Fractional Brownian bridge \$H=${H}\$ short time ${time_integrated}" \
+		    --exponent ${exponent} \
+		    ${reference}
+	    done
 
 
 	done

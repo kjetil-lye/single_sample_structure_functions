@@ -9,7 +9,7 @@ import matplotlib
 from numpy import *
 import matplotlib.pyplot as plt
 
-import matplotlib2tikz
+import tikzplotlib
 import PIL
 import socket
 import os
@@ -236,8 +236,8 @@ def savePlot(name):
     else:
         text_function = ax.text
     try:
-        if matplotlib.rcParams['text.usetex']:
-            informationText = informationText.replace('_', '\\_')
+
+        informationText = informationText.replace('_', '\\_')
         text_function(0.95, 0.01, informationText,
                       fontsize=3, color=textcolor,
                       family='monospace',
@@ -255,12 +255,12 @@ def savePlot(name):
         except:
             # 3d plots had some issues with the text attribute
             pass
-    # We don't want all the output from matplotlib2tikz
+    # We don't want all the output from tikzplotlib
 
     with RedirectStdStreamsToNull():
         if savePlot.saveTikz:
             try:
-                matplotlib2tikz.save('img_tikz/' + name + '.xyz',
+                tikzplotlib.save('img_tikz/' + name + '.xyz',
                                      figureheight='\\figureheight',
                                      figurewidth='\\figurewidth',
                                      show_info=False)
