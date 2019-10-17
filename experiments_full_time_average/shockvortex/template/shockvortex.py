@@ -1,3 +1,7 @@
+K = len(a)//10
+
+a1 = a[:K]
+b1 = a[K:2*K]
 
 GAMMA=1.66666666666667
 
@@ -7,10 +11,16 @@ x_c = 0.25
 y_c = 0.5
 M = 1.1
 
+perturbation = epsilon
+normalization1 = sum(a1)
+if abs(normalization1) < 1e-10:
+    normalization1 = 1
+#
+perturbation_x = perturbation*sum([a1[i]*cos(2*pi*(i+1)*(y+b1[i])) for i in range(len(a1))])/normalization1
 
 
 # shock part
-if  x < 0.5 + epsilon * X: 
+if  x < 0.5 + perturbation_x: 
     rho = 1.0;
     ux = sqrt(GAMMA);
     uy = 0.0;
@@ -21,8 +31,10 @@ else:
     uy = 0.0;
     p = 1 - 0.1 * GAMMA;
 
-# same value as https://link.springer.com/chapter/10.1007/BFb0096355 page 407
-vortex_epsilon=0.3
+# different value than
+# book by Shu ( https://link.springer.com/chapter/10.1007/BFb0096355 page 407 )
+# They use 0.3, but that doesn't lead to a prominent vortex.
+vortex_epsilon=1
 # vortex part
 if x < 0.5:
     tau = sqrt(pow(x - x_c, 2) + pow(y - y_c, 2)) / r_c;
