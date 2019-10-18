@@ -17,7 +17,7 @@ log basis x={2},
 log basis y={2},
 tick align=outside,
 tick pos=left,
-title={$T=0$, $p=2$},
+title={$T=1$, $p=3$},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={Resolution (\(\displaystyle N\times N\))},
@@ -27,130 +27,130 @@ xtick style={color=black},
 xtick={64,128,256,512,1024},
 xticklabels={\(\displaystyle 64\times64\),\(\displaystyle 128\times128\),\(\displaystyle 256\times256\),\(\displaystyle 512\times512\),\(\displaystyle 1024\times1024\)},
 y grid style={white!69.01960784313725!black},
-ylabel={\(\displaystyle \frac{1}{M}\sum_{m=1}^M \sum_{i,j} (|u_{i+1,j}-u_{i,j}|+|u_{i,j+1}-u_{i,j}|)^{2}\)},
-ymin=0.375664317856254, ymax=849573847.793879,
+ylabel={\(\displaystyle \frac{1}{M}\sum_{m=1}^M \sum_{i,j} (|u_{i+1,j}-u_{i,j}|+|u_{i,j+1}-u_{i,j}|)^{3}\Delta^{-1}\)},
+ymin=65.2049464871364, ymax=381293098053173,
 ymode=log,
 ytick style={color=black}
 ]
 \path [draw=color0, semithick]
-(axis cs:64,19585)
---(axis cs:64,80105);
+(axis cs:64,-857408)
+--(axis cs:64,3178816);
 
 \path [draw=color0, semithick]
-(axis cs:128,67933)
---(axis cs:128,286619);
+(axis cs:128,-3705600)
+--(axis cs:128,13911808);
 
 \path [draw=color0, semithick]
-(axis cs:256,230207)
---(axis cs:256,1009251);
+(axis cs:256,-15716608)
+--(axis cs:256,58776320);
 
 \path [draw=color0, semithick]
-(axis cs:512,772203)
---(axis cs:512,3520717);
+(axis cs:512,-67560960)
+--(axis cs:512,249564672);
 
 \path [draw=color0, semithick]
-(axis cs:1024,2576549)
---(axis cs:1024,12198681);
+(axis cs:1024,-296877056)
+--(axis cs:1024,1072765952);
 
 \path [draw=color1, semithick]
-(axis cs:64,222)
---(axis cs:64,2446);
+(axis cs:64,-11520)
+--(axis cs:64,51072);
 
 \path [draw=color1, semithick]
-(axis cs:128,453)
---(axis cs:128,5075);
+(axis cs:128,-35328)
+--(axis cs:128,156416);
 
 \path [draw=color1, semithick]
-(axis cs:256,915)
---(axis cs:256,10351);
+(axis cs:256,-125184)
+--(axis cs:256,526592);
 
 \path [draw=color1, semithick]
-(axis cs:512,1833)
---(axis cs:512,20925);
+(axis cs:512,-489984)
+--(axis cs:512,1938944);
 
 \path [draw=color1, semithick]
-(axis cs:1024,3668)
---(axis cs:1024,42096);
+(axis cs:1024,-1988608)
+--(axis cs:1024,7532544);
 
 \path [draw=color2, semithick]
-(axis cs:64,7)
---(axis cs:64,239);
+(axis cs:64,-448)
+--(axis cs:64,2496);
 
 \path [draw=color2, semithick]
-(axis cs:128,10)
---(axis cs:128,364);
+(axis cs:128,-640)
+--(axis cs:128,4736);
 
 \path [draw=color2, semithick]
-(axis cs:256,14)
---(axis cs:256,540);
+(axis cs:256,-1024)
+--(axis cs:256,8704);
 
 \path [draw=color2, semithick]
-(axis cs:512,21)
---(axis cs:512,789);
+(axis cs:512,-2048)
+--(axis cs:512,16384);
 
 \path [draw=color2, semithick]
-(axis cs:1024,30)
---(axis cs:1024,1144);
+(axis cs:1024,-4096)
+--(axis cs:1024,30720);
 
 \path [draw=color3, semithick]
-(axis cs:64,-24)
---(axis cs:64,390);
+(axis cs:64,0)
+--(axis cs:64,512);
 
 \path [draw=color3, semithick]
-(axis cs:128,-49)
---(axis cs:128,795);
+(axis cs:128,-256)
+--(axis cs:128,2048);
 
 \path [draw=color3, semithick]
-(axis cs:256,-98)
---(axis cs:256,1602);
+(axis cs:256,-1280)
+--(axis cs:256,7424);
 
 \path [draw=color3, semithick]
-(axis cs:512,-197)
---(axis cs:512,3213);
+(axis cs:512,-4608)
+--(axis cs:512,27136);
 
 \path [draw=color3, semithick]
-(axis cs:1024,-395)
---(axis cs:1024,6433);
+(axis cs:1024,-17408)
+--(axis cs:1024,105472);
 
 \path [draw=color4, semithick]
-(axis cs:64,-19769)
---(axis cs:64,73983);
+(axis cs:64,-128)
+--(axis cs:64,1792);
 
 \path [draw=color4, semithick]
-(axis cs:128,-42843)
---(axis cs:128,160295);
+(axis cs:128,0)
+--(axis cs:128,4352);
 
 \path [draw=color4, semithick]
-(axis cs:256,-85685)
---(axis cs:256,320591);
+(axis cs:256,0)
+--(axis cs:256,21504);
 
 \path [draw=color4, semithick]
-(axis cs:512,-168068)
---(axis cs:512,628854);
+(axis cs:512,512)
+--(axis cs:512,83456);
 
 \path [draw=color4, semithick]
-(axis cs:1024,-336136)
---(axis cs:1024,1257710);
+(axis cs:1024,3072)
+--(axis cs:1024,269312);
 
 \path [draw=color5, semithick]
-(axis cs:64,-5465433)
---(axis cs:64,19569245);
+(axis cs:64,-127133329088)
+--(axis cs:64,410881167424);
 
 \path [draw=color5, semithick]
-(axis cs:128,-11080996)
---(axis cs:128,39621344);
+(axis cs:128,-431232244480)
+--(axis cs:128,1513301093120);
 
 \path [draw=color5, semithick]
-(axis cs:256,-22249255)
---(axis cs:256,79554667);
+(axis cs:256,-1754094288640)
+--(axis cs:256,5995144783104);
 
 \path [draw=color5, semithick]
-(axis cs:512,-44585795)
---(axis cs:512,159421303);
+(axis cs:512,-7428675943424)
+--(axis cs:512,24501452094464);
 
 \path [draw=color5, semithick]
-(axis cs:1024,-89258868)
---(axis cs:1024,319154580);
+(axis cs:1024,-32209042950144)
+--(axis cs:1024,100217079834624);
 
 \path [draw=color6, semithick]
 (axis cs:64,0)
@@ -158,200 +158,200 @@ ytick style={color=black}
 
 \path [draw=color6, semithick]
 (axis cs:128,0)
---(axis cs:128,2);
+--(axis cs:128,0);
 
 \path [draw=color6, semithick]
 (axis cs:256,0)
---(axis cs:256,4);
+--(axis cs:256,0);
 
 \path [draw=color6, semithick]
-(axis cs:512,-1)
---(axis cs:512,9);
+(axis cs:512,0)
+--(axis cs:512,0);
 
 \path [draw=color6, semithick]
-(axis cs:1024,-2)
---(axis cs:1024,20);
+(axis cs:1024,0)
+--(axis cs:1024,0);
 
 \addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 19585
-128 67933
-256 230207
-512 772203
-1024 2576549
+64 -857408
+128 -3705600
+256 -15716608
+512 -67560960
+1024 -296877056
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 80105
-128 286619
-256 1009251
-512 3520717
-1024 12198681
+64 3178816
+128 13911808
+256 58776320
+512 249564672
+1024 1072765952
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color0, dashed]
 table {%
-64 50439.6948739947
-128 175896.123009197
-256 613394.790887565
-512 2139064.59705383
-1024 7459465.61389659
+64 1177120.63557943
+128 5020560.07617598
+256 21413288.2532337
+512 91330231.4600182
+1024 389534343.343126
 };
-\addlegendentry{$\mathcal{O}(N^{1.80})$}
+\addlegendentry{$\mathcal{O}(N^{2.09})$}
 \addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 222
-128 453
-256 915
-512 1833
-1024 3668
+64 -11520
+128 -35328
+256 -125184
+512 -489984
+1024 -1988608
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 2446
-128 5075
-256 10351
-512 20925
-1024 42096
+64 51072
+128 156416
+256 526592
+512 1938944
+1024 7532544
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color1, dashed]
 table {%
-64 1348.83202024402
-128 2743.35558698183
-256 5579.64206340748
-512 11348.2939300614
-1024 23081.0101543362
+64 18300.5894929885
+128 63036.277709627
+256 217128.104480328
+512 747896.536219816
+1024 2576125.41788792
 };
-\addlegendentry{$\mathcal{O}(N^{1.02})$}
+\addlegendentry{$\mathcal{O}(N^{1.78})$}
 \addplot [semithick, color2, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 7
-128 10
-256 14
-512 21
-1024 30
+64 -448
+128 -640
+256 -1024
+512 -2048
+1024 -4096
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color2, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 239
-128 364
-256 540
-512 789
-1024 1144
+64 2496
+128 4736
+256 8704
+512 16384
+1024 30720
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color2, dashed]
 table {%
-64 125.154953454849
-128 184.822986104228
-256 272.93794811571
-512 403.062005932549
-1024 595.223133125839
+64 1053.73046893689
+128 1994.91783431627
+256 3776.76956583428
+512 7150.16333407075
+1024 13536.657403295
 };
-\addlegendentry{$\mathcal{O}(N^{0.56})$}
+\addlegendentry{$\mathcal{O}(N^{0.92})$}
 \addplot [semithick, color3, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 -24
-128 -49
-256 -98
-512 -197
-1024 -395
+64 0
+128 -256
+256 -1280
+512 -4608
+1024 -17408
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color3, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 390
-128 795
-256 1602
-512 3213
-1024 6433
+64 512
+128 2048
+256 7424
+512 27136
+1024 105472
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color3, dashed]
 table {%
-64 184.257482054589
-128 371.17335093639
-256 747.701829576353
-512 1506.1911760137
-1024 3034.11302335173
+64 248.083421463673
+128 894.626782380013
+256 3226.16108335482
+512 11634.030570898
+1024 41954.0946119901
 };
-\addlegendentry{$\mathcal{O}(N^{1.01})$}
+\addlegendentry{$\mathcal{O}(N^{1.85})$}
 \addplot [semithick, color4, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 -19769
-128 -42843
-256 -85685
-512 -168068
-1024 -336136
+64 -128
+128 0
+256 0
+512 512
+1024 3072
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color4, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 73983
-128 160295
-256 320591
-512 628854
-1024 1257710
+64 1792
+128 4352
+256 21504
+512 83456
+1024 269312
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color4, dashed]
 table {%
-64 28096.6033866764
-128 56767.7209967279
-256 114696.218002298
-512 231737.723358473
-1024 468213.977432909
+64 735.537947946622
+128 2741.27894438682
+256 10216.4820617574
+512 38075.8426397784
+1024 141904.990775248
 };
-\addlegendentry{$\mathcal{O}(N^{1.01})$}
+\addlegendentry{$\mathcal{O}(N^{1.90})$}
 \addplot [semithick, color5, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 -5465433
-128 -11080996
-256 -22249255
-512 -44585795
-1024 -89258868
+64 -127133329088
+128 -431232244480
+256 -1754094288640
+512 -7428675943424
+1024 -32209042950144
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color5, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
-64 19569245
-128 39621344
-256 79554667
-512 159421303
-1024 319154580
+64 410881167424
+128 1513301093120
+256 5995144783104
+512 24501452094464
+1024 100217079834624
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color5, dashed]
 table {%
-64 7080901.77376523
-128 14222932.0494127
-256 28568648.8169772
-512 57383927.0547227
-1024 115263242.070619
+64 139127871194.404
+128 548459546962.973
+256 2162096437416.98
+512 8523255781719.13
+1024 33599745073072.3
 };
-\addlegendentry{$\mathcal{O}(N^{1.01})$}
+\addlegendentry{$\mathcal{O}(N^{1.98})$}
 \addplot [semithick, color6, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 64 0
 128 0
 256 0
-512 -1
-1024 -2
+512 0
+1024 0
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color6, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 64 0
-128 2
-256 4
-512 9
-1024 20
+128 0
+256 0
+512 0
+1024 0
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color6, dashed]
 table {%
 64 nan
@@ -363,67 +363,67 @@ table {%
 \addlegendentry{$\mathcal{O}(N^{nan})$}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
 table {%
-64 49845
-128 177276
-256 619729
-512 2146460
-1024 7387615
+64 1160704
+128 5103104
+256 21529856
+512 91001856
+1024 387944448
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
 table {%
-64 1334
-128 2764
-256 5633
-512 11379
-1024 22882
+64 19776
+128 60544
+256 200704
+512 724480
+1024 2771968
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
 table {%
-64 123
-128 187
-256 277
-512 405
-1024 587
+64 1024
+128 2048
+256 3840
+512 7168
+1024 13312
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color3, mark=*, mark size=3, mark options={solid}]
 table {%
-64 183
-128 373
-256 752
-512 1508
-1024 3019
+64 256
+128 896
+256 3072
+512 11264
+1024 44032
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color4, mark=*, mark size=3, mark options={solid}]
 table {%
-64 27107
-128 58726
-256 117453
-512 230393
-1024 460787
+64 832
+128 2176
+256 10752
+512 41984
+1024 136192
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color5, mark=*, mark size=3, mark options={solid}]
 table {%
-64 7051906
-128 14270174
-256 28652706
-512 57417754
-1024 114947856
+64 141873919168
+128 541034424320
+256 2120525247232
+512 8536388075520
+1024 34004018442240
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \addplot [semithick, color6, mark=*, mark size=3, mark options={solid}]
 table {%
 64 0
-128 1
-256 2
-512 4
-1024 9
+128 0
+256 0
+512 0
+1024 0
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -446,7 +446,7 @@ Hostname: lyelaptop};
 
 %% INCLUDE THE COMMENTS AT THE END WHEN COPYING
 %%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%
-%% $T=0$, $p=2$
+%% $T=1$, $p=3$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% script name: bv.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
@@ -458,7 +458,7 @@ Hostname: lyelaptop};
 %% GIT git_short_commit : 94245
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-18 15:48:38.073316
+%% generated_on_date : 2019-10-18 15:50:38.154367
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-48d9ea64-9479-462f-9854-f71975d72c74.json
