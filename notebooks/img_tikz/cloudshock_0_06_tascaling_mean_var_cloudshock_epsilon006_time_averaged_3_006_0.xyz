@@ -1,4 +1,4 @@
-% This file was created by matplotlib2tikz v0.6.18.
+% This file was created by tikzplotlib v0.8.2.
 \begin{tikzpicture}
 
 \definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
@@ -9,343 +9,402 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{$N=128$},{$\mathcal{O}(h^{0.33\pm0.013})$},{$N=256$},{$\mathcal{O}(h^{0.34\pm0.014})$},{$N=512$},{$\mathcal{O}(h^{0.35\pm0.016})$},{$N=1024$},{$\mathcal{O}(h^{0.35\pm0.016})$}},
 legend style={at={(0.97,0.03)}, anchor=south east, draw=white!80.0!black},
+log basis x={2},
+log basis y={2},
 tick align=outside,
 tick pos=left,
 title={Scaling for Cloudshock $\epsilon=0.06$ time averaged, $t=0.06,p=3$},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
-xlabel={$h$},
+xlabel={\(\displaystyle h\)},
 xmajorgrids,
 xmin=0.000849024539972736, xmax=0.0371037757401499,
 xmode=log,
+xtick style={color=black},
 y grid style={white!69.01960784313725!black},
-ylabel={$\left(\bar{S}^{3}_{1/N,N}(h)\right)^{\frac{1}{3}}$},
+ylabel={\(\displaystyle \left(\bar{S}^{3}_{1/N,N}(h)\right)^{\frac{1}{3}}\)},
 ymajorgrids,
 ymin=64.2607272184482, ymax=280.863416057805,
-ymode=log
+ymode=log,
+ytick style={color=black}
 ]
-\addlegendimage{no markers, color0}
-\addlegendimage{no markers, color0}
-\addlegendimage{no markers, color1}
-\addlegendimage{no markers, color1}
-\addlegendimage{no markers, color2}
-\addlegendimage{no markers, color2}
-\addlegendimage{no markers, color3}
-\addlegendimage{no markers, color3}
-\path [draw=color0, semithick] (axis cs:0.0104166666666667,140.431035149775)
+\path [draw=color0, semithick]
+(axis cs:0.0104166666666667,140.431035149775)
 --(axis cs:0.0104166666666667,155.114490704652);
 
-\path [draw=color0, semithick] (axis cs:0.0208333333333333,175.413660821751)
+\path [draw=color0, semithick]
+(axis cs:0.0208333333333333,175.413660821751)
 --(axis cs:0.0208333333333333,193.753816901041);
 
-\path [draw=color0, semithick] (axis cs:0.03125,200.817497943785)
+\path [draw=color0, semithick]
+(axis cs:0.03125,200.817497943785)
 --(axis cs:0.03125,222.268467228321);
 
-\path [draw=color1, semithick] (axis cs:0.00446428571428571,110.24449739442)
+\path [draw=color1, semithick]
+(axis cs:0.00446428571428571,110.24449739442)
 --(axis cs:0.00446428571428571,122.94776801876);
 
-\path [draw=color1, semithick] (axis cs:0.00892857142857143,138.441698244439)
+\path [draw=color1, semithick]
+(axis cs:0.00892857142857143,138.441698244439)
 --(axis cs:0.00892857142857143,154.013746615455);
 
-\path [draw=color1, semithick] (axis cs:0.0133928571428571,159.246955535367)
+\path [draw=color1, semithick]
+(axis cs:0.0133928571428571,159.246955535367)
 --(axis cs:0.0133928571428571,177.057436281348);
 
-\path [draw=color1, semithick] (axis cs:0.0178571428571429,176.113347404156)
+\path [draw=color1, semithick]
+(axis cs:0.0178571428571429,176.113347404156)
 --(axis cs:0.0178571428571429,195.753672859325);
 
-\path [draw=color1, semithick] (axis cs:0.0223214285714286,190.39817576219)
+\path [draw=color1, semithick]
+(axis cs:0.0223214285714286,190.39817576219)
 --(axis cs:0.0223214285714286,211.600116215958);
 
-\path [draw=color1, semithick] (axis cs:0.0267857142857143,202.835079804881)
+\path [draw=color1, semithick]
+(axis cs:0.0267857142857143,202.835079804881)
 --(axis cs:0.0267857142857143,225.404408786907);
 
-\path [draw=color1, semithick] (axis cs:0.03125,213.877863716609)
+\path [draw=color1, semithick]
+(axis cs:0.03125,213.877863716609)
 --(axis cs:0.03125,237.668890002574);
 
-\path [draw=color2, semithick] (axis cs:0.00208333333333333,87.1191875706676)
+\path [draw=color2, semithick]
+(axis cs:0.00208333333333333,87.1191875706676)
 --(axis cs:0.00208333333333333,98.3237396820566);
 
-\path [draw=color2, semithick] (axis cs:0.00416666666666667,109.885552917749)
+\path [draw=color2, semithick]
+(axis cs:0.00416666666666667,109.885552917749)
 --(axis cs:0.00416666666666667,123.848050185177);
 
-\path [draw=color2, semithick] (axis cs:0.00625,126.931851676533)
+\path [draw=color2, semithick]
+(axis cs:0.00625,126.931851676533)
 --(axis cs:0.00625,143.054923370969);
 
-\path [draw=color2, semithick] (axis cs:0.00833333333333333,140.896248147129)
+\path [draw=color2, semithick]
+(axis cs:0.00833333333333333,140.896248147129)
 --(axis cs:0.00833333333333333,158.764546378027);
 
-\path [draw=color2, semithick] (axis cs:0.0104166666666667,152.800172739512)
+\path [draw=color2, semithick]
+(axis cs:0.0104166666666667,152.800172739512)
 --(axis cs:0.0104166666666667,172.133486612904);
 
-\path [draw=color2, semithick] (axis cs:0.0125,163.203778193429)
+\path [draw=color2, semithick]
+(axis cs:0.0125,163.203778193429)
 --(axis cs:0.0125,183.795902740387);
 
-\path [draw=color2, semithick] (axis cs:0.0145833333333333,172.459589629179)
+\path [draw=color2, semithick]
+(axis cs:0.0145833333333333,172.459589629179)
 --(axis cs:0.0145833333333333,194.151268294513);
 
-\path [draw=color2, semithick] (axis cs:0.0166666666666667,180.808306283184)
+\path [draw=color2, semithick]
+(axis cs:0.0166666666666667,180.808306283184)
 --(axis cs:0.0166666666666667,203.472467823759);
 
-\path [draw=color2, semithick] (axis cs:0.01875,188.422973400588)
+\path [draw=color2, semithick]
+(axis cs:0.01875,188.422973400588)
 --(axis cs:0.01875,211.955102641465);
 
-\path [draw=color2, semithick] (axis cs:0.0208333333333333,195.432274584048)
+\path [draw=color2, semithick]
+(axis cs:0.0208333333333333,195.432274584048)
 --(axis cs:0.0208333333333333,219.744193204231);
 
-\path [draw=color2, semithick] (axis cs:0.0229166666666667,201.934366414843)
+\path [draw=color2, semithick]
+(axis cs:0.0229166666666667,201.934366414843)
 --(axis cs:0.0229166666666667,226.950692101092);
 
-\path [draw=color2, semithick] (axis cs:0.025,208.005707574206)
+\path [draw=color2, semithick]
+(axis cs:0.025,208.005707574206)
 --(axis cs:0.025,233.661560378253);
 
-\path [draw=color2, semithick] (axis cs:0.0270833333333333,213.706655623981)
+\path [draw=color2, semithick]
+(axis cs:0.0270833333333333,213.706655623981)
 --(axis cs:0.0270833333333333,239.946124334104);
 
-\path [draw=color2, semithick] (axis cs:0.0291666666666667,219.085394598481)
+\path [draw=color2, semithick]
+(axis cs:0.0291666666666667,219.085394598481)
 --(axis cs:0.0291666666666667,245.86053867484);
 
-\path [draw=color2, semithick] (axis cs:0.03125,224.181045142408)
+\path [draw=color2, semithick]
+(axis cs:0.03125,224.181045142408)
 --(axis cs:0.03125,251.450893033965);
 
-\path [draw=color3, semithick] (axis cs:0.00100806451612903,68.7165780092129)
+\path [draw=color3, semithick]
+(axis cs:0.00100806451612903,68.7165780092129)
 --(axis cs:0.00100806451612903,78.7948433091016);
 
-\path [draw=color3, semithick] (axis cs:0.00201612903225806,87.0530604544051)
+\path [draw=color3, semithick]
+(axis cs:0.00201612903225806,87.0530604544051)
 --(axis cs:0.00201612903225806,99.7647510444562);
 
-\path [draw=color3, semithick] (axis cs:0.0030241935483871,100.951405953613)
+\path [draw=color3, semithick]
+(axis cs:0.0030241935483871,100.951405953613)
 --(axis cs:0.0030241935483871,115.789025087513);
 
-\path [draw=color3, semithick] (axis cs:0.00403225806451613,112.457673875437)
+\path [draw=color3, semithick]
+(axis cs:0.00403225806451613,112.457673875437)
 --(axis cs:0.00403225806451613,129.009382879788);
 
-\path [draw=color3, semithick] (axis cs:0.00504032258064516,122.346774491247)
+\path [draw=color3, semithick]
+(axis cs:0.00504032258064516,122.346774491247)
 --(axis cs:0.00504032258064516,140.327824621659);
 
-\path [draw=color3, semithick] (axis cs:0.00604838709677419,131.043341307852)
+\path [draw=color3, semithick]
+(axis cs:0.00604838709677419,131.043341307852)
 --(axis cs:0.00604838709677419,150.24939412131);
 
-\path [draw=color3, semithick] (axis cs:0.00705645161290323,138.816559735148)
+\path [draw=color3, semithick]
+(axis cs:0.00705645161290323,138.816559735148)
 --(axis cs:0.00705645161290323,159.093246266462);
 
-\path [draw=color3, semithick] (axis cs:0.00806451612903226,145.851381524193)
+\path [draw=color3, semithick]
+(axis cs:0.00806451612903226,145.851381524193)
 --(axis cs:0.00806451612903226,167.077119769751);
 
-\path [draw=color3, semithick] (axis cs:0.00907258064516129,152.281731334243)
+\path [draw=color3, semithick]
+(axis cs:0.00907258064516129,152.281731334243)
 --(axis cs:0.00907258064516129,174.357930458769);
 
-\path [draw=color3, semithick] (axis cs:0.0100806451612903,158.208211820916)
+\path [draw=color3, semithick]
+(axis cs:0.0100806451612903,158.208211820916)
 --(axis cs:0.0100806451612903,181.052902050337);
 
-\path [draw=color3, semithick] (axis cs:0.0110887096774194,163.70847064504)
+\path [draw=color3, semithick]
+(axis cs:0.0110887096774194,163.70847064504)
 --(axis cs:0.0110887096774194,187.251880972454);
 
-\path [draw=color3, semithick] (axis cs:0.0120967741935484,168.843641879897)
+\path [draw=color3, semithick]
+(axis cs:0.0120967741935484,168.843641879897)
 --(axis cs:0.0120967741935484,193.025377186929);
 
-\path [draw=color3, semithick] (axis cs:0.0131048387096774,173.662704805835)
+\path [draw=color3, semithick]
+(axis cs:0.0131048387096774,173.662704805835)
 --(axis cs:0.0131048387096774,198.430032791);
 
-\path [draw=color3, semithick] (axis cs:0.0141129032258065,178.205493466623)
+\path [draw=color3, semithick]
+(axis cs:0.0141129032258065,178.205493466623)
 --(axis cs:0.0141129032258065,203.512051540516);
 
-\path [draw=color3, semithick] (axis cs:0.0151209677419355,182.5048365052)
+\path [draw=color3, semithick]
+(axis cs:0.0151209677419355,182.5048365052)
 --(axis cs:0.0151209677419355,208.309347457785);
 
-\path [draw=color3, semithick] (axis cs:0.0161290322580645,186.587984679655)
+\path [draw=color3, semithick]
+(axis cs:0.0161290322580645,186.587984679655)
 --(axis cs:0.0161290322580645,212.853551453261);
 
-\path [draw=color3, semithick] (axis cs:0.0171370967741935,190.477661149568)
+\path [draw=color3, semithick]
+(axis cs:0.0171370967741935,190.477661149568)
 --(axis cs:0.0171370967741935,217.171678238981);
 
-\path [draw=color3, semithick] (axis cs:0.0181451612903226,194.193011022664)
+\path [draw=color3, semithick]
+(axis cs:0.0181451612903226,194.193011022664)
 --(axis cs:0.0181451612903226,221.286986085972);
 
-\path [draw=color3, semithick] (axis cs:0.0191532258064516,197.75043673268)
+\path [draw=color3, semithick]
+(axis cs:0.0191532258064516,197.75043673268)
 --(axis cs:0.0191532258064516,225.219435195518);
 
-\path [draw=color3, semithick] (axis cs:0.0201612903225806,201.16418838859)
+\path [draw=color3, semithick]
+(axis cs:0.0201612903225806,201.16418838859)
 --(axis cs:0.0201612903225806,228.986131530724);
 
-\path [draw=color3, semithick] (axis cs:0.0211693548387097,204.446722588139)
+\path [draw=color3, semithick]
+(axis cs:0.0211693548387097,204.446722588139)
 --(axis cs:0.0211693548387097,232.601857205038);
 
-\path [draw=color3, semithick] (axis cs:0.0221774193548387,207.608978889444)
+\path [draw=color3, semithick]
+(axis cs:0.0221774193548387,207.608978889444)
 --(axis cs:0.0221774193548387,236.079486698553);
 
-\path [draw=color3, semithick] (axis cs:0.0231854838709677,210.660605353509)
+\path [draw=color3, semithick]
+(axis cs:0.0231854838709677,210.660605353509)
 --(axis cs:0.0231854838709677,239.430236406533);
 
-\path [draw=color3, semithick] (axis cs:0.0241935483870968,213.610136056738)
+\path [draw=color3, semithick]
+(axis cs:0.0241935483870968,213.610136056738)
 --(axis cs:0.0241935483870968,242.663944546224);
 
-\path [draw=color3, semithick] (axis cs:0.0252016129032258,216.465153130952)
+\path [draw=color3, semithick]
+(axis cs:0.0252016129032258,216.465153130952)
 --(axis cs:0.0252016129032258,245.789326344368);
 
-\path [draw=color3, semithick] (axis cs:0.0262096774193548,219.232418350845)
+\path [draw=color3, semithick]
+(axis cs:0.0262096774193548,219.232418350845)
 --(axis cs:0.0262096774193548,248.814143116712);
 
-\path [draw=color3, semithick] (axis cs:0.0272177419354839,221.917961682741)
+\path [draw=color3, semithick]
+(axis cs:0.0272177419354839,221.917961682741)
 --(axis cs:0.0272177419354839,251.74536753029);
 
-\path [draw=color3, semithick] (axis cs:0.0282258064516129,224.527173493139)
+\path [draw=color3, semithick]
+(axis cs:0.0282258064516129,224.527173493139)
 --(axis cs:0.0282258064516129,254.58930958117);
 
-\path [draw=color3, semithick] (axis cs:0.0292338709677419,227.064928138755)
+\path [draw=color3, semithick]
+(axis cs:0.0292338709677419,227.064928138755)
 --(axis cs:0.0292338709677419,257.351640322109);
 
-\path [draw=color3, semithick] (axis cs:0.030241935483871,229.535687201401)
+\path [draw=color3, semithick]
+(axis cs:0.030241935483871,229.535687201401)
 --(axis cs:0.030241935483871,260.037404581346);
 
-\path [draw=color3, semithick] (axis cs:0.03125,231.943530587622)
+\path [draw=color3, semithick]
+(axis cs:0.03125,231.943530587622)
 --(axis cs:0.03125,262.65113729197);
 
 \addplot [semithick, color0, dashed]
-table [row sep=\\]{%
-0.0104166666666667	147.633482507224 \\
-0.0208333333333333	185.055953837534 \\
-0.03125	211.202244233455 \\
+table {%
+0.0104166666666667 147.633482507224
+0.0208333333333333 185.055953837534
+0.03125 211.202244233455
 };
+\addlegendentry{$\mathcal{O}(h^{0.33\pm0.013})$}
 \addplot [semithick, color1, dashed]
-table [row sep=\\]{%
-0.00446428571428571	116.035472206667 \\
-0.00892857142857143	146.964419564952 \\
-0.0133928571428571	168.749265793268 \\
-0.0178571428571429	186.137395809401 \\
-0.0223214285714286	200.849315011934 \\
-0.0267857142857143	213.728935020393 \\
-0.03125	225.260762572074 \\
+table {%
+0.00446428571428571 116.035472206667
+0.00892857142857143 146.964419564952
+0.0133928571428571 168.749265793268
+0.0178571428571429 186.137395809401
+0.0223214285714286 200.849315011934
+0.0267857142857143 213.728935020393
+0.03125 225.260762572074
 };
+\addlegendentry{$\mathcal{O}(h^{0.34\pm0.014})$}
 \addplot [semithick, color2, dashed]
-table [row sep=\\]{%
-0.00208333333333333	92.236991334577 \\
-0.00416666666666667	117.666707750964 \\
-0.00625	135.678956282255 \\
-0.00833333333333333	150.107390891886 \\
-0.0104166666666667	162.347453558817 \\
-0.0125	173.085612028578 \\
-0.0145833333333333	182.71686168169 \\
-0.0166666666666667	191.491962603881 \\
-0.01875	199.581305845793 \\
-0.0208333333333333	207.106607616086 \\
-0.0229166666666667	214.158217201226 \\
-0.025	220.80527380373 \\
-0.0270833333333333	227.10201185407 \\
-0.0291666666666667	233.091856679124 \\
-0.03125	238.810185970201 \\
+table {%
+0.00208333333333333 92.236991334577
+0.00416666666666667 117.666707750964
+0.00625 135.678956282255
+0.00833333333333333 150.107390891886
+0.0104166666666667 162.347453558817
+0.0125 173.085612028578
+0.0145833333333333 182.71686168169
+0.0166666666666667 191.491962603881
+0.01875 199.581305845793
+0.0208333333333333 207.106607616086
+0.0229166666666667 214.158217201226
+0.025 220.80527380373
+0.0270833333333333 227.10201185407
+0.0291666666666667 233.091856679124
+0.03125 238.810185970201
 };
+\addlegendentry{$\mathcal{O}(h^{0.35\pm0.016})$}
 \addplot [semithick, color3, dashed]
-table [row sep=\\]{%
-0.00100806451612903	74.2242192177135 \\
-0.00201612903225806	94.8967263086714 \\
-0.0030241935483871	109.564535294078 \\
-0.00403225806451613	121.32682241747 \\
-0.00504032258064516	131.313189956744 \\
-0.00604838709677419	140.079826079971 \\
-0.00705645161290323	147.946981554506 \\
-0.00806451612903226	155.118078468163 \\
-0.00907258064516129	161.731406820141 \\
-0.0100806451612903	167.885792257278 \\
-0.0110887096774194	173.654618992676 \\
-0.0120967741935484	179.094061978424 \\
-0.0131048387096774	184.248199096149 \\
-0.0141129032258065	189.152332819979 \\
-0.0151209677419355	193.835230430557 \\
-0.0161290322580645	198.320682831883 \\
-0.0171370967741935	202.628618465272 \\
-0.0181451612903226	206.775917756836 \\
-0.0191532258064516	210.777020616698 \\
-0.0201612903225806	214.644387598371 \\
-0.0211693548387097	218.388855457474 \\
-0.0221774193548387	222.019915122958 \\
-0.0231854838709677	225.54593173729 \\
-0.0241935483870968	228.974320810623 \\
-0.0252016129032258	232.311690690049 \\
-0.0262096774193548	235.563958863716 \\
-0.0272177419354839	238.736447718367 \\
-0.0282258064516129	241.833964000534 \\
-0.0292338709677419	244.860865233073 \\
-0.030241935483871	247.821115600999 \\
-0.03125	250.718333269002 \\
+table {%
+0.00100806451612903 74.2242192177135
+0.00201612903225806 94.8967263086714
+0.0030241935483871 109.564535294078
+0.00403225806451613 121.32682241747
+0.00504032258064516 131.313189956744
+0.00604838709677419 140.079826079971
+0.00705645161290323 147.946981554506
+0.00806451612903226 155.118078468163
+0.00907258064516129 161.731406820141
+0.0100806451612903 167.885792257278
+0.0110887096774194 173.654618992676
+0.0120967741935484 179.094061978424
+0.0131048387096774 184.248199096149
+0.0141129032258065 189.152332819979
+0.0151209677419355 193.835230430557
+0.0161290322580645 198.320682831883
+0.0171370967741935 202.628618465272
+0.0181451612903226 206.775917756836
+0.0191532258064516 210.777020616698
+0.0201612903225806 214.644387598371
+0.0211693548387097 218.388855457474
+0.0221774193548387 222.019915122958
+0.0231854838709677 225.54593173729
+0.0241935483870968 228.974320810623
+0.0252016129032258 232.311690690049
+0.0262096774193548 235.563958863716
+0.0272177419354839 238.736447718367
+0.0282258064516129 241.833964000534
+0.0292338709677419 244.860865233073
+0.030241935483871 247.821115600999
+0.03125 250.718333269002
 };
-\addplot [semithick, color0, forget plot]
-table [row sep=\\]{%
-0.0104166666666667	147.772762927214 \\
-0.0208333333333333	184.583738861396 \\
-0.03125	211.542982586053 \\
+\addlegendentry{$\mathcal{O}(h^{0.35\pm0.016})$}
+\addplot [semithick, color0]
+table {%
+0.0104166666666667 147.772762927214
+0.0208333333333333 184.583738861396
+0.03125 211.542982586053
 };
-\addplot [semithick, color1, forget plot]
-table [row sep=\\]{%
-0.00446428571428571	116.59613270659 \\
-0.00892857142857143	146.227722429947 \\
-0.0133928571428571	168.152195908357 \\
-0.0178571428571429	185.933510131741 \\
-0.0223214285714286	200.999145989074 \\
-0.0267857142857143	214.119744295894 \\
-0.03125	225.773376859592 \\
+\addlegendentry{$N=1024$}
+\addplot [semithick, color1]
+table {%
+0.00446428571428571 116.59613270659
+0.00892857142857143 146.227722429947
+0.0133928571428571 168.152195908357
+0.0178571428571429 185.933510131741
+0.0223214285714286 200.999145989074
+0.0267857142857143 214.119744295894
+0.03125 225.773376859592
 };
-\addplot [semithick, color2, forget plot]
-table [row sep=\\]{%
-0.00208333333333333	92.7214636263621 \\
-0.00416666666666667	116.866801551463 \\
-0.00625	134.993387523751 \\
-0.00833333333333333	149.830397262578 \\
-0.0104166666666667	162.466829676208 \\
-0.0125	173.499840466908 \\
-0.0145833333333333	183.305428961846 \\
-0.0166666666666667	192.140387053471 \\
-0.01875	200.189038021026 \\
-0.0208333333333333	207.58823389414 \\
-0.0229166666666667	214.442529257968 \\
-0.025	220.833633976229 \\
-0.0270833333333333	226.826389979043 \\
-0.0291666666666667	232.472966636661 \\
-0.03125	237.815969088186 \\
+\addlegendentry{$N=1024$}
+\addplot [semithick, color2]
+table {%
+0.00208333333333333 92.7214636263621
+0.00416666666666667 116.866801551463
+0.00625 134.993387523751
+0.00833333333333333 149.830397262578
+0.0104166666666667 162.466829676208
+0.0125 173.499840466908
+0.0145833333333333 183.305428961846
+0.0166666666666667 192.140387053471
+0.01875 200.189038021026
+0.0208333333333333 207.58823389414
+0.0229166666666667 214.442529257968
+0.025 220.833633976229
+0.0270833333333333 226.826389979043
+0.0291666666666667 232.472966636661
+0.03125 237.815969088186
 };
-\addplot [semithick, color3, forget plot]
-table [row sep=\\]{%
-0.00100806451612903	73.7557106591573 \\
-0.00201612903225806	93.4089057494307 \\
-0.0030241935483871	108.370215520563 \\
-0.00403225806451613	120.733528377613 \\
-0.00504032258064516	131.337299556453 \\
-0.00604838709677419	140.646367714581 \\
-0.00705645161290323	148.954903000805 \\
-0.00806451612903226	156.464250646972 \\
-0.00907258064516129	163.319830896506 \\
-0.0100806451612903	169.630556935627 \\
-0.0110887096774194	175.480175808747 \\
-0.0120967741935484	180.934509533413 \\
-0.0131048387096774	186.046368798418 \\
-0.0141129032258065	190.858772503569 \\
-0.0151209677419355	195.407091981492 \\
-0.0161290322580645	199.720768066458 \\
-0.0171370967741935	203.824669694275 \\
-0.0181451612903226	207.739998554318 \\
-0.0191532258064516	211.484935964099 \\
-0.0201612903225806	215.075159959657 \\
-0.0211693548387097	218.524289896588 \\
-0.0221774193548387	221.844232793999 \\
-0.0231854838709677	225.045420880021 \\
-0.0241935483870968	228.137040301481 \\
-0.0252016129032258	231.12723973766 \\
-0.0262096774193548	234.023280733779 \\
-0.0272177419354839	236.831664606515 \\
-0.0282258064516129	239.558241537155 \\
-0.0292338709677419	242.208284230432 \\
-0.030241935483871	244.786545891373 \\
-0.03125	247.297333939796 \\
+\addlegendentry{$N=1024$}
+\addplot [semithick, color3]
+table {%
+0.00100806451612903 73.7557106591573
+0.00201612903225806 93.4089057494307
+0.0030241935483871 108.370215520563
+0.00403225806451613 120.733528377613
+0.00504032258064516 131.337299556453
+0.00604838709677419 140.646367714581
+0.00705645161290323 148.954903000805
+0.00806451612903226 156.464250646972
+0.00907258064516129 163.319830896506
+0.0100806451612903 169.630556935627
+0.0110887096774194 175.480175808747
+0.0120967741935484 180.934509533413
+0.0131048387096774 186.046368798418
+0.0141129032258065 190.858772503569
+0.0151209677419355 195.407091981492
+0.0161290322580645 199.720768066458
+0.0171370967741935 203.824669694275
+0.0181451612903226 207.739998554318
+0.0191532258064516 211.484935964099
+0.0201612903225806 215.075159959657
+0.0211693548387097 218.524289896588
+0.0221774193548387 221.844232793999
+0.0231854838709677 225.045420880021
+0.0241935483870968 228.137040301481
+0.0252016129032258 231.12723973766
+0.0262096774193548 234.023280733779
+0.0272177419354839 236.831664606515
+0.0282258064516129 239.558241537155
+0.0292338709677419 242.208284230432
+0.030241935483871 244.786545891373
+0.03125 247.297333939796
 };
+\addlegendentry{$N=1024$}
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0,
   align=right
-]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 893cc94705922f7ef9502f166adc5fb8ba574643
+]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
+Commit: aa357ef8fb65ab5c406c5b3f36fb5db8132c21df
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -353,7 +412,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @893cc};
+]{@aa357};
 \end{axis}
 
 \end{tikzpicture}
@@ -365,20 +424,20 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 893cc94705922f7ef9502f166adc5fb8ba574643
+%% GIT git_commit : aa357ef8fb65ab5c406c5b3f36fb5db8132c21df
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 893cc
+%% GIT git_short_commit : aa357
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-16 02:39:27.723029
+%% generated_on_date : 2019-10-17 21:54:01.370897
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-db4c72bf-123e-4c67-92c4-a470da928765.json
 %% python_version: 
-%%    /usr/bin/python3 (Version: 3.7.4 (default, Jul 16 2019, 07:12:58) 
-%%    [GCC 9.1.0])
+%%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
+%%    [GCC 9.2.0])
 %% python modules:
 %%     sys: Unknown (Unknown)
 %%     builtins: Unknown (Unknown)
@@ -1371,19 +1430,23 @@ Hostname: lyelaptop};
 %%     ipykernel.pylab.config: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/config.py)
 %%     ipykernel.eventloops: Unknown (/usr/lib/python3.7/site-packages/ipykernel/eventloops.py)
 %%     plot_info: 1.17.2 (../python/plot_info.py)
-%%     matplotlib2tikz: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__init__.py)
-%%     matplotlib2tikz.__about__: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__about__.py)
-%%     matplotlib2tikz.save: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/save.py)
-%%     matplotlib2tikz.axes: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/axes.py)
-%%     matplotlib2tikz.color: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/color.py)
-%%     matplotlib2tikz.legend: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/legend.py)
-%%     matplotlib2tikz.line2d: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/line2d.py)
-%%     matplotlib2tikz.path: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/path.py)
-%%     matplotlib2tikz.files: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/files.py)
-%%     matplotlib2tikz.image: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/image.py)
-%%     matplotlib2tikz.quadmesh: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/quadmesh.py)
-%%     matplotlib2tikz.patch: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/patch.py)
-%%     matplotlib2tikz.text: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/text.py)
+%%     tikzplotlib: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/__init__.py)
+%%     tikzplotlib.__about__: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/__about__.py)
+%%     tikzplotlib.save: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/save.py)
+%%     tikzplotlib.axes: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/axes.py)
+%%     matplotlib.backends.backend_pgf: 3.1.1 (/usr/lib/python3.7/site-packages/matplotlib/backends/backend_pgf.py)
+%%     matplotlib._png: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_png.cpython-37m-x86_64-linux-gnu.so)
+%%     matplotlib.backends.backend_mixed: Unknown (/usr/lib/python3.7/site-packages/matplotlib/backends/backend_mixed.py)
+%%     tikzplotlib.color: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/color.py)
+%%     tikzplotlib.image: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/image.py)
+%%     tikzplotlib.files: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/files.py)
+%%     tikzplotlib.legend: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/legend.py)
+%%     tikzplotlib.line2d: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/line2d.py)
+%%     tikzplotlib.path: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/path.py)
+%%     tikzplotlib.util: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/util.py)
+%%     tikzplotlib.patch: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/patch.py)
+%%     tikzplotlib.quadmesh: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/quadmesh.py)
+%%     tikzplotlib.text: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/text.py)
 %%     git: 3.0.2 (/usr/lib/python3.7/site-packages/git/__init__.py)
 %%     gitdb: 2.0.6 (/usr/lib/python3.7/site-packages/gitdb/__init__.py)
 %%     smmap: 2.0.5 (/usr/lib/python3.7/site-packages/smmap/__init__.py)
@@ -1452,7 +1515,19 @@ Hostname: lyelaptop};
 %%     cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/__init__.py)
 %%     cftime._cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/_cftime.cpython-37m-x86_64-linux-gnu.so)
 %%     _cython_0_29_1: Unknown (Unknown)
-%%     matplotlib._png: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_png.cpython-37m-x86_64-linux-gnu.so)
+%%     matplotlib2tikz: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__init__.py)
+%%     matplotlib2tikz.__about__: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__about__.py)
+%%     matplotlib2tikz.save: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/save.py)
+%%     matplotlib2tikz.axes: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/axes.py)
+%%     matplotlib2tikz.color: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/color.py)
+%%     matplotlib2tikz.legend: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/legend.py)
+%%     matplotlib2tikz.line2d: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/line2d.py)
+%%     matplotlib2tikz.path: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/path.py)
+%%     matplotlib2tikz.files: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/files.py)
+%%     matplotlib2tikz.image: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/image.py)
+%%     matplotlib2tikz.quadmesh: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/quadmesh.py)
+%%     matplotlib2tikz.patch: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/patch.py)
+%%     matplotlib2tikz.text: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/text.py)
 %%     PIL.BmpImagePlugin: 0.7 (/usr/lib/python3.7/site-packages/PIL/BmpImagePlugin.py)
 %%     PIL.ImageFile: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageFile.py)
 %%     PIL.ImagePalette: Unknown (/usr/lib/python3.7/site-packages/PIL/ImagePalette.py)
