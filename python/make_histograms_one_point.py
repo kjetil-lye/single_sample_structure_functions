@@ -24,6 +24,8 @@ def load(filename, point):
     data = []
     number_of_variables = len(variables)
     with netCDF4.Dataset(filename) as f:
+        for attr in f.ncattrs():
+            plot_info.add_additional_plot_parameters(filename.replace("/", "_") + "_" + attr, f.getncattr(attr))
         number_of_samples = (len(list(f.variables.keys()))-1)//number_of_variables
         data = np.zeros((number_of_samples, number_of_variables))
 
