@@ -56,8 +56,8 @@ def compute_wasserstein_one_point(data, reference_solution, exponent):
     
     wasserstein_sum = 0.0
     
-    for i in range(reference_solution.shape[0]):
-        for j in range(reference_solution.shape[1]):
+    for i in range(reference_solution.shape[1]):
+        for j in range(reference_solution.shape[2]):
             xs[:,:] = reference_solution[:,i, j,:]
 
             xt[:,:] = data[:, i//factor_reference_data, j//factor_reference_data, :]
