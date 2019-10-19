@@ -65,7 +65,7 @@ def draw_histograms(basename, resolutions, point, title):
 
         for m, resolution in enumerate(resolutions):
             plt.hist(all_data[m,:,n], range=[min_value, max_value], bins=32)
-            plt.title(f'Histogram for {title}\nat $({point[0]}, {point[1]})$, $T={time}$')
+            plt.title(f'Histogram for {title.replace("_", " ")}\nat $({point[0]}, {point[1]})$, $T={time}$')
             plt.xlabel(f'Value of ${latex_variables[variable]}^{{{resolution}}}({point[0]:.2f}, {point[1]:.2f})$')
 
             plot_info.showAndSave(f'histogram_{title}_{variable}_{resolution}_{time}_{point[0]}_{point[1]}')

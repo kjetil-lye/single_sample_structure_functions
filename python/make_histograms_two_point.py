@@ -39,7 +39,7 @@ def draw_histograms(basename, resolutions, point_a, point_b, title):
             
             plt.pcolormesh(x, y, hist)
             plt.colorbar()
-            plt.title(f'Two point histogram for {title}\nat $({point_a[0]}, {point_a[1]})\\times ({point_b[0]}, {point_b[1]})$, $T={time}$')
+            plt.title(f'Two point histogram for {title.replace("_", " ")}\nat $({point_a[0]}, {point_a[1]})\\times ({point_b[0]}, {point_b[1]})$, $T={time}$')
             plt.xlabel(f'Value of ${latex_variables[variable]}^{{{resolution}}}({point_a[0]:.2f}, {point_a[1]:.2f})$')
             plt.ylabel(f'Value of ${latex_variables[variable]}^{{{resolution}}}({point_b[0]:.2f}, {point_b[1]:.2f})$')
 
