@@ -84,7 +84,7 @@ def compute_wasserstein_two_point(data, reference_solution, exponent,
     
     wasserstein_sum /= number_of_cells_in_each_direction**4
     
-    return wasserstein_sum**(1/p)
+    return wasserstein_sum**(1/exponent)
             
     
     
