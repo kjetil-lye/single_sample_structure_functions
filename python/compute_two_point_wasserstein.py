@@ -70,8 +70,8 @@ def compute_wasserstein_two_point(data, reference_solution, exponent,
                     jp = int(jp_coarse * reference_solution.shape[1] / number_of_cells_in_each_direction)
                     
                     
-                     xs[:,number_of_variables:] = reference_solution[:,ip, jp,:]
-                     xt[:,number_of_variables:] = data[:, ip//factor_reference_data, jp//factor_reference_data, :]
+                    xs[:,number_of_variables:] = reference_solution[:,ip, jp,:]
+                    xt[:,number_of_variables:] = data[:, ip//factor_reference_data, jp//factor_reference_data, :]
            
                     
             
