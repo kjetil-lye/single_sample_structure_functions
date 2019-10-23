@@ -1,4 +1,4 @@
-% This file was created by matplotlib2tikz v0.6.18.
+% This file was created by tikzplotlib v0.8.2.
 \begin{tikzpicture}
 
 \definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
@@ -9,343 +9,402 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{$N=128$},{$\mathcal{O}(h^{0.68\pm0.008})$},{$N=256$},{$\mathcal{O}(h^{0.71\pm0.009})$},{$N=512$},{$\mathcal{O}(h^{0.74\pm0.012})$},{$N=1024$},{$\mathcal{O}(h^{0.76\pm0.017})$}},
 legend style={at={(0.97,0.03)}, anchor=south east, draw=white!80.0!black},
+log basis x={2},
+log basis y={2},
 tick align=outside,
 tick pos=left,
 title={Scaling for Cloudshock $\epsilon=0.06$ time averaged, $t=0.06,p=1$},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
-xlabel={$h$},
+xlabel={\(\displaystyle h\)},
 xmajorgrids,
 xmin=0.000849024539972736, xmax=0.0371037757401499,
 xmode=log,
+xtick style={color=black},
 y grid style={white!69.01960784313725!black},
-ylabel={$\bar{S}^{1}_{1/N,N}(h)$},
+ylabel={\(\displaystyle \bar{S}^{1}_{1/N,N}(h)\)},
 ymajorgrids,
-ymin=3.9808578211827, ymax=77.6109653396887,
-ymode=log
+ymin=2.60237147242088, ymax=36.7920845679136,
+ymode=log,
+ytick style={color=black}
 ]
-\addlegendimage{no markers, color0}
-\addlegendimage{no markers, color0}
-\addlegendimage{no markers, color1}
-\addlegendimage{no markers, color1}
-\addlegendimage{no markers, color2}
-\addlegendimage{no markers, color2}
-\addlegendimage{no markers, color3}
-\addlegendimage{no markers, color3}
-\path [draw=color0, semithick] (axis cs:0.0104166666666667,24.000791316899)
---(axis cs:0.0104166666666667,27.2250044434516);
+\path [draw=color0, semithick]
+(axis cs:0.0104166666666667,13.557343627843)
+--(axis cs:0.0104166666666667,14.6728796399356);
 
-\path [draw=color0, semithick] (axis cs:0.0208333333333333,38.2455262764103)
---(axis cs:0.0208333333333333,43.0850131183752);
+\path [draw=color0, semithick]
+(axis cs:0.0208333333333333,20.091134714425)
+--(axis cs:0.0208333333333333,21.7084795660116);
 
-\path [draw=color0, semithick] (axis cs:0.03125,50.8957163205853)
---(axis cs:0.03125,57.1533002204047);
+\path [draw=color0, semithick]
+(axis cs:0.03125,25.7552659393115)
+--(axis cs:0.03125,27.7749657376041);
 
-\path [draw=color1, semithick] (axis cs:0.00446428571428571,13.6323787136084)
---(axis cs:0.00446428571428571,15.5784298269604);
+\path [draw=color1, semithick]
+(axis cs:0.00446428571428571,7.8913999026858)
+--(axis cs:0.00446428571428571,8.63253320590708);
 
-\path [draw=color1, semithick] (axis cs:0.00892857142857143,21.7267204561864)
---(axis cs:0.00892857142857143,24.6516576462734);
+\path [draw=color1, semithick]
+(axis cs:0.00892857142857143,11.8619746563334)
+--(axis cs:0.00892857142857143,12.9618219475297);
 
-\path [draw=color1, semithick] (axis cs:0.0133928571428571,29.016025744369)
---(axis cs:0.0133928571428571,32.7969994069251);
+\path [draw=color1, semithick]
+(axis cs:0.0133928571428571,15.3725143129516)
+--(axis cs:0.0133928571428571,16.7735356659261);
 
-\path [draw=color1, semithick] (axis cs:0.0178571428571429,35.8948129988821)
---(axis cs:0.0178571428571429,40.4627070973281);
+\path [draw=color1, semithick]
+(axis cs:0.0178571428571429,18.6229910518633)
+--(axis cs:0.0178571428571429,20.2906231731321);
 
-\path [draw=color1, semithick] (axis cs:0.0223214285714286,42.4719427552303)
---(axis cs:0.0223214285714286,47.7733422492287);
+\path [draw=color1, semithick]
+(axis cs:0.0223214285714286,21.672173162726)
+--(axis cs:0.0223214285714286,23.5809978247135);
 
-\path [draw=color1, semithick] (axis cs:0.0267857142857143,48.7978153491955)
---(axis cs:0.0267857142857143,54.7887311707107);
+\path [draw=color1, semithick]
+(axis cs:0.0267857142857143,24.5546013940384)
+--(axis cs:0.0267857142857143,26.6850615162111);
 
-\path [draw=color1, semithick] (axis cs:0.03125,54.9033881837962)
---(axis cs:0.03125,61.5478306021698);
+\path [draw=color1, semithick]
+(axis cs:0.03125,27.2959286523351)
+--(axis cs:0.03125,29.632466242473);
 
-\path [draw=color2, semithick] (axis cs:0.00208333333333333,7.87108098053607)
---(axis cs:0.00208333333333333,9.1271131747436);
+\path [draw=color2, semithick]
+(axis cs:0.00208333333333333,4.71220649035519)
+--(axis cs:0.00208333333333333,5.14076761969492);
 
-\path [draw=color2, semithick] (axis cs:0.00416666666666667,12.5179802556969)
---(axis cs:0.00416666666666667,14.4196285364575);
+\path [draw=color2, semithick]
+(axis cs:0.00416666666666667,7.14207496034494)
+--(axis cs:0.00416666666666667,7.79653124619046);
 
-\path [draw=color2, semithick] (axis cs:0.00625,16.7427884146657)
---(axis cs:0.00625,19.2169438757569);
+\path [draw=color2, semithick]
+(axis cs:0.00625,9.3219621297441)
+--(axis cs:0.00625,10.1765411544925);
 
-\path [draw=color2, semithick] (axis cs:0.00833333333333333,20.7615697944785)
---(axis cs:0.00833333333333333,23.7661130315321);
+\path [draw=color2, semithick]
+(axis cs:0.00833333333333333,11.3623646704919)
+--(axis cs:0.00833333333333333,12.4021410137069);
 
-\path [draw=color2, semithick] (axis cs:0.0104166666666667,24.6289979577177)
---(axis cs:0.0104166666666667,28.1291500899409);
+\path [draw=color2, semithick]
+(axis cs:0.0104166666666667,13.2910186815499)
+--(axis cs:0.0104166666666667,14.5038070125564);
 
-\path [draw=color2, semithick] (axis cs:0.0125,28.3684618804276)
---(axis cs:0.0125,32.3330041843824);
+\path [draw=color2, semithick]
+(axis cs:0.0125,15.123327684267)
+--(axis cs:0.0125,16.4982489818507);
 
-\path [draw=color2, semithick] (axis cs:0.0145833333333333,31.9940963184427)
---(axis cs:0.0145833333333333,36.3944946292298);
+\path [draw=color2, semithick]
+(axis cs:0.0145833333333333,16.8711967628881)
+--(axis cs:0.0145833333333333,18.3983442423498);
 
-\path [draw=color2, semithick] (axis cs:0.0166666666666667,35.5167010965989)
---(axis cs:0.0166666666666667,40.3270449497871);
+\path [draw=color2, semithick]
+(axis cs:0.0166666666666667,18.5446672268057)
+--(axis cs:0.0166666666666667,20.2149778343877);
 
-\path [draw=color2, semithick] (axis cs:0.01875,38.9453849248453)
---(axis cs:0.01875,44.1423558971459);
+\path [draw=color2, semithick]
+(axis cs:0.01875,20.1523267491797)
+--(axis cs:0.01875,21.9575428950455);
 
-\path [draw=color2, semithick] (axis cs:0.0208333333333333,42.2882677950566)
---(axis cs:0.0208333333333333,47.850999992608);
+\path [draw=color2, semithick]
+(axis cs:0.0208333333333333,21.701518818997)
+--(axis cs:0.0208333333333333,23.634167016974);
 
-\path [draw=color2, semithick] (axis cs:0.0229166666666667,45.5525642413215)
---(axis cs:0.0229166666666667,51.4625460238);
+\path [draw=color2, semithick]
+(axis cs:0.0229166666666667,23.1985203724676)
+--(axis cs:0.0229166666666667,25.2518789393199);
 
-\path [draw=color2, semithick] (axis cs:0.025,48.7447378377312)
---(axis cs:0.025,54.9857040181829);
+\path [draw=color2, semithick]
+(axis cs:0.025,24.648716042672)
+--(axis cs:0.025,26.816788385533);
 
-\path [draw=color2, semithick] (axis cs:0.0270833333333333,51.8704943678052)
---(axis cs:0.0270833333333333,58.4283136558258);
+\path [draw=color2, semithick]
+(axis cs:0.0270833333333333,26.0567433363518)
+--(axis cs:0.0270833333333333,28.3342113736318);
 
-\path [draw=color2, semithick] (axis cs:0.0291666666666667,54.9348884831864)
---(axis cs:0.0291666666666667,61.797416997911);
+\path [draw=color2, semithick]
+(axis cs:0.0291666666666667,27.426601767251)
+--(axis cs:0.0291666666666667,29.8087577240206);
 
-\path [draw=color2, semithick] (axis cs:0.03125,57.9423690242133)
---(axis cs:0.03125,65.099259145755);
+\path [draw=color2, semithick]
+(axis cs:0.03125,28.7617421227023)
+--(axis cs:0.03125,31.2444090405129);
 
-\path [draw=color3, semithick] (axis cs:0.00100806451612903,4.55628198991127)
---(axis cs:0.00100806451612903,5.50170093531441);
+\path [draw=color3, semithick]
+(axis cs:0.00100806451612903,2.93534749421921)
+--(axis cs:0.00100806451612903,3.19486373327255);
 
-\path [draw=color3, semithick] (axis cs:0.00201612903225806,7.22824772129043)
---(axis cs:0.00201612903225806,8.66203793339724);
+\path [draw=color3, semithick]
+(axis cs:0.00201612903225806,4.47444998633705)
+--(axis cs:0.00201612903225806,4.87252027929056);
 
-\path [draw=color3, semithick] (axis cs:0.0030241935483871,9.67545439751149)
---(axis cs:0.0030241935483871,11.5453993876424);
+\path [draw=color3, semithick]
+(axis cs:0.0030241935483871,5.86789768090668)
+--(axis cs:0.0030241935483871,6.3893884785225);
 
-\path [draw=color3, semithick] (axis cs:0.00403225806451613,12.0177794178454)
---(axis cs:0.00403225806451613,14.2929028362354);
+\path [draw=color3, semithick]
+(axis cs:0.00403225806451613,7.18190232547574)
+--(axis cs:0.00403225806451613,7.8181507911753);
 
-\path [draw=color3, semithick] (axis cs:0.00504032258064516,14.2834461248262)
---(axis cs:0.00504032258064516,16.9373481303321);
+\path [draw=color3, semithick]
+(axis cs:0.00504032258064516,8.43088204025292)
+--(axis cs:0.00504032258064516,9.17495462453692);
 
-\path [draw=color3, semithick] (axis cs:0.00604838709677419,16.4837114225535)
---(axis cs:0.00604838709677419,19.4921528649167);
+\path [draw=color3, semithick]
+(axis cs:0.00604838709677419,9.62190698522733)
+--(axis cs:0.00604838709677419,10.4677823114243);
 
-\path [draw=color3, semithick] (axis cs:0.00705645161290323,18.6251202177339)
---(axis cs:0.00705645161290323,21.9655346876028);
+\path [draw=color3, semithick]
+(axis cs:0.00705645161290323,10.7604931707688)
+--(axis cs:0.00705645161290323,11.7028119025708);
 
-\path [draw=color3, semithick] (axis cs:0.00806451612903226,20.7126094078544)
---(axis cs:0.00806451612903226,24.3640703416465);
+\path [draw=color3, semithick]
+(axis cs:0.00806451612903226,11.8516176165858)
+--(axis cs:0.00806451612903226,12.8855592966532);
 
-\path [draw=color3, semithick] (axis cs:0.00907258064516129,22.7503653444581)
---(axis cs:0.00907258064516129,26.6935785521055);
+\path [draw=color3, semithick]
+(axis cs:0.00907258064516129,12.8998753355942)
+--(axis cs:0.00907258064516129,14.021058000757);
 
-\path [draw=color3, semithick] (axis cs:0.0100806451612903,24.7421471074589)
---(axis cs:0.0100806451612903,28.9594531256404);
+\path [draw=color3, semithick]
+(axis cs:0.0100806451612903,13.9094553314766)
+--(axis cs:0.0100806451612903,15.1138659829544);
 
-\path [draw=color3, semithick] (axis cs:0.0110887096774194,26.6913728687273)
---(axis cs:0.0110887096774194,31.1666982706115);
+\path [draw=color3, semithick]
+(axis cs:0.0110887096774194,14.8841132816008)
+--(axis cs:0.0110887096774194,16.1680692021362);
 
-\path [draw=color3, semithick] (axis cs:0.0120967741935484,28.6011706261451)
---(axis cs:0.0120967741935484,33.3199357369343);
+\path [draw=color3, semithick]
+(axis cs:0.0120967741935484,15.8271872882709)
+--(axis cs:0.0120967741935484,17.1873072022846);
 
-\path [draw=color3, semithick] (axis cs:0.0131048387096774,30.4743702917563)
---(axis cs:0.0131048387096774,35.4233850652055);
+\path [draw=color3, semithick]
+(axis cs:0.0131048387096774,16.7416282783843)
+--(axis cs:0.0131048387096774,18.1748052813591);
 
-\path [draw=color3, semithick] (axis cs:0.0141129032258065,32.3135326253885)
---(axis cs:0.0141129032258065,37.4808860388901);
+\path [draw=color3, semithick]
+(axis cs:0.0141129032258065,17.6300313584089)
+--(axis cs:0.0141129032258065,19.1334069821563);
 
-\path [draw=color3, semithick] (axis cs:0.0151209677419355,34.120957226465)
---(axis cs:0.0151209677419355,39.4959067286628);
+\path [draw=color3, semithick]
+(axis cs:0.0151209677419355,18.4946672747357)
+--(axis cs:0.0151209677419355,20.0656083933126);
 
-\path [draw=color3, semithick] (axis cs:0.0161290322580645,35.8987274837914)
---(axis cs:0.0161290322580645,41.4715827427775);
+\path [draw=color3, semithick]
+(axis cs:0.0161290322580645,19.3375235780732)
+--(axis cs:0.0161290322580645,20.9735986069406);
 
-\path [draw=color3, semithick] (axis cs:0.0171370967741935,37.6487265618784)
---(axis cs:0.0171370967741935,43.4107427819786);
+\path [draw=color3, semithick]
+(axis cs:0.0171370967741935,20.1603474589504)
+--(axis cs:0.0171370967741935,21.8593028445037);
 
-\path [draw=color3, semithick] (axis cs:0.0181451612903226,39.3726539609136)
---(axis cs:0.0181451612903226,45.3159419018883);
+\path [draw=color3, semithick]
+(axis cs:0.0181451612903226,20.964679616054)
+--(axis cs:0.0181451612903226,22.7244240327639);
 
-\path [draw=color3, semithick] (axis cs:0.0191532258064516,41.072045003117)
---(axis cs:0.0191532258064516,47.1894892030092);
+\path [draw=color3, semithick]
+(axis cs:0.0191532258064516,21.7518826722934)
+--(axis cs:0.0191532258064516,23.5704770618534);
 
-\path [draw=color3, semithick] (axis cs:0.0201612903225806,42.7482937083661)
---(axis cs:0.0201612903225806,49.033479800196);
+\path [draw=color3, semithick]
+(axis cs:0.0201612903225806,22.5231688141721)
+--(axis cs:0.0201612903225806,24.3988162199845);
 
-\path [draw=color3, semithick] (axis cs:0.0211693548387097,44.4026661761538)
---(axis cs:0.0211693548387097,50.8498189085709);
+\path [draw=color3, semithick]
+(axis cs:0.0211693548387097,23.279623506869)
+--(axis cs:0.0211693548387097,25.2106580280554);
 
-\path [draw=color3, semithick] (axis cs:0.0221774193548387,46.0363134102144)
---(axis cs:0.0221774193548387,52.6402425019898);
+\path [draw=color3, semithick]
+(axis cs:0.0221774193548387,24.022222799202)
+--(axis cs:0.0221774193548387,26.0070978743105);
 
-\path [draw=color3, semithick] (axis cs:0.0231854838709677,47.6502814566098)
---(axis cs:0.0231854838709677,54.4063332458907);
+\path [draw=color3, semithick]
+(axis cs:0.0231854838709677,24.7518461777681)
+--(axis cs:0.0231854838709677,26.7891244848979);
 
-\path [draw=color3, semithick] (axis cs:0.0241935483870968,49.2455243412328)
---(axis cs:0.0241935483870968,56.1495371021193);
+\path [draw=color3, semithick]
+(axis cs:0.0241935483870968,25.4692887537822)
+--(axis cs:0.0241935483870968,27.5576327322653);
 
-\path [draw=color3, semithick] (axis cs:0.0252016129032258,50.8229144524939)
---(axis cs:0.0252016129032258,57.8711774269409);
+\path [draw=color3, semithick]
+(axis cs:0.0252016129032258,26.1752714023769)
+--(axis cs:0.0252016129032258,28.3134339069341);
 
-\path [draw=color3, semithick] (axis cs:0.0262096774193548,52.3832549846215)
---(axis cs:0.0262096774193548,59.5724669515947);
+\path [draw=color3, semithick]
+(axis cs:0.0262096774193548,26.8704489375339)
+--(axis cs:0.0262096774193548,29.0572653034772);
 
-\path [draw=color3, semithick] (axis cs:0.0272177419354839,53.9272866775861)
---(axis cs:0.0272177419354839,61.2545152950671);
+\path [draw=color3, semithick]
+(axis cs:0.0272177419354839,27.5554176953541)
+--(axis cs:0.0272177419354839,29.7897993402481);
 
-\path [draw=color3, semithick] (axis cs:0.0282258064516129,55.4556902906277)
---(axis cs:0.0282258064516129,62.9183361916322);
+\path [draw=color3, semithick]
+(axis cs:0.0282258064516129,28.2307213486859)
+--(axis cs:0.0282258064516129,30.5116506830649);
 
-\path [draw=color3, semithick] (axis cs:0.0292338709677419,56.9690923804652)
---(axis cs:0.0292338709677419,64.5648546628885);
+\path [draw=color3, semithick]
+(axis cs:0.0292338709677419,28.8968566043055)
+--(axis cs:0.0292338709677419,31.2233825919959);
 
-\path [draw=color3, semithick] (axis cs:0.030241935483871,58.468074151098)
---(axis cs:0.030241935483871,66.1949135776694);
+\path [draw=color3, semithick]
+(axis cs:0.030241935483871,29.5542782201167)
+--(axis cs:0.030241935483871,31.9255121388006);
 
-\path [draw=color3, semithick] (axis cs:0.03125,59.9531792263253)
---(axis cs:0.03125,67.8092837682454);
+\path [draw=color3, semithick]
+(axis cs:0.03125,30.2034031302692)
+--(axis cs:0.03125,32.618513303449);
 
 \addplot [semithick, color0, dashed]
-table [row sep=\\]{%
-0.0104166666666667	25.5598999888498 \\
-0.0208333333333333	40.894136849327 \\
-0.03125	53.8335477054169 \\
+table {%
+0.0104166666666667 14.0771055333553
+0.0208333333333333 21.0530481133052
+0.03125 26.6420337241273
 };
+\addlegendentry{$\mathcal{O}(h^{0.58\pm0.005})$}
 \addplot [semithick, color1, dashed]
-table [row sep=\\]{%
-0.00446428571428571	14.3481343942484 \\
-0.00892857142857143	23.5110176743003 \\
-0.0133928571428571	31.3857015458838 \\
-0.0178571428571429	38.5254233681309 \\
-0.0223214285714286	45.1640903506105 \\
-0.0267857142857143	51.4289707281656 \\
-0.03125	57.3991773190129 \\
+table {%
+0.00446428571428571 8.10337305907878
+0.00892857142857143 12.6120552590726
+0.0133928571428571 16.3368709754705
+0.0178571428571429 19.6293490004993
+0.0223214285714286 22.633657120765
+0.0267857142857143 25.4266362909369
+0.03125 28.0553021202516
 };
+\addlegendentry{$\mathcal{O}(h^{0.64\pm0.006})$}
 \addplot [semithick, color2, dashed]
-table [row sep=\\]{%
-0.00208333333333333	8.13538573194051 \\
-0.00416666666666667	13.6071884050973 \\
-0.00625	18.3841399120366 \\
-0.00833333333333333	22.7592867004291 \\
-0.0104166666666667	26.8580355204095 \\
-0.0125	30.7491818693496 \\
-0.0145833333333333	34.4757611686641 \\
-0.0166666666666667	38.0670213192824 \\
-0.01875	41.5440166504212 \\
-0.0208333333333333	44.922559489977 \\
-0.0229166666666667	48.214918705787 \\
-0.025	51.4308632418146 \\
-0.0270833333333333	54.5783369390004 \\
-0.0291666666666667	57.6639133150547 \\
-0.03125	60.6931126610366 \\
+table {%
+0.00208333333333333 4.72914209117207
+0.00416666666666667 7.57074748587256
+0.00625 9.96964262276872
+0.00833333333333333 12.1197917909547
+0.0104166666666667 14.1020816517402
+0.0125 15.9601139839441
+0.0145833333333333 17.7207991334171
+0.0166666666666667 19.4022259136495
+0.01875 21.0172949151318
+0.0208333333333333 22.5756167085311
+0.0229166666666667 24.0845950037159
+0.025 25.550087201596
+0.0270833333333333 26.9768287428946
+0.0291666666666667 28.3687173911325
+0.03125 29.7290103774635
 };
+\addlegendentry{$\mathcal{O}(h^{0.68\pm0.006})$}
 \addplot [semithick, color3, dashed]
-table [row sep=\\]{%
-0.00100806451612903	4.71526416889595 \\
-0.00201612903225806	7.97392495054109 \\
-0.0030241935483871	10.8427829722858 \\
-0.00403225806451613	13.4846059180072 \\
-0.00504032258064516	15.9695008425591 \\
-0.00604838709677419	18.3360962565658 \\
-0.00705645161290323	20.6086382002192 \\
-0.00806451612903226	22.8036503844467 \\
-0.00907258064516129	24.9330553650863 \\
-0.0100806451612903	27.0058254755184 \\
-0.0110887096774194	29.0289349067932 \\
-0.0120967741935484	31.0079457266097 \\
-0.0131048387096774	32.9473874662567 \\
-0.0141129032258065	34.8510133165835 \\
-0.0151209677419355	36.721979004656 \\
-0.0161290322580645	38.5629712887392 \\
-0.0171370967741935	40.3763025245376 \\
-0.0181451612903226	42.1639817298795 \\
-0.0191532258064516	43.9277689688886 \\
-0.0201612903225806	45.6692176420766 \\
-0.0211693548387097	47.3897078414709 \\
-0.0221774193548387	49.0904729936074 \\
-0.0231854838709677	50.7726213843802 \\
-0.0241935483870968	52.437153728405 \\
-0.0252016129032258	54.0849776440436 \\
-0.0262096774193548	55.7169196808424 \\
-0.0272177419354839	57.3337353913124 \\
-0.0282258064516129	58.9361178255711 \\
-0.0292338709677419	60.5247047432172 \\
-0.030241935483871	62.1000847736245 \\
-0.03125	63.6628027078666 \\
+table {%
+0.00100806451612903 2.93679575254001
+0.00201612903225806 4.74492331251374
+0.0030241935483871 6.28216480461253
+0.00403225806451613 7.66627955729093
+0.00504032258064516 8.94664338457944
+0.00604838709677419 10.1499704937527
+0.00705645161290323 11.2927952430999
+0.00806451612903226 12.3862575598511
+0.00907258064516129 13.4383177986344
+0.0100806451612903 14.4549162901513
+0.0110887096774194 15.4406361840379
+0.0120967741935484 16.3991083055332
+0.0131048387096774 17.3332716025058
+0.0141129032258065 18.2455478444782
+0.0151209677419355 19.1379629112491
+0.0161290322580645 20.0122334689791
+0.0171370967741935 20.8698304541692
+0.0181451612903226 21.7120265679218
+0.0191532258064516 22.539932470602
+0.0201612903225806 23.3545248171422
+0.0211693548387097 24.1566682873809
+0.0221774193548387 24.9471331216407
+0.0231854838709677 25.7266092406887
+0.0241935483870968 26.4957177345625
+0.0252016129032258 27.2550202994577
+0.0262096774193548 28.0050270563519
+0.0272177419354839 28.7462030802665
+0.0282258064516129 29.47897389254
+0.0292338709677419 30.2037301118606
+0.030241935483871 30.9208314173942
+0.03125 31.6306099452271
 };
-\addplot [semithick, color0, forget plot]
-table [row sep=\\]{%
-0.0104166666666667	25.6128978801753 \\
-0.0208333333333333	40.6652696973928 \\
-0.03125	54.024508270495 \\
+\addlegendentry{$\mathcal{O}(h^{0.69\pm0.007})$}
+\addplot [semithick, color0]
+table {%
+0.0104166666666667 14.1151116338893
+0.0208333333333333 20.8998071402183
+0.03125 26.7651158384578
 };
-\addplot [semithick, color1, forget plot]
-table [row sep=\\]{%
-0.00446428571428571	14.6054042702844 \\
-0.00892857142857143	23.1891890512299 \\
-0.0133928571428571	30.906512575647 \\
-0.0178571428571429	38.1787600481051 \\
-0.0223214285714286	45.1226425022295 \\
-0.0267857142857143	51.7932732599531 \\
-0.03125	58.225609392983 \\
+\addlegendentry{$N=1024$}
+\addplot [semithick, color1]
+table {%
+0.00446428571428571 8.26196655429644
+0.00892857142857143 12.4118983019315
+0.0133928571428571 16.0730249894389
+0.0178571428571429 19.4568071124977
+0.0223214285714286 22.6265854937198
+0.0267857142857143 25.6198314551248
+0.03125 28.464197447404
 };
-\addplot [semithick, color2, forget plot]
-table [row sep=\\]{%
-0.00208333333333333	8.49909707763983 \\
-0.00416666666666667	13.4688043960772 \\
-0.00625	17.9798661452113 \\
-0.00833333333333333	22.2638414130053 \\
-0.0104166666666667	26.3790740238293 \\
-0.0125	30.350733032405 \\
-0.0145833333333333	34.1942954738363 \\
-0.0166666666666667	37.921873023193 \\
-0.01875	41.5438704109956 \\
-0.0208333333333333	45.0696338938323 \\
-0.0229166666666667	48.5075551325607 \\
-0.025	51.865220927957 \\
-0.0270833333333333	55.1494040118155 \\
-0.0291666666666667	58.3661527405487 \\
-0.03125	61.5208140849841 \\
+\addlegendentry{$N=1024$}
+\addplot [semithick, color2]
+table {%
+0.00208333333333333 4.92648705502505
+0.00416666666666667 7.4693031032677
+0.00625 9.74925164211828
+0.00833333333333333 11.8822528420994
+0.0104166666666667 13.8974128470531
+0.0125 15.8107883330589
+0.0145833333333333 17.634770502619
+0.0166666666666667 19.3798225305967
+0.01875 21.0549348221126
+0.0208333333333333 22.6678429179855
+0.0229166666666667 24.2251996558937
+0.025 25.7327522141025
+0.0270833333333333 27.1954773549918
+0.0291666666666667 28.6176797456358
+0.03125 30.0030755816076
 };
-\addplot [semithick, color3, forget plot]
-table [row sep=\\]{%
-0.00100806451612903	5.02899146261284 \\
-0.00201612903225806	7.94514282734383 \\
-0.0030241935483871	10.6104268925769 \\
-0.00403225806451613	13.1553411270404 \\
-0.00504032258064516	15.6103971275791 \\
-0.00604838709677419	17.9879321437351 \\
-0.00705645161290323	20.2953274526684 \\
-0.00806451612903226	22.5383398747504 \\
-0.00907258064516129	24.7219719482818 \\
-0.0100806451612903	26.8508001165496 \\
-0.0110887096774194	28.9290355696694 \\
-0.0120967741935484	30.9605531815397 \\
-0.0131048387096774	32.9488776784809 \\
-0.0141129032258065	34.8972093321393 \\
-0.0151209677419355	36.8084319775639 \\
-0.0161290322580645	38.6851551132845 \\
-0.0171370967741935	40.5297346719285 \\
-0.0181451612903226	42.344297931401 \\
-0.0191532258064516	44.1307671030631 \\
-0.0201612903225806	45.890886754281 \\
-0.0211693548387097	47.6262425423624 \\
-0.0221774193548387	49.3382779561021 \\
-0.0231854838709677	51.0283073512503 \\
-0.0241935483870968	52.697530721676 \\
-0.0252016129032258	54.3470459397174 \\
-0.0262096774193548	55.9778609681081 \\
-0.0272177419354839	57.5909009863266 \\
-0.0282258064516129	59.18701324113 \\
-0.0292338709677419	60.7669735216768 \\
-0.030241935483871	62.3314938643837 \\
-0.03125	63.8812314972854 \\
+\addlegendentry{$N=1024$}
+\addplot [semithick, color3]
+table {%
+0.00100806451612903 3.06510561374588
+0.00201612903225806 4.6734851328138
+0.0030241935483871 6.12864307971459
+0.00403225806451613 7.50002655832552
+0.00504032258064516 8.80291833239492
+0.00604838709677419 10.0448446483258
+0.00705645161290323 11.2316525366698
+0.00806451612903226 12.3685884566195
+0.00907258064516129 13.4604666681756
+0.0100806451612903 14.5116606572155
+0.0110887096774194 15.5260912418685
+0.0120967741935484 16.5072472452778
+0.0131048387096774 17.4582167798717
+0.0141129032258065 18.3817191702826
+0.0151209677419355 19.2801378340242
+0.0161290322580645 20.1555610925069
+0.0171370967741935 21.009825151727
+0.0181451612903226 21.8445518244089
+0.0191532258064516 22.6611798670734
+0.0201612903225806 23.4609925170783
+0.0211693548387097 24.2451407674622
+0.0221774193548387 25.0146603367562
+0.0231854838709677 25.770485331333
+0.0241935483870968 26.5134607430238
+0.0252016129032258 27.2443526546555
+0.0262096774193548 27.9638571205056
+0.0272177419354839 28.6726085178011
+0.0282258064516129 29.3711860158754
+0.0292338709677419 30.0601195981507
+0.030241935483871 30.7398951794586
+0.03125 31.4109582168591
 };
+\addlegendentry{$N=1024$}
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0,
   align=right
-]{ By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 893cc94705922f7ef9502f166adc5fb8ba574643
+]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
+Commit: 83fb7f26e96030302f507c944b2f47dff92f4fe2
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -353,7 +412,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @893cc};
+]{@83fb7};
 \end{axis}
 
 \end{tikzpicture}
@@ -365,20 +424,20 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 893cc94705922f7ef9502f166adc5fb8ba574643
+%% GIT git_commit : 83fb7f26e96030302f507c944b2f47dff92f4fe2
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 893cc
+%% GIT git_short_commit : 83fb7
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-16 02:25:06.505588
+%% generated_on_date : 2019-10-21 14:38:39.082736
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-db4c72bf-123e-4c67-92c4-a470da928765.json
+%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-8f209748-60cc-438a-8609-920553898264.json
 %% python_version: 
-%%    /usr/bin/python3 (Version: 3.7.4 (default, Jul 16 2019, 07:12:58) 
-%%    [GCC 9.1.0])
+%%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
+%%    [GCC 9.2.0])
 %% python modules:
 %%     sys: Unknown (Unknown)
 %%     builtins: Unknown (Unknown)
@@ -471,10 +530,10 @@ Hostname: lyelaptop};
 %%     linecache: Unknown (/usr/lib/python3.7/linecache.py)
 %%     tokenize: Unknown (/usr/lib/python3.7/tokenize.py)
 %%     token: Unknown (/usr/lib/python3.7/token.py)
-%%     IPython: 7.6.1 (/usr/lib/python3.7/site-packages/IPython/__init__.py)
+%%     IPython: 7.8.0 (/usr/lib/python3.7/site-packages/IPython/__init__.py)
 %%     IPython.core: Unknown (/usr/lib/python3.7/site-packages/IPython/core/__init__.py)
 %%     IPython.core.getipython: Unknown (/usr/lib/python3.7/site-packages/IPython/core/getipython.py)
-%%     IPython.core.release: 7.6.1 (/usr/lib/python3.7/site-packages/IPython/core/release.py)
+%%     IPython.core.release: 7.8.0 (/usr/lib/python3.7/site-packages/IPython/core/release.py)
 %%     IPython.core.application: Unknown (/usr/lib/python3.7/site-packages/IPython/core/application.py)
 %%     atexit: Unknown (Unknown)
 %%     copy: Unknown (/usr/lib/python3.7/copy.py)
@@ -704,38 +763,38 @@ Hostname: lyelaptop};
 %%     IPython.utils.contexts: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/contexts.py)
 %%     IPython.core.async_helpers: Unknown (/usr/lib/python3.7/site-packages/IPython/core/async_helpers.py)
 %%     IPython.terminal.interactiveshell: Unknown (/usr/lib/python3.7/site-packages/IPython/terminal/interactiveshell.py)
-%%     prompt_toolkit: 2.0.9 (/usr/lib/python3.7/site-packages/prompt_toolkit/__init__.py)
+%%     prompt_toolkit: 2.0.10 (/usr/lib/python3.7/site-packages/prompt_toolkit/__init__.py)
 %%     prompt_toolkit.application: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/application/__init__.py)
 %%     prompt_toolkit.application.application: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/application/application.py)
 %%     prompt_toolkit.buffer: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/buffer.py)
+%%     six.moves: Unknown (Unknown)
 %%     prompt_toolkit.application.current: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/application/current.py)
 %%     prompt_toolkit.eventloop: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/__init__.py)
-%%     prompt_toolkit.eventloop.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/base.py)
-%%     prompt_toolkit.log: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/log.py)
+%%     prompt_toolkit.eventloop.async_generator: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/async_generator.py)
+%%     queue: Unknown (/usr/lib/python3.7/queue.py)
+%%     _queue: Unknown (/usr/lib/python3.7/lib-dynload/_queue.cpython-37m-x86_64-linux-gnu.so)
+%%     queue: Unknown (/usr/lib/python3.7/queue.py)
 %%     prompt_toolkit.eventloop.coroutine: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/coroutine.py)
 %%     prompt_toolkit.eventloop.defaults: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/defaults.py)
 %%     prompt_toolkit.utils: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/utils.py)
-%%     six.moves: Unknown (Unknown)
 %%     wcwidth: Unknown (/usr/lib/python3.7/site-packages/wcwidth/__init__.py)
 %%     wcwidth.wcwidth: Unknown (/usr/lib/python3.7/site-packages/wcwidth/wcwidth.py)
 %%     wcwidth.table_wide: Unknown (/usr/lib/python3.7/site-packages/wcwidth/table_wide.py)
 %%     wcwidth.table_zero: Unknown (/usr/lib/python3.7/site-packages/wcwidth/table_zero.py)
 %%     prompt_toolkit.cache: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/cache.py)
+%%     prompt_toolkit.eventloop.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/base.py)
+%%     prompt_toolkit.log: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/log.py)
 %%     prompt_toolkit.eventloop.future: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/future.py)
 %%     prompt_toolkit.eventloop.context: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/context.py)
-%%     prompt_toolkit.eventloop.async_generator: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/async_generator.py)
-%%     queue: Unknown (/usr/lib/python3.7/queue.py)
-%%     _queue: Unknown (/usr/lib/python3.7/lib-dynload/_queue.cpython-37m-x86_64-linux-gnu.so)
-%%     queue: Unknown (/usr/lib/python3.7/queue.py)
 %%     prompt_toolkit.eventloop.event: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/eventloop/event.py)
 %%     prompt_toolkit.application.run_in_terminal: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/application/run_in_terminal.py)
 %%     prompt_toolkit.auto_suggest: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/auto_suggest.py)
 %%     prompt_toolkit.filters: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/filters/__init__.py)
-%%     prompt_toolkit.filters.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/filters/base.py)
 %%     prompt_toolkit.filters.app: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/filters/app.py)
 %%     prompt_toolkit.enums: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/enums.py)
-%%     prompt_toolkit.filters.utils: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/filters/utils.py)
+%%     prompt_toolkit.filters.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/filters/base.py)
 %%     prompt_toolkit.filters.cli: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/filters/cli.py)
+%%     prompt_toolkit.filters.utils: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/filters/utils.py)
 %%     prompt_toolkit.clipboard: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/clipboard/__init__.py)
 %%     prompt_toolkit.clipboard.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/clipboard/base.py)
 %%     prompt_toolkit.selection: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/selection.py)
@@ -743,9 +802,9 @@ Hostname: lyelaptop};
 %%     prompt_toolkit.completion: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/completion/__init__.py)
 %%     prompt_toolkit.completion.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/completion/base.py)
 %%     prompt_toolkit.completion.filesystem: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/completion/filesystem.py)
-%%     prompt_toolkit.completion.word_completer: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/completion/word_completer.py)
 %%     prompt_toolkit.completion.fuzzy_completer: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/completion/fuzzy_completer.py)
 %%     prompt_toolkit.document: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/document.py)
+%%     prompt_toolkit.completion.word_completer: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/completion/word_completer.py)
 %%     prompt_toolkit.history: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/history.py)
 %%     prompt_toolkit.search: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/search.py)
 %%     prompt_toolkit.key_binding: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/__init__.py)
@@ -765,16 +824,28 @@ Hostname: lyelaptop};
 %%     prompt_toolkit.key_binding.key_processor: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/key_processor.py)
 %%     prompt_toolkit.key_binding.bindings.named_commands: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/named_commands.py)
 %%     prompt_toolkit.key_binding.bindings.completion: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/completion.py)
+%%     prompt_toolkit.key_binding.bindings.cpr: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/cpr.py)
 %%     prompt_toolkit.key_binding.bindings.emacs: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/emacs.py)
-%%     prompt_toolkit.key_binding.bindings.vi: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/vi.py)
-%%     prompt_toolkit.input.vt100_parser: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/input/vt100_parser.py)
-%%     prompt_toolkit.input.ansi_escape_sequences: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/input/ansi_escape_sequences.py)
-%%     prompt_toolkit.key_binding.digraphs: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/digraphs.py)
 %%     prompt_toolkit.key_binding.bindings.mouse: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/mouse.py)
 %%     prompt_toolkit.layout: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/__init__.py)
 %%     prompt_toolkit.layout.containers: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/containers.py)
-%%     prompt_toolkit.layout.controls: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/controls.py)
 %%     prompt_toolkit.formatted_text: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/formatted_text/__init__.py)
+%%     prompt_toolkit.formatted_text.ansi: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/formatted_text/ansi.py)
+%%     prompt_toolkit.output: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/__init__.py)
+%%     prompt_toolkit.output.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/base.py)
+%%     prompt_toolkit.layout.screen: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/screen.py)
+%%     prompt_toolkit.output.color_depth: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/color_depth.py)
+%%     prompt_toolkit.output.defaults: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/defaults.py)
+%%     prompt_toolkit.output.vt100: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/vt100.py)
+%%     array: Unknown (/usr/lib/python3.7/lib-dynload/array.cpython-37m-x86_64-linux-gnu.so)
+%%     prompt_toolkit.styles: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/__init__.py)
+%%     prompt_toolkit.styles.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/base.py)
+%%     prompt_toolkit.styles.defaults: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/defaults.py)
+%%     prompt_toolkit.styles.named_colors: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/named_colors.py)
+%%     prompt_toolkit.styles.style: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/style.py)
+%%     prompt_toolkit.styles.pygments: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/pygments.py)
+%%     prompt_toolkit.styles.style_transformation: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/style_transformation.py)
+%%     colorsys: Unknown (/usr/lib/python3.7/colorsys.py)
 %%     prompt_toolkit.formatted_text.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/formatted_text/base.py)
 %%     prompt_toolkit.formatted_text.html: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/formatted_text/html.py)
 %%     xml: Unknown (/usr/lib/python3.7/xml/__init__.py)
@@ -784,28 +855,13 @@ Hostname: lyelaptop};
 %%     xml.dom.minicompat: Unknown (/usr/lib/python3.7/xml/dom/minicompat.py)
 %%     xml.dom.xmlbuilder: Unknown (/usr/lib/python3.7/xml/dom/xmlbuilder.py)
 %%     xml.dom.NodeFilter: Unknown (/usr/lib/python3.7/xml/dom/NodeFilter.py)
-%%     prompt_toolkit.formatted_text.ansi: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/formatted_text/ansi.py)
-%%     prompt_toolkit.output: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/__init__.py)
-%%     prompt_toolkit.output.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/base.py)
-%%     prompt_toolkit.layout.screen: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/screen.py)
-%%     prompt_toolkit.output.defaults: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/defaults.py)
-%%     prompt_toolkit.output.color_depth: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/color_depth.py)
-%%     prompt_toolkit.output.vt100: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/output/vt100.py)
-%%     prompt_toolkit.styles: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/__init__.py)
-%%     prompt_toolkit.styles.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/base.py)
-%%     prompt_toolkit.styles.defaults: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/defaults.py)
-%%     prompt_toolkit.styles.style: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/style.py)
-%%     prompt_toolkit.styles.named_colors: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/named_colors.py)
-%%     prompt_toolkit.styles.pygments: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/pygments.py)
-%%     prompt_toolkit.styles.style_transformation: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/styles/style_transformation.py)
-%%     colorsys: Unknown (/usr/lib/python3.7/colorsys.py)
-%%     array: Unknown (/usr/lib/python3.7/lib-dynload/array.cpython-37m-x86_64-linux-gnu.so)
 %%     prompt_toolkit.formatted_text.pygments: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/formatted_text/pygments.py)
 %%     prompt_toolkit.formatted_text.utils: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/formatted_text/utils.py)
+%%     prompt_toolkit.mouse_events: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/mouse_events.py)
+%%     prompt_toolkit.layout.controls: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/controls.py)
 %%     prompt_toolkit.lexers: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/lexers/__init__.py)
 %%     prompt_toolkit.lexers.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/lexers/base.py)
 %%     prompt_toolkit.lexers.pygments: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/lexers/pygments.py)
-%%     prompt_toolkit.mouse_events: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/mouse_events.py)
 %%     prompt_toolkit.layout.processors: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/processors.py)
 %%     prompt_toolkit.layout.utils: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/utils.py)
 %%     prompt_toolkit.layout.dimension: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/dimension.py)
@@ -814,7 +870,10 @@ Hostname: lyelaptop};
 %%     prompt_toolkit.layout.menus: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/menus.py)
 %%     prompt_toolkit.renderer: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/renderer.py)
 %%     prompt_toolkit.layout.mouse_handlers: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/mouse_handlers.py)
-%%     prompt_toolkit.key_binding.bindings.cpr: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/cpr.py)
+%%     prompt_toolkit.key_binding.bindings.vi: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/vi.py)
+%%     prompt_toolkit.input.vt100_parser: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/input/vt100_parser.py)
+%%     prompt_toolkit.input.ansi_escape_sequences: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/input/ansi_escape_sequences.py)
+%%     prompt_toolkit.key_binding.digraphs: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/digraphs.py)
 %%     prompt_toolkit.key_binding.emacs_state: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/emacs_state.py)
 %%     prompt_toolkit.layout.dummy: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/layout/dummy.py)
 %%     prompt_toolkit.application.dummy: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/application/dummy.py)
@@ -826,13 +885,13 @@ Hostname: lyelaptop};
 %%     prompt_toolkit.widgets.toolbars: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/widgets/toolbars.py)
 %%     prompt_toolkit.widgets.dialogs: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/widgets/dialogs.py)
 %%     prompt_toolkit.widgets.menus: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/widgets/menus.py)
+%%     prompt_toolkit.shortcuts.progress_bar: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/shortcuts/progress_bar/__init__.py)
+%%     prompt_toolkit.shortcuts.progress_bar.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/shortcuts/progress_bar/base.py)
+%%     prompt_toolkit.shortcuts.progress_bar.formatters: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/shortcuts/progress_bar/formatters.py)
 %%     prompt_toolkit.shortcuts.prompt: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py)
 %%     prompt_toolkit.key_binding.bindings.auto_suggest: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/auto_suggest.py)
 %%     prompt_toolkit.key_binding.bindings.open_in_editor: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/key_binding/bindings/open_in_editor.py)
 %%     prompt_toolkit.shortcuts.utils: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/shortcuts/utils.py)
-%%     prompt_toolkit.shortcuts.progress_bar: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/shortcuts/progress_bar/__init__.py)
-%%     prompt_toolkit.shortcuts.progress_bar.base: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/shortcuts/progress_bar/base.py)
-%%     prompt_toolkit.shortcuts.progress_bar.formatters: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/shortcuts/progress_bar/formatters.py)
 %%     prompt_toolkit.patch_stdout: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/patch_stdout.py)
 %%     pygments.style: Unknown (/usr/lib/python3.7/site-packages/pygments/style.py)
 %%     IPython.terminal.debugger: Unknown (/usr/lib/python3.7/site-packages/IPython/terminal/debugger.py)
@@ -1371,19 +1430,23 @@ Hostname: lyelaptop};
 %%     ipykernel.pylab.config: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/config.py)
 %%     ipykernel.eventloops: Unknown (/usr/lib/python3.7/site-packages/ipykernel/eventloops.py)
 %%     plot_info: 1.17.2 (../python/plot_info.py)
-%%     matplotlib2tikz: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__init__.py)
-%%     matplotlib2tikz.__about__: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__about__.py)
-%%     matplotlib2tikz.save: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/save.py)
-%%     matplotlib2tikz.axes: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/axes.py)
-%%     matplotlib2tikz.color: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/color.py)
-%%     matplotlib2tikz.legend: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/legend.py)
-%%     matplotlib2tikz.line2d: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/line2d.py)
-%%     matplotlib2tikz.path: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/path.py)
-%%     matplotlib2tikz.files: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/files.py)
-%%     matplotlib2tikz.image: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/image.py)
-%%     matplotlib2tikz.quadmesh: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/quadmesh.py)
-%%     matplotlib2tikz.patch: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/patch.py)
-%%     matplotlib2tikz.text: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/text.py)
+%%     tikzplotlib: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/__init__.py)
+%%     tikzplotlib.__about__: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/__about__.py)
+%%     tikzplotlib.save: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/save.py)
+%%     tikzplotlib.axes: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/axes.py)
+%%     matplotlib.backends.backend_pgf: 3.1.1 (/usr/lib/python3.7/site-packages/matplotlib/backends/backend_pgf.py)
+%%     matplotlib._png: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_png.cpython-37m-x86_64-linux-gnu.so)
+%%     matplotlib.backends.backend_mixed: Unknown (/usr/lib/python3.7/site-packages/matplotlib/backends/backend_mixed.py)
+%%     tikzplotlib.color: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/color.py)
+%%     tikzplotlib.image: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/image.py)
+%%     tikzplotlib.files: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/files.py)
+%%     tikzplotlib.legend: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/legend.py)
+%%     tikzplotlib.line2d: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/line2d.py)
+%%     tikzplotlib.path: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/path.py)
+%%     tikzplotlib.util: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/util.py)
+%%     tikzplotlib.patch: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/patch.py)
+%%     tikzplotlib.quadmesh: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/quadmesh.py)
+%%     tikzplotlib.text: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/text.py)
 %%     git: 3.0.2 (/usr/lib/python3.7/site-packages/git/__init__.py)
 %%     gitdb: 2.0.6 (/usr/lib/python3.7/site-packages/gitdb/__init__.py)
 %%     smmap: 2.0.5 (/usr/lib/python3.7/site-packages/smmap/__init__.py)
@@ -1452,7 +1515,19 @@ Hostname: lyelaptop};
 %%     cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/__init__.py)
 %%     cftime._cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/_cftime.cpython-37m-x86_64-linux-gnu.so)
 %%     _cython_0_29_1: Unknown (Unknown)
-%%     matplotlib._png: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_png.cpython-37m-x86_64-linux-gnu.so)
+%%     matplotlib2tikz: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__init__.py)
+%%     matplotlib2tikz.__about__: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__about__.py)
+%%     matplotlib2tikz.save: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/save.py)
+%%     matplotlib2tikz.axes: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/axes.py)
+%%     matplotlib2tikz.color: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/color.py)
+%%     matplotlib2tikz.legend: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/legend.py)
+%%     matplotlib2tikz.line2d: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/line2d.py)
+%%     matplotlib2tikz.path: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/path.py)
+%%     matplotlib2tikz.files: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/files.py)
+%%     matplotlib2tikz.image: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/image.py)
+%%     matplotlib2tikz.quadmesh: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/quadmesh.py)
+%%     matplotlib2tikz.patch: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/patch.py)
+%%     matplotlib2tikz.text: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/text.py)
 %%     PIL.BmpImagePlugin: 0.7 (/usr/lib/python3.7/site-packages/PIL/BmpImagePlugin.py)
 %%     PIL.ImageFile: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageFile.py)
 %%     PIL.ImagePalette: Unknown (/usr/lib/python3.7/site-packages/PIL/ImagePalette.py)
@@ -1475,12 +1550,12 @@ Hostname: lyelaptop};
 %%     [function: convergence_structure_functions, line: 65, file: <ipython-input-4-17c1ccc52087>]
 %%     [function: for_each_config, line: 36, file: <ipython-input-1-d0c606e0ff22>]
 %%     [function: <module>, line: 112, file: <ipython-input-4-17c1ccc52087>]
-%%     [function: run_code, line: 3325, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
-%%     [function: run_ast_nodes, line: 3248, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
-%%     [function: run_cell_async, line: 3057, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: _pseudo_sync_runner, line: 68, file: /usr/lib/python3.7/site-packages/IPython/core/async_helpers.py]
-%%     [function: _run_cell, line: 2880, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
-%%     [function: run_cell, line: 2854, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: _run_cell, line: 2881, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: run_cell, line: 2855, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell, line: 536, file: /usr/lib/python3.7/site-packages/ipykernel/zmqshell.py]
 %%     [function: do_execute, line: 294, file: /usr/lib/python3.7/site-packages/ipykernel/ipkernel.py]
 %%     [function: wrapper, line: 209, file: /usr/lib/python3.7/site-packages/tornado/gen.py]

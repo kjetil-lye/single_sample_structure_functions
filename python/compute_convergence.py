@@ -160,7 +160,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                 plt.xlabel("$x$")
                 plt.ylabel("$y$")
                 
-                plt.title(f"{variable}\n{title}\n$T={timepoint}$")
+                plt.title(f"{variable}\n{title.replace('_', ' ')}\n$T={timepoint}$")
                 
                 plt.colorbar()
                 

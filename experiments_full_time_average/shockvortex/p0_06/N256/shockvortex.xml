@@ -4,7 +4,7 @@
     <name>
       shockvortex
     </name>
-    <platform>cpu</platform>
+    <platform>cuda</platform>
     <grid>
       <lowerCorner>0 0 0</lowerCorner>
       <upperCorner>1 1 0</upperCorner>
@@ -12,7 +12,7 @@
     </grid>
     <boundary>neumann</boundary>
     <flux>HLL3</flux>
-    <endTime>0.0035</endTime>
+    <endTime>0.35</endTime>
     <equation>euler2</equation>
     <equationParameters>
       <gamma>1.66666666666667</gamma>
@@ -24,9 +24,11 @@
       <python>shockvortex.py</python>
       <parameters>
         <parameter>
-          <name>X</name>
-          <length>1</length>
-          <value>0</value>
+          <name>a</name>
+          <length>20</length>
+          <values>
+            <value>0</value>
+          </values>
         </parameter>
         <parameter>
           <name>epsilon</name>
@@ -53,9 +55,9 @@
       <functional>
         <name>structure_cube</name>
         <p>1</p>
-        <time>0.00175</time>
+        <time>0.175</time>
         <numberOfH>8</numberOfH>
-        <timeRadius>0.00175</timeRadius>
+        <timeRadius>0.175</timeRadius>
         <numberOfSnapshots>200</numberOfSnapshots>
         <writer>
           <type>netcdf</type>
@@ -75,9 +77,9 @@
       <functional>
         <name>structure_cube</name>
         <p>2</p>
-        <time>0.00175</time>
+        <time>0.175</time>
         <numberOfH>8</numberOfH>
-        <timeRadius>0.00175</timeRadius>
+        <timeRadius>0.175</timeRadius>
         <numberOfSnapshots>200</numberOfSnapshots>
         <writer>
           <type>netcdf</type>
@@ -97,9 +99,9 @@
       <functional>
         <name>structure_cube</name>
         <p>3</p>
-        <time>0.00175</time>
+        <time>0.175</time>
         <numberOfH>8</numberOfH>
-        <timeRadius>0.00175</timeRadius>
+        <timeRadius>0.175</timeRadius>
         <numberOfSnapshots>200</numberOfSnapshots>
         <writer>
           <type>netcdf</type>
@@ -107,8 +109,8 @@
         </writer>
       </functional>
       <functional>
-        <time>0.002625</time>
-        <timeRadius>0.000875</timeRadius>
+        <time>0.26249999999999996</time>
+        <timeRadius>0.0875</timeRadius>
         <name>identity</name>
         <writer>
           <type>netcdf</type>
@@ -116,8 +118,8 @@
         </writer>
       </functional>
       <functional>
-        <time>0.002625</time>
-        <timeRadius>0.000875</timeRadius>
+        <time>0.26249999999999996</time>
+        <timeRadius>0.0875</timeRadius>
         <name>moment</name>
         <degree>2</degree>
         <writer>
@@ -177,8 +179,8 @@
     <generator>auto</generator>
     <parameters>
       <parameter>
-        <name>X</name>
-        <length>1</length>
+        <name>a</name>
+        <length>20</length>
         <type>uniform</type>
       </parameter>
     </parameters>

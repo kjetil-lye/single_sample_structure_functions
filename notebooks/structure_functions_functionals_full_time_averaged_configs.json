@@ -24,9 +24,8 @@
     "cube_filename": "../experiments_full_time_average/kh/p0_06/N{resolution}/kh_functional_structure_cube_{p}_{t}.nc"
   },
 
-
   "fbb_0_5": {
-    "name": "Fractional Brownian bridge with $H=0.125$",
+    "name": "Fractional Brownian bridge with $H=0.5$",
     "Tarray": [
       8
     ],
@@ -99,6 +98,85 @@
     ],
     "cube_filename": "../experiments_full_time_average/fbb/H0_125/N{resolution}/euler_fbb_functional_structure_cube_{p}_{t}.nc"
   },
+
+
+
+
+    "fbb_0_5_st": {
+      "name": "Fractional Brownian bridge with $H=0.5$ short time",
+      "Tarray": [
+        8
+      ],
+      "maxT": 4,
+      "perturbations": [
+        0.1
+      ],
+      "resolutions": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "variables": [
+        "rho",
+        "mx",
+        "my",
+        "E"
+      ],
+      "cube_filename": "../experiments_full_time_average/fbb_short_time/H0_5/N{resolution}/euler_fbb_functional_structure_cube_{p}_{t}.nc"
+    },
+
+
+    "fbm_0_75_st": {
+      "name": "Fractional Brownian bridge with $H=0.75$ short time",
+      "Tarray": [
+        8
+      ],
+      "maxT": 4,
+      "perturbations": [
+        0.1
+      ],
+      "resolutions": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "variables": [
+        "rho",
+        "mx",
+        "my",
+        "E"
+      ],
+      "cube_filename": "../experiments_full_time_average/fbb_short_time/H0_75/N{resolution}/euler_fbb_functional_structure_cube_{p}_{t}.nc"
+    },
+
+
+
+    "fbm_0_125_st": {
+      "name": "Fractional Brownian bridge with $H=0.125$ short time",
+      "Tarray": [
+        8
+      ],
+      "maxT": 4,
+      "perturbations": [
+        0.1
+      ],
+      "resolutions": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "variables": [
+        "rho",
+        "mx",
+        "my",
+        "E"
+      ],
+      "cube_filename": "../experiments_full_time_average/fbb_short_time/H0_125/N{resolution}/euler_fbb_functional_structure_cube_{p}_{t}.nc"
+    },
+
 
 
   "rm_0_06": {
@@ -281,6 +359,93 @@
     ],
     "cube_filename": "../experiments_full_time_average/fbb/H0_125/N{resolution}/euler_fbb_functional_time_integrated_structure_cube_{p}_{t}.nc"
   },
+
+
+
+
+
+
+
+
+    "fbb_0_5_ta_st": {
+      "name": "Fractional Brownian bridge with $H=0.5$ time averaged short time",
+      "Tarray": [
+        0
+      ],
+      "maxT": 4,
+      "t_start" : 4,
+      "perturbations": [
+        0.1
+      ],
+      "resolutions": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "variables": [
+        "rho",
+        "mx",
+        "my",
+        "E"
+      ],
+      "cube_filename": "../experiments_full_time_average/fbb_short_time/H0_5/N{resolution}/euler_fbb_functional_time_integrated_structure_cube_{p}_{t}.nc"
+    },
+
+
+    "fbm_0_75_ta_st": {
+      "name": "Fractional Brownian bridge with $H=0.75$ time averaged short time",
+      "Tarray": [
+        0
+      ],
+      "maxT": 4,
+      "t_start" : 4,
+      "perturbations": [
+        0.1
+      ],
+      "resolutions": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "variables": [
+        "rho",
+        "mx",
+        "my",
+        "E"
+      ],
+      "cube_filename": "../experiments_full_time_average/fbb_short_time/H0_75/N{resolution}/euler_fbb_functional_time_integrated_structure_cube_{p}_{t}.nc"
+    },
+
+
+
+    "fbm_0_125_ta_st": {
+      "name": "Fractional Brownian bridge with $H=0.125$ time averaged short time",
+      "Tarray": [
+        0
+      ],
+      "t_start" : 4,
+      "maxT": 4,
+      "perturbations": [
+        0.1
+      ],
+      "resolutions": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "variables": [
+        "rho",
+        "mx",
+        "my",
+        "E"
+      ],
+      "cube_filename": "../experiments_full_time_average/fbb_short_time/H0_125/N{resolution}/euler_fbb_functional_time_integrated_structure_cube_{p}_{t}.nc"
+    },
+
+
 
 
   "rm_0_06_ta": {
