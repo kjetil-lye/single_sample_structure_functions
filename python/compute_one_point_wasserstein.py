@@ -71,7 +71,7 @@ def compute_wasserstein_one_point(data, reference_solution, exponent):
     
     wasserstein_sum /= reference_solution.shape[0]**2
     
-    return wasserstein_sum**(1/p)
+    return wasserstein_sum**(1/exponent)
             
     
     
