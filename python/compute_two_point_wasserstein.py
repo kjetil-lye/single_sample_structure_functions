@@ -59,19 +59,19 @@ def compute_wasserstein_two_point(data, reference_solution, exponent,
     
     for i_coarse in range(number_of_cells_in_each_direction):
         for j_coarse in range(number_of_cells_in_each_direction):
-            i = int(i_coarse * reference_solution.shape[0] / number_of_cells_in_each_direction)
-            j = int(j_coarse * reference_solution.shape[1] / number_of_cells_in_each_direction)
+            i = int(i_coarse * reference_solution.shape[1] / number_of_cells_in_each_direction)
+            j = int(j_coarse * reference_solution.shape[2] / number_of_cells_in_each_direction)
             xs[:,:number_of_variables] = reference_solution[:,i, j,:]
             xt[:,:number_of_variables] = data[:, i//factor_reference_data, j//factor_reference_data, :]
             
             for ip_coarse in range(number_of_cells_in_each_direction):
                 for jp_coarse in range(number_of_cells_in_each_direction):
-                    ip = int(ip_coarse * reference_solution.shape[0] / number_of_cells_in_each_direction)
-                    jp = int(jp_coarse * reference_solution.shape[1] / number_of_cells_in_each_direction)
+                    ip = int(ip_coarse * reference_solution.shape[1] / number_of_cells_in_each_direction)
+                    jp = int(jp_coarse * reference_solution.shape[2] / number_of_cells_in_each_direction)
                     
                     
-                     xs[:,number_of_variables:] = reference_solution[:,ip, jp,:]
-                     xt[:,number_of_variables:] = data[:, ip//factor_reference_data, jp//factor_reference_data, :]
+                    xs[:,number_of_variables:] = reference_solution[:,ip, jp,:]
+                    xt[:,number_of_variables:] = data[:, ip//factor_reference_data, jp//factor_reference_data, :]
            
                     
             
