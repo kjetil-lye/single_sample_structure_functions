@@ -69,7 +69,8 @@ Plots the one point histograms
                         help='Maximum resolution')
 
 
-    parser.add_argument('--point_a_x', type=float, default=[0.75, 0.25, 0.6],
+    parser.add_argument('--point_a_x', nargs='+',
+                        type=float, default=[0.75, 0.25, 0.6],
                         help='x coordinate of point a')
 
     parser.add_argument('--point_a_y', nargs='+',
