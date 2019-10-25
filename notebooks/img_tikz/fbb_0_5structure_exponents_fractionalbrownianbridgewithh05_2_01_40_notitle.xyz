@@ -69,7 +69,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 83fb7f26e96030302f507c944b2f47dff92f4fe2
+Commit: 20f49fb410e2024884bc0fa13a6a7aa702ec1a33
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -77,7 +77,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@83fb7};
+]{@20f49};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -85,7 +85,7 @@ Hostname: lyelaptop};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 83fb7f26e96030302f507c944b2f47dff92f4fe2
+Commit: 20f49fb410e2024884bc0fa13a6a7aa702ec1a33
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \end{axis}
@@ -99,14 +99,14 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 83fb7f26e96030302f507c944b2f47dff92f4fe2
+%% GIT git_commit : 20f49fb410e2024884bc0fa13a6a7aa702ec1a33
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 83fb7
+%% GIT git_short_commit : 20f49
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-20 15:18:55.903542
+%% generated_on_date : 2019-10-24 13:46:26.661229
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-8f209748-60cc-438a-8609-920553898264.json
