@@ -27,11 +27,11 @@ xtick={64,128,256,512,1024},
 xticklabels={\(\displaystyle 64\times64\),\(\displaystyle 128\times128\),\(\displaystyle 256\times256\),\(\displaystyle 512\times512\),\(\displaystyle 1024\times1024\)},
 y grid style={white!69.01960784313725!black},
 ylabel={\(\displaystyle \frac{1}{M}\sum_{m=1}^M \sum_{i,j} (|u_{i+1,j}-u_{i,j}|+|u_{i,j+1}-u_{i,j}|)^{2}\)},
-ymin=0.395526376786523, ymax=287948970.496778,
+ymin=3.62902864733796, ymax=83092194.2442267,
 ymode=log,
 ytick style={color=black},
-ytick={0.015625,0.25,4,64,1024,16384,262144,4194304,67108864,1073741824,17179869184},
-yticklabels={\(\displaystyle 2^{-6}\),\(\displaystyle 2^{-2}\),\(\displaystyle 2^{2}\),\(\displaystyle 2^{6}\),\(\displaystyle 2^{10}\),\(\displaystyle 2^{14}\),\(\displaystyle 2^{18}\),\(\displaystyle 2^{22}\),\(\displaystyle 2^{26}\),\(\displaystyle 2^{30}\),\(\displaystyle 2^{34}\)}
+ytick={0.25,2,16,128,1024,8192,65536,524288,4194304,33554432,268435456,2147483648},
+yticklabels={\(\displaystyle 2^{-2}\),\(\displaystyle 2^{1}\),\(\displaystyle 2^{4}\),\(\displaystyle 2^{7}\),\(\displaystyle 2^{10}\),\(\displaystyle 2^{13}\),\(\displaystyle 2^{16}\),\(\displaystyle 2^{19}\),\(\displaystyle 2^{22}\),\(\displaystyle 2^{25}\),\(\displaystyle 2^{28}\),\(\displaystyle 2^{31}\)}
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
 table {%
@@ -125,40 +125,40 @@ table {%
 \addlegendentry{$\mathcal{O}(N^{1.15})$}
 \addplot [semithick, color5, mark=*, mark size=3, mark options={solid}]
 table {%
-64 6232184
-128 12331473
-256 25486692
-512 53943881
-1024 113891413
+64 2345914
+128 4691745
+256 9510677
+512 18337456
+1024 38461413
 };
 \addlegendentry{CS $\epsilon=0.06$, $T=0.06$}
 \addplot [semithick, color5, dashed]
 table {%
-64 6069524.1067709
-128 12578171.3491659
-256 26066359.0268116
-512 54018589.3523942
-1024 111945361.936478
+64 2340767.35266988
+128 4693548.93031705
+256 9411187.97481243
+512 18870679.8229269
+1024 37838215.3169688
 };
-\addlegendentry{$\mathcal{O}(N^{1.05})$}
+\addlegendentry{$\mathcal{O}(N^{1.00})$}
 \addplot [semithick, color6, mark=*, mark size=3, mark options={solid}]
 table {%
-64 0
-128 1
-256 1
-512 3
-1024 5
+64 8
+128 9
+256 10
+512 11
+1024 14
 };
-\addlegendentry{SV $\epsilon=0.06$, $T=0.0035$}
+\addlegendentry{SV $\epsilon=0.06$, $T=0.35$}
 \addplot [semithick, color6, dashed]
 table {%
-64 nan
-128 nan
-256 nan
-512 nan
-1024 nan
+64 7.84016835997339
+128 8.94639390767905
+256 10.2087047466961
+512 11.6491240695048
+1024 13.2927824786621
 };
-\addlegendentry{$\mathcal{O}(N^{nan})$}
+\addlegendentry{$\mathcal{O}(N^{0.19})$}
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -166,7 +166,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: b9825147d76804a48826cd7b93247098b4203b1d
+Commit: 472f90d75b95732f58e9c7d2d449815320e30d46
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -174,7 +174,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@b982};
+]{@472f9};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -182,7 +182,7 @@ Hostname: lyelaptop};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: b9825147d76804a48826cd7b93247098b4203b1d
+Commit: 472f90d75b95732f58e9c7d2d449815320e30d46
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \end{axis}
@@ -196,17 +196,17 @@ Hostname: lyelaptop};
 %% script name: bv.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : b9825147d76804a48826cd7b93247098b4203b1d
-%% GIT git_repo_modified : True
+%% GIT git_commit : 472f90d75b95732f58e9c7d2d449815320e30d46
+%% GIT git_repo_modified : False
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : b982
+%% GIT git_short_commit : 472f9
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-18 16:00:17.696396
+%% generated_on_date : 2019-10-25 11:27:16.882741
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-48d9ea64-9479-462f-9854-f71975d72c74.json
+%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-d75e4990-a27a-4392-81fa-4b13436fbd46.json
 %% python_version: 
 %%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
 %%    [GCC 9.2.0])

@@ -97,7 +97,7 @@ Plots the one point histograms
     parser.add_argument('--point_x', nargs="+", type=float, default=[0.75, 0.25, 0.3],
                         help='x coordinate of point')
 
-    parser.add_argument('--point_y', type=float, default=[0.25, 0.75, 0.6],
+    parser.add_argument('--point_y', nargs="+", type=float, default=[0.25, 0.75, 0.6],
                         help='y coordinate of point')
 
     args = parser.parse_args()
