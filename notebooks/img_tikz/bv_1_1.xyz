@@ -17,6 +17,7 @@ log basis x={2},
 log basis y={2},
 tick align=outside,
 tick pos=left,
+title={$T=1$, $p=1$},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={Resolution (\(\displaystyle N\times N\))},
@@ -26,139 +27,137 @@ xtick style={color=black},
 xtick={64,128,256,512,1024},
 xticklabels={\(\displaystyle 64\times64\),\(\displaystyle 128\times128\),\(\displaystyle 256\times256\),\(\displaystyle 512\times512\),\(\displaystyle 1024\times1024\)},
 y grid style={white!69.01960784313725!black},
-ylabel={\(\displaystyle \frac{1}{M}\sum_{m=1}^M \sum_{i,j} (|u_{i+1,j}-u_{i,j}|+|u_{i,j+1}-u_{i,j}|)^{2}\)},
-ymin=3.62902864733796, ymax=83092194.2442267,
+ylabel={\(\displaystyle \frac{1}{M}\sum_{m=1}^M \sum_{i,j} (|u_{i+1,j}-u_{i,j}|+|u_{i,j+1}-u_{i,j}|)\Delta\)},
+ymin=0.718733318597733, ymax=1028.19777639056,
 ymode=log,
-ytick style={color=black},
-ytick={0.25,2,16,128,1024,8192,65536,524288,4194304,33554432,268435456,2147483648},
-yticklabels={\(\displaystyle 2^{-2}\),\(\displaystyle 2^{1}\),\(\displaystyle 2^{4}\),\(\displaystyle 2^{7}\),\(\displaystyle 2^{10}\),\(\displaystyle 2^{13}\),\(\displaystyle 2^{16}\),\(\displaystyle 2^{19}\),\(\displaystyle 2^{22}\),\(\displaystyle 2^{25}\),\(\displaystyle 2^{28}\),\(\displaystyle 2^{31}\)}
+ytick style={color=black}
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
 table {%
-64 5015
-128 11747
-256 26026
-512 56002
-1024 118145
+64 45
+128 65
+256 91
+512 124
+1024 166
 };
 \addlegendentry{fBb $H=0.125$, $T=0.2$}
 \addplot [semithick, color0, dashed]
 table {%
-64 5208.72903779821
-128 11454.8209302169
-256 25190.9672381038
-512 55398.9306561081
-1024 121831.03129117
+64 46.2252758799122
+128 64.0190845332839
+256 88.6623845172284
+512 122.791796939769
+1024 170.05887533701
 };
-\addlegendentry{$\mathcal{O}(N^{1.14})$}
+\addlegendentry{$\mathcal{O}(N^{0.47})$}
 \addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
 table {%
-64 421
-128 810
-256 1557
-512 3012
-1024 5856
+64 15
+128 20
+256 27
+512 36
+1024 46
 };
 \addlegendentry{fBb $H=0.5$, $T=0.2$}
 \addplot [semithick, color1, dashed]
 table {%
-64 419.663089920971
-128 810.217395393891
-256 1564.23627325072
-512 3019.97356816038
-1024 5830.47491504215
+64 15.128223784559
+128 20.0746741797878
+256 26.6384573075897
+512 35.3483897857108
+1024 46.9061945297611
 };
-\addlegendentry{$\mathcal{O}(N^{0.95})$}
+\addlegendentry{$\mathcal{O}(N^{0.41})$}
 \addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
 table {%
-64 69
-128 105
-256 156
-512 227
-1024 329
+64 6
+128 8
+256 9
+512 11
+1024 14
 };
 \addlegendentry{fBb $H=0.75$, $T=0.2$}
 \addplot [semithick, color2, dashed]
 table {%
-64 70.3025234849913
-128 103.782452988078
-256 153.20641442582
-512 226.167379411552
-1024 333.874294373333
+64 6.1623965225361
+128 7.53659654072496
+256 9.21723995039053
+512 11.2726629114344
+1024 13.7864403876613
 };
-\addlegendentry{$\mathcal{O}(N^{0.56})$}
+\addlegendentry{$\mathcal{O}(N^{0.29})$}
 \addplot [semithick, color3, mark=*, mark size=3, mark options={solid}]
 table {%
-64 20
-128 44
-256 95
-512 201
-1024 452
+64 2
+128 4
+256 5
+512 8
+1024 11
 };
 \addlegendentry{KH $\epsilon=0.6$, $T=2.0$}
 \addplot [semithick, color3, dashed]
 table {%
-64 20.0685549567336
-128 43.5824989142665
-256 94.6472835591345
-512 205.543704658726
-1024 446.375352108624
+64 2.25401840419585
+128 3.39729292926849
+256 5.12045475128909
+512 7.71763206937958
+1024 11.6321396538699
 };
-\addlegendentry{$\mathcal{O}(N^{1.12})$}
+\addlegendentry{$\mathcal{O}(N^{0.59})$}
 \addplot [semithick, color4, mark=*, mark size=3, mark options={solid}]
 table {%
-64 32
-128 70
-256 161
-512 365
-1024 763
+64 2
+128 4
+256 5
+512 8
+1024 12
 };
 \addlegendentry{RM $\epsilon=0.06$, $T=4.0$}
 \addplot [semithick, color4, dashed]
 table {%
-64 32.0619159005897
-128 71.3154890881093
-256 158.627419510594
-512 352.835808073923
-1024 784.814553771794
+64 2.21513268649658
+128 3.39729292926849
+256 5.2103421693947
+512 7.99096989496814
+1024 12.2555482512016
 };
-\addlegendentry{$\mathcal{O}(N^{1.15})$}
+\addlegendentry{$\mathcal{O}(N^{0.62})$}
 \addplot [semithick, color5, mark=*, mark size=3, mark options={solid}]
 table {%
-64 2345914
-128 4691745
-256 9510677
-512 18337456
-1024 38461413
+64 305
+128 377
+256 465
+512 575
+1024 739
 };
 \addlegendentry{CS $\epsilon=0.06$, $T=0.06$}
 \addplot [semithick, color5, dashed]
 table {%
-64 2340767.35266988
-128 4693548.93031705
-256 9411187.97481243
-512 18870679.8229269
-1024 37838215.3169688
+64 302.606426238347
+128 376.772950262477
+256 469.117122904978
+512 584.094147017012
+1024 727.251161643561
 };
-\addlegendentry{$\mathcal{O}(N^{1.00})$}
+\addlegendentry{$\mathcal{O}(N^{0.32})$}
 \addplot [semithick, color6, mark=*, mark size=3, mark options={solid}]
 table {%
-64 8
-128 9
-256 10
-512 11
-1024 14
+64 1
+128 1
+256 1
+512 1
+1024 1
 };
 \addlegendentry{SV $\epsilon=0.06$, $T=0.35$}
 \addplot [semithick, color6, dashed]
 table {%
-64 7.84016835997339
-128 8.94639390767905
-256 10.2087047466961
-512 11.6491240695048
-1024 13.2927824786621
+64 1
+128 1
+256 1
+512 1
+1024 1
 };
-\addlegendentry{$\mathcal{O}(N^{0.19})$}
+\addlegendentry{$\mathcal{O}(N^{0.00})$}
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -166,7 +165,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 472f90d75b95732f58e9c7d2d449815320e30d46
+Commit: fa4f90171282da3d45f669150c1b572d5115532d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -174,36 +173,26 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@472f9};
-\node at (axis cs:0.95,0.01)[
-  scale=0.15,
-  anchor=south east,
-  text=white!50.19607843137255!black,
-  rotate=0.0,
-  align=right
-]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 472f90d75b95732f58e9c7d2d449815320e30d46
-Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lyelaptop};
+]{@fa4f};
 \end{axis}
 
 \end{tikzpicture}
 
 %% INCLUDE THE COMMENTS AT THE END WHEN COPYING
 %%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%
-%% None
+%% $T=1$, $p=1$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% script name: bv.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 472f90d75b95732f58e9c7d2d449815320e30d46
-%% GIT git_repo_modified : False
+%% GIT git_commit : fa4f90171282da3d45f669150c1b572d5115532d
+%% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 472f9
+%% GIT git_short_commit : fa4f
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-25 11:27:16.882741
+%% generated_on_date : 2019-10-25 11:40:08.921064
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-d75e4990-a27a-4392-81fa-4b13436fbd46.json
@@ -1318,9 +1307,8 @@ Hostname: lyelaptop};
 %%     PIL.PngImagePlugin: 0.9 (/usr/lib/python3.7/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
-%%     [function: savePlot, line: 330, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: <module>, line: 35, file: <ipython-input-4-78f82f0eb22f>]
+%%     [function: <module>, line: 35, file: <ipython-input-4-11e12a433a13>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]

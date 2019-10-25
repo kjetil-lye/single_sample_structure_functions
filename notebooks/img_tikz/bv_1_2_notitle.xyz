@@ -166,7 +166,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 472f90d75b95732f58e9c7d2d449815320e30d46
+Commit: fa4f90171282da3d45f669150c1b572d5115532d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -174,7 +174,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@472f9};
+]{@fa4f};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -182,7 +182,7 @@ Hostname: lyelaptop};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 472f90d75b95732f58e9c7d2d449815320e30d46
+Commit: fa4f90171282da3d45f669150c1b572d5115532d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \end{axis}
@@ -196,14 +196,14 @@ Hostname: lyelaptop};
 %% script name: bv.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 472f90d75b95732f58e9c7d2d449815320e30d46
-%% GIT git_repo_modified : False
+%% GIT git_commit : fa4f90171282da3d45f669150c1b572d5115532d
+%% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 472f9
+%% GIT git_short_commit : fa4f
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-25 11:27:16.882741
+%% generated_on_date : 2019-10-25 11:40:38.256094
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-d75e4990-a27a-4392-81fa-4b13436fbd46.json
@@ -1320,7 +1320,7 @@ Hostname: lyelaptop};
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 330, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: <module>, line: 35, file: <ipython-input-4-78f82f0eb22f>]
+%%     [function: <module>, line: 35, file: <ipython-input-4-11e12a433a13>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]

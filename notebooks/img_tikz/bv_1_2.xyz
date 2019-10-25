@@ -17,6 +17,7 @@ log basis x={2},
 log basis y={2},
 tick align=outside,
 tick pos=left,
+title={$T=1$, $p=2$},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={Resolution (\(\displaystyle N\times N\))},
@@ -29,9 +30,7 @@ y grid style={white!69.01960784313725!black},
 ylabel={\(\displaystyle \frac{1}{M}\sum_{m=1}^M \sum_{i,j} (|u_{i+1,j}-u_{i,j}|+|u_{i,j+1}-u_{i,j}|)^{2}\)},
 ymin=3.62902864733796, ymax=83092194.2442267,
 ymode=log,
-ytick style={color=black},
-ytick={0.25,2,16,128,1024,8192,65536,524288,4194304,33554432,268435456,2147483648},
-yticklabels={\(\displaystyle 2^{-2}\),\(\displaystyle 2^{1}\),\(\displaystyle 2^{4}\),\(\displaystyle 2^{7}\),\(\displaystyle 2^{10}\),\(\displaystyle 2^{13}\),\(\displaystyle 2^{16}\),\(\displaystyle 2^{19}\),\(\displaystyle 2^{22}\),\(\displaystyle 2^{25}\),\(\displaystyle 2^{28}\),\(\displaystyle 2^{31}\)}
+ytick style={color=black}
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
 table {%
@@ -166,7 +165,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 472f90d75b95732f58e9c7d2d449815320e30d46
+Commit: fa4f90171282da3d45f669150c1b572d5115532d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -174,36 +173,26 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@472f9};
-\node at (axis cs:0.95,0.01)[
-  scale=0.15,
-  anchor=south east,
-  text=white!50.19607843137255!black,
-  rotate=0.0,
-  align=right
-]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 472f90d75b95732f58e9c7d2d449815320e30d46
-Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lyelaptop};
+]{@fa4f};
 \end{axis}
 
 \end{tikzpicture}
 
 %% INCLUDE THE COMMENTS AT THE END WHEN COPYING
 %%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%
-%% None
+%% $T=1$, $p=2$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% script name: bv.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 472f90d75b95732f58e9c7d2d449815320e30d46
-%% GIT git_repo_modified : False
+%% GIT git_commit : fa4f90171282da3d45f669150c1b572d5115532d
+%% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 472f9
+%% GIT git_short_commit : fa4f
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-25 11:27:16.882741
+%% generated_on_date : 2019-10-25 11:40:36.286263
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-d75e4990-a27a-4392-81fa-4b13436fbd46.json
@@ -1318,9 +1307,8 @@ Hostname: lyelaptop};
 %%     PIL.PngImagePlugin: 0.9 (/usr/lib/python3.7/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
-%%     [function: savePlot, line: 330, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: <module>, line: 35, file: <ipython-input-4-78f82f0eb22f>]
+%%     [function: <module>, line: 35, file: <ipython-input-4-11e12a433a13>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
