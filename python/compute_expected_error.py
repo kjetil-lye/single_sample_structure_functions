@@ -39,6 +39,7 @@ def plot_convergence(basename, title, conserved_variables = conserved_variables_
     errors = []
     errors_std = []
     for resolution in resolutions[:-1]:
+        print(f'resolution: {resolution}')
         timepoint = get_time(basename.format(resolution=resolution))
         
         number_of_samples = 1024
@@ -46,7 +47,7 @@ def plot_convergence(basename, title, conserved_variables = conserved_variables_
         errors_per_sample = np.zeros(number_of_samples)
 
         for sample in range(number_of_samples):
-            if reference_solution:
+            if reference:
                 reference_resolution = resolutions[-1]
             else:
                 reference_resolution = 2 * resolution
@@ -65,7 +66,7 @@ def plot_convergence(basename, title, conserved_variables = conserved_variables_
 
         errors.append(np.mean(errors_per_sample))
         errors_std.append(np.std(errors_per_sample))
-        
+    print("Done!")
     if reference:
         convergence_type = 'reference'
     else:
@@ -74,7 +75,7 @@ def plot_convergence(basename, title, conserved_variables = conserved_variables_
     plot_info.saveData(f'convergence_{convergence_type}_expected_error_{title}_{timepoint}_errors', errors)
     plot_info.saveData(f'convergence_{convergence_type}_expected_error_{title}_{timepoint}_resolutions', resolutions)
     
-    plt.errorbar(resolutions[:-1], errors, yerr=error_std, fmt='-o')
+    plt.errorbar(resolutions[:-1], errors, yerr=errors_std, fmt='-o')
     poly = np.polyfit(np.log(resolutions[:-1]), np.log(errors), 1)
     
     plt.loglog(resolutions[:-1], np.exp(poly[1])*resolutions[:-1]**poly[0],
@@ -84,12 +85,12 @@ def plot_convergence(basename, title, conserved_variables = conserved_variables_
     plt.xlabel("Resolution ($N\\times N$)")
     latex_name='u'
     if reference:
-        plt.ylabel(f"Averaged error ($\\mathbb{{E}}(\\|{latex_name}^N(\\cdot)-{latex_name}^{{{reference_resolution}}}(\\cdot) \\|_{{L^1(D)}})$)")
+        plt.ylabel(f"Averaged error ($\\mathbb{{E}}(\\|{latex_name}^N-{latex_name}^{{{reference_resolution}}} \\|_{{L^1(D)}})$)")
     else:
-        plt.ylabel(f"Averaged error ($\\mathbb{E}(\\|{latex_name}^N(\\cdot)-{latex_name}^{{2N}}(\\cdot)\\|_{{L^1(D)}})$)")
+        plt.ylabel(f"Averaged error ($\\mathbb{{E}}(\\|{latex_name}^N-{latex_name}^{{2N}}\\|_{{L^1(D)}})$)")
     
     plt.xticks(resolutions[:-1], [f'${N}\\times {N}$' for N in resolutions[:-1]])
-    plt.title(f'Convergence of {statistic_name.replace("_", " ")}\n{title.replace("_"," ")}\n$T={timepoint}$ {convergence_type} convergence')
+    plt.title(f'Averaged error as a function of mesh resolution\n{title.replace("_"," ")}\n$T={timepoint}$ {convergence_type} convergence')
     
     
     # Scale to nearest power of two to make the y axis not zoom in too much
