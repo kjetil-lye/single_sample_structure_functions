@@ -230,7 +230,7 @@
 
 
   "shockvortex_0_06": {
-    "name": "Shock Vortex $\\epsilon=0.06$",
+    "name": "Shockvortex $\\epsilon=0.06$",
     "Tarray": [
       8
     ],
@@ -501,7 +501,7 @@
 
 
   "shockvortex_0_06_ta": {
-    "name": "Shock Vortex $\\epsilon=0.06$ time averaged",
+    "name": "Shockvortex $\\epsilon=0.06$ time averaged",
     "Tarray": [
       0
     ],
