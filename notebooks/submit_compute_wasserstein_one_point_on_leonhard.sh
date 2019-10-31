@@ -1,7 +1,21 @@
 #!/bin/bash
 set -e
+if [ "$#" -eq 0 ]; 
+then
+    USE_DEFAULT_COMMAND=1
+else
+    USE_DEFAULT_COMMAND=0
+    SINGLE_SAMPLE_STRUCTURE_SUBMIT_COMMAND="$@"
+fi
+echo "Using submission command: ${SINGLE_SAMPLE_STRUCTURE_SUBMIT_COMMAND}"
+    
 function submit {
-    bsub -n 1 -W 120:00 -R 'rusage[mem=64000]' "$@"
+    if [[ ${USE_DEFAULT_COMMAND} -eq 1 ]];
+    then
+	bsub -n 1 -W 120:00 -R 'rusage[mem=64000]' "$@"
+    else
+	${SINGLE_SAMPLE_STRUCTURE_SUBMIT_COMMAND} "$@"
+    fi
 }
 
 basepath='/cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average/'
