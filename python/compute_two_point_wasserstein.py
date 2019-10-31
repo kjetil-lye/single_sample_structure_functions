@@ -131,8 +131,8 @@ def plot_wasserstein_two_point_convergence(basename, title,
         
     statistic_name = 'wasserstein_two_point'
         
-    plot_info.saveData(f'convergence_{convergence_type}_{statistic_name}_{title}_{timepoint}_errors', errors)
-    plot_info.saveData(f'convergence_{convergence_type}_{statistic_name}_{title}_{timepoint}_resolutions', resolutions)
+    plot_info.saveData(f'convergence_{convergence_type}_{statistic_name}_{exponent}_{title}_{timepoint}_errors', errors)
+    plot_info.saveData(f'convergence_{convergence_type}_{statistic_name}_{exponent}_{title}_{timepoint}_resolutions', resolutions)
     
     plt.loglog(resolutions[:-1], errors, '-o')
     poly = np.polyfit(np.log(resolutions[:-1]), np.log(errors), 1)
@@ -164,7 +164,7 @@ def plot_wasserstein_two_point_convergence(basename, title,
     plt.ylim([min_power_of_two, max_power_of_two])
     
     plt.legend()
-    plot_info.savePlot(f'convergence_{convergence_type}_{statistic_name}_{title}_{timepoint}')
+    plot_info.savePlot(f'convergence_{convergence_type}_{statistic_name}_{exponent}_{title}_{timepoint}')
     plt.close('all')
     
     
