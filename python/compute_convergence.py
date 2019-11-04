@@ -36,7 +36,7 @@ def load_file_single_sample(filename, conserved_variables):
         data = np.zeros((resolution, resolution, len(conserved_variables)))
         for variable_index, variable in enumerate(conserved_variables):
             # 42 is the answer to everything. (Wanted different realizations than the ones already shown a thousand times)
-            data[:,:,variable_index] = f.variables[f'sample_42_{variable}'][:,:,0]
+            data[:,:,variable_index] = f.variables[f'sample_42_{variable}'][:,:,0].T
             
         return data
 
@@ -53,7 +53,7 @@ def load_file_mean(filename, conserved_variables, number_of_samples):
         for sample in range(number_of_samples):
             for variable_index, variable in enumerate(conserved_variables):
                 key = f'sample_{sample}_{variable}'
-                mean[:,:,variable_index] += f.variables[key][:,:,0]
+                mean[:,:,variable_index] += f.variables[key][:,:,0].T
         
         mean /= number_of_samples
         
@@ -72,8 +72,8 @@ def load_file_variance(filename, conserved_variables, number_of_samples):
         for sample in range(number_of_samples):
             for variable_index, variable in enumerate(conserved_variables):
                 key = f'sample_{sample}_{variable}'
-                mean[:,:,variable_index] += f.variables[key][:,:,0]
-                m2[:,:,variable_index] += f.variables[key][:,:,0]**2
+                mean[:,:,variable_index] += f.variables[key][:,:,0].T
+                m2[:,:,variable_index] += f.variables[key][:,:,0].T**2
                 
         
         mean /= number_of_samples
