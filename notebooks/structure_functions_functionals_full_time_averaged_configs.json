@@ -230,7 +230,7 @@
 
 
   "shockvortex_0_06": {
-    "name": "Shock Vortex $\\epsilon=0.06$",
+    "name": "Shockvortex $\\epsilon=0.06$",
     "Tarray": [
       8
     ],
@@ -254,8 +254,8 @@
     "cube_filename": "../experiments_full_time_average/shockvortex/p0_06/N{resolution}/shockvortex_functional_structure_cube_{p}_{t}.nc"
   },
 
-  "kh_ta": {
-    "name": "Kelvin-Helmholtz time averaged",
+  "kh_0_06_ta": {
+    "name": "Kelvin-Helmholtz $\\epsilon=0.06$ time averaged",
     "Tarray": [
       0
     ],
@@ -368,7 +368,7 @@
 
 
     "fbb_0_5_ta_st": {
-      "name": "Fractional Brownian bridge with $H=0.5$ time averaged short time",
+      "name": "Fractional Brownian bridge $H=0.5$ time averaged",
       "Tarray": [
         0
       ],
@@ -394,7 +394,7 @@
 
 
     "fbb_0_75_ta_st": {
-      "name": "Fractional Brownian bridge with $H=0.75$ time averaged short time",
+      "name": "Fractional Brownian bridge $H=0.75$ time averaged",
       "Tarray": [
         0
       ],
@@ -421,7 +421,7 @@
 
 
     "fbb_0_125_ta_st": {
-      "name": "Fractional Brownian bridge with $H=0.125$ time averaged short time",
+      "name": "Fractional Brownian bridge $H=0.125$ time averaged",
       "Tarray": [
         0
       ],
@@ -501,7 +501,7 @@
 
 
   "shockvortex_0_06_ta": {
-    "name": "Shock Vortex $\\epsilon=0.06$ time averaged",
+    "name": "Shockvortex $\\epsilon=0.06$ time averaged",
     "Tarray": [
       0
     ],
