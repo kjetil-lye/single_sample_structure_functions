@@ -50,7 +50,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 24a1b4aca31b8f7dc30e6944c16924aa57a9b4bb
+Commit: a738dc32643a90f78ce63eee490d71f310d8c83c
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lo-amd-fp-003};
 \node at (axis cs:0.2,0.93)[
@@ -58,7 +58,7 @@ Hostname: lo-amd-fp-003};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@24a1};
+]{@a738d};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -66,7 +66,7 @@ Hostname: lo-amd-fp-003};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 24a1b4aca31b8f7dc30e6944c16924aa57a9b4bb
+Commit: a738dc32643a90f78ce63eee490d71f310d8c83c
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lo-amd-fp-003};
 \end{axis}
@@ -80,14 +80,14 @@ Hostname: lo-amd-fp-003};
 %% script name: ../python/compute_two_point_wasserstein.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 24a1b4aca31b8f7dc30e6944c16924aa57a9b4bb
+%% GIT git_commit : a738dc32643a90f78ce63eee490d71f310d8c83c
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 24a1
+%% GIT git_short_commit : a738d
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
 %% hostname : lo-amd-fp-003
-%% generated_on_date : 2019-10-30 23:18:50.181552
+%% generated_on_date : 2019-11-05 17:10:42.751726
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_two_point_wasserstein.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//kh/p0_06/N{resolution}/kh_functional_time_integrated_identity_0.nc --title Kelvin-Helmholtz _time_integrated --exponent 1
