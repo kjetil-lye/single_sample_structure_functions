@@ -260,7 +260,7 @@ table {%
 0.857142857142857 0.612221936562705
 1 0.613771873723258
 };
-\addlegendentry{Shock Vortex $\epsilon=0.06$}
+\addlegendentry{Shockvortex $\epsilon=0.06$}
 \addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
 table {%
 0 0.389993739405003
@@ -272,7 +272,7 @@ table {%
 0.857142857142857 0.658960848266607
 1 0.666203830636329
 };
-\addlegendentry{Shock Vortex $\epsilon=0.06$}
+\addlegendentry{Shockvortex $\epsilon=0.06$}
 \addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
 table {%
 0 0.570998521065968
@@ -284,7 +284,7 @@ table {%
 0.857142857142857 0.658597934122538
 1 0.663066877198307
 };
-\addlegendentry{Shock Vortex $\epsilon=0.06$}
+\addlegendentry{Shockvortex $\epsilon=0.06$}
 \addplot [semithick, color3, mark=*, mark size=3, mark options={solid}]
 table {%
 0 0.153286865088512
@@ -296,7 +296,7 @@ table {%
 0.857142857142857 0.656255129146798
 1 0.66416535081046
 };
-\addlegendentry{Shock Vortex $\epsilon=0.06$}
+\addlegendentry{Shockvortex $\epsilon=0.06$}
 \addplot [semithick, color4, mark=*, mark size=3, mark options={solid}]
 table {%
 0 0.427655382546945
@@ -308,7 +308,7 @@ table {%
 0.857142857142857 0.474642402519453
 1 0.489953572798036
 };
-\addlegendentry{Shock Vortex $\epsilon=0.06$}
+\addlegendentry{Shockvortex $\epsilon=0.06$}
 \addplot [semithick, color5, mark=*, mark size=3, mark options={solid}]
 table {%
 0 0.420748463724178
@@ -320,7 +320,7 @@ table {%
 0.857142857142857 0.445908450866109
 1 0.456700328416343
 };
-\addlegendentry{Shock Vortex $\epsilon=0.06$}
+\addlegendentry{Shockvortex $\epsilon=0.06$}
 \addplot [semithick, color6, mark=*, mark size=3, mark options={solid}]
 table {%
 0 0.764809393481761
@@ -332,7 +332,7 @@ table {%
 0.857142857142857 0.759331069825944
 1 0.758236662937631
 };
-\addlegendentry{Shock Vortex $\epsilon=0.06$}
+\addlegendentry{Shockvortex $\epsilon=0.06$}
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -340,7 +340,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 20f49fb410e2024884bc0fa13a6a7aa702ec1a33
+Commit: f7325b96be62cb6e04b9c2f6225c0e95cbe3f033
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -348,7 +348,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@20f49};
+]{@f732};
 \end{axis}
 
 \end{tikzpicture}
@@ -359,17 +359,17 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 20f49fb410e2024884bc0fa13a6a7aa702ec1a33
+%% GIT git_commit : f7325b96be62cb6e04b9c2f6225c0e95cbe3f033
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 20f49
+%% GIT git_short_commit : f732
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-25 01:20:11.757995
+%% generated_on_date : 2019-11-01 01:54:59.900080
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-8f209748-60cc-438a-8609-920553898264.json
+%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-6528b0a9-f2f5-4afb-8e47-ee80f5c7ac4c.json
 %% python_version: 
 %%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
 %%    [GCC 9.2.0])
