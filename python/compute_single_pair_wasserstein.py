@@ -6,7 +6,12 @@ from mpi4py import MPI
 import netCDF4
 import ot
 import numpy as np
-from compressible_euler import conserved_variables
+conserved_variables = [
+    "rho",
+    "mx",
+    "my",
+    "E"
+]
 
 # We are not going to plot, but we will save data
 import plot_info
@@ -24,7 +29,7 @@ def get_resolution(filename):
     
 
 
-def load_plane_line(filename, start_x, end_x, start_x, end_x, number_of_samples, variables):
+def load_plane_line(filename, start_x, end_x, start_y, end_y, number_of_samples, variables):
     
     with netCDF4.Dataset(filename) as f:
         for attr in f.ncattrs():
@@ -34,12 +39,12 @@ def load_plane_line(filename, start_x, end_x, start_x, end_x, number_of_samples,
         length_y = end_y - start_y
         length_x = end_x - start_x
 
-        samples = np.zeros((number_of_samples, length_y, length_x, len(variables)))
+        samples = np.zeros((number_of_samples, length_x, length_y, len(variables)))
         for variable_index, variable in enumerate(variables):
             for sample in range(number_of_samples):
                 key = f'sample_{sample}_{variable}'
                 
-                samples[sample,:,:,variable_index] = f.variables[key][start_y:end_y, start_x:end_x,0]
+                samples[sample,:,:,variable_index] = f.variables[key][start_x:end_x, start_y:end_y,0]
                 
     return samples
 
@@ -96,8 +101,8 @@ def compute_wasserstein_one_point(file_a, file_b, multi_x, multi_y):
     weights_a = np.ones(resolution) / resolution
     weights_b = np.ones(resolution) / resolution
     
-    for y in range(end_x-start_x):
-        for x in range(resolution):
+    for y in range(end_y - start_y):
+        for x in range(end_x - start_x):
             distances = ot.dist(data_a[:,y//factor, x//factor,:],
                                 data_b[:,y, x,:], metric='euclidean')
                             
