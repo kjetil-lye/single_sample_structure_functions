@@ -32,7 +32,7 @@ do
     total=$((${multi_x}*${multi_y}))
 
     bsub -W 24:00 -n $total -R 'rusage[mem=3000]' mpirun -np ${total} \
-	python ../python/compute_one_point_wasserstein.py \
+	python ../python/compute_single_pair_wasserstein.py \
 	--file_a "${basepath}/kh/p0_06/N${resolution}/kh_functional_identity_${time}.nc" \
 	--file_b "${basepath}/kh/p0_06/N1024/kh_functional_identity_${time}.nc" \
 	--outfile "wasserstein_one_point_kh_0_06_${resolution}_1024" \
@@ -40,7 +40,7 @@ do
 	--multi_y ${multi_y}
 
     bsub -W 24:00 -n $total -R 'rusage[mem=3000]' mpirun -np ${total} \
-	python ../python/compute_one_point_wasserstein.py \
+	python ../python/compute_single_pair_wasserstein.py \
 	--file_a "${basepath}/rm/p0_06/N${resolution}/rm_functional_identity_${time}.nc" \
 	--file_b "${basepath}/rm/p0_06/N1024/rm_functional_identity_${time}.nc" \
 	--outfile "wasserstein_one_point_rm_0_06_${resolution}_1024" \
@@ -48,7 +48,7 @@ do
 	--multi_y ${multi_y}
 
     bsub -W 24:00 -n $total -R 'rusage[mem=3000]' mpirun -np ${total} \
-	python ../python/compute_one_point_wasserstein.py \
+	python ../python/compute_single_pair_wasserstein.py \
 	--file_a "${basepath}/shockvortex/p0_06/N${resolution}/shockvortex_functional_identity_${time}.nc" \
 	--file_b "${basepath}/shockvortex/p0_06/N1024/shockvortex_functional_identity_${time}.nc" \
 	--outfile "wasserstein_one_point_shockvortex_0_06_${resolution}_1024" \
@@ -56,7 +56,7 @@ do
 	--multi_y ${multi_y}
 
     bsub -W 24:00 -n $total -R 'rusage[mem=3000]' mpirun -np ${total} \
-	python ../python/compute_one_point_wasserstein.py \
+	python ../python/compute_single_pair_wasserstein.py \
 	--file_a "${basepath}/cloudshock/p0_06/N${resolution}/cloudshock_functional_identity_${time}.nc" \
 	--file_b "${basepath}/cloudshock/p0_06/N1024/cloudshock_functional_identity_${time}.nc" \
 	--outfile "wasserstein_one_point_cloudshock_0_06_${resolution}_1024" \
@@ -66,7 +66,7 @@ do
     for H in 0.125 0.5 0.75;
     do
 	bsub -W 24:00 -n $total -R 'rusage[mem=3000]' mpirun -np ${total} \
-	    python ../python/compute_one_point_wasserstein.py \
+	    python ../python/compute_single_pair_wasserstein.py \
 	    --file_a "${basepath}/fbb_short_time/H${H//./_}/N${resolution}/euler_fbb_functional_identity_${time}.nc" \
 	    --file_b "${basepath}/fbb_short_time/H${H//./_}/N1024/euler_fbb_functional_identity_${time}.nc" \
 	    --outfile "wasserstein_one_point_fbb_short_time_H${H//./_}_0_06_${resolution}_1024" \
