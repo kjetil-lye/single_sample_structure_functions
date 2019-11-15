@@ -154,7 +154,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                 min_value = min_values[variable_index]
                 max_value = max_values[variable_index]
                 
-                plt.pcolormesh(x, y, data[:,:,variable_index].T,
+                plt.pcolormesh(x, y, data[:,:,variable_index],
                                vmin=min_value, vmax=max_value)
                 
                 plt.xlabel("$x$")

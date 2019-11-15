@@ -69,7 +69,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: f7325b96be62cb6e04b9c2f6225c0e95cbe3f033
+Commit: d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -77,7 +77,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@f732};
+]{@d6efe};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -85,7 +85,7 @@ Hostname: lyelaptop};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: f7325b96be62cb6e04b9c2f6225c0e95cbe3f033
+Commit: d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \end{axis}
@@ -99,17 +99,17 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : f7325b96be62cb6e04b9c2f6225c0e95cbe3f033
+%% GIT git_commit : d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : f732
+%% GIT git_short_commit : d6efe
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-10-31 12:37:46.001183
+%% generated_on_date : 2019-11-14 15:01:01.933506
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-6528b0a9-f2f5-4afb-8e47-ee80f5c7ac4c.json
+%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-18ff9c60-5d64-49e0-a17a-173777362f1a.json
 %% python_version: 
 %%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
 %%    [GCC 9.2.0])
@@ -175,8 +175,8 @@ Hostname: lyelaptop};
 %%     pkgutil: Unknown (/usr/lib/python3.7/pkgutil.py)
 %%     weakref: Unknown (/usr/lib/python3.7/weakref.py)
 %%     _weakrefset: Unknown (/usr/lib/python3.7/_weakrefset.py)
-%%     ipykernel: 5.1.1 (/usr/lib/python3.7/site-packages/ipykernel/__init__.py)
-%%     ipykernel._version: 5.1.1 (/usr/lib/python3.7/site-packages/ipykernel/_version.py)
+%%     ipykernel: 5.1.3 (/usr/lib/python3.7/site-packages/ipykernel/__init__.py)
+%%     ipykernel._version: 5.1.3 (/usr/lib/python3.7/site-packages/ipykernel/_version.py)
 %%     ipykernel.connect: Unknown (/usr/lib/python3.7/site-packages/ipykernel/connect.py)
 %%     __future__: Unknown (/usr/lib/python3.7/__future__.py)
 %%     json: 2.0.9 (/usr/lib/python3.7/json/__init__.py)
@@ -205,10 +205,10 @@ Hostname: lyelaptop};
 %%     linecache: Unknown (/usr/lib/python3.7/linecache.py)
 %%     tokenize: Unknown (/usr/lib/python3.7/tokenize.py)
 %%     token: Unknown (/usr/lib/python3.7/token.py)
-%%     IPython: 7.8.0 (/usr/lib/python3.7/site-packages/IPython/__init__.py)
+%%     IPython: 7.9.0 (/usr/lib/python3.7/site-packages/IPython/__init__.py)
 %%     IPython.core: Unknown (/usr/lib/python3.7/site-packages/IPython/core/__init__.py)
 %%     IPython.core.getipython: Unknown (/usr/lib/python3.7/site-packages/IPython/core/getipython.py)
-%%     IPython.core.release: 7.8.0 (/usr/lib/python3.7/site-packages/IPython/core/release.py)
+%%     IPython.core.release: 7.9.0 (/usr/lib/python3.7/site-packages/IPython/core/release.py)
 %%     IPython.core.application: Unknown (/usr/lib/python3.7/site-packages/IPython/core/application.py)
 %%     atexit: Unknown (Unknown)
 %%     copy: Unknown (/usr/lib/python3.7/copy.py)
@@ -226,7 +226,7 @@ Hostname: lyelaptop};
 %%     _lzma: Unknown (/usr/lib/python3.7/lib-dynload/_lzma.cpython-37m-x86_64-linux-gnu.so)
 %%     pwd: Unknown (Unknown)
 %%     grp: Unknown (/usr/lib/python3.7/lib-dynload/grp.cpython-37m-x86_64-linux-gnu.so)
-%%     traitlets: 4.3.2 (/usr/lib/python3.7/site-packages/traitlets/__init__.py)
+%%     traitlets: 4.3.3 (/usr/lib/python3.7/site-packages/traitlets/__init__.py)
 %%     traitlets.traitlets: Unknown (/usr/lib/python3.7/site-packages/traitlets/traitlets.py)
 %%     inspect: Unknown (/usr/lib/python3.7/inspect.py)
 %%     dis: Unknown (/usr/lib/python3.7/dis.py)
@@ -245,7 +245,7 @@ Hostname: lyelaptop};
 %%     locale: Unknown (/usr/lib/python3.7/locale.py)
 %%     traitlets.utils.sentinel: Unknown (/usr/lib/python3.7/site-packages/traitlets/utils/sentinel.py)
 %%     traitlets.utils.bunch: Unknown (/usr/lib/python3.7/site-packages/traitlets/utils/bunch.py)
-%%     traitlets._version: 4.3.2 (/usr/lib/python3.7/site-packages/traitlets/_version.py)
+%%     traitlets._version: 4.3.3 (/usr/lib/python3.7/site-packages/traitlets/_version.py)
 %%     traitlets.config: Unknown (/usr/lib/python3.7/site-packages/traitlets/config/__init__.py)
 %%     traitlets.config.application: Unknown (/usr/lib/python3.7/site-packages/traitlets/config/application.py)
 %%     decorator: 4.4.0 (/usr/lib/python3.7/site-packages/decorator.py)
@@ -733,17 +733,17 @@ Hostname: lyelaptop};
 %%     IPython.extensions: Unknown (/usr/lib/python3.7/site-packages/IPython/extensions/__init__.py)
 %%     IPython.extensions.storemagic: Unknown (/usr/lib/python3.7/site-packages/IPython/extensions/storemagic.py)
 %%     IPython.utils.frame: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/frame.py)
-%%     jupyter_client: 5.3.1 (/usr/lib/python3.7/site-packages/jupyter_client/__init__.py)
-%%     jupyter_client._version: 5.3.1 (/usr/lib/python3.7/site-packages/jupyter_client/_version.py)
+%%     jupyter_client: 5.3.4 (/usr/lib/python3.7/site-packages/jupyter_client/__init__.py)
+%%     jupyter_client._version: 5.3.4 (/usr/lib/python3.7/site-packages/jupyter_client/_version.py)
 %%     jupyter_client.connect: Unknown (/usr/lib/python3.7/site-packages/jupyter_client/connect.py)
-%%     zmq: 18.0.2 (/usr/lib/python3.7/site-packages/zmq/__init__.py)
+%%     zmq: 18.1.0 (/usr/lib/python3.7/site-packages/zmq/__init__.py)
 %%     zmq.backend: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/__init__.py)
 %%     zmq.backend.select: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/select.py)
 %%     zmq.backend.cython: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/cython/__init__.py)
 %%     zmq.backend.cython.constants: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/cython/constants.cpython-37m-x86_64-linux-gnu.so)
 %%     cython_runtime: Unknown (Unknown)
 %%     zmq.backend.cython.error: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/cython/error.cpython-37m-x86_64-linux-gnu.so)
-%%     _cython_0_29_10: Unknown (Unknown)
+%%     _cython_0_29_13: Unknown (Unknown)
 %%     zmq.backend.cython.message: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/cython/message.cpython-37m-x86_64-linux-gnu.so)
 %%     zmq.error: Unknown (/usr/lib/python3.7/site-packages/zmq/error.py)
 %%     zmq.backend.cython.context: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/cython/context.cpython-37m-x86_64-linux-gnu.so)
@@ -753,7 +753,7 @@ Hostname: lyelaptop};
 %%     zmq.backend.cython._version: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/cython/_version.cpython-37m-x86_64-linux-gnu.so)
 %%     zmq.backend.cython._device: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/cython/_device.cpython-37m-x86_64-linux-gnu.so)
 %%     zmq.backend.cython._proxy_steerable: Unknown (/usr/lib/python3.7/site-packages/zmq/backend/cython/_proxy_steerable.cpython-37m-x86_64-linux-gnu.so)
-%%     zmq.sugar: 18.0.2 (/usr/lib/python3.7/site-packages/zmq/sugar/__init__.py)
+%%     zmq.sugar: 18.1.0 (/usr/lib/python3.7/site-packages/zmq/sugar/__init__.py)
 %%     zmq.sugar.constants: Unknown (/usr/lib/python3.7/site-packages/zmq/sugar/constants.py)
 %%     zmq.utils: Unknown (/usr/lib/python3.7/site-packages/zmq/utils/__init__.py)
 %%     zmq.utils.constant_names: Unknown (/usr/lib/python3.7/site-packages/zmq/utils/constant_names.py)
@@ -776,11 +776,11 @@ Hostname: lyelaptop};
 %%     simplejson.encoder: Unknown (/usr/lib/python3.7/site-packages/simplejson/encoder.py)
 %%     zmq.sugar.frame: Unknown (/usr/lib/python3.7/site-packages/zmq/sugar/frame.py)
 %%     zmq.sugar.tracker: Unknown (/usr/lib/python3.7/site-packages/zmq/sugar/tracker.py)
-%%     zmq.sugar.version: 18.0.2 (/usr/lib/python3.7/site-packages/zmq/sugar/version.py)
+%%     zmq.sugar.version: 18.1.0 (/usr/lib/python3.7/site-packages/zmq/sugar/version.py)
 %%     zmq.sugar.stopwatch: Unknown (/usr/lib/python3.7/site-packages/zmq/sugar/stopwatch.py)
 %%     jupyter_client.localinterfaces: Unknown (/usr/lib/python3.7/site-packages/jupyter_client/localinterfaces.py)
-%%     jupyter_core: 4.5.0 (/usr/lib/python3.7/site-packages/jupyter_core/__init__.py)
-%%     jupyter_core.version: 4.5.0 (/usr/lib/python3.7/site-packages/jupyter_core/version.py)
+%%     jupyter_core: 4.6.0 (/usr/lib/python3.7/site-packages/jupyter_core/__init__.py)
+%%     jupyter_core.version: 4.6.0 (/usr/lib/python3.7/site-packages/jupyter_core/version.py)
 %%     jupyter_core.paths: Unknown (/usr/lib/python3.7/site-packages/jupyter_core/paths.py)
 %%     jupyter_client.launcher: Unknown (/usr/lib/python3.7/site-packages/jupyter_client/launcher.py)
 %%     traitlets.log: Unknown (/usr/lib/python3.7/site-packages/traitlets/log.py)
@@ -845,6 +845,9 @@ Hostname: lyelaptop};
 %%     ipykernel.zmqshell: Unknown (/usr/lib/python3.7/site-packages/ipykernel/zmqshell.py)
 %%     IPython.core.payloadpage: Unknown (/usr/lib/python3.7/site-packages/IPython/core/payloadpage.py)
 %%     ipykernel.displayhook: Unknown (/usr/lib/python3.7/site-packages/ipykernel/displayhook.py)
+%%     ipykernel.eventloops: Unknown (/usr/lib/python3.7/site-packages/ipykernel/eventloops.py)
+%%     distutils: 3.7.4 (/usr/lib/python3.7/distutils/__init__.py)
+%%     distutils.version: Unknown (/usr/lib/python3.7/distutils/version.py)
 %%     ipykernel.parentpoller: Unknown (/usr/lib/python3.7/site-packages/ipykernel/parentpoller.py)
 %%     faulthandler: Unknown (Unknown)
 %%     ipykernel.datapub: Unknown (/usr/lib/python3.7/site-packages/ipykernel/datapub.py)
@@ -853,8 +856,8 @@ Hostname: lyelaptop};
 %%     ipykernel.codeutil: Unknown (/usr/lib/python3.7/site-packages/ipykernel/codeutil.py)
 %%     IPython.core.completerlib: Unknown (/usr/lib/python3.7/site-packages/IPython/core/completerlib.py)
 %%     storemagic: Unknown (/usr/lib/python3.7/site-packages/IPython/extensions/storemagic.py)
-%%     ipywidgets: 7.5.0 (/usr/lib/python3.7/site-packages/ipywidgets/__init__.py)
-%%     ipywidgets._version: 7.5.0 (/usr/lib/python3.7/site-packages/ipywidgets/_version.py)
+%%     ipywidgets: 7.5.1 (/usr/lib/python3.7/site-packages/ipywidgets/__init__.py)
+%%     ipywidgets._version: 7.5.1 (/usr/lib/python3.7/site-packages/ipywidgets/_version.py)
 %%     ipywidgets.widgets: Unknown (/usr/lib/python3.7/site-packages/ipywidgets/widgets/__init__.py)
 %%     ipywidgets.widgets.widget: Unknown (/usr/lib/python3.7/site-packages/ipywidgets/widgets/widget.py)
 %%     ipywidgets.widgets.domwidget: Unknown (/usr/lib/python3.7/site-packages/ipywidgets/widgets/domwidget.py)
@@ -885,16 +888,14 @@ Hostname: lyelaptop};
 %%     ipywidgets.widgets.widget_upload: Unknown (/usr/lib/python3.7/site-packages/ipywidgets/widgets/widget_upload.py)
 %%     latex_plots: Unknown (../python/latex_plots.py)
 %%     matplotlib: 3.1.1 (/usr/lib/python3.7/site-packages/matplotlib/__init__.py)
-%%     distutils: 3.7.4 (/usr/lib/python3.7/distutils/__init__.py)
-%%     distutils.version: Unknown (/usr/lib/python3.7/distutils/version.py)
 %%     matplotlib.cbook: Unknown (/usr/lib/python3.7/site-packages/matplotlib/cbook/__init__.py)
 %%     gzip: Unknown (/usr/lib/python3.7/gzip.py)
-%%     numpy: 1.17.2 (/usr/lib/python3.7/site-packages/numpy/__init__.py)
+%%     numpy: 1.17.3 (/usr/lib/python3.7/site-packages/numpy/__init__.py)
 %%     numpy._globals: Unknown (/usr/lib/python3.7/site-packages/numpy/_globals.py)
 %%     numpy.__config__: Unknown (/usr/lib/python3.7/site-packages/numpy/__config__.py)
 %%     numpy.version: Unknown (/usr/lib/python3.7/site-packages/numpy/version.py)
 %%     numpy._distributor_init: Unknown (/usr/lib/python3.7/site-packages/numpy/_distributor_init.py)
-%%     numpy.core: 1.17.2 (/usr/lib/python3.7/site-packages/numpy/core/__init__.py)
+%%     numpy.core: 1.17.3 (/usr/lib/python3.7/site-packages/numpy/core/__init__.py)
 %%     numpy.core.info: Unknown (/usr/lib/python3.7/site-packages/numpy/core/info.py)
 %%     numpy.core.multiarray: Unknown (/usr/lib/python3.7/site-packages/numpy/core/multiarray.py)
 %%     numpy.core.overrides: Unknown (/usr/lib/python3.7/site-packages/numpy/core/overrides.py)
@@ -927,7 +928,7 @@ Hostname: lyelaptop};
 %%     numpy.core._dtype_ctypes: Unknown (/usr/lib/python3.7/site-packages/numpy/core/_dtype_ctypes.py)
 %%     numpy.core._internal: Unknown (/usr/lib/python3.7/site-packages/numpy/core/_internal.py)
 %%     numpy._pytesttester: Unknown (/usr/lib/python3.7/site-packages/numpy/_pytesttester.py)
-%%     numpy.lib: 1.17.2 (/usr/lib/python3.7/site-packages/numpy/lib/__init__.py)
+%%     numpy.lib: 1.17.3 (/usr/lib/python3.7/site-packages/numpy/lib/__init__.py)
 %%     numpy.lib.info: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/info.py)
 %%     numpy.lib.type_check: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/type_check.py)
 %%     numpy.lib.ufunclike: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/ufunclike.py)
@@ -959,9 +960,8 @@ Hostname: lyelaptop};
 %%     numpy.lib.arraypad: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/arraypad.py)
 %%     numpy.lib._version: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/_version.py)
 %%     numpy.fft: Unknown (/usr/lib/python3.7/site-packages/numpy/fft/__init__.py)
-%%     numpy.fft.info: Unknown (/usr/lib/python3.7/site-packages/numpy/fft/info.py)
-%%     numpy.fft.pocketfft: Unknown (/usr/lib/python3.7/site-packages/numpy/fft/pocketfft.py)
-%%     numpy.fft.pocketfft_internal: Unknown (/usr/lib/python3.7/site-packages/numpy/fft/pocketfft_internal.cpython-37m-x86_64-linux-gnu.so)
+%%     numpy.fft._pocketfft: Unknown (/usr/lib/python3.7/site-packages/numpy/fft/_pocketfft.py)
+%%     numpy.fft._pocketfft_internal: Unknown (/usr/lib/python3.7/site-packages/numpy/fft/_pocketfft_internal.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.fft.helper: Unknown (/usr/lib/python3.7/site-packages/numpy/fft/helper.py)
 %%     numpy.polynomial: Unknown (/usr/lib/python3.7/site-packages/numpy/polynomial/__init__.py)
 %%     numpy.polynomial.polynomial: Unknown (/usr/lib/python3.7/site-packages/numpy/polynomial/polynomial.py)
@@ -979,9 +979,7 @@ Hostname: lyelaptop};
 %%     numpy.random.bounded_integers: Unknown (/usr/lib/python3.7/site-packages/numpy/random/bounded_integers.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.mt19937: Unknown (/usr/lib/python3.7/site-packages/numpy/random/mt19937.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.bit_generator: Unknown (/usr/lib/python3.7/site-packages/numpy/random/bit_generator.cpython-37m-x86_64-linux-gnu.so)
-%%     _cython_0_29_13: Unknown (Unknown)
 %%     secrets: Unknown (/usr/lib/python3.7/secrets.py)
-%%     numpy.random.entropy: Unknown (/usr/lib/python3.7/site-packages/numpy/random/entropy.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.philox: Unknown (/usr/lib/python3.7/site-packages/numpy/random/philox.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.pcg64: Unknown (/usr/lib/python3.7/site-packages/numpy/random/pcg64.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.sfc64: Unknown (/usr/lib/python3.7/site-packages/numpy/random/sfc64.cpython-37m-x86_64-linux-gnu.so)
@@ -1050,8 +1048,8 @@ Hostname: lyelaptop};
 %%     matplotlib.backend_tools: Unknown (/usr/lib/python3.7/site-packages/matplotlib/backend_tools.py)
 %%     matplotlib.tight_bbox: Unknown (/usr/lib/python3.7/site-packages/matplotlib/tight_bbox.py)
 %%     matplotlib.widgets: Unknown (/usr/lib/python3.7/site-packages/matplotlib/widgets.py)
-%%     PIL: 6.1.0 (/usr/lib/python3.7/site-packages/PIL/__init__.py)
-%%     PIL._version: 6.1.0 (/usr/lib/python3.7/site-packages/PIL/_version.py)
+%%     PIL: 6.2.0 (/usr/lib/python3.7/site-packages/PIL/__init__.py)
+%%     PIL._version: 6.2.0 (/usr/lib/python3.7/site-packages/PIL/_version.py)
 %%     matplotlib._image: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_image.cpython-37m-x86_64-linux-gnu.so)
 %%     matplotlib.style: Unknown (/usr/lib/python3.7/site-packages/matplotlib/style/__init__.py)
 %%     matplotlib.style.core: Unknown (/usr/lib/python3.7/site-packages/matplotlib/style/core.py)
@@ -1094,17 +1092,16 @@ Hostname: lyelaptop};
 %%     matplotlib.projections.polar: Unknown (/usr/lib/python3.7/site-packages/matplotlib/projections/polar.py)
 %%     matplotlib.backends.backend_agg: 3.1.1 (/usr/lib/python3.7/site-packages/matplotlib/backends/backend_agg.py)
 %%     matplotlib.backends._backend_agg: Unknown (/usr/lib/python3.7/site-packages/matplotlib/backends/_backend_agg.cpython-37m-x86_64-linux-gnu.so)
-%%     PIL.Image: 6.1.0 (/usr/lib/python3.7/site-packages/PIL/Image.py)
-%%     PIL._util: Unknown (/usr/lib/python3.7/site-packages/PIL/_util.py)
+%%     PIL.Image: 6.2.0 (/usr/lib/python3.7/site-packages/PIL/Image.py)
 %%     PIL.ImageMode: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageMode.py)
 %%     PIL.TiffTags: Unknown (/usr/lib/python3.7/site-packages/PIL/TiffTags.py)
 %%     PIL._binary: Unknown (/usr/lib/python3.7/site-packages/PIL/_binary.py)
+%%     PIL._util: Unknown (/usr/lib/python3.7/site-packages/PIL/_util.py)
 %%     PIL._imaging: Unknown (/usr/lib/python3.7/site-packages/PIL/_imaging.cpython-37m-x86_64-linux-gnu.so)
 %%     ipykernel.pylab: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/__init__.py)
 %%     ipykernel.pylab.backend_inline: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/backend_inline.py)
 %%     ipykernel.pylab.config: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/config.py)
-%%     ipykernel.eventloops: Unknown (/usr/lib/python3.7/site-packages/ipykernel/eventloops.py)
-%%     plot_info: 1.17.2 (../python/plot_info.py)
+%%     plot_info: 1.17.3 (../python/plot_info.py)
 %%     tikzplotlib: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/__init__.py)
 %%     tikzplotlib.__about__: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/__about__.py)
 %%     tikzplotlib.save: 0.8.2 (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/save.py)
@@ -1122,7 +1119,7 @@ Hostname: lyelaptop};
 %%     tikzplotlib.patch: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/patch.py)
 %%     tikzplotlib.quadmesh: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/quadmesh.py)
 %%     tikzplotlib.text: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/tikzplotlib/text.py)
-%%     git: 3.0.2 (/usr/lib/python3.7/site-packages/git/__init__.py)
+%%     git: 3.0.4 (/usr/lib/python3.7/site-packages/git/__init__.py)
 %%     gitdb: 2.0.6 (/usr/lib/python3.7/site-packages/gitdb/__init__.py)
 %%     smmap: 2.0.5 (/usr/lib/python3.7/site-packages/smmap/__init__.py)
 %%     smmap.mman: Unknown (/usr/lib/python3.7/site-packages/smmap/mman.py)
@@ -1184,12 +1181,11 @@ Hostname: lyelaptop};
 %%     git.index.util: Unknown (/usr/lib/python3.7/site-packages/git/index/util.py)
 %%     git.remote: Unknown (/usr/lib/python3.7/site-packages/git/remote.py)
 %%     git.repo.fun: Unknown (/usr/lib/python3.7/site-packages/git/repo/fun.py)
-%%     netCDF4: 1.5.2 (/usr/lib/python3.7/site-packages/netCDF4/__init__.py)
-%%     netCDF4._netCDF4: 1.5.2 (/usr/lib/python3.7/site-packages/netCDF4/_netCDF4.cpython-37m-x86_64-linux-gnu.so)
+%%     netCDF4: 1.5.3 (/usr/lib/python3.7/site-packages/netCDF4/__init__.py)
+%%     netCDF4._netCDF4: 1.5.3 (/usr/lib/python3.7/site-packages/netCDF4/_netCDF4.cpython-37m-x86_64-linux-gnu.so)
 %%     netCDF4.utils: Unknown (/usr/lib/python3.7/site-packages/netCDF4/utils.py)
-%%     cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/__init__.py)
-%%     cftime._cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/_cftime.cpython-37m-x86_64-linux-gnu.so)
-%%     _cython_0_29_1: Unknown (Unknown)
+%%     cftime: 1.0.4.2 (/usr/lib/python3.7/site-packages/cftime/__init__.py)
+%%     cftime._cftime: 1.0.4.2 (/usr/lib/python3.7/site-packages/cftime/_cftime.cpython-37m-x86_64-linux-gnu.so)
 %%     matplotlib2tikz: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__init__.py)
 %%     matplotlib2tikz.__about__: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/__about__.py)
 %%     matplotlib2tikz.save: 0.6.18 (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/save.py)
@@ -1206,9 +1202,9 @@ Hostname: lyelaptop};
 %%     PIL.BmpImagePlugin: 0.7 (/usr/lib/python3.7/site-packages/PIL/BmpImagePlugin.py)
 %%     PIL.ImageFile: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageFile.py)
 %%     PIL.ImagePalette: Unknown (/usr/lib/python3.7/site-packages/PIL/ImagePalette.py)
-%%     PIL.ImageColor: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageColor.py)
-%%     PIL.GimpPaletteFile: Unknown (/usr/lib/python3.7/site-packages/PIL/GimpPaletteFile.py)
 %%     PIL.GimpGradientFile: Unknown (/usr/lib/python3.7/site-packages/PIL/GimpGradientFile.py)
+%%     PIL.GimpPaletteFile: Unknown (/usr/lib/python3.7/site-packages/PIL/GimpPaletteFile.py)
+%%     PIL.ImageColor: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageColor.py)
 %%     PIL.PaletteFile: Unknown (/usr/lib/python3.7/site-packages/PIL/PaletteFile.py)
 %%     PIL.GifImagePlugin: 0.9 (/usr/lib/python3.7/site-packages/PIL/GifImagePlugin.py)
 %%     PIL.ImageChops: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageChops.py)
@@ -1223,9 +1219,9 @@ Hostname: lyelaptop};
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 330, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 109, file: <ipython-input-4-17c1ccc52087>]
-%%     [function: for_each_config, line: 36, file: <ipython-input-1-d0c606e0ff22>]
-%%     [function: <module>, line: 112, file: <ipython-input-4-17c1ccc52087>]
+%%     [function: convergence_structure_functions, line: 117, file: <ipython-input-4-3dad20916027>]
+%%     [function: for_each_config, line: 37, file: <ipython-input-1-57f864807074>]
+%%     [function: <module>, line: 137, file: <ipython-input-4-3dad20916027>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
@@ -1233,17 +1229,17 @@ Hostname: lyelaptop};
 %%     [function: _run_cell, line: 2881, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell, line: 2855, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell, line: 536, file: /usr/lib/python3.7/site-packages/ipykernel/zmqshell.py]
-%%     [function: do_execute, line: 294, file: /usr/lib/python3.7/site-packages/ipykernel/ipkernel.py]
+%%     [function: do_execute, line: 300, file: /usr/lib/python3.7/site-packages/ipykernel/ipkernel.py]
 %%     [function: wrapper, line: 209, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
-%%     [function: execute_request, line: 542, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
+%%     [function: execute_request, line: 541, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
 %%     [function: wrapper, line: 209, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
-%%     [function: dispatch_shell, line: 272, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
+%%     [function: dispatch_shell, line: 268, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
 %%     [function: wrapper, line: 209, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
-%%     [function: process_one, line: 365, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
+%%     [function: process_one, line: 361, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
 %%     [function: run, line: 748, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
 %%     [function: __init__, line: 714, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
 %%     [function: wrapper, line: 225, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
-%%     [function: dispatch_queue, line: 378, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
+%%     [function: dispatch_queue, line: 377, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
 %%     [function: run, line: 748, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
 %%     [function: inner, line: 787, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
 %%     [function: _run_callback, line: 743, file: /usr/lib/python3.7/site-packages/tornado/ioloop.py]
@@ -1252,8 +1248,8 @@ Hostname: lyelaptop};
 %%     [function: _run_once, line: 1771, file: /usr/lib/python3.7/asyncio/base_events.py]
 %%     [function: run_forever, line: 534, file: /usr/lib/python3.7/asyncio/base_events.py]
 %%     [function: start, line: 148, file: /usr/lib/python3.7/site-packages/tornado/platform/asyncio.py]
-%%     [function: start, line: 505, file: /usr/lib/python3.7/site-packages/ipykernel/kernelapp.py]
-%%     [function: launch_instance, line: 658, file: /usr/lib/python3.7/site-packages/traitlets/config/application.py]
+%%     [function: start, line: 563, file: /usr/lib/python3.7/site-packages/ipykernel/kernelapp.py]
+%%     [function: launch_instance, line: 664, file: /usr/lib/python3.7/site-packages/traitlets/config/application.py]
 %%     [function: <module>, line: 16, file: /usr/lib/python3.7/site-packages/ipykernel_launcher.py]
 %%     [function: _run_code, line: 85, file: /usr/lib/python3.7/runpy.py]
 %%     [function: _run_module_as_main, line: 193, file: /usr/lib/python3.7/runpy.py]
