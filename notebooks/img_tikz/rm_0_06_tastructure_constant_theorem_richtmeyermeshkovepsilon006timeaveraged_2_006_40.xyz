@@ -3,12 +3,11 @@
 
 \definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
 \definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
-\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
 
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend style={at={(0.03,0.97)}, anchor=north west, draw=white!80.0!black},
+legend style={draw=white!80.0!black},
 log basis x={2},
 log basis y={2},
 tick align=outside,
@@ -26,75 +25,43 @@ xtick={128,256,512,1024},
 xticklabels={\(\displaystyle 128\times 128\),\(\displaystyle 256\times 256\),\(\displaystyle 512\times 512\),\(\displaystyle 1024\times 1024\)},
 y grid style={white!69.01960784313725!black},
 ylabel={Constant \(\displaystyle C_{N,s}\)},
-ymin=0.970041883565352, ymax=1.89408641456679,
+ymin=0.5, ymax=16,
 ymode=log,
 ytick style={color=black}
 ]
 \path [draw=color0, semithick]
-(axis cs:128,1)
---(axis cs:128,1);
-
-\path [draw=color0, semithick]
-(axis cs:256,1)
---(axis cs:256,1);
-
-\path [draw=color0, semithick]
-(axis cs:512,1)
---(axis cs:512,1);
-
-\path [draw=color0, semithick]
-(axis cs:1024,1)
---(axis cs:1024,1);
-
-\path [draw=color1, semithick]
 (axis cs:128,1.02288664251948)
 --(axis cs:128,1.03756325865184);
 
-\path [draw=color1, semithick]
+\path [draw=color0, semithick]
 (axis cs:256,1.04860860727738)
 --(axis cs:256,1.07296961004647);
 
-\path [draw=color1, semithick]
+\path [draw=color0, semithick]
 (axis cs:512,1.05354123429173)
 --(axis cs:512,1.07239495259298);
 
-\path [draw=color1, semithick]
+\path [draw=color0, semithick]
 (axis cs:1024,1.08204278597839)
 --(axis cs:1024,1.10031390627842);
 
-\path [draw=color2, semithick]
+\path [draw=color1, semithick]
 (axis cs:128,1.22842236995755)
 --(axis cs:128,1.24604806064783);
 
-\path [draw=color2, semithick]
+\path [draw=color1, semithick]
 (axis cs:256,1.44853352867806)
 --(axis cs:256,1.48416784458615);
 
-\path [draw=color2, semithick]
+\path [draw=color1, semithick]
 (axis cs:512,1.5954126035137)
 --(axis cs:512,1.64365526172688);
 
-\path [draw=color2, semithick]
+\path [draw=color1, semithick]
 (axis cs:1024,1.77461792991815)
 --(axis cs:1024,1.83734315322191);
 
 \addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 128 1.02288664251948
 256 1.04860860727738
@@ -102,7 +69,7 @@ table {%
 1024 1.08204278597839
 };
 \addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
+\addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 128 1.03756325865184
 256 1.07296961004647
@@ -110,7 +77,7 @@ table {%
 1024 1.10031390627842
 };
 \addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=-, mark size=5, mark options={solid}, only marks]
+\addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 128 1.22842236995755
 256 1.44853352867806
@@ -118,7 +85,7 @@ table {%
 1024 1.77461792991815
 };
 \addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=-, mark size=5, mark options={solid}, only marks]
+\addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 128 1.24604806064783
 256 1.48416784458615
@@ -128,21 +95,13 @@ table {%
 \addlegendentry{$s=3$}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
 table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
-table {%
 128 1.03022495058566
 256 1.06078910866193
 512 1.06296809344236
 1024 1.0911783461284
 };
 \addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
 table {%
 128 1.23723521530269
 256 1.4663506866321
@@ -157,7 +116,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
+Commit: 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -165,7 +124,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@d6efe};
+]{@8ecca};
 \end{axis}
 
 \end{tikzpicture}
@@ -179,14 +138,14 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
+%% GIT git_commit : 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : d6efe
+%% GIT git_short_commit : 8ecca
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-11-15 17:17:34.132156
+%% generated_on_date : 2019-11-16 18:56:41.863406
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-18ff9c60-5d64-49e0-a17a-173777362f1a.json
@@ -1298,9 +1257,9 @@ Hostname: lyelaptop};
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 134, file: <ipython-input-4-3dad20916027>]
+%%     [function: convergence_structure_functions, line: 137, file: <ipython-input-4-2f0ac20faa04>]
 %%     [function: for_each_config, line: 37, file: <ipython-input-1-57f864807074>]
-%%     [function: <module>, line: 137, file: <ipython-input-4-3dad20916027>]
+%%     [function: <module>, line: 140, file: <ipython-input-4-2f0ac20faa04>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]

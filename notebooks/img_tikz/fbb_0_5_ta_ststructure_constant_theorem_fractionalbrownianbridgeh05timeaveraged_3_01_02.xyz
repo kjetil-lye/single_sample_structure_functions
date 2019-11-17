@@ -2,13 +2,11 @@
 \begin{tikzpicture}
 
 \definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
-\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
-\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
 
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend style={at={(0.03,0.97)}, anchor=north west, draw=white!80.0!black},
+legend style={draw=white!80.0!black},
 log basis x={2},
 log basis y={2},
 tick align=outside,
@@ -26,91 +24,27 @@ xtick={128,256,512,1024},
 xticklabels={\(\displaystyle 128\times 128\),\(\displaystyle 256\times 256\),\(\displaystyle 512\times 512\),\(\displaystyle 1024\times 1024\)},
 y grid style={white!69.01960784313725!black},
 ylabel={Constant \(\displaystyle C_{N,s}\)},
-ymin=0.964705124137021, ymax=1.94506468117852,
+ymin=0.5, ymax=16,
 ymode=log,
 ytick style={color=black}
 ]
 \path [draw=color0, semithick]
-(axis cs:128,1)
---(axis cs:128,1);
-
-\path [draw=color0, semithick]
-(axis cs:256,1)
---(axis cs:256,1);
-
-\path [draw=color0, semithick]
-(axis cs:512,1)
---(axis cs:512,1);
-
-\path [draw=color0, semithick]
-(axis cs:1024,1)
---(axis cs:1024,1);
-
-\path [draw=color1, semithick]
-(axis cs:128,0.995949431808017)
---(axis cs:128,1.01550996139826);
-
-\path [draw=color1, semithick]
-(axis cs:256,1.02604014025632)
---(axis cs:256,1.0885424101302);
-
-\path [draw=color1, semithick]
-(axis cs:512,1.03659424899067)
---(axis cs:512,1.11073414950589);
-
-\path [draw=color1, semithick]
-(axis cs:1024,1.02763191740595)
---(axis cs:1024,1.10093110118582);
-
-\path [draw=color2, semithick]
 (axis cs:128,1.1604464875225)
 --(axis cs:128,1.22184413680809);
 
-\path [draw=color2, semithick]
+\path [draw=color0, semithick]
 (axis cs:256,1.40990604700231)
 --(axis cs:256,1.50922492069698);
 
-\path [draw=color2, semithick]
+\path [draw=color0, semithick]
 (axis cs:512,1.59850780582869)
 --(axis cs:512,1.73857400109786);
 
-\path [draw=color2, semithick]
+\path [draw=color0, semithick]
 (axis cs:1024,1.70872017412602)
 --(axis cs:1024,1.88404531875125);
 
 \addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 0.995949431808017
-256 1.02604014025632
-512 1.03659424899067
-1024 1.02763191740595
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1.01550996139826
-256 1.0885424101302
-512 1.11073414950589
-1024 1.10093110118582
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 128 1.1604464875225
 256 1.40990604700231
@@ -118,7 +52,7 @@ table {%
 1024 1.70872017412602
 };
 \addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=-, mark size=5, mark options={solid}, only marks]
+\addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 128 1.22184413680809
 256 1.50922492069698
@@ -127,22 +61,6 @@ table {%
 };
 \addlegendentry{$s=3$}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
-table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
-table {%
-128 1.00572969660314
-256 1.05729127519326
-512 1.07366419924828
-1024 1.06428150929588
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
 table {%
 128 1.1911453121653
 256 1.45956548384964
@@ -157,7 +75,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
+Commit: 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -165,7 +83,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@d6efe};
+]{@8ecca};
 \end{axis}
 
 \end{tikzpicture}
@@ -179,14 +97,14 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
+%% GIT git_commit : 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : d6efe
+%% GIT git_short_commit : 8ecca
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-11-15 16:17:21.619027
+%% generated_on_date : 2019-11-16 17:58:48.454274
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-18ff9c60-5d64-49e0-a17a-173777362f1a.json
@@ -1298,9 +1216,9 @@ Hostname: lyelaptop};
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 134, file: <ipython-input-4-3dad20916027>]
+%%     [function: convergence_structure_functions, line: 137, file: <ipython-input-4-2f0ac20faa04>]
 %%     [function: for_each_config, line: 37, file: <ipython-input-1-57f864807074>]
-%%     [function: <module>, line: 137, file: <ipython-input-4-3dad20916027>]
+%%     [function: <module>, line: 140, file: <ipython-input-4-2f0ac20faa04>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
