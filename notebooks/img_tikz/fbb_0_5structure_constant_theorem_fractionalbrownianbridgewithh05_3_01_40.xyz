@@ -2,8 +2,6 @@
 \begin{tikzpicture}
 
 \definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
-\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
-\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
 
 \begin{axis}[
 height=\figureheight,
@@ -31,86 +29,22 @@ ymode=log,
 ytick style={color=black}
 ]
 \path [draw=color0, semithick]
-(axis cs:128,1)
---(axis cs:128,1);
-
-\path [draw=color0, semithick]
-(axis cs:256,1)
---(axis cs:256,1);
-
-\path [draw=color0, semithick]
-(axis cs:512,1)
---(axis cs:512,1);
-
-\path [draw=color0, semithick]
-(axis cs:1024,1)
---(axis cs:1024,1);
-
-\path [draw=color1, semithick]
-(axis cs:128,1.00397005736714)
---(axis cs:128,1.0550427932466);
-
-\path [draw=color1, semithick]
-(axis cs:256,1.06524049886236)
---(axis cs:256,1.18398996639553);
-
-\path [draw=color1, semithick]
-(axis cs:512,1.07071969388715)
---(axis cs:512,1.24037972884995);
-
-\path [draw=color1, semithick]
-(axis cs:1024,1.03845304182233)
---(axis cs:1024,1.21132952412687);
-
-\path [draw=color2, semithick]
 (axis cs:128,1.18323397144335)
 --(axis cs:128,1.27368154730995);
 
-\path [draw=color2, semithick]
+\path [draw=color0, semithick]
 (axis cs:256,1.46565102508896)
 --(axis cs:256,1.64121515195618);
 
-\path [draw=color2, semithick]
+\path [draw=color0, semithick]
 (axis cs:512,1.66641657514355)
 --(axis cs:512,1.9528379172578);
 
-\path [draw=color2, semithick]
+\path [draw=color0, semithick]
 (axis cs:1024,1.76948535438318)
 --(axis cs:1024,2.14910649236847);
 
 \addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1.00397005736714
-256 1.06524049886236
-512 1.07071969388715
-1024 1.03845304182233
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=-, mark size=5, mark options={solid}, only marks]
-table {%
-128 1.0550427932466
-256 1.18398996639553
-512 1.24037972884995
-1024 1.21132952412687
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 128 1.18323397144335
 256 1.46565102508896
@@ -118,7 +52,7 @@ table {%
 1024 1.76948535438318
 };
 \addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=-, mark size=5, mark options={solid}, only marks]
+\addplot [semithick, color0, mark=-, mark size=5, mark options={solid}, only marks]
 table {%
 128 1.27368154730995
 256 1.64121515195618
@@ -127,22 +61,6 @@ table {%
 };
 \addlegendentry{$s=3$}
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
-table {%
-128 1
-256 1
-512 1
-1024 1
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
-table {%
-128 1.02950642530687
-256 1.12461523262895
-512 1.15554971136855
-1024 1.1248912829746
-};
-\addlegendentry{$s=3$}
-\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
 table {%
 128 1.22845775937665
 256 1.55343308852257
@@ -157,7 +75,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
+Commit: 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -165,7 +83,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@d6efe};
+]{@8ecca};
 \end{axis}
 
 \end{tikzpicture}
@@ -179,14 +97,14 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
+%% GIT git_commit : 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : d6efe
+%% GIT git_short_commit : 8ecca
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-11-15 18:58:39.550232
+%% generated_on_date : 2019-11-16 12:57:15.220621
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-18ff9c60-5d64-49e0-a17a-173777362f1a.json

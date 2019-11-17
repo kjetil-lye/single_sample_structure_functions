@@ -404,7 +404,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
+Commit: 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -412,7 +412,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@d6efe};
+]{@8ecca};
 \end{axis}
 
 \end{tikzpicture}
@@ -424,14 +424,14 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : d6efe2b40fb5f0f8baa0fe726d368da0b71b1574
+%% GIT git_commit : 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : d6efe
+%% GIT git_short_commit : 8ecca
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-11-14 14:30:26.825711
+%% generated_on_date : 2019-11-16 14:38:38.546728
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-18ff9c60-5d64-49e0-a17a-173777362f1a.json
@@ -1543,9 +1543,9 @@ Hostname: lyelaptop};
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 73, file: <ipython-input-4-3dad20916027>]
+%%     [function: convergence_structure_functions, line: 73, file: <ipython-input-4-2f0ac20faa04>]
 %%     [function: for_each_config, line: 37, file: <ipython-input-1-57f864807074>]
-%%     [function: <module>, line: 137, file: <ipython-input-4-3dad20916027>]
+%%     [function: <module>, line: 140, file: <ipython-input-4-2f0ac20faa04>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
