@@ -16,8 +16,8 @@ xmajorgrids,
 xmin=238.856445833423, xmax=1097.49602563716,
 xmode=log,
 xtick style={color=black},
-xtick={64,128,256,512,1024,2048,4096},
-xticklabels={\(\displaystyle 2^{6}\),\(\displaystyle 2^{7}\),\(\displaystyle 2^{8}\),\(\displaystyle 2^{9}\),\(\displaystyle 2^{10}\),\(\displaystyle 2^{11}\),\(\displaystyle 2^{12}\)},
+xtick={256,512,1024},
+xticklabels={\(\displaystyle 256\times 256\),\(\displaystyle 512\times 512\),\(\displaystyle 1024\times 1024\)},
 y grid style={white!69.01960784313725!black},
 ylabel={\(\displaystyle |S^{2}_{r_{\mathrm{max}}}(\mu^{1/N,1024})-S^{2}_{r_{\mathrm{max}}}(\mu^{2/N,1024})|\)},
 ymajorgrids,
@@ -40,7 +40,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: ea459067bbccbc2b3a1c970b75c3aa6acfbd92be
+Commit: a7011f8b4c852951779aa0b45578587aeafdfd2b
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions
 Hostname: galerkin};
 \node at (axis cs:0.2,0.93)[
@@ -48,7 +48,7 @@ Hostname: galerkin};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@ea4590};
+]{@a7011};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -56,7 +56,7 @@ Hostname: galerkin};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: ea459067bbccbc2b3a1c970b75c3aa6acfbd92be
+Commit: a7011f8b4c852951779aa0b45578587aeafdfd2b
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions
 Hostname: galerkin};
 \end{axis}
@@ -70,14 +70,14 @@ Hostname: galerkin};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : ea459067bbccbc2b3a1c970b75c3aa6acfbd92be
+%% GIT git_commit : a7011f8b4c852951779aa0b45578587aeafdfd2b
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions
-%% GIT git_short_commit : ea4590
+%% GIT git_short_commit : a7011
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : galerkin
-%% generated_on_date : 2019-11-18 16:47:28.813727
+%% generated_on_date : 2019-11-18 17:59:28.546228
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-999938c7-dc68-4ea5-a8b1-dde2d82a2df0.json
@@ -1191,9 +1191,9 @@ Hostname: galerkin};
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 330, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 84, file: <ipython-input-4-8c9e14b25d6c>]
+%%     [function: convergence_structure_functions, line: 85, file: <ipython-input-4-ddd93970f9c0>]
 %%     [function: for_each_config, line: 37, file: <ipython-input-1-57f864807074>]
-%%     [function: <module>, line: 138, file: <ipython-input-4-8c9e14b25d6c>]
+%%     [function: <module>, line: 139, file: <ipython-input-4-ddd93970f9c0>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
