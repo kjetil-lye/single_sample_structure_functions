@@ -112,8 +112,8 @@ def compute_wasserstein_one_point(file_a, file_b, multi_x, multi_y):
     
 
             for x in range(end_x - start_x):
-                distances = ot.dist(data_a[:, y_coarse, x//factor, :],
-                                    data_b[:, y, x, :], metric='euclidean')
+                distances = ot.dist(data_a[:, 0, x//factor, :],
+                                    data_b[:, 0, x, :], metric='euclidean')
                             
                 emd_pairing = ot.emd(weights_a, weights_b, distances)
                 wasserstein_distance = np.sum(emd_pairing * distances)
