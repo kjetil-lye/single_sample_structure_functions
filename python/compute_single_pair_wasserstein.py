@@ -81,7 +81,7 @@ def compute_wasserstein_one_point(file_a, file_b, multi_x, multi_y):
     
     start_x, end_x, start_y, end_y = get_node_x_y_ranges(multi_x, multi_y, resolution)
     
-    start_y_coarse = y // factor
+    start_y_coarse = start_y // factor
     end_y_coarse = max(start_y_coarse + 1, end_y // factor)
 
     wasserstein_distance_sum = 0.0
