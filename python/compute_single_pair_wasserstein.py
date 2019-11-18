@@ -57,7 +57,7 @@ def get_node_x_y_ranges(multi_x, multi_y, resolution):
     rank_x = rank % multi_x
     
     number_of_points_per_node = resolution // multi_x
-    number_of_lines_per_node = resolution // multi_x
+    number_of_lines_per_node = resolution // multi_y
     
     start_x = rank_x * number_of_points_per_node    
     end_x = (rank_x + 1) * number_of_points_per_node
@@ -112,8 +112,8 @@ def compute_wasserstein_one_point(file_a, file_b, multi_x, multi_y):
     
 
             for x in range(end_x - start_x):
-                distances = ot.dist(data_a[:, 0, x//factor, :],
-                                    data_b[:, 0, x, :], metric='euclidean')
+                distances = ot.dist(data_a[:, x//factor, 0, :],
+                                    data_b[:, x, 0, :], metric='euclidean')
                             
                 emd_pairing = ot.emd(weights_a, weights_b, distances)
                 wasserstein_distance = np.sum(emd_pairing * distances)
