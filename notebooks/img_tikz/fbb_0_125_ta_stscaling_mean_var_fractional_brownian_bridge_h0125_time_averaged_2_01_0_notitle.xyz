@@ -16,7 +16,7 @@ tick align=outside,
 tick pos=left,
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
-xlabel={\(\displaystyle h\)},
+xlabel={\(\displaystyle r\)},
 xmajorgrids,
 xmin=0.000849024539972736, xmax=0.0371037757401499,
 xmode=log,
@@ -24,7 +24,7 @@ xtick style={color=black},
 xtick={0.000244140625,0.00048828125,0.0009765625,0.001953125,0.00390625,0.0078125,0.015625,0.03125,0.0625,0.125},
 xticklabels={\(\displaystyle 2^{-12}\),\(\displaystyle 2^{-11}\),\(\displaystyle 2^{-10}\),\(\displaystyle 2^{-9}\),\(\displaystyle 2^{-8}\),\(\displaystyle 2^{-7}\),\(\displaystyle 2^{-6}\),\(\displaystyle 2^{-5}\),\(\displaystyle 2^{-4}\),\(\displaystyle 2^{-3}\)},
 y grid style={white!69.01960784313725!black},
-ylabel={\(\displaystyle \left(\bar{S}^{2}_{1/N,N}(h)\right)^{\frac{1}{2}}\)},
+ylabel={\(\displaystyle S^{2}_{r}(\mu^{1/N,1024})\)},
 ymajorgrids,
 ymin=0.617825118204665, ymax=5.53983385711966,
 ymode=log,
@@ -262,7 +262,7 @@ table {%
 0.0208333333333333 2.66839487730351
 0.03125 3.25196638381563
 };
-\addlegendentry{$\mathcal{O}(h^{0.49\pm0.010})$}
+\addlegendentry{$\mathcal{O}(r^{0.49\pm0.010})$}
 \addplot [semithick, color1, dashed]
 table {%
 0.00446428571428571 1.3971481283208
@@ -273,7 +273,7 @@ table {%
 0.0267857142857143 3.55851298492345
 0.03125 3.85656141930013
 };
-\addlegendentry{$\mathcal{O}(h^{0.52\pm0.007})$}
+\addlegendentry{$\mathcal{O}(r^{0.52\pm0.007})$}
 \addplot [semithick, color2, dashed]
 table {%
 0.00208333333333333 1.02633808829665
@@ -292,7 +292,7 @@ table {%
 0.0291666666666667 4.23215352978122
 0.03125 4.39183931501866
 };
-\addlegendentry{$\mathcal{O}(h^{0.54\pm0.006})$}
+\addlegendentry{$\mathcal{O}(r^{0.54\pm0.006})$}
 \addplot [semithick, color3, dashed]
 table {%
 0.00100806451612903 0.763256183180174
@@ -327,7 +327,7 @@ table {%
 0.030241935483871 4.75985165133216
 0.03125 4.84458978223799
 };
-\addlegendentry{$\mathcal{O}(h^{0.54\pm0.006})$}
+\addlegendentry{$\mathcal{O}(r^{0.54\pm0.006})$}
 \addplot [semithick, color0]
 table {%
 0.0104166666666667 1.90578290834228
@@ -407,7 +407,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: d211d756a73e822e24f1909da1db9deb7bc1530c
+Commit: 88fcf3f3c5f939a16ace7039ed7a04d37d736b0e
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -415,7 +415,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@d211d};
+]{@88fcf};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -423,7 +423,7 @@ Hostname: lyelaptop};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: d211d756a73e822e24f1909da1db9deb7bc1530c
+Commit: 88fcf3f3c5f939a16ace7039ed7a04d37d736b0e
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \end{axis}
@@ -437,17 +437,17 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : d211d756a73e822e24f1909da1db9deb7bc1530c
+%% GIT git_commit : 88fcf3f3c5f939a16ace7039ed7a04d37d736b0e
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : d211d
+%% GIT git_short_commit : 88fcf
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-11-18 03:38:27.857815
+%% generated_on_date : 2019-11-19 01:17:22.396287
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-18ff9c60-5d64-49e0-a17a-173777362f1a.json
+%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-f1fc6584-42fb-4004-bce1-239844274ec7.json
 %% python_version: 
 %%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
 %%    [GCC 9.2.0])
@@ -1557,9 +1557,9 @@ Hostname: lyelaptop};
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 330, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 73, file: <ipython-input-4-2f0ac20faa04>]
+%%     [function: convergence_structure_functions, line: 70, file: <ipython-input-4-ddd93970f9c0>]
 %%     [function: for_each_config, line: 37, file: <ipython-input-1-57f864807074>]
-%%     [function: <module>, line: 140, file: <ipython-input-4-2f0ac20faa04>]
+%%     [function: <module>, line: 139, file: <ipython-input-4-ddd93970f9c0>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
