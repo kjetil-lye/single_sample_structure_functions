@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 import netCDF4
 import ot
 import scipy.spatial
+import re
+from compute_convergence import load_file_mean
 
 conserved_variables_default = [
         "rho",
@@ -34,8 +36,17 @@ def load_file(filename, conserved_variables, number_of_samples):
         return data
 
 
+    
+def get_number_of_samples(filename):
+    max_sample = 0
+    with netCDF4.Dataset(filename) as f:
+        for v in f.variables.keys():
+            match = re.search(r'sample_(\d+)_', v)
+            if match:
+                sample = int(match.group(1))
+                max_sample = max(sample, max_sample)
+    return max_sample+1
 
-           
     
     
 def get_time(filename):
@@ -45,6 +56,7 @@ def get_time(filename):
     
 def compute_wasserstein_two_point(data, reference_solution, exponent, 
                                   number_of_cells_in_each_direction):
+    
     number_of_samples = data.shape[0]
     number_of_variables = data.shape[-1]
     
@@ -56,7 +68,7 @@ def compute_wasserstein_two_point(data, reference_solution, exponent,
     weights = np.ones(number_of_samples)/number_of_samples
     
     wasserstein_sum = 0.0
-    
+
     for i_coarse in range(number_of_cells_in_each_direction):
         for j_coarse in range(number_of_cells_in_each_direction):
             i = int(i_coarse * reference_solution.shape[1] / number_of_cells_in_each_direction)
@@ -73,9 +85,6 @@ def compute_wasserstein_two_point(data, reference_solution, exponent,
                     xs[:,number_of_variables:] = reference_solution[:,ip, jp,:]
                     xt[:,number_of_variables:] = data[:, ip//factor_reference_data, jp//factor_reference_data, :]
            
-                    
-            
-              
                     cost_matrix = scipy.spatial.distance.cdist(xs, xt, metric='minkowski', p=exponent)
                     assignment_matrix = ot.emd(weights, weights, cost_matrix)
             
@@ -93,14 +102,32 @@ def plot_wasserstein_two_point_convergence(basename, title,
                                            resolutions=[64, 128,256,512,1024],
                                            reference=True,
                                            exponent = 1,
-                                           number_of_cells_in_each_direction=16
+                                           number_of_cells_in_each_direction=16,
+                                           normalize=False,
+                                           use_all_samples=False
                                            ):
-    
+    if normalize and not reference:
+        raise Exception("We do not support normalization except for reference convergence")
+
     if reference:
+
         # We do reference convergence
         reference_resolution = max(resolutions)
+
+        if use_all_samples:
+            number_of_samples = get_number_of_samples(basename.format(resolution = reference_resolution))
+        else:
+            number_of_samples = reference_resolution
+        if normalize:
+            mean = load_file_mean(basename.format(resolution = reference_resolution),
+                                  conserved_variables, max(resolutions))
+
         reference_solution = load_file(basename.format(resolution=reference_resolution),
                                        conserved_variables, max(resolutions))
+
+        if normalize:
+            for sample in range(reference_solution):
+                reference_solution[sample, :,:,:] /= mean
     
     errors = []
     
@@ -111,14 +138,23 @@ def plot_wasserstein_two_point_convergence(basename, title,
             # We have already loaded this
             data = reference_solution
         else:
+            if use_all_samples:
+                number_of_samples = get_number_of_samples(basename.format(resolution = resolution))
+            else:
+                number_of_samples = max(resolutions)
+
             data = load_file(basename.format(resolution=resolution),
                              conserved_variables, max(resolutions))
-       
+
+            if normalize:
+                for sample in range(reference_solution):
+                    reference_solution[sample, :, :, :] /= mean
+
         if not reference:
             reference_resolution = resolution * 2
             reference_solution = load_file(basename.format(resolution=reference_resolution),
-                             conserved_variables, max(resolutions))
-        
+                                           conserved_variables, number_of_samples)
+            
         error = compute_wasserstein_two_point(data, reference_solution, exponent,
                                               number_of_cells_in_each_direction)
         
@@ -129,10 +165,17 @@ def plot_wasserstein_two_point_convergence(basename, title,
     else:
         convergence_type = 'cauchy'
         
+    if normalize:
+        normalized='_normalized'
+        normalized_text=' Normalized by mean of reference solution.'
+    else:
+        normalized=''
+        normalized_text=''
+
     statistic_name = 'wasserstein_two_point'
         
-    plot_info.saveData(f'convergence_{convergence_type}_{statistic_name}_{exponent}_{title}_{timepoint}_errors', errors)
-    plot_info.saveData(f'convergence_{convergence_type}_{statistic_name}_{exponent}_{title}_{timepoint}_resolutions', resolutions)
+    plot_info.saveData(f'convergence_{convergence_type}{normalized}_{statistic_name}_{number_of_samples}_{exponent}_{title}_{timepoint}_errors', errors)
+    plot_info.saveData(f'convergence_{convergence_type}{normalized}_{statistic_name}_{number_of_samples}_{exponent}_{title}_{timepoint}_resolutions', resolutions)
     
     plt.loglog(resolutions[:-1], errors, '-o')
     poly = np.polyfit(np.log(resolutions[:-1]), np.log(errors), 1)
@@ -148,7 +191,7 @@ def plot_wasserstein_two_point_convergence(basename, title,
         plt.ylabel(f"Error ($\\|W_{{{exponent}}}(\\nu^{{2,N}}, \\nu^{{2,2N}})\\|_{{L^{{{exponent}}}(D^2)}}$)")
     
     plt.xticks(resolutions[:-1], [f'${N}\\times {N}$' for N in resolutions[:-1]])
-    plt.title(f'Convergence of {statistic_name.replace("_"," ")}\n{title.replace("_"," ")}\n$T={timepoint}$ {convergence_type} convergence')
+    plt.title(f'Convergence of {statistic_name.replace("_"," ")}\n{title.replace("_"," ")}\n$T={timepoint}$ {convergence_type} convergence. Using $M={number_of_samples}$. \n{normalized_text}')
     
     
     # Scale to nearest power of two to make the y axis not zoom in too much
@@ -164,7 +207,7 @@ def plot_wasserstein_two_point_convergence(basename, title,
     plt.ylim([min_power_of_two, max_power_of_two])
     
     plt.legend()
-    plot_info.savePlot(f'convergence_{convergence_type}_{statistic_name}_{exponent}_{title}_{timepoint}')
+    plot_info.savePlot(f'convergence_{convergence_type}{normalized}_{statistic_name}_{number_of_samples}_{exponent}_{title}_{timepoint}')
     plt.close('all')
     
     
@@ -190,6 +233,12 @@ Computes the wasserstein distances
     
     parser.add_argument('--number_of_cells_in_each_direction', type=int, default=16,
                         help='Number of cells in each direction to use to approximation the L^p integral over D^2 (4 dimensions)')
+
+    parser.add_argument('--normalize', action='store_true',
+                        help='Normalize the data with the mean of the reference solution. Only available if running reference convergence for now')
+
+    parser.add_argument('--use_all_samples', action='store_true',
+                        help='Use all samples in the file')
     
     args = parser.parse_args()
     
@@ -200,4 +249,6 @@ Computes the wasserstein distances
                                            conserved_variables=conserved_variables_default,
                                            reference=args.reference,
                                            exponent = args.exponent,
-                                           number_of_cells_in_each_direction=args.number_of_cells_in_each_direction)
+                                           number_of_cells_in_each_direction=args.number_of_cells_in_each_direction,
+                                           normalize=args.normalize,
+                                           use_all_samples=args.use_all_samples)
