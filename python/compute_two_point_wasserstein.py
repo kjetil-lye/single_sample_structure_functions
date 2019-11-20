@@ -119,15 +119,16 @@ def plot_wasserstein_two_point_convergence(basename, title,
         else:
             number_of_samples = reference_resolution
         if normalize:
-            mean = load_file_mean(basename.format(resolution = reference_resolution),
+            mean_field = load_file_mean(basename.format(resolution = reference_resolution),
                                   conserved_variables, max(resolutions))
+            mean = np.sum(abs(mean_field), axis=(0,1))/mean_field.shape[0]**2
 
         reference_solution = load_file(basename.format(resolution=reference_resolution),
                                        conserved_variables, max(resolutions))
 
         if normalize:
-            for sample in range(reference_solution):
-                reference_solution[sample, :,:,:] /= mean
+            for component in range(reference_solution.shape[-1]):
+                reference_solution[:, :, :, component] /= mean
     
     errors = []
     
@@ -147,8 +148,8 @@ def plot_wasserstein_two_point_convergence(basename, title,
                              conserved_variables, max(resolutions))
 
             if normalize:
-                for sample in range(reference_solution):
-                    reference_solution[sample, :, :, :] /= mean
+                for component in range(data.shape[-1]):
+                    data[:, :, :, component] /= mean[component]
 
         if not reference:
             reference_resolution = resolution * 2
