@@ -159,7 +159,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                     vmax_title=''
                 else:
                     max_value = vmax
-                    vmax_append=f'_vmax_{vmax}'
+                    vmax_append=f'_vmax_{str(vmax).replace(".", "_")}'
                     vmax_title=f' Colorbar capped with vmax {vmax}.'
                 
                 plt.pcolormesh(x, y, data[:,:,variable_index],
