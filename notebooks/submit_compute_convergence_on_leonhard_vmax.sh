@@ -34,7 +34,7 @@ do
 	    vmax=""
 	    if [[ "$stats" == "variance" ]];
 	    then
-		vmax="--vmax 200"
+		vmax="--vmax 150"
 	    fi
 	    
 	    if [[ "$stats" == "mean" ]];
@@ -44,7 +44,7 @@ do
 
 	    if [[ "$stats" == "single_sample" ]];
 	    then
-		vmax="--vmax 200"
+		vmax="--vmax 20"
 	    fi
 	    
 
