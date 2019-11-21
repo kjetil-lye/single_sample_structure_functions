@@ -122,7 +122,7 @@ def compute_wasserstein_one_point(file_a, file_b, multi_x, multi_y, normalizatio
         if normalization_file is not None:
             for sample in range(number_of_samples):
                 for component in range(data_a.shape[-1]):
-                    data_a[sample, :, :, component] / = normalization_factor[component]
+                    data_a[sample, :, :, component] /= normalization_factor[component]
             
 
         for y_fine_offset in range(factor):
@@ -138,7 +138,7 @@ def compute_wasserstein_one_point(file_a, file_b, multi_x, multi_y, normalizatio
             if normalization_file is not None:
                 for sample in range(number_of_samples):
                     for component in range(data_b.shape[-1]):
-                        data_b[sample, :, :, component] / = normalization_factor[component]
+                        data_b[sample, :, :, component] /= normalization_factor[component]
     
     
 
