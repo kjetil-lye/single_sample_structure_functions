@@ -128,7 +128,7 @@ def plot_wasserstein_two_point_convergence(basename, title,
 
         if normalize:
             for component in range(reference_solution.shape[-1]):
-                reference_solution[:, :, :, component] /= mean
+                reference_solution[:, :, :, component] /= mean[component]
     
     errors = []
     
