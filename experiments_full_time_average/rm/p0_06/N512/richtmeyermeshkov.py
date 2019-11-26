@@ -17,7 +17,7 @@ normalization = sum(a1)
 if abs(normalization) < 1e-8:
     normalization = N
 
-perturbation = epsilon * sum([a1[n] * cos(phi+2*pi*b1[n]) for n in range(N)]) / normalization
+perturbation = epsilon * sum([a1[n] * cos((n+1)*(phi+2*pi*b1[n])) for n in range(N)]) / normalization
 
 r = sqrt((x-0.5)**2+(y-0.5)**2)
 if r < 0.1:

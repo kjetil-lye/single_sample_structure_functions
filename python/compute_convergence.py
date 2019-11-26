@@ -127,8 +127,9 @@ def get_min_max_values(all_data):
     return np.min(min_over_resolutions, axis=0), np.max(max_over_resolutions, axis=0)
     
 def plot_convergence(basename, statistic_name, title, conserved_variables = conserved_variables_default,
-                                resolutions=[64, 128,256,512,1024],
-                                reference=True):
+                     resolutions=[64, 128,256,512,1024],
+                     reference=True,
+                     vmax=None):
     
     all_data = load_all_data(basename, resolutions, conserved_variables,
                              statistic_name, max(resolutions))
@@ -152,7 +153,14 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
            
             for variable_index, variable in enumerate(conserved_variables):
                 min_value = min_values[variable_index]
-                max_value = max_values[variable_index]
+                if vmax is None:
+                    max_value = max_values[variable_index]
+                    vmax_append=''
+                    vmax_title=''
+                else:
+                    max_value = vmax
+                    vmax_append=f'_vmax_{str(vmax).replace(".", "_")}'
+                    vmax_title=f' Colorbar capped with vmax {vmax}.'
                 
                 plt.pcolormesh(x, y, data[:,:,variable_index],
                                vmin=min_value, vmax=max_value)
@@ -160,11 +168,11 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                 plt.xlabel("$x$")
                 plt.ylabel("$y$")
                 
-                plt.title(f"{variable}\n{title.replace('_', ' ')}\n$T={timepoint}$")
+                plt.title(f"{variable}\n{title.replace('_', ' ')}\n$T={timepoint}$.{vmax_title}")
                 
                 plt.colorbar()
                 
-                plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}_N{resolution}")
+                plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}_N{resolution}{vmax_append}")
                 plt.close('all')
                 
     
@@ -248,6 +256,9 @@ Computes the wasserstein distances
     
     parser.add_argument('--reference', action='store_true',
                         help='Compute convergence against reference solution, else use Cauchy convergence.')
+
+    parser.add_argument('--vmax', type=float, required=False,
+                        help='Maximum value for colorbar for the field plot')
     
     args = parser.parse_args()
     
@@ -257,4 +268,5 @@ Computes the wasserstein distances
                      args.statistic_name, 
                      args.title, 
                      conserved_variables=conserved_variables_default,
-                     reference=args.reference)
+                     reference=args.reference,
+                     vmax=args.vmax)

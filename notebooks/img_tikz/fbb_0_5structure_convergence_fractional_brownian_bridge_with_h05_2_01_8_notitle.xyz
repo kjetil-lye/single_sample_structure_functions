@@ -16,10 +16,10 @@ xmajorgrids,
 xmin=238.856445833423, xmax=1097.49602563716,
 xmode=log,
 xtick style={color=black},
-xtick={64,128,256,512,1024,2048,4096},
-xticklabels={\(\displaystyle 2^{6}\),\(\displaystyle 2^{7}\),\(\displaystyle 2^{8}\),\(\displaystyle 2^{9}\),\(\displaystyle 2^{10}\),\(\displaystyle 2^{11}\),\(\displaystyle 2^{12}\)},
+xtick={256,512,1024},
+xticklabels={\(\displaystyle 256\times 256\),\(\displaystyle 512\times 512\),\(\displaystyle 1024\times 1024\)},
 y grid style={white!69.01960784313725!black},
-ylabel={\(\displaystyle |S^{2}_{\Delta x,M}(h_{\max})-S^{2}_{2\Delta x,M}(h_{\max})|\)},
+ylabel={\(\displaystyle |S^{2}_{r_{\mathrm{max}}}(\mu^{1/N,1024})-S^{2}_{r_{\mathrm{max}}}(\mu^{2/N,1024})|\)},
 ymajorgrids,
 ymin=0.0284090909090909, ymax=0.1375,
 ymode=log,
@@ -40,7 +40,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
+Commit: 88fcf3f3c5f939a16ace7039ed7a04d37d736b0e
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -48,7 +48,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@8ecca};
+]{@88fcf};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -56,7 +56,7 @@ Hostname: lyelaptop};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
+Commit: 88fcf3f3c5f939a16ace7039ed7a04d37d736b0e
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \end{axis}
@@ -70,17 +70,17 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 8ecca898bc74448275bb17fc4a6bdf7e51a34dd6
+%% GIT git_commit : 88fcf3f3c5f939a16ace7039ed7a04d37d736b0e
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 8ecca
+%% GIT git_short_commit : 88fcf
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-11-16 12:48:37.295476
+%% generated_on_date : 2019-11-18 19:43:09.549863
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-18ff9c60-5d64-49e0-a17a-173777362f1a.json
+%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-f1fc6584-42fb-4004-bce1-239844274ec7.json
 %% python_version: 
 %%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
 %%    [GCC 9.2.0])
@@ -1190,9 +1190,9 @@ Hostname: lyelaptop};
 %%     [function: savePlot, line: 308, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 330, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 342, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 86, file: <ipython-input-4-2f0ac20faa04>]
+%%     [function: convergence_structure_functions, line: 85, file: <ipython-input-4-ddd93970f9c0>]
 %%     [function: for_each_config, line: 37, file: <ipython-input-1-57f864807074>]
-%%     [function: <module>, line: 140, file: <ipython-input-4-2f0ac20faa04>]
+%%     [function: <module>, line: 139, file: <ipython-input-4-ddd93970f9c0>]
 %%     [function: run_code, line: 3326, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3249, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3058, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
