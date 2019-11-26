@@ -24,7 +24,7 @@ ytick style={color=black},
 ytick={0,0.2,0.4,0.6,0.8,1},
 yticklabels={\(\displaystyle 0.0\),\(\displaystyle 0.2\),\(\displaystyle 0.4\),\(\displaystyle 0.6\),\(\displaystyle 0.8\),\(\displaystyle 1.0\)}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_single_sample_my_shockvortex_time_integrated_035_n1024_notitle-002.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_single_sample_my_shockvortex_time_integrated_035_n1024_notitle-003.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -32,15 +32,15 @@ yticklabels={\(\displaystyle 0.0\),\(\displaystyle 0.2\),\(\displaystyle 0.4\),\
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 4d235e4a7a68bd0dc9f4272669194094b9a9c25f
+Commit: a8336c282cb27a8eb3655d84fc795ccb1fd81b48
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-063};
+Hostname: lo-a2-019};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@4d235};
+]{@a8336};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -48,9 +48,9 @@ Hostname: lo-a2-063};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 4d235e4a7a68bd0dc9f4272669194094b9a9c25f
+Commit: a8336c282cb27a8eb3655d84fc795ccb1fd81b48
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-063};
+Hostname: lo-a2-019};
 \end{axis}
 
 \end{tikzpicture}
@@ -62,14 +62,14 @@ Hostname: lo-a2-063};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 4d235e4a7a68bd0dc9f4272669194094b9a9c25f
+%% GIT git_commit : a8336c282cb27a8eb3655d84fc795ccb1fd81b48
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 4d235
+%% GIT git_short_commit : a8336
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-063
-%% generated_on_date : 2019-11-07 13:05:47.637598
+%% hostname : lo-a2-019
+%% generated_on_date : 2019-11-21 22:36:30.703819
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//shockvortex/p0_06/N{resolution}/shockvortex_functional_time_integrated_identity_0.nc --title Shockvortex _time_integrated --statistic_name single_sample --reference
@@ -1296,5 +1296,5 @@ Hostname: lo-a2-063};
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
 %%     [function: savePlot, line: 330, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 167, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 175, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 272, file: ../python/compute_convergence.py]
