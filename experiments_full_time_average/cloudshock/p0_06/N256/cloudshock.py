@@ -18,8 +18,8 @@ def init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):
     if abs(normalization2) < 1e-10:
         normalization2 = 1
 
-    x = np.linspace(0, 1, nx)
-    y = np.linspace(0, 1, ny)
+    x = np.linspace(ax, bx, nx)
+    y = np.linspace(ay, by, ny)
 
     X, Y =np.meshgrid(x, y)
 
