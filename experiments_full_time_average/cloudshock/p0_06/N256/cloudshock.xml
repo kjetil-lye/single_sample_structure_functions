@@ -4,7 +4,7 @@
     <name>
     cloudshock
   </name>
-    <platform>cuda</platform>
+    <platform>cpu</platform>
     <grid>
       <lowerCorner>0 0 0</lowerCorner>
       <upperCorner>1 1 0</upperCorner>
@@ -12,14 +12,14 @@
     </grid>
     <boundary>neumann</boundary>
     <flux>hll3</flux>
-    <endTime>0.07</endTime>
+    <endTime>0.06</endTime>
     <equation>euler2</equation>
     <equationParameters>
       <gamma>1.4</gamma>
     </equationParameters>
     <reconstruction>wenof2</reconstruction>
     <cfl>auto</cfl>
-    <integrator>rungekutta3</integrator>
+    <integrator>rungekutta2</integrator>
     <initialData>
       <python>cloudshock.py</python>
       <parameters>
@@ -55,9 +55,9 @@
       <functional>
         <name>structure_cube</name>
         <p>1</p>
-        <time>0.035</time>
+        <time>0.03</time>
         <numberOfH>8</numberOfH>
-        <timeRadius>0.035</timeRadius>
+        <timeRadius>0.03</timeRadius>
         <numberOfSnapshots>200</numberOfSnapshots>
         <writer>
           <type>netcdf</type>
@@ -77,9 +77,9 @@
       <functional>
         <name>structure_cube</name>
         <p>2</p>
-        <time>0.035</time>
+        <time>0.03</time>
         <numberOfH>8</numberOfH>
-        <timeRadius>0.035</timeRadius>
+        <timeRadius>0.03</timeRadius>
         <numberOfSnapshots>200</numberOfSnapshots>
         <writer>
           <type>netcdf</type>
@@ -99,9 +99,9 @@
       <functional>
         <name>structure_cube</name>
         <p>3</p>
-        <time>0.035</time>
+        <time>0.03</time>
         <numberOfH>8</numberOfH>
-        <timeRadius>0.035</timeRadius>
+        <timeRadius>0.03</timeRadius>
         <numberOfSnapshots>200</numberOfSnapshots>
         <writer>
           <type>netcdf</type>
@@ -109,8 +109,8 @@
         </writer>
       </functional>
       <functional>
-        <time>0.052500000000000005</time>
-        <timeRadius>0.0175</timeRadius>
+        <time>0.045</time>
+        <timeRadius>0.015</timeRadius>
         <name>identity</name>
         <writer>
           <type>netcdf</type>
@@ -118,8 +118,8 @@
         </writer>
       </functional>
       <functional>
-        <time>0.052500000000000005</time>
-        <timeRadius>0.0175</timeRadius>
+        <time>0.045</time>
+        <timeRadius>0.015</timeRadius>
         <name>moment</name>
         <degree>2</degree>
         <writer>
