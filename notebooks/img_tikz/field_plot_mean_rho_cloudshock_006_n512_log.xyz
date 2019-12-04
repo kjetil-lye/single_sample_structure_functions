@@ -1,0 +1,890 @@
+% This file was created by tikzplotlib v0.8.5.
+\begin{tikzpicture}
+
+\begin{axis}[
+colorbar,
+colorbar style={ylabel={}},
+colormap/viridis,
+height=\figureheight,
+point meta max=24.2595908265517,
+point meta min=0.999999832841242,
+tick align=outside,
+tick pos=left,
+title={rho
+Cloudshock 
+\(\displaystyle T=0.06\).},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={\(\displaystyle x\)},
+xmin=0, xmax=1,
+xtick style={color=black},
+y grid style={white!69.01960784313725!black},
+ylabel={\(\displaystyle y\)},
+ymin=0, ymax=1,
+ytick style={color=black}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_mean_rho_cloudshock_006_n512_log-000.png};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
+Commit: 75f70e737c3616e9d42f02b6e0a7f467cc210cf4
+Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
+Hostname: daint101};
+\node at (axis cs:0.2,0.93)[
+  scale=0.5,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0
+]{@75f7};
+\end{axis}
+
+\end{tikzpicture}
+
+
+%% INCLUDE THE COMMENTS AT THE END WHEN COPYING
+%%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%
+%% rho
+%% Cloudshock 
+%% $T=0.06$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% script name: ../python/compute_convergence.py
+%% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
+%% DO NOT REMOVE THE COMMENTS BELOW!
+%% GIT git_commit : 75f70e737c3616e9d42f02b6e0a7f467cc210cf4
+%% GIT git_repo_modified : True
+%% GIT git_branch : fulltimeintegratedstructurefunctions
+%% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
+%% GIT git_short_commit : 75f7
+%% working_directory : /scratch/snx3000/klye/single_sample_structure_functions/notebooks
+%% hostname : daint101
+%% generated_on_date : 2019-12-03 23:14:08.661352
+%% accessed_environment:
+%% additional_parameters:
+%%    commandrun=/opt/python/3.6.5.7/bin/python ../python/compute_convergence.py --input_basename /scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average//cloudshock/p0_06/N{resolution}/cloudshock_functional_identity_1.nc --title Cloudshock  --statistic_name mean --reference --log
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average/cloudshock/p0_06/N64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.operatingSystem=Linux: Linux 4.12.14-150.17_5.0.85-cray_ari_c #1 SMP Thu Aug 22 18:29:02 UTC 2019 (24c42de) x86_64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.username=klye
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.host=nid02651
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.standardCLibrary=GNU libc 2.26 stable
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.generatedAt=20191202T194632
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.CPU=Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.revision=617004f7d7728b42656c53eec72f8439c0aaa5b0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.versionControlStatus=CLEAN
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.buildType=Release
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlags=
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsDebug=-g
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelease=-O3 -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsMinSizeRel=-Os -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelWithDebInfo=-O2 -g -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaFlags=--use_fast_math -Xptxas -warn-spills -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60 -gencode arch=compute_75,code=sm_75 -gencode arch=compute_70,code=sm_70 -gencode arch=compute_61,code=sm_61
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaVersion=10.1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cxxCompiler=GNU 8.3.0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaCompiler=NVIDIA 10.1.105
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_VERSION=107000
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIB_VERSION=1_70
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM=linux
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM_CONFIG=boost/config/platform/linux.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_COMPILER=GNU C++ version 8.3.0 20190222 (Cray Inc.)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIBSTDCXX_VERSION=80300
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.C++11=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB=GNU libstdc++ version 20190222
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB_CONFIG=boost/config/stdlib/libstdcpp3.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointPrecisionDescription=double (double precision, 64 bits)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointType=double
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMax=1.79769e+308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMin=2.22507e-308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointEpsilon=2.22045e-16
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.name=Tesla P100-PCIE-16GB
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalGlobalMem=17071734784
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.sharedMemPerBlock=49152
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.regsPerBlock=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.warpSize=32
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.memPitch=2147483647
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsPerBlock=1024
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsDim=1024, 1024, 64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxGridSize=2147483647, 65535, 65535
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalConstMem=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.major=6
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.minor=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.clockRate=1328500
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.textureAlignment=512
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.deviceOverlap=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.multiProcessorCount=56
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.kernelExecTimeoutEnabled=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.integrated=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.canMapHostMemory=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.computeMode=3
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.concurrentKernels=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.ECCEnabled=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciBusID=2
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciDeviceID=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.tccDriver=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.mpiEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.mpiProcesses=128
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.mpiVersion=MPI VERSION    : CRAY MPICH version 7.7.10 (ANL base 3.2)MPI BUILD INFO : Built Mon Aug 19 15:12:38 2019 (git hash ff5d439) MT-G
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.ompEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.ompThreads=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N64_dash_cloudshock_DOT_py=import numpy as npdef init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):    N = len(a)//4    a1 = a[:N]    a2 = a[N:2*N]    b1 = a[2*N:3*N]    b2 = a[3*N:4*N]    perturbation = epsilon    normalization1 = sum(a1)    if abs(normalization1) < 1e-10:        normalization1 = 1    normalization2 = sum(a2)    if abs(normalization2) < 1e-10:        normalization2 = 1    x = np.linspace(ax, bx, nx+1)    y = np.linspace(ay, by, ny+1)    x = x[:-1]    y = y[:-1]    X, Y =np.meshgrid(x, y)    r = np.sqrt((X-0.25)**2 + (Y-0.5)**2)    phi = np.arctan2(X-0.25, Y - 0.5)    perturbation_x = perturbation*np.sum([a1[i]*np.cos(2*np.pi*(i+1)*(Y+b1[i])) for i in range(len(a1))], axis=0)/normalization1    perturbation_r = perturbation*np.sum([a2[i]*np.cos(2*np.pi*(i+1)*(phi+b2[i])) for i in range(len(a2))], axis=0)/normalization2    #    r_max = 0.13    left_x = (x <= 0.05 + perturbation_x)    cloud = r <= r_max + perturbation_r    rho[:,:,0] = (left_x*3.86859 + (1-left_x)*(cloud*10.0 + (1-cloud)*1.0)).T    ux[:,:,0] = (11.2536*left_x).T    uy[:,:,:] = np.zeros_like(ux)        p[:,:,0] = (167.345*left_x + (1-left_x)*1.0).T
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N64_dash_cloudshock_DOT_xml=<?xml version="1.0" ?><config>  <fvm>    <name>    cloudshock  </name>    <platform>cuda</platform>    <grid>      <lowerCorner>0 0 0</lowerCorner>      <upperCorner>1 1 0</upperCorner>      <dimension>64 64 1</dimension>    </grid>    <boundary>neumann</boundary>    <flux>hll3</flux>    <endTime>0.06</endTime>    <equation>euler2</equation>    <equationParameters>      <gamma>1.4</gamma>    </equationParameters>    <reconstruction>wenof2</reconstruction>    <cfl>auto</cfl>    <integrator>rungekutta2</integrator>    <initialData>      <python>cloudshock.py</python>      <parameters>        <parameter>          <name>a</name>          <length>40</length>          <values>            <value>0</value>          </values>        </parameter>        <parameter>          <name>epsilon</name>          <length>1</length>          <value>0.06</value>        </parameter>      </parameters>    </initialData>    <diffusion>      <name>none</name>      <reconstruction>none</reconstruction>    </diffusion>    <functionals>      <functional>        <name>structure_cube</name>        <p>1</p>        <numberOfH>2</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>1</p>        <time>0.03</time>        <numberOfH>2</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <numberOfH>2</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <time>0.03</time>        <numberOfH>2</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <numberOfH>2</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_3</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <time>0.03</time>        <numberOfH>2</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_3</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_identity</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_identity</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>1</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_1</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>3</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_3</basename>        </writer>      </functional>    </functionals>  </fvm>  <uq>    <sampleStart>0</sampleStart>    <samples>1024</samples>    <generator>auto</generator>    <parameters>      <parameter>        <name>a</name>        <length>40</length>        <type>uniform</type>      </parameter>    </parameters>    <stats>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>2</numberOfH>        <p>1</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>2</numberOfH>        <p>2</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>2</numberOfH>        <p>3</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>    </stats>  </uq></config>
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.pythonVersion=Runtime: 3.6.5 (default, Apr 15 2019, 18:26:21) [GCC 7.3.0 20180125 (Cray Inc.)], compile time: 3.6.5
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.alsvinnInDocker=false
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average/cloudshock/p0_06/N128
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.operatingSystem=Linux: Linux 4.12.14-150.17_5.0.85-cray_ari_c #1 SMP Thu Aug 22 18:29:02 UTC 2019 (24c42de) x86_64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.username=klye
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.host=nid02711
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.standardCLibrary=GNU libc 2.26 stable
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.generatedAt=20191202T194640
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.CPU=Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.revision=617004f7d7728b42656c53eec72f8439c0aaa5b0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.versionControlStatus=CLEAN
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.buildType=Release
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlags=
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsDebug=-g
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelease=-O3 -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsMinSizeRel=-Os -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelWithDebInfo=-O2 -g -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaFlags=--use_fast_math -Xptxas -warn-spills -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60 -gencode arch=compute_75,code=sm_75 -gencode arch=compute_70,code=sm_70 -gencode arch=compute_61,code=sm_61
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaVersion=10.1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cxxCompiler=GNU 8.3.0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaCompiler=NVIDIA 10.1.105
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_VERSION=107000
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIB_VERSION=1_70
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM=linux
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM_CONFIG=boost/config/platform/linux.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_COMPILER=GNU C++ version 8.3.0 20190222 (Cray Inc.)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIBSTDCXX_VERSION=80300
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.C++11=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB=GNU libstdc++ version 20190222
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB_CONFIG=boost/config/stdlib/libstdcpp3.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointPrecisionDescription=double (double precision, 64 bits)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointType=double
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMax=1.79769e+308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMin=2.22507e-308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointEpsilon=2.22045e-16
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.name=Tesla P100-PCIE-16GB
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalGlobalMem=17071734784
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.sharedMemPerBlock=49152
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.regsPerBlock=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.warpSize=32
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.memPitch=2147483647
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsPerBlock=1024
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsDim=1024, 1024, 64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxGridSize=2147483647, 65535, 65535
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalConstMem=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.major=6
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.minor=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.clockRate=1328500
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.textureAlignment=512
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.deviceOverlap=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.multiProcessorCount=56
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.kernelExecTimeoutEnabled=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.integrated=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.canMapHostMemory=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.computeMode=3
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.concurrentKernels=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.ECCEnabled=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciBusID=2
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciDeviceID=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.tccDriver=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.mpiEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.mpiProcesses=128
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.mpiVersion=MPI VERSION    : CRAY MPICH version 7.7.10 (ANL base 3.2)MPI BUILD INFO : Built Mon Aug 19 15:12:38 2019 (git hash ff5d439) MT-G
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.ompEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.ompThreads=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N128_dash_cloudshock_DOT_py=import numpy as npdef init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):    N = len(a)//4    a1 = a[:N]    a2 = a[N:2*N]    b1 = a[2*N:3*N]    b2 = a[3*N:4*N]    perturbation = epsilon    normalization1 = sum(a1)    if abs(normalization1) < 1e-10:        normalization1 = 1    normalization2 = sum(a2)    if abs(normalization2) < 1e-10:        normalization2 = 1    x = np.linspace(ax, bx, nx+1)    y = np.linspace(ay, by, ny+1)    x = x[:-1]    y = y[:-1]    X, Y =np.meshgrid(x, y)    r = np.sqrt((X-0.25)**2 + (Y-0.5)**2)    phi = np.arctan2(X-0.25, Y - 0.5)    perturbation_x = perturbation*np.sum([a1[i]*np.cos(2*np.pi*(i+1)*(Y+b1[i])) for i in range(len(a1))], axis=0)/normalization1    perturbation_r = perturbation*np.sum([a2[i]*np.cos(2*np.pi*(i+1)*(phi+b2[i])) for i in range(len(a2))], axis=0)/normalization2    #    r_max = 0.13    left_x = (x <= 0.05 + perturbation_x)    cloud = r <= r_max + perturbation_r    rho[:,:,0] = (left_x*3.86859 + (1-left_x)*(cloud*10.0 + (1-cloud)*1.0)).T    ux[:,:,0] = (11.2536*left_x).T    uy[:,:,:] = np.zeros_like(ux)        p[:,:,0] = (167.345*left_x + (1-left_x)*1.0).T
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N128_dash_cloudshock_DOT_xml=<?xml version="1.0" ?><config>  <fvm>    <name>    cloudshock  </name>    <platform>cuda</platform>    <grid>      <lowerCorner>0 0 0</lowerCorner>      <upperCorner>1 1 0</upperCorner>      <dimension>128 128 1</dimension>    </grid>    <boundary>neumann</boundary>    <flux>hll3</flux>    <endTime>0.06</endTime>    <equation>euler2</equation>    <equationParameters>      <gamma>1.4</gamma>    </equationParameters>    <reconstruction>wenof2</reconstruction>    <cfl>auto</cfl>    <integrator>rungekutta2</integrator>    <initialData>      <python>cloudshock.py</python>      <parameters>        <parameter>          <name>a</name>          <length>40</length>          <values>            <value>0</value>          </values>        </parameter>        <parameter>          <name>epsilon</name>          <length>1</length>          <value>0.06</value>        </parameter>      </parameters>    </initialData>    <diffusion>      <name>none</name>      <reconstruction>none</reconstruction>    </diffusion>    <functionals>      <functional>        <name>structure_cube</name>        <p>1</p>        <numberOfH>4</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>1</p>        <time>0.03</time>        <numberOfH>4</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <numberOfH>4</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <time>0.03</time>        <numberOfH>4</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <numberOfH>4</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_3</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <time>0.03</time>        <numberOfH>4</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_3</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_identity</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_identity</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>1</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_1</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>3</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_3</basename>        </writer>      </functional>    </functionals>  </fvm>  <uq>    <sampleStart>0</sampleStart>    <samples>1024</samples>    <generator>auto</generator>    <parameters>      <parameter>        <name>a</name>        <length>40</length>        <type>uniform</type>      </parameter>    </parameters>    <stats>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>4</numberOfH>        <p>1</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>4</numberOfH>        <p>2</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>4</numberOfH>        <p>3</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>    </stats>  </uq></config>
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.pythonVersion=Runtime: 3.6.5 (default, Apr 15 2019, 18:26:21) [GCC 7.3.0 20180125 (Cray Inc.)], compile time: 3.6.5
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N128_cloudshock_functional_identity_1.nc_alsvinn_report.alsvinnInDocker=false
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average/cloudshock/p0_06/N256
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.operatingSystem=Linux: Linux 4.12.14-150.17_5.0.85-cray_ari_c #1 SMP Thu Aug 22 18:29:02 UTC 2019 (24c42de) x86_64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.username=klye
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.host=nid02930
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.standardCLibrary=GNU libc 2.26 stable
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.generatedAt=20191202T194621
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.CPU=Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.revision=617004f7d7728b42656c53eec72f8439c0aaa5b0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.versionControlStatus=CLEAN
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.buildType=Release
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlags=
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsDebug=-g
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelease=-O3 -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsMinSizeRel=-Os -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelWithDebInfo=-O2 -g -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaFlags=--use_fast_math -Xptxas -warn-spills -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60 -gencode arch=compute_75,code=sm_75 -gencode arch=compute_70,code=sm_70 -gencode arch=compute_61,code=sm_61
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaVersion=10.1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cxxCompiler=GNU 8.3.0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaCompiler=NVIDIA 10.1.105
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_VERSION=107000
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIB_VERSION=1_70
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM=linux
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM_CONFIG=boost/config/platform/linux.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_COMPILER=GNU C++ version 8.3.0 20190222 (Cray Inc.)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIBSTDCXX_VERSION=80300
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.C++11=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB=GNU libstdc++ version 20190222
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB_CONFIG=boost/config/stdlib/libstdcpp3.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointPrecisionDescription=double (double precision, 64 bits)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointType=double
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMax=1.79769e+308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMin=2.22507e-308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointEpsilon=2.22045e-16
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.name=Tesla P100-PCIE-16GB
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalGlobalMem=17071734784
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.sharedMemPerBlock=49152
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.regsPerBlock=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.warpSize=32
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.memPitch=2147483647
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsPerBlock=1024
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsDim=1024, 1024, 64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxGridSize=2147483647, 65535, 65535
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalConstMem=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.major=6
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.minor=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.clockRate=1328500
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.textureAlignment=512
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.deviceOverlap=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.multiProcessorCount=56
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.kernelExecTimeoutEnabled=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.integrated=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.canMapHostMemory=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.computeMode=3
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.concurrentKernels=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.ECCEnabled=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciBusID=2
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciDeviceID=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.tccDriver=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.mpiEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.mpiProcesses=128
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.mpiVersion=MPI VERSION    : CRAY MPICH version 7.7.10 (ANL base 3.2)MPI BUILD INFO : Built Mon Aug 19 15:12:38 2019 (git hash ff5d439) MT-G
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.ompEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.ompThreads=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N256_dash_cloudshock_DOT_py=import numpy as npdef init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):    N = len(a)//4    a1 = a[:N]    a2 = a[N:2*N]    b1 = a[2*N:3*N]    b2 = a[3*N:4*N]    perturbation = epsilon    normalization1 = sum(a1)    if abs(normalization1) < 1e-10:        normalization1 = 1    normalization2 = sum(a2)    if abs(normalization2) < 1e-10:        normalization2 = 1    x = np.linspace(ax, bx, nx+1)    y = np.linspace(ay, by, ny+1)    x = x[:-1]    y = y[:-1]    X, Y =np.meshgrid(x, y)    r = np.sqrt((X-0.25)**2 + (Y-0.5)**2)    phi = np.arctan2(X-0.25, Y - 0.5)    perturbation_x = perturbation*np.sum([a1[i]*np.cos(2*np.pi*(i+1)*(Y+b1[i])) for i in range(len(a1))], axis=0)/normalization1    perturbation_r = perturbation*np.sum([a2[i]*np.cos(2*np.pi*(i+1)*(phi+b2[i])) for i in range(len(a2))], axis=0)/normalization2    #    r_max = 0.13    left_x = (x <= 0.05 + perturbation_x)    cloud = r <= r_max + perturbation_r    rho[:,:,0] = (left_x*3.86859 + (1-left_x)*(cloud*10.0 + (1-cloud)*1.0)).T    ux[:,:,0] = (11.2536*left_x).T    uy[:,:,:] = np.zeros_like(ux)        p[:,:,0] = (167.345*left_x + (1-left_x)*1.0).T
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N256_dash_cloudshock_DOT_xml=<?xml version="1.0" ?><config>  <fvm>    <name>    cloudshock  </name>    <platform>cuda</platform>    <grid>      <lowerCorner>0 0 0</lowerCorner>      <upperCorner>1 1 0</upperCorner>      <dimension>256 256 1</dimension>    </grid>    <boundary>neumann</boundary>    <flux>hll3</flux>    <endTime>0.06</endTime>    <equation>euler2</equation>    <equationParameters>      <gamma>1.4</gamma>    </equationParameters>    <reconstruction>wenof2</reconstruction>    <cfl>auto</cfl>    <integrator>rungekutta2</integrator>    <initialData>      <python>cloudshock.py</python>      <parameters>        <parameter>          <name>a</name>          <length>40</length>          <values>            <value>0</value>          </values>        </parameter>        <parameter>          <name>epsilon</name>          <length>1</length>          <value>0.06</value>        </parameter>      </parameters>    </initialData>    <diffusion>      <name>none</name>      <reconstruction>none</reconstruction>    </diffusion>    <functionals>      <functional>        <name>structure_cube</name>        <p>1</p>        <numberOfH>8</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>1</p>        <time>0.03</time>        <numberOfH>8</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <numberOfH>8</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <time>0.03</time>        <numberOfH>8</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <numberOfH>8</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_3</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <time>0.03</time>        <numberOfH>8</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_3</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_identity</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_identity</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>1</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_1</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>3</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_3</basename>        </writer>      </functional>    </functionals>  </fvm>  <uq>    <sampleStart>0</sampleStart>    <samples>1024</samples>    <generator>auto</generator>    <parameters>      <parameter>        <name>a</name>        <length>40</length>        <type>uniform</type>      </parameter>    </parameters>    <stats>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>8</numberOfH>        <p>1</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>8</numberOfH>        <p>2</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>8</numberOfH>        <p>3</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>    </stats>  </uq></config>
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.pythonVersion=Runtime: 3.6.5 (default, Apr 15 2019, 18:26:21) [GCC 7.3.0 20180125 (Cray Inc.)], compile time: 3.6.5
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N256_cloudshock_functional_identity_1.nc_alsvinn_report.alsvinnInDocker=false
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average/cloudshock/p0_06/N512
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.operatingSystem=Linux: Linux 4.12.14-150.17_5.0.85-cray_ari_c #1 SMP Thu Aug 22 18:29:02 UTC 2019 (24c42de) x86_64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.username=klye
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.host=nid01986
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.standardCLibrary=GNU libc 2.26 stable
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.generatedAt=20191202T193138
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.CPU=Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.revision=617004f7d7728b42656c53eec72f8439c0aaa5b0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.versionControlStatus=CLEAN
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.buildType=Release
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlags=
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsDebug=-g
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelease=-O3 -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsMinSizeRel=-Os -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelWithDebInfo=-O2 -g -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaFlags=--use_fast_math -Xptxas -warn-spills -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60 -gencode arch=compute_75,code=sm_75 -gencode arch=compute_70,code=sm_70 -gencode arch=compute_61,code=sm_61
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaVersion=10.1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cxxCompiler=GNU 8.3.0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaCompiler=NVIDIA 10.1.105
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_VERSION=107000
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIB_VERSION=1_70
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM=linux
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM_CONFIG=boost/config/platform/linux.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_COMPILER=GNU C++ version 8.3.0 20190222 (Cray Inc.)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIBSTDCXX_VERSION=80300
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.C++11=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB=GNU libstdc++ version 20190222
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB_CONFIG=boost/config/stdlib/libstdcpp3.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointPrecisionDescription=double (double precision, 64 bits)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointType=double
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMax=1.79769e+308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMin=2.22507e-308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointEpsilon=2.22045e-16
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.name=Tesla P100-PCIE-16GB
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalGlobalMem=17071734784
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.sharedMemPerBlock=49152
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.regsPerBlock=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.warpSize=32
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.memPitch=2147483647
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsPerBlock=1024
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsDim=1024, 1024, 64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxGridSize=2147483647, 65535, 65535
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalConstMem=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.major=6
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.minor=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.clockRate=1328500
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.textureAlignment=512
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.deviceOverlap=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.multiProcessorCount=56
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.kernelExecTimeoutEnabled=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.integrated=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.canMapHostMemory=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.computeMode=3
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.concurrentKernels=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.ECCEnabled=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciBusID=2
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciDeviceID=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.tccDriver=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.mpiEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.mpiProcesses=128
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.mpiVersion=MPI VERSION    : CRAY MPICH version 7.7.10 (ANL base 3.2)MPI BUILD INFO : Built Mon Aug 19 15:12:38 2019 (git hash ff5d439) MT-G
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.ompEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.ompThreads=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N512_dash_cloudshock_DOT_py=import numpy as npdef init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):    N = len(a)//4    a1 = a[:N]    a2 = a[N:2*N]    b1 = a[2*N:3*N]    b2 = a[3*N:4*N]    perturbation = epsilon    normalization1 = sum(a1)    if abs(normalization1) < 1e-10:        normalization1 = 1    normalization2 = sum(a2)    if abs(normalization2) < 1e-10:        normalization2 = 1    x = np.linspace(ax, bx, nx+1)    y = np.linspace(ay, by, ny+1)    x = x[:-1]    y = y[:-1]    X, Y =np.meshgrid(x, y)    r = np.sqrt((X-0.25)**2 + (Y-0.5)**2)    phi = np.arctan2(X-0.25, Y - 0.5)    perturbation_x = perturbation*np.sum([a1[i]*np.cos(2*np.pi*(i+1)*(Y+b1[i])) for i in range(len(a1))], axis=0)/normalization1    perturbation_r = perturbation*np.sum([a2[i]*np.cos(2*np.pi*(i+1)*(phi+b2[i])) for i in range(len(a2))], axis=0)/normalization2    #    r_max = 0.13    left_x = (x <= 0.05 + perturbation_x)    cloud = r <= r_max + perturbation_r    rho[:,:,0] = (left_x*3.86859 + (1-left_x)*(cloud*10.0 + (1-cloud)*1.0)).T    ux[:,:,0] = (11.2536*left_x).T    uy[:,:,:] = np.zeros_like(ux)        p[:,:,0] = (167.345*left_x + (1-left_x)*1.0).T
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N512_dash_cloudshock_DOT_xml=<?xml version="1.0" ?><config>  <fvm>    <name>    cloudshock  </name>    <platform>cuda</platform>    <grid>      <lowerCorner>0 0 0</lowerCorner>      <upperCorner>1 1 0</upperCorner>      <dimension>512 512 1</dimension>    </grid>    <boundary>neumann</boundary>    <flux>hll3</flux>    <endTime>0.06</endTime>    <equation>euler2</equation>    <equationParameters>      <gamma>1.4</gamma>    </equationParameters>    <reconstruction>wenof2</reconstruction>    <cfl>auto</cfl>    <integrator>rungekutta2</integrator>    <initialData>      <python>cloudshock.py</python>      <parameters>        <parameter>          <name>a</name>          <length>40</length>          <values>            <value>0</value>          </values>        </parameter>        <parameter>          <name>epsilon</name>          <length>1</length>          <value>0.06</value>        </parameter>      </parameters>    </initialData>    <diffusion>      <name>none</name>      <reconstruction>none</reconstruction>    </diffusion>    <functionals>      <functional>        <name>structure_cube</name>        <p>1</p>        <numberOfH>16</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>1</p>        <time>0.03</time>        <numberOfH>16</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <numberOfH>16</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <time>0.03</time>        <numberOfH>16</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <numberOfH>16</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_3</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <time>0.03</time>        <numberOfH>16</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_3</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_identity</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_identity</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>1</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_1</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>3</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_3</basename>        </writer>      </functional>    </functionals>  </fvm>  <uq>    <sampleStart>0</sampleStart>    <samples>1024</samples>    <generator>auto</generator>    <parameters>      <parameter>        <name>a</name>        <length>40</length>        <type>uniform</type>      </parameter>    </parameters>    <stats>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>16</numberOfH>        <p>1</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>16</numberOfH>        <p>2</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>16</numberOfH>        <p>3</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>    </stats>  </uq></config>
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.pythonVersion=Runtime: 3.6.5 (default, Apr 15 2019, 18:26:21) [GCC 7.3.0 20180125 (Cray Inc.)], compile time: 3.6.5
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N512_cloudshock_functional_identity_1.nc_alsvinn_report.alsvinnInDocker=false
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average/cloudshock/p0_06/N1024
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.operatingSystem=Linux: Linux 4.12.14-150.17_5.0.85-cray_ari_c #1 SMP Thu Aug 22 18:29:02 UTC 2019 (24c42de) x86_64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.username=klye
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.host=nid02347
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.standardCLibrary=GNU libc 2.26 stable
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.generatedAt=20191202T195606
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.CPU=Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.revision=617004f7d7728b42656c53eec72f8439c0aaa5b0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.versionControlStatus=CLEAN
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.buildType=Release
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlags=
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsDebug=-g
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelease=-O3 -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsMinSizeRel=-Os -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cxxFlagsRelWithDebInfo=-O2 -g -DNDEBUG
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaFlags=--use_fast_math -Xptxas -warn-spills -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60 -gencode arch=compute_75,code=sm_75 -gencode arch=compute_70,code=sm_70 -gencode arch=compute_61,code=sm_61
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaVersion=10.1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cxxCompiler=GNU 8.3.0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaCompiler=NVIDIA 10.1.105
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_VERSION=107000
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIB_VERSION=1_70
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM=linux
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_PLATFORM_CONFIG=boost/config/platform/linux.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_COMPILER=GNU C++ version 8.3.0 20190222 (Cray Inc.)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_LIBSTDCXX_VERSION=80300
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.C++11=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB=GNU libstdc++ version 20190222
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.boost.BOOST_STDLIB_CONFIG=boost/config/stdlib/libstdcpp3.hpp
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointPrecisionDescription=double (double precision, 64 bits)
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointType=double
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMax=1.79769e+308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointMin=2.22507e-308
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.floatingPointEpsilon=2.22045e-16
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.name=Tesla P100-PCIE-16GB
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalGlobalMem=17071734784
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.sharedMemPerBlock=49152
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.regsPerBlock=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.warpSize=32
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.memPitch=2147483647
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsPerBlock=1024
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxThreadsDim=1024, 1024, 64
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.maxGridSize=2147483647, 65535, 65535
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.totalConstMem=65536
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.major=6
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.minor=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.clockRate=1328500
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.textureAlignment=512
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.deviceOverlap=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.multiProcessorCount=56
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.kernelExecTimeoutEnabled=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.integrated=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.canMapHostMemory=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.computeMode=3
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.concurrentKernels=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.ECCEnabled=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciBusID=2
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.pciDeviceID=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.cudaProperties.tccDriver=0
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.mpiEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.mpiProcesses=128
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.mpiVersion=MPI VERSION    : CRAY MPICH version 7.7.10 (ANL base 3.2)MPI BUILD INFO : Built Mon Aug 19 15:12:38 2019 (git hash ff5d439) MT-G
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.ompEnabled=true
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.ompThreads=1
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N1024_dash_cloudshock_DOT_py=import numpy as npdef init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):    N = len(a)//4    a1 = a[:N]    a2 = a[N:2*N]    b1 = a[2*N:3*N]    b2 = a[3*N:4*N]    perturbation = epsilon    normalization1 = sum(a1)    if abs(normalization1) < 1e-10:        normalization1 = 1    normalization2 = sum(a2)    if abs(normalization2) < 1e-10:        normalization2 = 1    x = np.linspace(ax, bx, nx+1)    y = np.linspace(ay, by, ny+1)    x = x[:-1]    y = y[:-1]    X, Y =np.meshgrid(x, y)    r = np.sqrt((X-0.25)**2 + (Y-0.5)**2)    phi = np.arctan2(X-0.25, Y - 0.5)    perturbation_x = perturbation*np.sum([a1[i]*np.cos(2*np.pi*(i+1)*(Y+b1[i])) for i in range(len(a1))], axis=0)/normalization1    perturbation_r = perturbation*np.sum([a2[i]*np.cos(2*np.pi*(i+1)*(phi+b2[i])) for i in range(len(a2))], axis=0)/normalization2    #    r_max = 0.13    left_x = (x <= 0.05 + perturbation_x)    cloud = r <= r_max + perturbation_r    rho[:,:,0] = (left_x*3.86859 + (1-left_x)*(cloud*10.0 + (1-cloud)*1.0)).T    ux[:,:,0] = (11.2536*left_x).T    uy[:,:,:] = np.zeros_like(ux)        p[:,:,0] = (167.345*left_x + (1-left_x)*1.0).T
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.loadedTextFiles._dash_scratch_dash_snx3000_dash_klye_dash_single_sample_structure_functions_dash_experiments_full_time_average_dash_cloudshock_dash_p0_06_dash_N1024_dash_cloudshock_DOT_xml=<?xml version="1.0" ?><config>  <fvm>    <name>    cloudshock  </name>    <platform>cuda</platform>    <grid>      <lowerCorner>0 0 0</lowerCorner>      <upperCorner>1 1 0</upperCorner>      <dimension>1024 1024 1</dimension>    </grid>    <boundary>neumann</boundary>    <flux>hll3</flux>    <endTime>0.06</endTime>    <equation>euler2</equation>    <equationParameters>      <gamma>1.4</gamma>    </equationParameters>    <reconstruction>wenof2</reconstruction>    <cfl>auto</cfl>    <integrator>rungekutta2</integrator>    <initialData>      <python>cloudshock.py</python>      <parameters>        <parameter>          <name>a</name>          <length>40</length>          <values>            <value>0</value>          </values>        </parameter>        <parameter>          <name>epsilon</name>          <length>1</length>          <value>0.06</value>        </parameter>      </parameters>    </initialData>    <diffusion>      <name>none</name>      <reconstruction>none</reconstruction>    </diffusion>    <functionals>      <functional>        <name>structure_cube</name>        <p>1</p>        <numberOfH>32</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>1</p>        <time>0.03</time>        <numberOfH>32</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_1</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <numberOfH>32</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>2</p>        <time>0.03</time>        <numberOfH>32</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_2</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <numberOfH>32</numberOfH>        <numberOfSaves>8</numberOfSaves>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_structure_cube_3</basename>        </writer>      </functional>      <functional>        <name>structure_cube</name>        <p>3</p>        <time>0.03</time>        <numberOfH>32</numberOfH>        <timeRadius>0.03</timeRadius>        <numberOfSnapshots>200</numberOfSnapshots>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_structure_cube_3</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_identity</basename>        </writer>      </functional>      <functional>        <time>0.045</time>        <timeRadius>0.015</timeRadius>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_time_integrated_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>identity</name>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_identity</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>moment</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_moment_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>1</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_1</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>2</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_2</basename>        </writer>      </functional>      <functional>        <numberOfSaves>1</numberOfSaves>        <name>bv</name>        <degree>3</degree>        <writer>          <type>netcdf</type>          <basename>cloudshock_functional_bv_3</basename>        </writer>      </functional>    </functionals>  </fvm>  <uq>    <sampleStart>0</sampleStart>    <samples>1024</samples>    <generator>auto</generator>    <parameters>      <parameter>        <name>a</name>        <length>40</length>        <type>uniform</type>      </parameter>    </parameters>    <stats>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>32</numberOfH>        <p>1</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>32</numberOfH>        <p>2</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>      <stat>        <name>	structure_cube      </name>        <numberOfSaves>1</numberOfSaves>        <numberOfH>32</numberOfH>        <p>3</p>        <writeInitialTimestep>true</writeInitialTimestep>        <writer>          <type>netcdf</type>          <basename>cloudshock</basename>        </writer>      </stat>    </stats>  </uq></config>
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.pythonVersion=Runtime: 3.6.5 (default, Apr 15 2019, 18:26:21) [GCC 7.3.0 20180125 (Cray Inc.)], compile time: 3.6.5
+%%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N1024_cloudshock_functional_identity_1.nc_alsvinn_report.alsvinnInDocker=false
+%% python_version: 
+%%    /opt/python/3.6.5.7/bin/python (Version: 3.6.5 (default, Apr 15 2019, 18:26:21) 
+%%    [GCC 7.3.0 20180125 (Cray Inc.)])
+%% python modules:
+%%     builtins: Unknown (Unknown)
+%%     sys: Unknown (Unknown)
+%%     importlib._bootstrap: Unknown (/opt/python/3.6.5.7/lib/python3.6/importlib/_bootstrap.py)
+%%     _imp: Unknown (Unknown)
+%%     _warnings: Unknown (Unknown)
+%%     _thread: Unknown (Unknown)
+%%     _weakref: Unknown (Unknown)
+%%     importlib._bootstrap_external: Unknown (/opt/python/3.6.5.7/lib/python3.6/importlib/_bootstrap_external.py)
+%%     io: Unknown (Unknown)
+%%     marshal: Unknown (Unknown)
+%%     posix: Unknown (Unknown)
+%%     zipimport: Unknown (Unknown)
+%%     encodings: Unknown (/opt/python/3.6.5.7/lib/python3.6/encodings/__init__.py)
+%%     codecs: Unknown (/opt/python/3.6.5.7/lib/python3.6/codecs.py)
+%%     _codecs: Unknown (Unknown)
+%%     encodings.aliases: Unknown (/opt/python/3.6.5.7/lib/python3.6/encodings/aliases.py)
+%%     encodings.ascii: Unknown (/opt/python/3.6.5.7/lib/python3.6/encodings/ascii.py)
+%%     _signal: Unknown (Unknown)
+%%     __main__: Unknown (../python/compute_convergence.py)
+%%     encodings.utf_8: Unknown (/opt/python/3.6.5.7/lib/python3.6/encodings/utf_8.py)
+%%     encodings.latin_1: Unknown (/opt/python/3.6.5.7/lib/python3.6/encodings/latin_1.py)
+%%     io: Unknown (/opt/python/3.6.5.7/lib/python3.6/io.py)
+%%     abc: Unknown (/opt/python/3.6.5.7/lib/python3.6/abc.py)
+%%     _weakrefset: Unknown (/opt/python/3.6.5.7/lib/python3.6/_weakrefset.py)
+%%     site: Unknown (/opt/python/3.6.5.7/lib/python3.6/site.py)
+%%     os: Unknown (/opt/python/3.6.5.7/lib/python3.6/os.py)
+%%     errno: Unknown (Unknown)
+%%     stat: Unknown (/opt/python/3.6.5.7/lib/python3.6/stat.py)
+%%     _stat: Unknown (Unknown)
+%%     posixpath: Unknown (/opt/python/3.6.5.7/lib/python3.6/posixpath.py)
+%%     genericpath: Unknown (/opt/python/3.6.5.7/lib/python3.6/genericpath.py)
+%%     posixpath: Unknown (/opt/python/3.6.5.7/lib/python3.6/posixpath.py)
+%%     collections.abc: Unknown (/opt/python/3.6.5.7/lib/python3.6/_collections_abc.py)
+%%     _sitebuiltins: Unknown (/opt/python/3.6.5.7/lib/python3.6/_sitebuiltins.py)
+%%     sysconfig: Unknown (/opt/python/3.6.5.7/lib/python3.6/sysconfig.py)
+%%     _sysconfigdata_m_linux_x86_64-linux-gnu: Unknown (/opt/python/3.6.5.7/lib/python3.6/_sysconfigdata_m_linux_x86_64-linux-gnu.py)
+%%     _bootlocale: Unknown (/opt/python/3.6.5.7/lib/python3.6/_bootlocale.py)
+%%     _locale: Unknown (Unknown)
+%%     types: Unknown (/opt/python/3.6.5.7/lib/python3.6/types.py)
+%%     functools: Unknown (/opt/python/3.6.5.7/lib/python3.6/functools.py)
+%%     _functools: Unknown (Unknown)
+%%     collections: Unknown (/opt/python/3.6.5.7/lib/python3.6/collections/__init__.py)
+%%     operator: Unknown (/opt/python/3.6.5.7/lib/python3.6/operator.py)
+%%     _operator: Unknown (Unknown)
+%%     keyword: Unknown (/opt/python/3.6.5.7/lib/python3.6/keyword.py)
+%%     heapq: Unknown (/opt/python/3.6.5.7/lib/python3.6/heapq.py)
+%%     _heapq: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_heapq.cpython-36m-x86_64-linux-gnu.so)
+%%     itertools: Unknown (Unknown)
+%%     reprlib: Unknown (/opt/python/3.6.5.7/lib/python3.6/reprlib.py)
+%%     _collections: Unknown (Unknown)
+%%     weakref: Unknown (/opt/python/3.6.5.7/lib/python3.6/weakref.py)
+%%     collections.abc: Unknown (/opt/python/3.6.5.7/lib/python3.6/collections/abc.py)
+%%     importlib: Unknown (/opt/python/3.6.5.7/lib/python3.6/importlib/__init__.py)
+%%     importlib._bootstrap: Unknown (/opt/python/3.6.5.7/lib/python3.6/importlib/_bootstrap.py)
+%%     importlib._bootstrap_external: Unknown (/opt/python/3.6.5.7/lib/python3.6/importlib/_bootstrap_external.py)
+%%     warnings: Unknown (/opt/python/3.6.5.7/lib/python3.6/warnings.py)
+%%     importlib.util: Unknown (/opt/python/3.6.5.7/lib/python3.6/importlib/util.py)
+%%     importlib.abc: Unknown (/opt/python/3.6.5.7/lib/python3.6/importlib/abc.py)
+%%     importlib.machinery: Unknown (/opt/python/3.6.5.7/lib/python3.6/importlib/machinery.py)
+%%     contextlib: Unknown (/opt/python/3.6.5.7/lib/python3.6/contextlib.py)
+%%     mpl_toolkits: Unknown (Unknown)
+%%     latex_plots: Unknown (/scratch/snx3000/klye/single_sample_structure_functions/python/latex_plots.py)
+%%     matplotlib: 3.1.1 (/users/klye/.local/lib/python3.6/site-packages/matplotlib/__init__.py)
+%%     atexit: Unknown (Unknown)
+%%     distutils: 3.6.5 (/opt/python/3.6.5.7/lib/python3.6/distutils/__init__.py)
+%%     distutils.version: Unknown (/opt/python/3.6.5.7/lib/python3.6/distutils/version.py)
+%%     re: 2.2.1 (/opt/python/3.6.5.7/lib/python3.6/re.py)
+%%     enum: Unknown (/opt/python/3.6.5.7/lib/python3.6/enum.py)
+%%     sre_compile: Unknown (/opt/python/3.6.5.7/lib/python3.6/sre_compile.py)
+%%     _sre: Unknown (Unknown)
+%%     sre_parse: Unknown (/opt/python/3.6.5.7/lib/python3.6/sre_parse.py)
+%%     sre_constants: Unknown (/opt/python/3.6.5.7/lib/python3.6/sre_constants.py)
+%%     copyreg: Unknown (/opt/python/3.6.5.7/lib/python3.6/copyreg.py)
+%%     inspect: Unknown (/opt/python/3.6.5.7/lib/python3.6/inspect.py)
+%%     ast: Unknown (/opt/python/3.6.5.7/lib/python3.6/ast.py)
+%%     _ast: Unknown (Unknown)
+%%     dis: Unknown (/opt/python/3.6.5.7/lib/python3.6/dis.py)
+%%     opcode: Unknown (/opt/python/3.6.5.7/lib/python3.6/opcode.py)
+%%     _opcode: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_opcode.cpython-36m-x86_64-linux-gnu.so)
+%%     linecache: Unknown (/opt/python/3.6.5.7/lib/python3.6/linecache.py)
+%%     tokenize: Unknown (/opt/python/3.6.5.7/lib/python3.6/tokenize.py)
+%%     token: Unknown (/opt/python/3.6.5.7/lib/python3.6/token.py)
+%%     locale: Unknown (/opt/python/3.6.5.7/lib/python3.6/locale.py)
+%%     logging: 0.5.1.2 (/opt/python/3.6.5.7/lib/python3.6/logging/__init__.py)
+%%     time: Unknown (Unknown)
+%%     traceback: Unknown (/opt/python/3.6.5.7/lib/python3.6/traceback.py)
+%%     string: Unknown (/opt/python/3.6.5.7/lib/python3.6/string.py)
+%%     _string: Unknown (Unknown)
+%%     threading: Unknown (/opt/python/3.6.5.7/lib/python3.6/threading.py)
+%%     pathlib: Unknown (/opt/python/3.6.5.7/lib/python3.6/pathlib.py)
+%%     fnmatch: Unknown (/opt/python/3.6.5.7/lib/python3.6/fnmatch.py)
+%%     ntpath: Unknown (/opt/python/3.6.5.7/lib/python3.6/ntpath.py)
+%%     urllib: Unknown (/opt/python/3.6.5.7/lib/python3.6/urllib/__init__.py)
+%%     urllib.parse: Unknown (/opt/python/3.6.5.7/lib/python3.6/urllib/parse.py)
+%%     pprint: Unknown (/opt/python/3.6.5.7/lib/python3.6/pprint.py)
+%%     shutil: Unknown (/opt/python/3.6.5.7/lib/python3.6/shutil.py)
+%%     zlib: 1.0 (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/zlib.cpython-36m-x86_64-linux-gnu.so)
+%%     bz2: Unknown (/opt/python/3.6.5.7/lib/python3.6/bz2.py)
+%%     _compression: Unknown (/opt/python/3.6.5.7/lib/python3.6/_compression.py)
+%%     _bz2: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_bz2.cpython-36m-x86_64-linux-gnu.so)
+%%     lzma: Unknown (/opt/python/3.6.5.7/lib/python3.6/lzma.py)
+%%     _lzma: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_lzma.cpython-36m-x86_64-linux-gnu.so)
+%%     pwd: Unknown (Unknown)
+%%     grp: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/grp.cpython-36m-x86_64-linux-gnu.so)
+%%     subprocess: Unknown (/opt/python/3.6.5.7/lib/python3.6/subprocess.py)
+%%     signal: Unknown (/opt/python/3.6.5.7/lib/python3.6/signal.py)
+%%     _posixsubprocess: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_posixsubprocess.cpython-36m-x86_64-linux-gnu.so)
+%%     select: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/select.cpython-36m-x86_64-linux-gnu.so)
+%%     selectors: Unknown (/opt/python/3.6.5.7/lib/python3.6/selectors.py)
+%%     math: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/math.cpython-36m-x86_64-linux-gnu.so)
+%%     tempfile: Unknown (/opt/python/3.6.5.7/lib/python3.6/tempfile.py)
+%%     random: Unknown (/opt/python/3.6.5.7/lib/python3.6/random.py)
+%%     hashlib: Unknown (/opt/python/3.6.5.7/lib/python3.6/hashlib.py)
+%%     _hashlib: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_hashlib.cpython-36m-x86_64-linux-gnu.so)
+%%     _blake2: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_blake2.cpython-36m-x86_64-linux-gnu.so)
+%%     _sha3: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_sha3.cpython-36m-x86_64-linux-gnu.so)
+%%     bisect: Unknown (/opt/python/3.6.5.7/lib/python3.6/bisect.py)
+%%     _bisect: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_bisect.cpython-36m-x86_64-linux-gnu.so)
+%%     _random: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_random.cpython-36m-x86_64-linux-gnu.so)
+%%     matplotlib.cbook: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/cbook/__init__.py)
+%%     glob: Unknown (/opt/python/3.6.5.7/lib/python3.6/glob.py)
+%%     gzip: Unknown (/opt/python/3.6.5.7/lib/python3.6/gzip.py)
+%%     struct: Unknown (/opt/python/3.6.5.7/lib/python3.6/struct.py)
+%%     _struct: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_struct.cpython-36m-x86_64-linux-gnu.so)
+%%     numbers: Unknown (/opt/python/3.6.5.7/lib/python3.6/numbers.py)
+%%     numpy: 1.15.1 (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/__init__.py)
+%%     __future__: Unknown (/opt/python/3.6.5.7/lib/python3.6/__future__.py)
+%%     numpy._globals: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/_globals.py)
+%%     numpy.__config__: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/__config__.py)
+%%     numpy.version: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/version.py)
+%%     numpy._import_tools: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/_import_tools.py)
+%%     numpy.add_newdocs: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/add_newdocs.py)
+%%     numpy.lib: 1.15.1 (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/__init__.py)
+%%     numpy.lib.info: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/info.py)
+%%     numpy.lib.type_check: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/type_check.py)
+%%     numpy.core: 1.15.1 (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/__init__.py)
+%%     numpy.core.info: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/info.py)
+%%     datetime: Unknown (/opt/python/3.6.5.7/lib/python3.6/datetime.py)
+%%     _datetime: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_datetime.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.core.multiarray: 3.1 (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/multiarray.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.core.umath: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/umath.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.core._internal: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/_internal.py)
+%%     numpy.compat: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/compat/__init__.py)
+%%     numpy.compat._inspect: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/compat/_inspect.py)
+%%     numpy.compat.py3k: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/compat/py3k.py)
+%%     ctypes: 1.1.0 (/opt/python/3.6.5.7/lib/python3.6/ctypes/__init__.py)
+%%     _ctypes: 1.1.0 (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_ctypes.cpython-36m-x86_64-linux-gnu.so)
+%%     ctypes._endian: Unknown (/opt/python/3.6.5.7/lib/python3.6/ctypes/_endian.py)
+%%     numpy.core.numerictypes: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/numerictypes.py)
+%%     numpy.core.numeric: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/numeric.py)
+%%     pickle: Unknown (/opt/python/3.6.5.7/lib/python3.6/pickle.py)
+%%     _compat_pickle: Unknown (/opt/python/3.6.5.7/lib/python3.6/_compat_pickle.py)
+%%     _pickle: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_pickle.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.core.fromnumeric: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/fromnumeric.py)
+%%     numpy.core._methods: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/_methods.py)
+%%     numpy.core.arrayprint: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/arrayprint.py)
+%%     numpy.core.defchararray: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/defchararray.py)
+%%     numpy.core.records: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/records.py)
+%%     numpy.core.memmap: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/memmap.py)
+%%     numpy.core.function_base: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/function_base.py)
+%%     numpy.core.machar: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/machar.py)
+%%     numpy.core.getlimits: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/getlimits.py)
+%%     numpy.core.shape_base: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/shape_base.py)
+%%     numpy.core.einsumfunc: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/einsumfunc.py)
+%%     numpy.testing: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/testing/__init__.py)
+%%     unittest: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/__init__.py)
+%%     unittest.result: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/result.py)
+%%     unittest.util: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/util.py)
+%%     unittest.case: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/case.py)
+%%     difflib: Unknown (/opt/python/3.6.5.7/lib/python3.6/difflib.py)
+%%     unittest.suite: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/suite.py)
+%%     unittest.loader: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/loader.py)
+%%     unittest.main: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/main.py)
+%%     argparse: 1.1 (/opt/python/3.6.5.7/lib/python3.6/argparse.py)
+%%     copy: Unknown (/opt/python/3.6.5.7/lib/python3.6/copy.py)
+%%     textwrap: Unknown (/opt/python/3.6.5.7/lib/python3.6/textwrap.py)
+%%     gettext: Unknown (/opt/python/3.6.5.7/lib/python3.6/gettext.py)
+%%     unittest.runner: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/runner.py)
+%%     unittest.signals: Unknown (/opt/python/3.6.5.7/lib/python3.6/unittest/signals.py)
+%%     numpy.testing._private: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/testing/_private/__init__.py)
+%%     numpy.testing._private.utils: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/testing/_private/utils.py)
+%%     gc: Unknown (Unknown)
+%%     numpy.lib.utils: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/utils.py)
+%%     numpy.testing._private.decorators: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/testing/_private/decorators.py)
+%%     numpy.testing._private.nosetester: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/testing/_private/nosetester.py)
+%%     numpy.testing._private.pytesttester: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/testing/_private/pytesttester.py)
+%%     numpy.lib.ufunclike: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/ufunclike.py)
+%%     numpy.lib.index_tricks: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/index_tricks.py)
+%%     numpy.lib.function_base: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/function_base.py)
+%%     numpy.lib.twodim_base: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/twodim_base.py)
+%%     numpy.lib.histograms: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/histograms.py)
+%%     numpy.matrixlib: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/matrixlib/__init__.py)
+%%     numpy.matrixlib.defmatrix: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/matrixlib/defmatrix.py)
+%%     numpy.linalg: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/linalg/__init__.py)
+%%     numpy.linalg.info: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/linalg/info.py)
+%%     numpy.linalg.linalg: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/linalg/linalg.py)
+%%     numpy.linalg.lapack_lite: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/linalg/lapack_lite.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.linalg._umath_linalg: b'0.1.5' (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/linalg/_umath_linalg.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.lib.stride_tricks: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/stride_tricks.py)
+%%     numpy.lib.mixins: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/mixins.py)
+%%     numpy.lib.nanfunctions: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/nanfunctions.py)
+%%     numpy.lib.shape_base: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/shape_base.py)
+%%     numpy.lib.scimath: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/scimath.py)
+%%     numpy.lib.polynomial: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/polynomial.py)
+%%     numpy.lib.arraysetops: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/arraysetops.py)
+%%     numpy.lib.npyio: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/npyio.py)
+%%     numpy.lib.format: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/format.py)
+%%     numpy.lib._datasource: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/_datasource.py)
+%%     numpy.lib._iotools: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/_iotools.py)
+%%     numpy.lib.financial: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/financial.py)
+%%     decimal: 1.70 (/opt/python/3.6.5.7/lib/python3.6/decimal.py)
+%%     decimal: 1.70 (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_decimal.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.lib.arrayterator: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/arrayterator.py)
+%%     numpy.lib.arraypad: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/arraypad.py)
+%%     numpy.lib._version: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/lib/_version.py)
+%%     numpy.core._multiarray_tests: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/core/_multiarray_tests.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy._distributor_init: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/_distributor_init.py)
+%%     numpy.fft: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/fft/__init__.py)
+%%     numpy.fft.info: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/fft/info.py)
+%%     numpy.fft.fftpack: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/fft/fftpack.py)
+%%     numpy.fft.fftpack_lite: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/fft/fftpack_lite.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.fft.helper: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/fft/helper.py)
+%%     numpy.polynomial: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/__init__.py)
+%%     numpy.polynomial.polynomial: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/polynomial.py)
+%%     numpy.polynomial.polyutils: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/polyutils.py)
+%%     numpy.polynomial._polybase: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/_polybase.py)
+%%     numpy.polynomial.chebyshev: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/chebyshev.py)
+%%     numpy.polynomial.legendre: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/legendre.py)
+%%     numpy.polynomial.hermite: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/hermite.py)
+%%     numpy.polynomial.hermite_e: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/hermite_e.py)
+%%     numpy.polynomial.laguerre: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/polynomial/laguerre.py)
+%%     numpy.random: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/random/__init__.py)
+%%     numpy.random.info: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/random/info.py)
+%%     cython_runtime: Unknown (Unknown)
+%%     numpy.random.mtrand: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/random/mtrand.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.random.mtrand: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/random/mtrand.cpython-36m-x86_64-linux-gnu.so)
+%%     numpy.ctypeslib: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/ctypeslib.py)
+%%     numpy.ma: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/ma/__init__.py)
+%%     numpy.ma.core: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/ma/core.py)
+%%     numpy.ma.extras: Unknown (/opt/python/3.6.5.7/lib/python3.6/site-packages/numpy/ma/extras.py)
+%%     matplotlib.cbook.deprecation: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/cbook/deprecation.py)
+%%     matplotlib.rcsetup: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/rcsetup.py)
+%%     matplotlib.fontconfig_pattern: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/fontconfig_pattern.py)
+%%     pyparsing: 2.4.2 (/users/klye/.local/lib/python3.6/site-packages/pyparsing.py)
+%%     matplotlib.colors: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/colors.py)
+%%     matplotlib._color_data: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_color_data.py)
+%%     cycler: 0.10.0 (/users/klye/.local/lib/python3.6/site-packages/cycler.py)
+%%     six: 1.11.0 (/opt/python/3.6.5.7/lib/python3.6/site-packages/six.py)
+%%     six.moves: Unknown (Unknown)
+%%     matplotlib._version: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_version.py)
+%%     json: 2.0.9 (/opt/python/3.6.5.7/lib/python3.6/json/__init__.py)
+%%     json.decoder: Unknown (/opt/python/3.6.5.7/lib/python3.6/json/decoder.py)
+%%     json.scanner: Unknown (/opt/python/3.6.5.7/lib/python3.6/json/scanner.py)
+%%     _json: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_json.cpython-36m-x86_64-linux-gnu.so)
+%%     json.encoder: Unknown (/opt/python/3.6.5.7/lib/python3.6/json/encoder.py)
+%%     matplotlib.ft2font: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/ft2font.cpython-36m-x86_64-linux-gnu.so)
+%%     dateutil: 2.8.0 (/users/klye/.local/lib/python3.6/site-packages/dateutil/__init__.py)
+%%     dateutil._version: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/_version.py)
+%%     kiwisolver: 1.1.0 (/users/klye/.local/lib/python3.6/site-packages/kiwisolver.cpython-36m-x86_64-linux-gnu.so)
+%%     socket: Unknown (/opt/python/3.6.5.7/lib/python3.6/socket.py)
+%%     _socket: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_socket.cpython-36m-x86_64-linux-gnu.so)
+%%     matplotlib.pyplot: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/pyplot.py)
+%%     matplotlib.colorbar: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/colorbar.py)
+%%     matplotlib.artist: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/artist.py)
+%%     matplotlib.docstring: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/docstring.py)
+%%     matplotlib.path: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/path.py)
+%%     matplotlib._path: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_path.cpython-36m-x86_64-linux-gnu.so)
+%%     matplotlib.transforms: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/transforms.py)
+%%     matplotlib.collections: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/collections.py)
+%%     matplotlib.cm: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/cm.py)
+%%     matplotlib._cm: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_cm.py)
+%%     matplotlib._cm_listed: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_cm_listed.py)
+%%     matplotlib.lines: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/lines.py)
+%%     matplotlib.markers: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/markers.py)
+%%     matplotlib.contour: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/contour.py)
+%%     matplotlib.ticker: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/ticker.py)
+%%     matplotlib.font_manager: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/font_manager.py)
+%%     matplotlib.afm: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/afm.py)
+%%     matplotlib._mathtext_data: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_mathtext_data.py)
+%%     matplotlib.text: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/text.py)
+%%     matplotlib.patches: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/patches.py)
+%%     matplotlib.bezier: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/bezier.py)
+%%     matplotlib.textpath: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/textpath.py)
+%%     matplotlib.dviread: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/dviread.py)
+%%     matplotlib.mathtext: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/mathtext.py)
+%%     unicodedata: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/unicodedata.cpython-36m-x86_64-linux-gnu.so)
+%%     matplotlib.texmanager: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/texmanager.py)
+%%     matplotlib.blocking_input: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/blocking_input.py)
+%%     matplotlib.gridspec: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/gridspec.py)
+%%     matplotlib._pylab_helpers: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_pylab_helpers.py)
+%%     matplotlib.tight_layout: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tight_layout.py)
+%%     matplotlib._layoutbox: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_layoutbox.py)
+%%     matplotlib._constrained_layout: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_constrained_layout.py)
+%%     matplotlib.image: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/image.py)
+%%     matplotlib.backend_bases: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/backend_bases.py)
+%%     matplotlib.backend_tools: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/backend_tools.py)
+%%     matplotlib.tight_bbox: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tight_bbox.py)
+%%     matplotlib.widgets: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/widgets.py)
+%%     PIL: 6.2.1 (/users/klye/.local/lib/python3.6/site-packages/PIL/__init__.py)
+%%     PIL._version: 6.2.1 (/users/klye/.local/lib/python3.6/site-packages/PIL/_version.py)
+%%     matplotlib._image: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_image.cpython-36m-x86_64-linux-gnu.so)
+%%     matplotlib.style: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/style/__init__.py)
+%%     matplotlib.style.core: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/style/core.py)
+%%     matplotlib.figure: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/figure.py)
+%%     matplotlib.backends: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/backends/__init__.py)
+%%     matplotlib.projections: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/projections/__init__.py)
+%%     matplotlib.axes: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/axes/__init__.py)
+%%     matplotlib.axes._subplots: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/axes/_subplots.py)
+%%     uuid: Unknown (/opt/python/3.6.5.7/lib/python3.6/uuid.py)
+%%     ctypes.util: Unknown (/opt/python/3.6.5.7/lib/python3.6/ctypes/util.py)
+%%     matplotlib.axes._axes: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/axes/_axes.py)
+%%     matplotlib.category: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/category.py)
+%%     dateutil.parser: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/parser/__init__.py)
+%%     dateutil.parser._parser: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/parser/_parser.py)
+%%     calendar: Unknown (/opt/python/3.6.5.7/lib/python3.6/calendar.py)
+%%     dateutil.relativedelta: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/relativedelta.py)
+%%     dateutil._common: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/_common.py)
+%%     dateutil.tz: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/tz/__init__.py)
+%%     dateutil.tz.tz: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/tz/tz.py)
+%%     dateutil.tz._common: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/tz/_common.py)
+%%     dateutil.tz._factories: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/tz/_factories.py)
+%%     dateutil.parser.isoparser: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/parser/isoparser.py)
+%%     matplotlib.units: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/units.py)
+%%     matplotlib.dates: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/dates.py)
+%%     dateutil.rrule: Unknown (/users/klye/.local/lib/python3.6/site-packages/dateutil/rrule.py)
+%%     matplotlib.legend: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/legend.py)
+%%     matplotlib.offsetbox: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/offsetbox.py)
+%%     matplotlib.container: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/container.py)
+%%     matplotlib.legend_handler: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/legend_handler.py)
+%%     matplotlib.mlab: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/mlab.py)
+%%     csv: 1.0 (/opt/python/3.6.5.7/lib/python3.6/csv.py)
+%%     _csv: 1.0 (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/_csv.cpython-36m-x86_64-linux-gnu.so)
+%%     matplotlib.quiver: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/quiver.py)
+%%     matplotlib.stackplot: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/stackplot.py)
+%%     matplotlib.streamplot: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/streamplot.py)
+%%     matplotlib.table: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/table.py)
+%%     matplotlib.tri: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/__init__.py)
+%%     matplotlib.tri.triangulation: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/triangulation.py)
+%%     matplotlib.tri.tricontour: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/tricontour.py)
+%%     matplotlib.tri.tritools: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/tritools.py)
+%%     matplotlib.tri.trifinder: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/trifinder.py)
+%%     matplotlib.tri.triinterpolate: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/triinterpolate.py)
+%%     matplotlib.tri.trirefine: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/trirefine.py)
+%%     matplotlib.tri.tripcolor: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/tripcolor.py)
+%%     matplotlib.tri.triplot: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/tri/triplot.py)
+%%     matplotlib.axes._base: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/axes/_base.py)
+%%     matplotlib.axis: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/axis.py)
+%%     matplotlib.scale: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/scale.py)
+%%     matplotlib.spines: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/spines.py)
+%%     matplotlib.axes._secondary_axes: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/axes/_secondary_axes.py)
+%%     matplotlib.projections.geo: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/projections/geo.py)
+%%     matplotlib.projections.polar: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/projections/polar.py)
+%%     matplotlib.backends.backend_agg: 3.1.1 (/users/klye/.local/lib/python3.6/site-packages/matplotlib/backends/backend_agg.py)
+%%     matplotlib.backends._backend_agg: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/backends/_backend_agg.cpython-36m-x86_64-linux-gnu.so)
+%%     PIL.Image: 6.2.1 (/users/klye/.local/lib/python3.6/site-packages/PIL/Image.py)
+%%     PIL.ImageMode: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/ImageMode.py)
+%%     PIL.TiffTags: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/TiffTags.py)
+%%     PIL._binary: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/_binary.py)
+%%     PIL._util: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/_util.py)
+%%     PIL._imaging: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/_imaging.cpython-36m-x86_64-linux-gnu.so)
+%%     plot_info: 1.15.1 (/scratch/snx3000/klye/single_sample_structure_functions/python/plot_info.py)
+%%     tikzplotlib: 0.8.5 (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/__init__.py)
+%%     tikzplotlib.__about__: 0.8.5 (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/__about__.py)
+%%     tikzplotlib._save: 0.8.5 (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_save.py)
+%%     tikzplotlib._axes: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_axes.py)
+%%     matplotlib.backends.backend_pgf: 3.1.1 (/users/klye/.local/lib/python3.6/site-packages/matplotlib/backends/backend_pgf.py)
+%%     matplotlib._png: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/_png.cpython-36m-x86_64-linux-gnu.so)
+%%     matplotlib.backends.backend_mixed: Unknown (/users/klye/.local/lib/python3.6/site-packages/matplotlib/backends/backend_mixed.py)
+%%     tikzplotlib._color: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_color.py)
+%%     tikzplotlib._image: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_image.py)
+%%     tikzplotlib._files: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_files.py)
+%%     tikzplotlib._legend: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_legend.py)
+%%     tikzplotlib._line2d: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_line2d.py)
+%%     tikzplotlib._path: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_path.py)
+%%     tikzplotlib._markers: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_markers.py)
+%%     tikzplotlib._util: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_util.py)
+%%     tikzplotlib._patch: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_patch.py)
+%%     tikzplotlib._quadmesh: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_quadmesh.py)
+%%     tikzplotlib._text: Unknown (/users/klye/.local/lib/python3.6/site-packages/tikzplotlib/_text.py)
+%%     git: 3.0.2 (/users/klye/.local/lib/python3.6/site-packages/git/__init__.py)
+%%     gitdb: 2.0.5 (/users/klye/.local/lib/python3.6/site-packages/gitdb/__init__.py)
+%%     smmap: 2.0.5 (/users/klye/.local/lib/python3.6/site-packages/smmap/__init__.py)
+%%     smmap.mman: Unknown (/users/klye/.local/lib/python3.6/site-packages/smmap/mman.py)
+%%     smmap.util: Unknown (/users/klye/.local/lib/python3.6/site-packages/smmap/util.py)
+%%     mmap: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/mmap.cpython-36m-x86_64-linux-gnu.so)
+%%     smmap.buf: Unknown (/users/klye/.local/lib/python3.6/site-packages/smmap/buf.py)
+%%     gitdb.base: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/base.py)
+%%     gitdb.util: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/util.py)
+%%     binascii: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/binascii.cpython-36m-x86_64-linux-gnu.so)
+%%     gitdb.const: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/const.py)
+%%     gitdb.fun: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/fun.py)
+%%     gitdb.utils: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/utils/__init__.py)
+%%     gitdb.utils.encoding: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/utils/encoding.py)
+%%     gitdb.utils.compat: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/utils/compat.py)
+%%     gitdb.typ: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/typ.py)
+%%     gitdb.db: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/db/__init__.py)
+%%     gitdb.db.base: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/db/base.py)
+%%     gitdb.exc: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/exc.py)
+%%     gitdb.db.loose: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/db/loose.py)
+%%     gitdb.stream: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/stream.py)
+%%     gitdb.db.mem: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/db/mem.py)
+%%     gitdb.db.pack: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/db/pack.py)
+%%     gitdb.pack: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/pack.py)
+%%     array: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/array.cpython-36m-x86_64-linux-gnu.so)
+%%     gitdb.db.git: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/db/git.py)
+%%     gitdb.db.ref: Unknown (/users/klye/.local/lib/python3.6/site-packages/gitdb/db/ref.py)
+%%     git.exc: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/exc.py)
+%%     git.compat: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/compat.py)
+%%     git.config: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/config.py)
+%%     git.util: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/util.py)
+%%     getpass: Unknown (/opt/python/3.6.5.7/lib/python3.6/getpass.py)
+%%     termios: Unknown (/opt/python/3.6.5.7/lib/python3.6/lib-dynload/termios.cpython-36m-x86_64-linux-gnu.so)
+%%     platform: 1.0.8 (/opt/python/3.6.5.7/lib/python3.6/platform.py)
+%%     configparser: Unknown (/opt/python/3.6.5.7/lib/python3.6/configparser.py)
+%%     git.objects: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/__init__.py)
+%%     git.objects.base: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/base.py)
+%%     git.objects.util: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/util.py)
+%%     git.objects.blob: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/blob.py)
+%%     mimetypes: Unknown (/opt/python/3.6.5.7/lib/python3.6/mimetypes.py)
+%%     git.objects.commit: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/commit.py)
+%%     git.diff: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/diff.py)
+%%     git.cmd: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/cmd.py)
+%%     git.objects.tree: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/tree.py)
+%%     git.objects.submodule: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/submodule/__init__.py)
+%%     git.objects.submodule.base: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/submodule/base.py)
+%%     git.objects.submodule.util: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/submodule/util.py)
+%%     git.objects.fun: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/fun.py)
+%%     git.objects.submodule.root: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/submodule/root.py)
+%%     git.objects.tag: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/objects/tag.py)
+%%     git.refs: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/refs/__init__.py)
+%%     git.refs.symbolic: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/refs/symbolic.py)
+%%     git.refs.log: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/refs/log.py)
+%%     git.refs.reference: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/refs/reference.py)
+%%     git.refs.head: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/refs/head.py)
+%%     git.refs.tag: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/refs/tag.py)
+%%     git.refs.remote: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/refs/remote.py)
+%%     git.db: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/db.py)
+%%     git.repo: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/repo/__init__.py)
+%%     git.repo.base: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/repo/base.py)
+%%     git.index: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/index/__init__.py)
+%%     git.index.base: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/index/base.py)
+%%     git.index.fun: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/index/fun.py)
+%%     git.index.typ: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/index/typ.py)
+%%     git.index.util: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/index/util.py)
+%%     git.remote: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/remote.py)
+%%     git.repo.fun: Unknown (/users/klye/.local/lib/python3.6/site-packages/git/repo/fun.py)
+%%     netCDF4: 1.5.2 (/users/klye/.local/lib/python3.6/site-packages/netCDF4/__init__.py)
+%%     netCDF4._netCDF4: 1.5.2 (/users/klye/.local/lib/python3.6/site-packages/netCDF4/_netCDF4.cpython-36m-x86_64-linux-gnu.so)
+%%     _cython_0_29_13: Unknown (Unknown)
+%%     netCDF4.utils: Unknown (/users/klye/.local/lib/python3.6/site-packages/netCDF4/utils.py)
+%%     getopt: Unknown (/opt/python/3.6.5.7/lib/python3.6/getopt.py)
+%%     cftime: 1.0.3.4 (/users/klye/.local/lib/python3.6/site-packages/cftime/__init__.py)
+%%     cftime._cftime: 1.0.3.4 (/users/klye/.local/lib/python3.6/site-packages/cftime/_cftime.cpython-36m-x86_64-linux-gnu.so)
+%%     _cython_0_29_1: Unknown (Unknown)
+%%     PIL.BmpImagePlugin: 0.7 (/users/klye/.local/lib/python3.6/site-packages/PIL/BmpImagePlugin.py)
+%%     PIL.ImageFile: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/ImageFile.py)
+%%     PIL.ImagePalette: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/ImagePalette.py)
+%%     PIL.GimpGradientFile: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/GimpGradientFile.py)
+%%     PIL.GimpPaletteFile: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/GimpPaletteFile.py)
+%%     PIL.ImageColor: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/ImageColor.py)
+%%     PIL.PaletteFile: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/PaletteFile.py)
+%%     PIL.GifImagePlugin: 0.9 (/users/klye/.local/lib/python3.6/site-packages/PIL/GifImagePlugin.py)
+%%     PIL.ImageChops: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/ImageChops.py)
+%%     PIL.ImageSequence: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/ImageSequence.py)
+%%     PIL.JpegImagePlugin: 0.6 (/users/klye/.local/lib/python3.6/site-packages/PIL/JpegImagePlugin.py)
+%%     PIL.TiffImagePlugin: 1.3.5 (/users/klye/.local/lib/python3.6/site-packages/PIL/TiffImagePlugin.py)
+%%     fractions: Unknown (/opt/python/3.6.5.7/lib/python3.6/fractions.py)
+%%     PIL.JpegPresets: Unknown (/users/klye/.local/lib/python3.6/site-packages/PIL/JpegPresets.py)
+%%     PIL.PpmImagePlugin: 0.2 (/users/klye/.local/lib/python3.6/site-packages/PIL/PpmImagePlugin.py)
+%%     PIL.PngImagePlugin: 0.9 (/users/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
+%% stacktrace:
+%%     [function: savePlot, line: 308, file: /scratch/snx3000/klye/single_sample_structure_functions/python/plot_info.py]
+%%     [function: plot_convergence, line: 185, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 286, file: ../python/compute_convergence.py]

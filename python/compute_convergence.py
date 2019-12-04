@@ -5,6 +5,7 @@ import plot_info
 import numpy as np
 import matplotlib.pyplot as plt
 import netCDF4
+from matplotlib.colors import LogNorm
 
 conserved_variables_default = [
         "rho",
@@ -129,7 +130,8 @@ def get_min_max_values(all_data):
 def plot_convergence(basename, statistic_name, title, conserved_variables = conserved_variables_default,
                      resolutions=[64, 128,256,512,1024],
                      reference=True,
-                     vmax=None):
+                     vmax=None,
+                     plot_density_log=False):
     
     all_data = load_all_data(basename, resolutions, conserved_variables,
                              statistic_name, max(resolutions))
@@ -162,8 +164,16 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                     vmax_append=f'_vmax_{str(vmax).replace(".", "_")}'
                     vmax_title=f' Colorbar capped with vmax {vmax}.'
                 
-                plt.pcolormesh(x, y, data[:,:,variable_index],
-                               vmin=min_value, vmax=max_value)
+                if variable == 'rho' and plot_density_log:
+                    plt.pcolormesh(x, y, data[:,:,variable_index],
+                                   norm=LogNorm(vmin=min_value, vmax=max_value),
+                                   vmin=min_value, vmax=max_value)
+                    
+                    log_append='_log'
+                else:
+                    plt.pcolormesh(x, y, data[:,:,variable_index],
+                                   vmin=min_value, vmax=max_value)
+                    log_append = ''
                 
                 plt.xlabel("$x$")
                 plt.ylabel("$y$")
@@ -172,7 +182,7 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                 
                 plt.colorbar()
                 
-                plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}_N{resolution}{vmax_append}")
+                plot_info.savePlot(f"field_plot_{statistic_name}_{variable}_{title}_{timepoint}_N{resolution}{vmax_append}{log_append}")
                 plt.close('all')
                 
     
@@ -260,6 +270,9 @@ Computes the wasserstein distances
     parser.add_argument('--vmax', type=float, required=False,
                         help='Maximum value for colorbar for the field plot')
     
+    parser.add_argument('--log', action='store_true',
+                        help="Plot the log of the density")
+    
     args = parser.parse_args()
     
     
@@ -269,4 +282,5 @@ Computes the wasserstein distances
                      args.title, 
                      conserved_variables=conserved_variables_default,
                      reference=args.reference,
-                     vmax=args.vmax)
+                     vmax=args.vmax,
+                     plot_density_log = args.log)
