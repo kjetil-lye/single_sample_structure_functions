@@ -11,14 +11,14 @@
   </grid>
   <boundary>neumann</boundary>
   <flux>hll3</flux>
-  <endTime>0.12</endTime>
+  <endTime>0.06</endTime>
   <equation>euler2</equation>
   <equationParameters>
     <gamma>1.4</gamma>
   </equationParameters>
   <reconstruction>wenof2</reconstruction>
   <cfl>auto</cfl>
-  <integrator>rungekutta3</integrator>
+  <integrator>rungekutta2</integrator>
 
   <initialData>
     <python>cloudshock.py</python>
@@ -31,7 +31,7 @@
       <parameter>
         <name>epsilon</name>
         <length>1</length>
-        <value>0.06</value>
+        <value>0.01</value>
       </parameter>
 
     </parameters>

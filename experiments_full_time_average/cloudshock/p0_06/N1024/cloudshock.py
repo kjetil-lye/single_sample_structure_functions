@@ -1,6 +1,7 @@
 import numpy as np
 def init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):
 
+
     N = len(a)//4
     a1 = a[:N]
     a2 = a[N:2*N]
@@ -18,8 +19,12 @@ def init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):
     if abs(normalization2) < 1e-10:
         normalization2 = 1
 
-    x = np.linspace(0, 1, nx)
-    y = np.linspace(0, 1, ny)
+    x = np.linspace(ax, bx, nx+1)
+    y = np.linspace(ay, by, ny+1)
+
+    x = x[:-1]
+    y = y[:-1]
+
 
     X, Y =np.meshgrid(x, y)
 
@@ -31,11 +36,11 @@ def init_global(rho, ux, uy, p, nx, ny, nz, ax, ay, az, bx, by, bz):
 
     #
     r_max = 0.13
-    left_x = (x < 0.05 + perturbation_x)
-    cloud = r < r_max + perturbation_r
+    left_x = (x <= 0.05 + perturbation_x)
+    cloud = r <= r_max + perturbation_r
 
-    rho[:,:,0] = left_x*3.86859 + (1-left_x)*(cloud*10.0 + (1-cloud)*1.0)
-    ux[:,:,0] = 11.2536*left_x
+    rho[:,:,0] = (left_x*3.86859 + (1-left_x)*(cloud*10.0 + (1-cloud)*1.0)).T
+    ux[:,:,0] = (11.2536*left_x).T
     uy[:,:,:] = np.zeros_like(ux)
     
-    p[:,:,0] = 167.345*left_x + (1-left_x)*1.0
+    p[:,:,0] = (167.345*left_x + (1-left_x)*1.0).T

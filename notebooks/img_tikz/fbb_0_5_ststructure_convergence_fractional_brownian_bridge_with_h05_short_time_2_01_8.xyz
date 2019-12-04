@@ -28,9 +28,9 @@ ytick style={color=black}
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
 table {%
-256 0.164992919898151
-512 0.117792675290767
-1024 0.0708261837397153
+256 0.164393733677866
+512 0.117453967702585
+1024 0.0706589195069329
 };
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
@@ -39,7 +39,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 88fcf3f3c5f939a16ace7039ed7a04d37d736b0e
+Commit: 06c2db0759a5655fee67f01c55c616e341bb8351
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: lyelaptop};
 \node at (axis cs:0.2,0.93)[
@@ -47,7 +47,7 @@ Hostname: lyelaptop};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@88fcf};
+]{@06c2d};
 \end{axis}
 
 \end{tikzpicture}
@@ -59,17 +59,17 @@ Hostname: lyelaptop};
 %% script name: structure_variance.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 88fcf3f3c5f939a16ace7039ed7a04d37d736b0e
+%% GIT git_commit : 06c2db0759a5655fee67f01c55c616e341bb8351
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 88fcf
+%% GIT git_short_commit : 06c2d
 %% working_directory : /home/kjetil/projects/single_sample_structure_functions/notebooks
 %% hostname : lyelaptop
-%% generated_on_date : 2019-11-18 20:50:26.426596
+%% generated_on_date : 2019-11-20 19:15:54.816611
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-f1fc6584-42fb-4004-bce1-239844274ec7.json
+%%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-9a6aacde-d69c-4cb9-b810-e739dbea1edf.json
 %% python_version: 
 %%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
 %%    [GCC 9.2.0])
