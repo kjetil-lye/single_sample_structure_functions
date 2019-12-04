@@ -23,7 +23,7 @@ ylabel={\(\displaystyle y\)},
 ymin=0, ymax=1,
 ytick style={color=black}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_rho_cloudshock_006_n128-010.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_rho_cloudshock_006_n128-011.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -31,15 +31,15 @@ ytick style={color=black}
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 75f70e737c3616e9d42f02b6e0a7f467cc210cf4
+Commit: 228e4226007c563e0c3942dc76581ecfc5dca892
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: daint101};
+Hostname: daint107};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@75f7};
+]{@228e4};
 \end{axis}
 
 \end{tikzpicture}
@@ -54,14 +54,14 @@ Hostname: daint101};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 75f70e737c3616e9d42f02b6e0a7f467cc210cf4
+%% GIT git_commit : 228e4226007c563e0c3942dc76581ecfc5dca892
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 75f7
+%% GIT git_short_commit : 228e4
 %% working_directory : /scratch/snx3000/klye/single_sample_structure_functions/notebooks
-%% hostname : daint101
-%% generated_on_date : 2019-12-03 23:21:18.542733
+%% hostname : daint107
+%% generated_on_date : 2019-12-04 09:56:48.250661
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/opt/python/3.6.5.7/bin/python ../python/compute_convergence.py --input_basename /scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average//cloudshock/p0_06/N{resolution}/cloudshock_functional_identity_1.nc --title Cloudshock  --statistic_name variance --reference
