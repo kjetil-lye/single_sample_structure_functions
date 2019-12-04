@@ -7,7 +7,7 @@ colorbar style={ytick={0,50000,100000,150000,200000,250000,300000},yticklabels={
 colormap/viridis,
 height=\figureheight,
 point meta max=317111.395796328,
-point meta min=-6.30606677987089e-14,
+point meta min=0,
 tick align=outside,
 tick pos=left,
 width=\figurewidth,
@@ -24,7 +24,7 @@ ytick style={color=black},
 ytick={0,0.2,0.4,0.6,0.8,1},
 yticklabels={\(\displaystyle 0.0\),\(\displaystyle 0.2\),\(\displaystyle 0.4\),\(\displaystyle 0.6\),\(\displaystyle 0.8\),\(\displaystyle 1.0\)}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_e_cloudshock_006_n512_notitle-011.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_e_cloudshock_006_n512_notitle-015.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -32,7 +32,7 @@ yticklabels={\(\displaystyle 0.0\),\(\displaystyle 0.2\),\(\displaystyle 0.4\),\
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 228e4226007c563e0c3942dc76581ecfc5dca892
+Commit: f8b4fc8507014f5672e00044d4e4274592d4d245
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: daint107};
 \node at (axis cs:0.2,0.93)[
@@ -40,7 +40,7 @@ Hostname: daint107};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@228e4};
+]{@f8b4f};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -48,7 +48,7 @@ Hostname: daint107};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 228e4226007c563e0c3942dc76581ecfc5dca892
+Commit: f8b4fc8507014f5672e00044d4e4274592d4d245
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: daint107};
 \end{axis}
@@ -63,17 +63,17 @@ Hostname: daint107};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 228e4226007c563e0c3942dc76581ecfc5dca892
+%% GIT git_commit : f8b4fc8507014f5672e00044d4e4274592d4d245
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 228e4
+%% GIT git_short_commit : f8b4f
 %% working_directory : /scratch/snx3000/klye/single_sample_structure_functions/notebooks
 %% hostname : daint107
-%% generated_on_date : 2019-12-04 09:58:21.668781
+%% generated_on_date : 2019-12-04 22:02:48.738563
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/opt/python/3.6.5.7/bin/python ../python/compute_convergence.py --input_basename /scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average//cloudshock/p0_06/N{resolution}/cloudshock_functional_identity_1.nc --title Cloudshock  --statistic_name variance --reference
+%%    commandrun=/opt/python/3.6.5.7/bin/python ../python/compute_convergence.py --input_basename /scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average//cloudshock/p0_06/N{resolution}/cloudshock_functional_identity_1.nc --title Cloudshock  --statistic_name variance --reference --log
 %%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
 %%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
 %%    _scratch_snx3000_klye_single_sample_structure_functions_experiments_full_time_average__cloudshock_p0_06_N64_cloudshock_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average/cloudshock/p0_06/N64
