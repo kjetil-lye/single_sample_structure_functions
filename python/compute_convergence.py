@@ -80,7 +80,7 @@ def load_file_variance(filename, conserved_variables, number_of_samples):
         mean /= number_of_samples
         m2 /= number_of_samples
         
-        return m2 - mean**2
+        return np.maximum(0, m2 - mean**2)
         
            
     
@@ -165,9 +165,9 @@ def plot_convergence(basename, statistic_name, title, conserved_variables = cons
                     vmax_title=f' Colorbar capped with vmax {vmax}.'
                 
                 if variable == 'rho' and plot_density_log:
-                    plt.pcolormesh(x, y, data[:,:,variable_index],
-                                   norm=LogNorm(vmin=min_value, vmax=max_value),
-                                   vmin=min_value, vmax=max_value)
+                    plt.pcolormesh(x, y, np.maximum(np.finfo(float).eps, data[:,:,variable_index]),
+                                   norm=LogNorm(vmin=max(min_value, np.finfo(float).eps), vmax=max_value),
+                                   vmin=max(min_value, np.finfo(float).eps), vmax=max_value)
                     
                     log_append='_log'
                 else:
