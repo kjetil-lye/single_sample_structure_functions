@@ -12,7 +12,7 @@ tick align=outside,
 tick pos=both,
 title={rho
 Kelvin-Helmholtz  time integrated
-$T=2.0$},
+$T=2.0$.},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={\(\displaystyle x\)},
@@ -23,7 +23,7 @@ ylabel={\(\displaystyle y\)},
 ymin=0, ymax=1,
 ytick style={color=black}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_single_sample_rho_kelvinhelmholtz_time_integrated_20_n256-003.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_single_sample_rho_kelvinhelmholtz_time_integrated_20_n256-004.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -31,15 +31,15 @@ ytick style={color=black}
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: a738dc32643a90f78ce63eee490d71f310d8c83c
+Commit: 64881d8be9280d5a26824d9ed06b75fa54e69a6d
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-062};
+Hostname: lo-login-01};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@a738d};
+]{@64881};
 \end{axis}
 
 \end{tikzpicture}
@@ -48,19 +48,19 @@ Hostname: lo-a2-062};
 %%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%
 %% rho
 %% Kelvin-Helmholtz  time integrated
-%% $T=2.0$
+%% $T=2.0$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : a738dc32643a90f78ce63eee490d71f310d8c83c
+%% GIT git_commit : 64881d8be9280d5a26824d9ed06b75fa54e69a6d
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : a738d
+%% GIT git_short_commit : 64881
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-062
-%% generated_on_date : 2019-11-04 15:38:46.539840
+%% hostname : lo-login-01
+%% generated_on_date : 2019-12-05 18:20:53.538005
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//kh/p0_06/N{resolution}/kh_functional_time_integrated_identity_0.nc --title Kelvin-Helmholtz _time_integrated --statistic_name single_sample --reference
@@ -436,8 +436,6 @@ Hostname: lo-a2-062};
 %%     io: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/io.py)
 %%     abc: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/abc.py)
 %%     _weakrefset: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/_weakrefset.py)
-%%     _bootlocale: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/_bootlocale.py)
-%%     _locale: Unknown (Unknown)
 %%     site: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site.py)
 %%     os: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/os.py)
 %%     errno: Unknown (Unknown)
@@ -450,6 +448,8 @@ Hostname: lo-a2-062};
 %%     _sitebuiltins: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/_sitebuiltins.py)
 %%     sysconfig: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/sysconfig.py)
 %%     _sysconfigdata_m_linux_x86_64-linux-gnu: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/_sysconfigdata_m_linux_x86_64-linux-gnu.py)
+%%     _bootlocale: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/_bootlocale.py)
+%%     _locale: Unknown (Unknown)
 %%     types: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/types.py)
 %%     functools: Unknown (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/functools.py)
 %%     _functools: Unknown (Unknown)
@@ -1286,5 +1286,5 @@ Hostname: lo-a2-062};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 167, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 185, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 286, file: ../python/compute_convergence.py]
