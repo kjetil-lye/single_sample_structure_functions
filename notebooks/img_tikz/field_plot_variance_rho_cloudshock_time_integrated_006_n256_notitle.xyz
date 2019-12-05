@@ -24,7 +24,7 @@ ytick style={color=black},
 ytick={0,0.2,0.4,0.6,0.8,1},
 yticklabels={\(\displaystyle 0.0\),\(\displaystyle 0.2\),\(\displaystyle 0.4\),\(\displaystyle 0.6\),\(\displaystyle 0.8\),\(\displaystyle 1.0\)}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_rho_cloudshock_time_integrated_006_n256_notitle-005.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {field_plot_variance_rho_cloudshock_time_integrated_006_n256_notitle-006.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -32,7 +32,7 @@ yticklabels={\(\displaystyle 0.0\),\(\displaystyle 0.2\),\(\displaystyle 0.4\),\
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: f8b4fc8507014f5672e00044d4e4274592d4d245
+Commit: 7fa5ef46cbb3bc1487781699bc75166ab0926231
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: daint107};
 \node at (axis cs:0.2,0.93)[
@@ -40,7 +40,7 @@ Hostname: daint107};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@f8b4f};
+]{@7fa5e};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -48,7 +48,7 @@ Hostname: daint107};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: f8b4fc8507014f5672e00044d4e4274592d4d245
+Commit: 7fa5ef46cbb3bc1487781699bc75166ab0926231
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
 Hostname: daint107};
 \end{axis}
@@ -63,14 +63,14 @@ Hostname: daint107};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : f8b4fc8507014f5672e00044d4e4274592d4d245
+%% GIT git_commit : 7fa5ef46cbb3bc1487781699bc75166ab0926231
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : f8b4f
+%% GIT git_short_commit : 7fa5e
 %% working_directory : /scratch/snx3000/klye/single_sample_structure_functions/notebooks
 %% hostname : daint107
-%% generated_on_date : 2019-12-04 22:12:37.756203
+%% generated_on_date : 2019-12-05 09:43:00.246944
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/opt/python/3.6.5.7/bin/python ../python/compute_convergence.py --input_basename /scratch/snx3000/klye/single_sample_structure_functions/experiments_full_time_average//cloudshock/p0_06/N{resolution}/cloudshock_functional_time_integrated_identity_0.nc --title Cloudshock _time_integrated --statistic_name variance --reference
