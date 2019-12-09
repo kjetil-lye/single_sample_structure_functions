@@ -32,15 +32,15 @@ yticklabels={\(\displaystyle 2^{-9}\),\(\displaystyle 2^{-8}\),\(\displaystyle 2
 table {%
 64 0.0198851699338858
 128 0.0125982294812578
-256 0.00769477804688758
+256 0.00769477804688757
 512 0.00415564128898778
 };
 \addplot [semithick, color1, dashed]
 table {%
 64 0.0206056500514793
 128 0.0122633070377715
-256 0.00729842053645181
-512 0.0043436034148731
+256 0.0072984205364518
+512 0.00434360341487309
 };
 \addlegendentry{$\mathcal{O}(N^{-0.7})$}
 \node at (axis cs:0.95,0.01)[
@@ -50,15 +50,15 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 942074d32ef6e282b459d5535547c72d76f8494a
+Commit: 4d235e4a7a68bd0dc9f4272669194094b9a9c25f
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-058};
+Hostname: lo-a2-073};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@94207};
+]{@4d235};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -66,9 +66,9 @@ Hostname: lo-a2-058};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 942074d32ef6e282b459d5535547c72d76f8494a
+Commit: 4d235e4a7a68bd0dc9f4272669194094b9a9c25f
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-058};
+Hostname: lo-a2-073};
 \end{axis}
 
 \end{tikzpicture}
@@ -80,14 +80,14 @@ Hostname: lo-a2-058};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 942074d32ef6e282b459d5535547c72d76f8494a
+%% GIT git_commit : 4d235e4a7a68bd0dc9f4272669194094b9a9c25f
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 94207
+%% GIT git_short_commit : 4d235
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-058
-%% generated_on_date : 2019-10-21 17:37:45.025178
+%% hostname : lo-a2-073
+%% generated_on_date : 2019-11-07 13:21:18.371730
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//fbb_short_time/H0_125/N{resolution}/euler_fbb_functional_time_integrated_identity_0.nc --title Fractional Brownian bridge $H=0.125$ short time _time_integrated --statistic_name variance --reference

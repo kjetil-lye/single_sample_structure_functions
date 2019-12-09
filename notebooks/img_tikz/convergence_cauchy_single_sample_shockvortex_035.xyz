@@ -51,15 +51,15 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 942074d32ef6e282b459d5535547c72d76f8494a
+Commit: 375d8ef2245fa7cab944f71461ee2b6509bb76ca
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-066};
+Hostname: lo-a2-025};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@94207};
+]{@375d};
 \end{axis}
 
 \end{tikzpicture}
@@ -73,17 +73,17 @@ Hostname: lo-a2-066};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 942074d32ef6e282b459d5535547c72d76f8494a
+%% GIT git_commit : 375d8ef2245fa7cab944f71461ee2b6509bb76ca
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 94207
+%% GIT git_short_commit : 375d
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-066
-%% generated_on_date : 2019-10-21 17:17:04.862250
+%% hostname : lo-a2-025
+%% generated_on_date : 2019-12-05 12:40:40.976855
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//shockvortex/p0_06/N{resolution}/shockvortex_functional_identity_1.nc --title Shockvortex  --statistic_name single_sample
+%%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//shockvortex/p0_06/N{resolution}/shockvortex_functional_identity_1.nc --title Shockvortex  --statistic_name single_sample --log
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__shockvortex_p0_06_N64_shockvortex_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__shockvortex_p0_06_N64_shockvortex_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__shockvortex_p0_06_N64_shockvortex_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/cluster/scratch/klye/single_sample_structure_functions_fulltime/experiments_full_time_average/shockvortex/p0_06/N64
@@ -1289,5 +1289,5 @@ Hostname: lo-a2-066};
 %%     cftime._cftime: 1.0.0b1 (/cluster/home/klye/.local/lib64/python3.6/site-packages/cftime/_cftime.cpython-36m-x86_64-linux-gnu.so)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 228, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 246, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 286, file: ../python/compute_convergence.py]

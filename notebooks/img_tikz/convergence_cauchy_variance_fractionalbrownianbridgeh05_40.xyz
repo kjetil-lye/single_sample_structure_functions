@@ -33,15 +33,15 @@ ytick style={color=black}
 table {%
 64 0.187831301863868
 128 0.116095886797388
-256 0.078437898453067
+256 0.0784378984530671
 512 0.0696514937913389
 };
 \addplot [semithick, color1, dashed]
 table {%
 64 0.173153318498775
 128 0.123637572855444
-256 0.088281585095311
-512 0.0630361635783074
+256 0.0882815850953111
+512 0.0630361635783075
 };
 \addlegendentry{$\mathcal{O}(N^{-0.5})$}
 \node at (axis cs:0.95,0.01)[
@@ -51,15 +51,15 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 942074d32ef6e282b459d5535547c72d76f8494a
+Commit: a738dc32643a90f78ce63eee490d71f310d8c83c
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-073};
+Hostname: lo-a2-062};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@94207};
+]{@a738d};
 \end{axis}
 
 \end{tikzpicture}
@@ -73,14 +73,14 @@ Hostname: lo-a2-073};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 942074d32ef6e282b459d5535547c72d76f8494a
+%% GIT git_commit : a738dc32643a90f78ce63eee490d71f310d8c83c
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 94207
+%% GIT git_short_commit : a738d
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-073
-%% generated_on_date : 2019-10-21 17:48:23.202459
+%% hostname : lo-a2-062
+%% generated_on_date : 2019-11-04 15:56:30.903754
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//fbb/H0_5/N{resolution}/euler_fbb_functional_identity_1.nc --title Fractional Brownian bridge $H=0.5$  --statistic_name variance

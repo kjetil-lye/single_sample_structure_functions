@@ -31,17 +31,17 @@ ytick style={color=black}
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table {%
-64 0.000461660982613376
-128 0.000258582447550335
-256 0.000124805819759643
-512 4.75058582093459e-05
+64 0.00046166098260932
+128 0.000258582447547149
+256 0.000124805819755745
+512 4.75058582054609e-05
 };
 \addplot [semithick, color1, dashed]
 table {%
-64 0.000506220684745688
-128 0.00023791984347027
-256 0.000111820503631445
-512 5.25547800049406e-05
+64 0.000506220684746779
+128 0.000237919843465123
+256 0.000111820503626366
+512 5.25547800013033e-05
 };
 \addlegendentry{$\mathcal{O}(N^{-1.1})$}
 \node at (axis cs:0.95,0.01)[
@@ -51,15 +51,15 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: 942074d32ef6e282b459d5535547c72d76f8494a
+Commit: 375d8ef2245fa7cab944f71461ee2b6509bb76ca
 Repo: git@github.com:kjetil-lye/single\_sample\_structure\_functions.git
-Hostname: lo-a2-059};
+Hostname: lo-a2-030};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@94207};
+]{@375d};
 \end{axis}
 
 \end{tikzpicture}
@@ -73,17 +73,17 @@ Hostname: lo-a2-059};
 %% script name: ../python/compute_convergence.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 942074d32ef6e282b459d5535547c72d76f8494a
+%% GIT git_commit : 375d8ef2245fa7cab944f71461ee2b6509bb76ca
 %% GIT git_repo_modified : True
 %% GIT git_branch : fulltimeintegratedstructurefunctions
 %% GIT git_remote_url : git@github.com:kjetil-lye/single_sample_structure_functions.git
-%% GIT git_short_commit : 94207
+%% GIT git_short_commit : 375d
 %% working_directory : /cluster/scratch/klye/single_sample_structure_functions_fulltime/notebooks
-%% hostname : lo-a2-059
-%% generated_on_date : 2019-10-21 17:39:15.632460
+%% hostname : lo-a2-030
+%% generated_on_date : 2019-12-05 13:06:13.409500
 %% accessed_environment:
 %% additional_parameters:
-%%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//shockvortex/p0_06/N{resolution}/shockvortex_functional_identity_1.nc --title Shockvortex  --statistic_name variance --reference
+%%    commandrun=/cluster/apps/python/3.6.4_cpu/bin/python ../python/compute_convergence.py --input_basename /cluster/work/math/klye/single_sample_structure_functions/experiments_full_time_average//shockvortex/p0_06/N{resolution}/shockvortex_functional_identity_1.nc --title Shockvortex  --statistic_name variance --reference --log
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__shockvortex_p0_06_N64_shockvortex_functional_identity_1.nc_alsvinn_report.software=alsvinn https://github.com/alsvinn
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__shockvortex_p0_06_N64_shockvortex_functional_identity_1.nc_alsvinn_report.softwareVersion=0.5.4
 %%    _cluster_work_math_klye_single_sample_structure_functions_experiments_full_time_average__shockvortex_p0_06_N64_shockvortex_functional_identity_1.nc_alsvinn_report.currentWorkingDirectory=/cluster/scratch/klye/single_sample_structure_functions_fulltime/experiments_full_time_average/shockvortex/p0_06/N64
@@ -1306,5 +1306,5 @@ Hostname: lo-a2-059};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/apps/python/3.6.4_cpu/lib64/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
 %%     [function: savePlot, line: 308, file: /cluster/scratch/klye/single_sample_structure_functions_fulltime/python/plot_info.py]
-%%     [function: plot_convergence, line: 228, file: ../python/compute_convergence.py]
-%%     [function: <module>, line: 260, file: ../python/compute_convergence.py]
+%%     [function: plot_convergence, line: 246, file: ../python/compute_convergence.py]
+%%     [function: <module>, line: 286, file: ../python/compute_convergence.py]
